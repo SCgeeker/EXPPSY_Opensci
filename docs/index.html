@@ -25,7 +25,7 @@
 <meta name="author" content="陳紹慶">
 
 
-<meta name="date" content="2018-08-20">
+<meta name="date" content="2018-09-09">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -68,7 +68,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>導讀</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#section-0.1"><i class="fa fa-check"></i><b>0.1</b> 寫作動機</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#section-0.2"><i class="fa fa-check"></i><b>0.2</b> 編寫模式</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#section-0.2"><i class="fa fa-check"></i><b>0.2</b> 這本書的設計</a></li>
 <li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#section-0.3"><i class="fa fa-check"></i><b>0.3</b> 如何使用這本書</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> 緒論</a><ul>
@@ -83,7 +83,7 @@
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 學習讓知識持續循環的研究方法</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="-toolbox.html"><a href="-toolbox.html"><i class="fa fa-check"></i><b>2</b> 心理學實驗基礎技能及工具 {toolbox}</a></li>
+<li class="chapter" data-level="2" data-path="toolbox.html"><a href="toolbox.html"><i class="fa fa-check"></i><b>2</b> 開放實驗工具箱</a></li>
 <li class="chapter" data-level="3" data-path="case.html"><a href="case.html"><i class="fa fa-check"></i><b>3</b> 可重製的研究設計</a><ul>
 <li class="chapter" data-level="3.1" data-path="case.html"><a href="case.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 案例介紹</a></li>
 <li class="chapter" data-level="3.2" data-path="case.html"><a href="case.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 為何需要再現實驗結果</a></li>
@@ -119,28 +119,51 @@
 <div id="header">
 <h1 class="title">實驗心理學：開放科學取向</h1>
 <h4 class="author"><em>陳紹慶</em></h4>
-<h4 class="date"><em>2018-08-20</em></h4>
+<h4 class="date"><em>2018-09-09</em></h4>
 </div>
 <div id="e5b08ee8ae80" class="section level1 unnumbered">
 <h1>導讀</h1>
 <div id="section-0.1" class="section level2">
 <h2><span class="header-section-number">0.1</span> 寫作動機</h2>
+<p>心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是研究操作養成入門。有百年歷史的心理學系都將這門課程設為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到起點。寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑，但是我寫這本書的時機，正是心理科學重製危機(Replication Crisis)，逐漸轉變為心理科學品質危機(Quality Crisis)。</p>
+<p>2011年是歐美心理學界深刻感受粗糙的研究方法長期損害心理科學品質的關鍵一年。當年有曾於「科學」(Science)發表研究的荷蘭社會與人格心理學者Diederik Stapel被揭發研究造假<span class="citation">(Stapel <a href="#ref-StapelFakingScienceTrue2014">2014</a>)</span>，以及美國資深社會與人格心理學者Daryl Bem發表結論有爭議且結果難以重現的超感知覺研究<span class="citation">(Bem <a href="#ref-BemFeelingfutureexperimental2011">2011</a>)</span>。後續緊接發生的類以案例，啟發一群心理學者提出改進心理科學研究流程的主張<span class="citation">(Chambers, Munafo, and signatories <a href="#ref-chambers_trust_2013">2013</a>; Lindsay, Simons, and Lilienfeld <a href="#ref-LindsayResearchPreregistration1012016">2016</a>)</span>，並付諸於大規模再現研究<span class="citation">(Camerer et al. <a href="#ref-CamererEvaluatingreplicabilitysocial2018">2018</a>; Klein et al. <a href="#ref-KleinInvestigatingVariationReplicability2014">2014</a>; Open Science Collaboration <a href="#ref-OpenScienceCollaborationEstimatingreproducibilitypsychological2015">2015</a>)</span>。行動結果顯示令人難以接受的事實：近幾年發表於頂尖期刊的多數心理學研究，經過嚴謹的設計再現研究與分析，能重現原始發現的比例未達一半。對於正在學學習的學生來說，今天聽到教授講述某個有啟發性的研究，明天得知這項研究證據經不起考驗，這樣的狀況不再是想像，而是隨時可能會發生的日常情節。</p>
+<p>如何讓心理學學生在品質危機時代，有個清楚的方向，是我編寫這本書的目的。首先是心理建設：今天起要學習實驗研究法的學生，正面臨放任心理科學每況愈下，或參與重建品質的抉擇機會。不論你會不會以心理學研究為終生事業，有能明辨心理科學研究品質的眼光，就能為重建心理科學品質貢獻一點力量。什麼樣的知識份子是一位有明辨心理科學研究品質的心理學人，這本書有個明確學習目標：<strong>看到讓你想分享的研究結果，你會先去找研究者有沒有公開資料與註冊研究計畫？</strong></p>
 <!---
-心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是研究操作養成入門。有百年歷史的心理學系都將這門課程設為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到起點。寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑，但是我寫這本書的時機，正是心理科學重製危機(Replication Crisis)，逐漸轉變為心理科學品質危機(Quality Crisis)。
-
-再現危機是從2011年起，許多社會與人格心理學的知名研究結果，無法被多數實驗室成功重現。有些失敗的案例引起的爭論，從學術期刊與研討會，蔓延到網路媒體。這幾年最知名的是權力姿勢效應[]：透過TED演講舞台成名的Amy Cuddy，大力提倡的兩分鐘改變生心理狀態的四大功效(提昇自信、敢於冒險、睪固酮上升、可體松下降)，如今只剩下提高自信感受一項，勉強通過多數註冊報告的考驗[]。
-
 權力姿勢效應事件之後，又出現Brian Wansink的資料分析不確實，發表的論文被徹稿或被警告的事件[]。寫作此書的2018年還出現網路記者質疑史丹佛監獄實驗細節造假，學界與大眾議論持續月餘的事件[]。這些事件的主題研究與我的專業領域都有距離，但是Brian Wansink與Pilip Zimbardo都是學術生涯已經長達20年以上的資深學者，他們的學術觀點與行動也影響身邊後進學者，難道他們經歷的科學訓練過程就是習慣並強化瑕疵知識的產出？
 
 再現危機的指標事件有可查閱的文獻資訊，呈現心理科學人士對一系列事件的觀點。但是尚未有指標事件或重要著作能標誌品質危機，資深學者的學術誠信被質疑，源自他人質疑資深學者產出的知識品質。本書寫作時相關討論雖然還未塵埃落定，我察覺到個別學者或團隊的研究品質，隨著透過網路公開質疑證據的方法越來越興盛成熟，只以能依設計執行研究、依固定格式寫作學術論文的實驗心理學訓練，不足以培養學生應付新時代的挑戰。也因為沒有一本教科書是以這樣的視野設計，所以我決定親自下海，也為這幾年的學思歷程轉變留下紀錄。
 -->
 </div>
 <div id="section-0.2" class="section level2">
-<h2><span class="header-section-number">0.2</span> 編寫模式</h2>
+<h2><span class="header-section-number">0.2</span> 這本書的設計</h2>
 </div>
 <div id="section-0.3" class="section level2">
 <h2><span class="header-section-number">0.3</span> 如何使用這本書</h2>
 
+</div>
+</div>
+<h3>參考文獻</h3>
+<div id="refs" class="references">
+<div id="ref-StapelFakingScienceTrue2014">
+<p>Stapel, Diederik. 2014. <em>Faking Science: A True Story of Academic Fraud</em>. Translated by Nicholas J. L. Brown.</p>
+</div>
+<div id="ref-BemFeelingfutureexperimental2011">
+<p>Bem, D. J. 2011. “Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect.” <em>Journal of Personality and Social Psychology</em> 100 (March): 407–25. doi:<a href="https://doi.org/10.1037/a0021524">10.1037/a0021524</a>.</p>
+</div>
+<div id="ref-chambers_trust_2013">
+<p>Chambers, Chris, Marcus Munafo, and more than 80 signatories. 2013. “Trust in Science Would Be Improved by Study Pre-Registration.” <em>The Guardian</em>, June.</p>
+</div>
+<div id="ref-LindsayResearchPreregistration1012016">
+<p>Lindsay, Stephen, Daniel Simons, and Scott Lilienfeld. 2016. “Research Preregistration 101.” <em>Observer</em> 29 (10): 14–16.</p>
+</div>
+<div id="ref-CamererEvaluatingreplicabilitysocial2018">
+<p>Camerer, Colin F., Anna Dreber, Felix Holzmeister, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, et al. 2018. “Evaluating the Replicability of Social Science Experiments in Nature and Science Between 2010 and 2015.” <em>Nature Human Behaviour</em>, August, 1. doi:<a href="https://doi.org/10.1038/s41562-018-0399-z">10.1038/s41562-018-0399-z</a>.</p>
+</div>
+<div id="ref-KleinInvestigatingVariationReplicability2014">
+<p>Klein, Richard A., Kate A. Ratliff, Michelangelo Vianello, Reginald B. Adams Jr, Štěpán Bahník, Michael J. Bernstein, Konrad Bocian, et al. 2014. “Investigating Variation in Replicability.” <em>Social Psychology</em> 45 (January): 142–52. doi:<a href="https://doi.org/10.1027/1864-9335/a000178">10.1027/1864-9335/a000178</a>.</p>
+</div>
+<div id="ref-OpenScienceCollaborationEstimatingreproducibilitypsychological2015">
+<p>Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” <em>Science</em> 349 (6251): aac4716. doi:<a href="https://doi.org/10.1126/science.aac4716">10.1126/science.aac4716</a>.</p>
 </div>
 </div>
             </section>
