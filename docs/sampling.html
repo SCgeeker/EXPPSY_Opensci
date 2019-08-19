@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>實驗心理學：開放科學取向</title>
+  <title>B 預估隨機化實驗的樣本數 | 實驗心理學：開放科學取向</title>
   <meta name="description" content="心理學實驗法的開放教學材料" />
   <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="實驗心理學：開放科學取向" />
+  <meta property="og:title" content="B 預估隨機化實驗的樣本數 | 實驗心理學：開放科學取向" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="SCgeeker/EXPPSY_Opensci" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="實驗心理學：開放科學取向" />
+  <meta name="twitter:title" content="B 預估隨機化實驗的樣本數 | 實驗心理學：開放科學取向" />
   
   <meta name="twitter:description" content="心理學實驗法的開放教學材料" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="intro.html">
+<link rel="prev" href="QRP.html">
+<link rel="next" href="power-estimation.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -150,67 +150,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">實驗心理學：開放科學取向</h1>
-<p class="author"><em>陳紹慶</em></p>
-<p class="date"><em>2019-08-19</em></p>
-</div>
-<div id="section" class="section level1 unnumbered">
-<h1>導讀</h1>
-<ul>
-<li>寫作動機</li>
-</ul>
-<p>心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是研究操作養成入門。有百年歷史的心理學系都將這門課程設為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到起點。寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑，但是我寫這本書的時機，正是心理科學重製危機(Replication Crisis)，逐漸轉變為心理科學品質危機(Quality Crisis)。</p>
-<p>2011年是歐美心理學界深刻感受粗糙的研究方法長期損害心理科學品質的關鍵一年。當年有曾於「科學」(Science)發表研究的荷蘭社會與人格心理學者Diederik Stapel被揭發研究造假<span class="citation">(Stapel <a href="#ref-stapelFakingScienceTrue2014" role="doc-biblioref">2014</a>)</span>，以及美國資深社會與人格心理學者Daryl Bem發表結論有爭議且結果難以重現的超感知覺研究<span class="citation">(Bem <a href="#ref-bemFeelingFutureExperimental2011" role="doc-biblioref">2011</a>)</span>。後續緊接發生的類以案例，啟發一群心理學者提出改進心理科學研究流程的主張<span class="citation">(Chambers, Munafo, and signatories <a href="#ref-chambers_trust_2013" role="doc-biblioref">2013</a>; Lindsay, Simons, and Lilienfeld <a href="#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">2016</a>)</span>，並付諸於大規模再現研究<span class="citation">(Camerer et al. <a href="#ref-camererEvaluatingReplicabilitySocial2018" role="doc-biblioref">2018</a>; Klein et al. <a href="#ref-kleinInvestigatingVariationReplicability2014" role="doc-biblioref">2014</a>; Open Science Collaboration <a href="#ref-opensciencecollaborationEstimatingReproducibilityPsychological2015" role="doc-biblioref">2015</a>)</span>。行動結果顯示令人難以接受的事實：近幾年發表於頂尖期刊的多數心理學研究，經過嚴謹的設計再現研究與分析，能重現原始發現的比例未達一半。對於正在學學習的學生來說，今天聽到教授講述某個有啟發性的研究，明天得知這項研究證據經不起考驗，這樣的狀況不再是想像，而是隨時可能會發生的日常情節。</p>
-<p>如何讓心理學學生在品質危機時代，有個清楚的方向，是我編寫這本書的目的。首先是心理建設：今天起要學習實驗研究法的學生，正面臨放任心理科學每況愈下，或參與重建品質的抉擇機會。不論你會不會以心理學研究為終生事業，有能明辨心理科學研究品質的眼光，就能為重建心理科學品質貢獻一點力量。什麼樣的知識份子是一位有明辨心理科學研究品質的心理學人，這本書有個明確學習目標：<strong>看到讓你想分享的研究結果，你會先去找研究者有沒有公開資料與註冊研究計畫？</strong></p>
-<ul>
-<li>本書的設計理念</li>
-</ul>
-<p>建立學習情境才能保持學習者對重要課題的專注，基於相關學習理論及建議操作<span class="citation">(Lave and Wenger <a href="#ref-laveSituatedLearningLegitimate1991" role="doc-biblioref">1991</a>; Chapman <a href="#ref-chapmanUpgradeYourCargo2016" role="doc-biblioref">2016</a>)</span>，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。</p>
-<ul>
-<li>如何使用這本書</li>
-</ul>
-<p>本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。</p>
-<p>以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。</p>
-
-</div>
-<h3>參考文獻</h3>
-<div id="refs" class="references">
-<div id="ref-bemFeelingFutureExperimental2011">
-<p>Bem, D. J. 2011. “Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect.” <em>Journal of Personality and Social Psychology</em> 100 (March): 407–25. <a href="https://doi.org/10.1037/a0021524">https://doi.org/10.1037/a0021524</a>.</p>
-</div>
-<div id="ref-camererEvaluatingReplicabilitySocial2018">
-<p>Camerer, Colin F., Anna Dreber, Felix Holzmeister, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, et al. 2018. “Evaluating the Replicability of Social Science Experiments in Nature and Science Between 2010 and 2015.” <em>Nature Human Behaviour</em>, August, 1. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>.</p>
-</div>
-<div id="ref-chambers_trust_2013">
-<p>Chambers, Chris, Marcus Munafo, and more than 80 signatories. 2013. “Trust in Science Would Be Improved by Study Pre-Registration.” <em>The Guardian</em>, June.</p>
-</div>
-<div id="ref-chapmanUpgradeYourCargo2016">
-<p>Chapman, David. 2016. “Upgrade Your Cargo Cult for the Win.” <em>Meaningness</em>. https://meaningness.com/metablog/upgrade-your-cargo-cult.</p>
-</div>
-<div id="ref-kleinInvestigatingVariationReplicability2014">
-<p>Klein, Richard A., Kate A. Ratliff, Michelangelo Vianello, Reginald B. Adams Jr, Štěpán Bahník, Michael J. Bernstein, Konrad Bocian, et al. 2014. “Investigating Variation in Replicability.” <em>Social Psychology</em> 45: 142–52. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>.</p>
-</div>
-<div id="ref-laveSituatedLearningLegitimate1991">
-<p>Lave, Jean, and Etienne Wenger. 1991. <em>Situated Learning: Legitimate Peripheral Participation</em>. Learning in Doing. Cambridge [England] ; New York: Cambridge University Press.</p>
-</div>
-<div id="ref-lindsayResearchPreregistration1012016">
-<p>Lindsay, Stephen, Daniel Simons, and Scott Lilienfeld. 2016. “Research Preregistration 101.” <em>Observer</em> 29 (10): 14–16.</p>
-</div>
-<div id="ref-opensciencecollaborationEstimatingReproducibilityPsychological2015">
-<p>Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” <em>Science</em> 349 (6251): aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>.</p>
-</div>
-<div id="ref-stapelFakingScienceTrue2014">
-<p>Stapel, Diederik. 2014. <em>Faking Science: A True Story of Academic Fraud</em>. Translated by Nicholas J. L. Brown.</p>
-</div>
+<div id="sampling" class="section level1">
+<h1><span class="header-section-number">B</span> 預估隨機化實驗的樣本數</h1>
+<p>規劃一項以隨機程序收集資料的實驗之前，必有假設提供可測得的效果量估計值。效果量加上隨機誤差的變異，</p>
+<ol style="list-style-type: decimal">
+<li><p>敏感度分析</p></li>
+<li><p>事前資訊分析</p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="QRP.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="power-estimation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
