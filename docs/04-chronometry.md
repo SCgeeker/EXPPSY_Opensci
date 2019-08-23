@@ -94,39 +94,42 @@ Simon Task得名於第一篇論文的主要通訊作者[@craftProcessingSymbolic
 
 ## 心理計時實驗的再現與重製 ##  {#chrono_rep} 
 
-我們還有一些課題要從重製 @zwaanParticipantNonnaiveteReproducibility2017 的三個實驗結果學習。首先是效果量，都是計算不一致(incongruent)或不符合(congruent)的反應時間，與相對情況反應時間的重覆量數(repeated measurement)之Cohen's d。除了根據論文的說明，驗證其中報告的效果量之外。應該注意到每個實驗的設計特點，與計算效果量取用的分組條件。Simon Task與Flanker Task都有四組效果量，然而Flanker Task只有計算**反應一致(response congruent)**與**不一致(incongruent)**的效果量，並未計算**刺激一致(stimuli congruent)**與其他兩者的效果量。能不能由此理解兩種作業要測量的心智歷程，各自根據的理論有何特點？
+我們還要從重製 @zwaanParticipantNonnaiveteReproducibility2017 的三個實驗結果，學習如何規畫再現研究。首先我們需要得知各項實驗應測得的效果量，這個單元介紹的三項實驗都是計算不一致(incongruent)或不符合(congruent)的反應時間，與相對情況反應時間的重覆量數(repeated measurement)之Cohen's d。除了根據論文的說明，驗證其中報告的效果量之外。應該注意到每個實驗的設計特點，與計算效果量取用的分組條件。Simon Task與Flanker Task都有四組效果量，然而Flanker Task只有計算**反應一致(response congruent)**與**不一致(incongruent)**的效果量，並未計算**刺激一致(stimuli congruent)**與其他兩者的效果量。經由閱讀原始文獻[@craftProcessingSymbolicInformation1970; eriksenEffectsNoiseLetters1974]，你能不能由此理解各種作業要測量的心智歷程，各自根據的理論有何特點？
 
-Motor Priming比另外兩個實驗多了四個要分析的效果量，從之前的研究設計說明，我們知道這個實驗多出一個參與者內獨變項：有無置入遮蔽物。效果量的數值–包括正負與大小–似乎有很大的差異。這個實驗根據的理論有沒有任何理由，設定遮蔽物啟動不同的心智歷程？
+Motor Priming比另外兩個實驗多了四個要分析的效果量，從之前的研究設計說明，我們知道這個實驗多出一個參與者內獨變項：有無置入遮蔽物。效果量的數值–包括正負與大小–似乎有很大的差異。根據原始文獻的內容[@eimerEffectsMaskedStimuli1998]，你能不能找到這個實驗設定遮蔽物的任何理由？
 
-根據以上資料，現在要規劃一件再現實驗，其中一個重要的功課是應該徵求多少參與者？需要像 @zwaanParticipantNonnaiveteReproducibility2017 為每一個實驗徵求近兩百位嗎？以一個教學課程來說，這樣的人數對學生來說是不小的負擔。還好已經有不少提供科學研究者計算樣本數與考驗力的應用程式問世，在此使用R套件`simr` [@greenSIMRPackagePower2016]提供的函式庫，分析不同樣本數再現三個心理計時實驗資料。估計成功的再現實驗結果，得到與 @zwaanParticipantNonnaiveteReproducibility2017 相同的效果量時，最有可能達到的考驗力。三個實驗的刺激種類不多，每位參與者貢獻200次以上的反應，參與者人數是再現實驗能否在維持預期考驗力的條件下，再現結果與原始研究一致的關鍵。所有實驗都有分派兩種版本的刺激材料給參與者進行實驗，以下以各版本第一段，剔除極端值的原始反應資料估計考驗力與樣本數。
+根據以上資料，現在要規劃一件再現實驗，其中一個重要的功課是應該徵求多少參與者？需要像 @zwaanParticipantNonnaiveteReproducibility2017 為每一個實驗徵求近兩百位嗎？以一個教學課程來說，這樣的人數對學生來說是不小的負擔。還好已經有不少提供科學研究者計算樣本數與考驗力的應用程式問世，在此使用`jpower`示範，說明再現研究要得到接近 @zwaanParticipantNonnaiveteReproducibility2017 的結果，至少要多少參與者？
 
-Simon作業的效果量是三個心理計時實驗裡，最強的項目。由圖\@ref(fig:simon-power)可知，兩種版本的實驗資料估計大約徵求15到20人，就可達到90%至100%的考驗力。
-
-<div class="figure">
-<img src="figs/Simon_same_1.png" alt="估計Simon作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Simon_diff_1.png" alt="估計Simon作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:simon-power)估計Simon作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
-</div>
-
-Flanker作業的實驗結果最重要的效果量是**反應一致(response congruent)**與**不一致(incongruent)**的差異，是三組心理計時實驗最弱的效果量，由圖\@ref(fig:flanker-power)可知，兩種版本的實驗資料估計至少要徵求40位參與者，才能達到約80%~90%的考驗力。
+<!---
+R套件`simr` [@greenSIMRPackagePower2016]提供的函式庫，分析不同樣本數再現三個心理計時實驗資料。估計成功的再現實驗結果，得到與 @zwaanParticipantNonnaiveteReproducibility2017 相同的效果量時，最有可能達到的考驗力。三個實驗的刺激種類不多，每位參與者貢獻200次以上的反應，參與者人數是再現實驗能否在維持預期考驗力的條件下，再現結果與原始研究一致的關鍵。所有實驗都有分派兩種版本的刺激材料給參與者進行實驗，以下以各版本第一段，剔除極端值的原始反應資料估計考驗力與樣本數。
+--->
+Simon作業的效果量是三個心理計時實驗裡，效果量最強的項目。由圖\@ref(fig:simon-power)可知，兩種版本的實驗資料估計大約徵求8到13人，就可達到90%至100%的考驗力。
 
 <div class="figure">
-<img src="figs/Flanker_same_1.png" alt="估計Flanker作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Flanker_diff_1.png" alt="估計Flanker作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:flanker-power)估計Flanker作業之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
+<img src="figs/Simon_N.png" alt="估計Simon作業之考驗力與參與者人數。" width="80%" />
+<p class="caption">(\#fig:simon-power)估計Simon作業之考驗力與參與者人數。</p>
 </div>
 
-Motor Priming有置入遮蔽物及未置入遮蔽物兩種條件，各有一種促發效應結果。無遮蔽物的實驗結果獲得的效果量小於有遮蔽物，從圖\@ref(fig:motormasked-power)可知，需要徵求至少25位參與者，才能保障無遮蔽物的再現實驗結果有90%的考驗力。圖\@ref(fig:motorunmasked-power)顯示約15~20人的再現實驗結果，就能達到90%的考驗力。
+Flanker作業的實驗結果最重要的效果量是**反應一致(response congruent)**與**不一致(incongruent)**的差異，是三組心理計時實驗最弱的效果量，由圖\@ref(fig:flanker-power)可知，估計至少要徵求22位至40位參與者，才能達到約90%~100%的考驗力。
+
+<div class="figure">
+<img src="figs/Flanker_N.png" alt="估計Flanker作業之考驗力與參與者人數。" width="80%" />
+<p class="caption">(\#fig:flanker-power)估計Flanker作業之考驗力與參與者人數。</p>
+</div>
+
+Motor Priming有置入遮蔽物及未置入遮蔽物兩種條件，各有一種促發效應結果。無遮蔽物的實驗結果獲得的效果量小於有遮蔽物，從圖\@ref(fig:motor-power)可知，有遮蔽物的情況需要徵求至少12位參與者，無遮蔽物的情況則需要徵求至少5位參與者，才能保障90%以上的考驗力。
 
 
 <div class="figure">
-<img src="figs/MotorMasked_same_1.png" alt="估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/MotorMasked_diff_1.png" alt="估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:motormasked-power)估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
+<img src="figs/Motor_Priming_Mask_N.png" alt="估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:有遮蔽物，右圖:無遮蔽物" width="50%" /><img src="figs/Motor_Priming_Unmask.png" alt="估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:有遮蔽物，右圖:無遮蔽物" width="50%" />
+<p class="caption">(\#fig:motor-power)估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:有遮蔽物，右圖:無遮蔽物</p>
 </div>
-
+<!---
 <div class="figure">
 <img src="figs/MotorUnmasked_same_1.png" alt="估計Motor Priming無遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/MotorUnmasked_diff_1.png" alt="估計Motor Priming無遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
 <p class="caption">(\#fig:motorunmasked-power)估計Motor Priming無遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
 </div>
-
+--->
 ## 習作 ##  {#chrono_practice} 
 
 - 在每項實驗的`Raw Data`表單裡，那些欄位是真正用於分析的依變項資料？那些欄位是獨變項？那些是計算參與者平均反應的必要欄位？

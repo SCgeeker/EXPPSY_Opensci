@@ -24,7 +24,7 @@
 <meta name="author" content="陳紹慶" />
 
 
-<meta name="date" content="2019-08-19" />
+<meta name="date" content="2019-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -127,7 +127,7 @@
 <li class="chapter" data-level="A.5" data-path="QRP.html"><a href="QRP.html#bad_W"><i class="fa fa-check"></i><b>A.5</b> 在寫作報告的過程裡</a></li>
 </ul></li>
 <li class="chapter" data-level="B" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>B</b> 預估隨機化實驗的樣本數</a></li>
-<li class="chapter" data-level="C" data-path="power-estimation.html"><a href="power-estimation.html"><i class="fa fa-check"></i><b>C</b> 九項實驗的考驗力分析</a></li>
+<li class="chapter" data-level="C" data-path="power-estimation.html"><a href="power-estimation.html"><i class="fa fa-check"></i><b>C</b> jPower操作示範</a></li>
 <li class="chapter" data-level="D" data-path="learning-resource.html"><a href="learning-resource.html"><i class="fa fa-check"></i><b>D</b> 心理學實驗操作學習資源</a></li>
 <li class="chapter" data-level="" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i>參考文獻</a></li>
 <li class="divider"></li>
@@ -292,33 +292,34 @@
 </div>
 <div id="mem_rep" class="section level2">
 <h2><span class="header-section-number">5.4</span> 記憶實驗的再現與重製</h2>
-<p><span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 以網路實驗再現的三項記憶實驗。由於網路實驗是參與者在個人電腦登入參加，程序設計不能太過複雜，Zwaan等人的版本只有取原始實驗的關鍵部分。</p>
-<p><span class="citation">Murdock (<a href="#ref-murdockSerialPositionEffect1962" role="doc-biblioref">1962</a>)</span> 的序列效應實驗只有進行20項目的情況，雖然改在網頁進行，學習列表項目與測試回憶項目的時間控制， <span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的設計都與原始實驗一致。序列效應以列表位置在1到4，9到12，以及17到20的項目回憶平均正確率，估計序列效應的效果量。初始效應是序列位置1到4與9到12平均正確率差異，對應圖<a href="memory.html#fig:primacy-power">5.8</a>的效果量分別是0.63與0.99。</p>
+<p><span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 以網路實驗再現的三項記憶實驗。由於網路實驗是參與者在個人電腦登入參加，程序設計不能太過複雜，Zwaan等人的版本只有節取原始實驗的關鍵部分。建議學生比較原始文獻，探討簡化的程序會不會影響實驗結果的再現。</p>
+<p><span class="citation">Murdock (<a href="#ref-murdockSerialPositionEffect1962" role="doc-biblioref">1962</a>)</span> 的序列效應實驗只有進行20項目的情況，雖然改在網頁進行，學習列表項目與測試回憶項目的時間控制， <span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的設計都與原始實驗一致。初始效應是序列位置1到4與9到12平均正確率差異；新近效應是序列位置12到17與14到20的平均正確率差異。從圖<a href="memory.html#fig:primacy-power">5.8</a>來看，再現兩種效應至少需要17人及10人，就能保證90%的考驗力。</p>
 <div class="figure"><span id="fig:primacy-power"></span>
-<img src="figs/Serial_Primacy_participant_same_1.png" alt="估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Primacy_participant_diff_1.png" alt="估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
+<img src="figs/Serial_Position_Primacy_N.png" alt="估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Position_Recency_N.png" alt="估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激" width="50%" />
 <p class="caption">
-圖 5.8: 估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激
+圖 5.8: 估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激
 </p>
 </div>
-<p>初始效應是序列位置17到4與20到12平均正確率差異，對應圖<a href="memory.html#fig:recency-power">5.9</a>的第一次效果量分別是1.06與1.13。</p>
-<div class="figure"><span id="fig:recency-power"></span>
+<!---
+對應圖\@ref(fig:recency-power)的第一次效果量分別是1.06與1.13。
+
+<div class="figure">
 <img src="figs/Serial_Recency_participant_same_1.png" alt="估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Recency_participant_diff_1.png" alt="估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">
-圖 5.9: 估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激
-</p>
+<p class="caption">(\#fig:recency-power)估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
 </div>
-<p>所有參與 <span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至04個與4個項目間隔，分別標記為<code>Massed</code>與<code>Spaced</code>。兩種情況的回憶正確率差異，正是間隔效應的測量結果。這項實驗測得的第一次效果量都是.11，對應圖<a href="memory.html#fig:spacing-power">5.10</a>。</p>
+--->
+<p>所有參與 <span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為<code>Massed</code>與<code>Spaced</code>。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。可參考圖<a href="memory.html#fig:spacing-power">5.9</a>。</p>
 <div class="figure"><span id="fig:spacing-power"></span>
-<img src="figs/Spacing_participant_same_1.png" alt="估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Spacing_participant_diff_1.png" alt="估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
+<img src="figs/Spacing_N.png" alt="估計間隔效應之考驗力與參與者人數。" width="80%" />
 <p class="caption">
-圖 5.10: 估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激
+圖 5.9: 估計間隔效應之考驗力與參與者人數。
 </p>
 </div>
-<p><span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的假記憶實驗改採視覺呈現字詞項目列表，還有不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。再認作業之中有學過與未學過的列表關鍵詞，參與者的平均再認率差異是假記憶效應的測量結果，對應圖<a href="memory.html#fig:fmemory-power">5.11</a>的第一次效果量分別是0.49與0.39。</p>
+<p><span class="citation">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的假記憶實驗改採視覺呈現字詞項目列表，還有不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。再認作業之中有學過與未學過的列表關鍵詞，參與者的平均再認率差異是假記憶效應的測量結果，對應圖<a href="memory.html#fig:fmemory-power">5.10</a>的第一次效果量分別是0.49與0.39。</p>
 <div class="figure"><span id="fig:fmemory-power"></span>
 <img src="figs/FalseMemory_participant_same_1.png" alt="估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/FalseMemory_participant_diff_1.png" alt="估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
 <p class="caption">
-圖 5.11: 估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激
+圖 5.10: 估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激
 </p>
 </div>
 </div>

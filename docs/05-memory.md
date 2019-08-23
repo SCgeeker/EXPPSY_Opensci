@@ -107,27 +107,27 @@ nocite: |
 
 ## 記憶實驗的再現與重製  ##  {#mem_rep}
 
-@zwaanParticipantNonnaiveteReproducibility2017 以網路實驗再現的三項記憶實驗。由於網路實驗是參與者在個人電腦登入參加，程序設計不能太過複雜，Zwaan等人的版本只有取原始實驗的關鍵部分。
+@zwaanParticipantNonnaiveteReproducibility2017 以網路實驗再現的三項記憶實驗。由於網路實驗是參與者在個人電腦登入參加，程序設計不能太過複雜，Zwaan等人的版本只有節取原始實驗的關鍵部分。建議學生比較原始文獻，探討簡化的程序會不會影響實驗結果的再現。
 
-@murdockSerialPositionEffect1962 的序列效應實驗只有進行20項目的情況，雖然改在網頁進行，學習列表項目與測試回憶項目的時間控制， @zwaanParticipantNonnaiveteReproducibility2017 的設計都與原始實驗一致。序列效應以列表位置在1到4，9到12，以及17到20的項目回憶平均正確率，估計序列效應的效果量。初始效應是序列位置1到4與9到12平均正確率差異，對應圖\@ref(fig:primacy-power)的效果量分別是0.63與0.99。
+@murdockSerialPositionEffect1962 的序列效應實驗只有進行20項目的情況，雖然改在網頁進行，學習列表項目與測試回憶項目的時間控制， @zwaanParticipantNonnaiveteReproducibility2017 的設計都與原始實驗一致。初始效應是序列位置1到4與9到12平均正確率差異；新近效應是序列位置12到17與14到20的平均正確率差異。從圖\@ref(fig:primacy-power)來看，再現兩種效應至少需要17人及10人，就能保證90%的考驗力。
 
 <div class="figure">
-<img src="figs/Serial_Primacy_participant_same_1.png" alt="估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Primacy_participant_diff_1.png" alt="估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:primacy-power)估計序列回憶初始效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
+<img src="figs/Serial_Position_Primacy_N.png" alt="估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Position_Recency_N.png" alt="估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激" width="50%" />
+<p class="caption">(\#fig:primacy-power)估計序列效應之考驗力與參與者人數。左圖:初始效應，右圖:前後參與不同刺激</p>
 </div>
-
-初始效應是序列位置17到4與20到12平均正確率差異，對應圖\@ref(fig:recency-power)的第一次效果量分別是1.06與1.13。
+<!---
+對應圖\@ref(fig:recency-power)的第一次效果量分別是1.06與1.13。
 
 <div class="figure">
 <img src="figs/Serial_Recency_participant_same_1.png" alt="估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Serial_Recency_participant_diff_1.png" alt="估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
 <p class="caption">(\#fig:recency-power)估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
 </div>
-
-所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至04個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。這項實驗測得的第一次效果量都是.11，對應圖\@ref(fig:spacing-power)。
+--->
+所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。可參考圖\@ref(fig:spacing-power)。
 
 <div class="figure">
-<img src="figs/Spacing_participant_same_1.png" alt="估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/Spacing_participant_diff_1.png" alt="估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:spacing-power)估計間隔效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
+<img src="figs/Spacing_N.png" alt="估計間隔效應之考驗力與參與者人數。" width="80%" />
+<p class="caption">(\#fig:spacing-power)估計間隔效應之考驗力與參與者人數。</p>
 </div>
 
 @zwaanParticipantNonnaiveteReproducibility2017 的假記憶實驗改採視覺呈現字詞項目列表，還有不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。再認作業之中有學過與未學過的列表關鍵詞，參與者的平均再認率差異是假記憶效應的測量結果，對應圖\@ref(fig:fmemory-power)的第一次效果量分別是0.49與0.39。

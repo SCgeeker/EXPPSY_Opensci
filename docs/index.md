@@ -1,7 +1,7 @@
 --- 
 title: "實驗心理學：開放科學取向"
 author: "陳紹慶"
-date: "2019-08-19"
+date: "2019-08-23"
 kint: "bookdown::render_book"
 site: bookdown::bookdown_site
 #output:
