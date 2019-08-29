@@ -142,16 +142,16 @@ knitr::include_graphics(c("figs/Serial_Position_Primacy_N.png","figs/Serial_Posi
 knitr::include_graphics(c("figs/Serial_Recency_participant_same_1.png","figs/Serial_Recency_participant_diff_1.png"))
 ```
 --->
-所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。可參考圖\@ref(fig:spacing-power)。
+所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。請參考圖\@ref(fig:spacing-power)。
 
 ```{r spacing-power, echo=FALSE, fig.show='hold', message=FALSE, warning=FALSE, paged.print=TRUE, out.width='80%', fig.cap="估計間隔效應之考驗力與參與者人數。"}
 knitr::include_graphics(c("figs/Spacing_N.png"))
 ```
 
-@zwaanParticipantNonnaiveteReproducibility2017 的假記憶實驗改採視覺呈現字詞項目列表，還有不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。再認作業之中有學過與未學過的列表關鍵詞，參與者的平均再認率差異是假記憶效應的測量結果，對應圖\@ref(fig:fmemory-power)的第一次效果量分別是0.49與0.39。
+@zwaanParticipantNonnaiveteReproducibility2017 的假記憶實驗是 @roedigerCreatingFalseMemories1995 的簡化版本：改用視覺呈現字詞項目列表，還有參與者不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。分析重點是未曾學習的列表關鍵詞之再認正確率，預計需要至少10人，才能有90%的考驗力，再現同樣的結果。請參考圖\@ref(fig:fmemory-power)。
 
-```{r fmemory-power, echo=FALSE, fig.show='hold', message=FALSE, warning=FALSE, paged.print=TRUE, out.width='50%', fig.cap="估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激"}
-knitr::include_graphics(c("figs/FalseMemory_participant_same_1.png","figs/FalseMemory_participant_diff_1.png"))
+```{r fmemory-power, echo=FALSE, fig.show='hold', message=FALSE, warning=FALSE, paged.print=TRUE, out.width='50%', fig.cap="估計錯誤記憶誤答率之考驗力與參與者人數。"}
+knitr::include_graphics(c("figs/False_Memory_N.png"))
 ```
 
 ## 習作 ##  {#mem_practice} 

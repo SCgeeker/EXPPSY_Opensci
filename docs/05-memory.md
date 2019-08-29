@@ -123,18 +123,18 @@ nocite: |
 <p class="caption">(\#fig:recency-power)估計序列回憶新近效應之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
 </div>
 --->
-所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。可參考圖\@ref(fig:spacing-power)。
+所有參與 @zwaanParticipantNonnaiveteReproducibility2017  間隔效應實驗的人士，都知道有測試作業。所有關鍵項目只有重覆一次，每次實驗隨機分派至1個與4個項目間隔，分別標記為`Massed`與`Spaced`。兩種情況的回憶正確率差異，正是間隔效應的測量結果。預計需要至少12人，才能有90%的考驗力，再現同樣的結果。請參考圖\@ref(fig:spacing-power)。
 
 <div class="figure">
 <img src="figs/Spacing_N.png" alt="估計間隔效應之考驗力與參與者人數。" width="80%" />
 <p class="caption">(\#fig:spacing-power)估計間隔效應之考驗力與參與者人數。</p>
 </div>
 
-@zwaanParticipantNonnaiveteReproducibility2017 的假記憶實驗改採視覺呈現字詞項目列表，還有不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。再認作業之中有學過與未學過的列表關鍵詞，參與者的平均再認率差異是假記憶效應的測量結果，對應圖\@ref(fig:fmemory-power)的第一次效果量分別是0.49與0.39。
+@zwaanParticipantNonnaiveteReproducibility2017 的假記憶實驗是 @roedigerCreatingFalseMemories1995 的簡化版本：改用視覺呈現字詞項目列表，還有參與者不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。分析重點是未曾學習的列表關鍵詞之再認正確率，預計需要至少10人，才能有90%的考驗力，再現同樣的結果。請參考圖\@ref(fig:fmemory-power)。
 
 <div class="figure">
-<img src="figs/FalseMemory_participant_same_1.png" alt="估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" /><img src="figs/FalseMemory_participant_diff_1.png" alt="估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激" width="50%" />
-<p class="caption">(\#fig:fmemory-power)估計錯誤記憶誤答率之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激</p>
+<img src="figs/False_Memory_N.png" alt="估計錯誤記憶誤答率之考驗力與參與者人數。" width="50%" />
+<p class="caption">(\#fig:fmemory-power)估計錯誤記憶誤答率之考驗力與參與者人數。</p>
 </div>
 
 ## 習作 ##  {#mem_practice} 

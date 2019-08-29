@@ -4,14 +4,14 @@
 
 雖然本書推薦的統計軟體都有計算Cohen's d的功能，為了未來學習設計更複雜的實驗，讀者還是有必要了解如何計算。 @lakens_calculating_2013 整理兩種Cohen's d的計算方法，節錄如下：
 
-- 參與者間設計 Cohen's d_s
+- 參與者間設計 Cohen's $d_s$
 
 需要數值：兩組平均值($\bar{X}_1$, $\bar{X}_2$)，兩組樣本變異數($SD^2_1$, $SD^2_2$)，兩組樣本人數($n_1$, $n_2$)。
 
 $$d_s = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{ \frac{(n_1 - 1)SD^2_1 + (n_2 - 1)SD^2_2}{n_1 + n_2 - 2}}}$$
 
 
-- 參與者內設計 Cohen's d_Z
+- 參與者內設計 Cohen's $d_Z$
 
 需要數值：差異分數平均值($M_{diff}$)，每位參與者的差異分數($X_{diff}$)，參與者人數(N)。
 
@@ -21,7 +21,7 @@ $$d_z = \frac{M_{diff}}{\sqrt\frac{\sum(X_{diff} - M_{diff})^2}{N - 1}}$$
 
 規劃一項實驗之前，必須根據可測得的效果量以及預期達到的考驗力，規劃能得到如此結果的樣本人數。在許多實驗研究法教材培養的研究執行能力，包括軟硬體安排實現設計的完整度，以及執行與解釋資料分析符合學術規範。為了增加研究的可重製性，新手研究者應當在學習如何規劃的時期，了解執行實驗應收集的樣本人數。這個單元以**形態模擬效應**為範例，說明如何考慮估計樣本人數的重要資訊，以及示範操作程序。
 
-@zwaanParticipantNonnaiveteReproducibility2017 招募80位參與者，再現 @ZwaanLanguageComprehendersMentally2002 的研究結果。80位是不是合理的樣本人數，可運用過去研究文獻的效果量資料，評估再現實驗若能發現相同的結果，所達到的考驗力。 @waanRevisitingMentalSimulation2012 曾進行兩次招募176人的實驗，雖然也得到顯著的結果，測得的效果量(.15, .18)只有 @ZwaanLanguageComprehendersMentally2002 的一半(.31)。要評估 @zwaanParticipantNonnaiveteReproducibility2017 招 募的人數，最適當的方式是假設以此實驗方法測得的**形態模擬效應**，效果量範圍在.15到.31之間，評估達到考驗力.80或.90時的人數。
+@zwaanParticipantNonnaiveteReproducibility2017 招募80位參與者，再現 @ZwaanLanguageComprehendersMentally2002 的研究結果。80位是不是合理的樣本人數，可運用過去研究文獻的效果量資料，評估再現實驗若能發現相同的結果，所達到的考驗力。 @ZwaanRevisitingMentalSimulation2012 曾進行兩次招募176人的實驗，雖然也得到顯著的結果，測得的效果量(.15, .18)只有 @ZwaanLanguageComprehendersMentally2002 的一半(.31)。要評估 @zwaanParticipantNonnaiveteReproducibility2017 招 募的人數，最適當的方式是假設以此實驗方法測得的**形態模擬效應**，效果量範圍在.15到.31之間，評估達到考驗力.80或.90時的人數。
 
 
 # jPower操作示範 {#power-estimation}
