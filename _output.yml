@@ -1,0 +1,28 @@
+bookdown::gitbook:
+  smart: false
+#  includes: 
+#    in_header: preamble.tex
+  keep_tex: yes
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+        <li>心理學實驗研究法</li>
+      after: |
+        <li>本書持續寫作中，不定期更新</li>
+    toolbar:
+      position: fixed
+    download: null
+    search: yes
+    sharing:
+      facebook: yes
+      twitter: yes
+#bookdown::pdf_book:
+#  includes:
+#    in_header: preamble.tex
+#  latex_engine: xelatex
+#  citation_package: natbib
+#  keep_tex: yes
+#bookdown::epub_book: default

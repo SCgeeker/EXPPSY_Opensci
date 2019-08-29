@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>第4單元 可重製的心理計時學研究 | 實驗心理學：開放科學取向</title>
   <meta name="description" content="心理學實驗法的開放教學材料" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="第4單元 可重製的心理計時學研究 | 實驗心理學：開放科學取向" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="陳紹慶" />
 
 
-<meta name="date" content="2019-08-23" />
+<meta name="date" content="2019-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="case.html">
-<link rel="next" href="memory.html">
+<link rel="prev" href="case.html"/>
+<link rel="next" href="memory.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -126,9 +126,10 @@
 <li class="chapter" data-level="A.4" data-path="QRP.html"><a href="QRP.html#bad_A"><i class="fa fa-check"></i><b>A.4</b> 在分析資料的過程裡</a></li>
 <li class="chapter" data-level="A.5" data-path="QRP.html"><a href="QRP.html#bad_W"><i class="fa fa-check"></i><b>A.5</b> 在寫作報告的過程裡</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>B</b> 預估隨機化實驗的樣本數</a></li>
-<li class="chapter" data-level="C" data-path="power-estimation.html"><a href="power-estimation.html"><i class="fa fa-check"></i><b>C</b> jPower操作示範</a></li>
-<li class="chapter" data-level="D" data-path="learning-resource.html"><a href="learning-resource.html"><i class="fa fa-check"></i><b>D</b> 心理學實驗操作學習資源</a></li>
+<li class="chapter" data-level="B" data-path="effectsize.html"><a href="effectsize.html"><i class="fa fa-check"></i><b>B</b> 效果量的計算方法</a></li>
+<li class="chapter" data-level="C" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>C</b> 預估隨機化實驗的樣本人數</a></li>
+<li class="chapter" data-level="D" data-path="power-estimation.html"><a href="power-estimation.html"><i class="fa fa-check"></i><b>D</b> jPower操作示範</a></li>
+<li class="chapter" data-level="E" data-path="learning-resource.html"><a href="learning-resource.html"><i class="fa fa-check"></i><b>E</b> 心理學實驗操作學習資源</a></li>
 <li class="chapter" data-level="" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i>參考文獻</a></li>
 <li class="divider"></li>
 <li>本書持續寫作中，不定期更新</li>
@@ -374,8 +375,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
