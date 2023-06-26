@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="如何使用這本書 本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。 以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。">
-<title>實驗心理學：開放科學取向 - 8&nbsp; 可重製研究實作指南</title>
+<meta name="description" content="第一版(Quarto重製)">
+<title>實驗心理學：開放科學取向 - 7&nbsp; 可重製研究實作指南</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,15 +67,15 @@ div.csl-indent {
   "type": "textbox",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "查無資料",
+    "search-matching-documents-text": "以下是符合搜索條件的頁面",
+    "search-copy-link-title": "複製連結並搜索",
+    "search-hide-matches-text": "隱藏其它符合搜索條件的頁面",
+    "search-more-match-text": "本頁其他符合搜索條件結果",
+    "search-more-matches-text": "更多本頁符合搜索條件結果",
+    "search-clear-button-title": "清除搜索條件",
+    "search-detached-cancel-button-title": "取消搜索",
+    "search-submit-button-title": "提交搜索"
   }
 }</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <link rel="stylesheet" href="include/booktem.css">
@@ -88,11 +88,11 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-project.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-project.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -122,7 +122,7 @@ div.csl-indent {
           </li>
       </ul>
 </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="切換為深色模式"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -136,76 +136,76 @@ div.csl-indent {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">bookdown::gitbook: default</span></span></a>
+ <span class="menu-text">導讀</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-fundamental.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-case.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-chronometry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-memory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-language.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07-project.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(APPENDIX) 附錄</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">附錄</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="切換">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">產生不良研究的操作巧門</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+ <span class="menu-text">參考文獻</span></a>
   </div>
 </li>
       </ul>
@@ -215,22 +215,22 @@ div.csl-indent {
 </nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">目錄</h2>
    
   <ul>
-<li><a href="#projects_ethics" id="toc-projects_ethics" class="nav-link active" data-scroll-target="#projects_ethics"><span class="header-section-number">8.1</span> 研究倫理基本須知</a></li>
-  <li><a href="#projects_example" id="toc-projects_example" class="nav-link" data-scroll-target="#projects_example"><span class="header-section-number">8.2</span> 預先註冊範例</a></li>
+<li><a href="#projects_ethics" id="toc-projects_ethics" class="nav-link active" data-scroll-target="#projects_ethics"><span class="header-section-number">7.1</span> 研究倫理基本須知</a></li>
+  <li><a href="#projects_example" id="toc-projects_example" class="nav-link" data-scroll-target="#projects_example"><span class="header-section-number">7.2</span> 預先註冊範例</a></li>
   <li>
-<a href="#projects_writing" id="toc-projects_writing" class="nav-link" data-scroll-target="#projects_writing"><span class="header-section-number">8.3</span> 報告寫作建議</a>
+<a href="#projects_writing" id="toc-projects_writing" class="nav-link" data-scroll-target="#projects_writing"><span class="header-section-number">7.3</span> 報告寫作建議</a>
   <ul class="collapse">
-<li><a href="#%E5%A0%B1%E5%91%8A%E6%A0%BC%E5%BC%8F%E8%88%87%E5%85%83%E7%B4%A0" id="toc-報告格式與元素" class="nav-link" data-scroll-target="#%E5%A0%B1%E5%91%8A%E6%A0%BC%E5%BC%8F%E8%88%87%E5%85%83%E7%B4%A0"><span class="header-section-number">8.3.1</span> 報告格式與元素</a></li>
+<li><a href="#%E5%A0%B1%E5%91%8A%E6%A0%BC%E5%BC%8F%E8%88%87%E5%85%83%E7%B4%A0" id="toc-報告格式與元素" class="nav-link" data-scroll-target="#%E5%A0%B1%E5%91%8A%E6%A0%BC%E5%BC%8F%E8%88%87%E5%85%83%E7%B4%A0"><span class="header-section-number">7.3.1</span> 報告格式與元素</a></li>
   </ul>
 </li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/07-project.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/07-project.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title"><span id="projects" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></h1>
+<h1 class="title"><span id="projects" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></h1>
 </div>
 
 
@@ -243,10 +243,10 @@ div.csl-indent {
   </div>
   
 
-</header><p>本單元依預先註冊<span class="citation" data-cites="lindsayResearchPreregistration1012016">(<a href="#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">Lindsay et al., 2016</a>)</span>與註冊報告<span class="citation" data-cites="attenperceptpsychophysRegisteredReportsReplications2013">(<a href="#ref-attenperceptpsychophysRegisteredReportsReplications2013" role="doc-biblioref">Atten Percept Psychophys, 2013</a>)</span>的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。</p>
-<section id="projects_ethics" class="level2" data-number="8.1"><h2 data-number="8.1" class="anchored" data-anchor-id="projects_ethics">
-<span class="header-section-number">8.1</span> 研究倫理基本須知</h2>
-<p>科學研究能增進人類對這個世界的了解，是每個領域科學家進行研究的主要動機。行為與社會科學的研究對象是人類，運用各種方式取得人類行為資料是研究之必需。儘管研究有崇高的目標，任何取得資料的方式都不能侵害個人利益，或造成任何可能的風險。以下引述 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 整理的基本須知，補充最近應該考慮的例子：</p>
+</header><p>本單元依預先註冊<span class="citation" data-cites="lindsayResearchPreregistration1012016">(<a href="references.html#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">Lindsay et al., 2016</a>)</span>與註冊報告<span class="citation" data-cites="attenperceptpsychophysRegisteredReportsReplications2013">(<a href="references.html#ref-attenperceptpsychophysRegisteredReportsReplications2013" role="doc-biblioref">Atten Percept Psychophys, 2013</a>)</span>的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。</p>
+<section id="projects_ethics" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="projects_ethics">
+<span class="header-section-number">7.1</span> 研究倫理基本須知</h2>
+<p>科學研究能增進人類對這個世界的了解，是每個領域科學家進行研究的主要動機。行為與社會科學的研究對象是人類，運用各種方式取得人類行為資料是研究之必需。儘管研究有崇高的目標，任何取得資料的方式都不能侵害個人利益，或造成任何可能的風險。以下引述 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="references.html#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 整理的基本須知，補充最近應該考慮的例子：</p>
 <ul>
 <li>獲取資料的方式是否會引發參與者心理或生理的不適？ 例如：詢問個人性別不只設計兩個選項，讓跨性別人士自由決定要不要告知。</li>
 <li>收集資料有無侵犯個人隱私？ 例如在公開場合進行實驗；收集個人手機定位…</li>
@@ -254,8 +254,8 @@ div.csl-indent {
 <li>參與者隨時中止參與研究的自由。</li>
 <li>邀請未成年人士參與研究，應考慮的問題：</li>
 <li>以非人類動物進行研究，應考慮的問題：</li>
-</ul></section><section id="projects_example" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="projects_example">
-<span class="header-section-number">8.2</span> 預先註冊範例</h2>
+</ul></section><section id="projects_example" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="projects_example">
+<span class="header-section-number">7.2</span> 預先註冊範例</h2>
 <p>因為不同心理科學領域常用的方法不同，理論思考與設定問題的取向也有差異，無法設定一體適用的計畫指南。開放科學中心已經貼心地為各領域心理科學研究者，整理合適的預先註冊範例<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，學生可根據主題所屬 領域，參考合適的範例規劃預先註冊。</p>
 <p>預先註冊與專業期刊經營的註冊報告，兩者流程一致，只是註冊報告有期刊邀請的評審把關(圖@ref(fig:ch07-fig01))。若教師有足夠的資源組成教學團隊，以註冊報告模式審核學生預先註冊計畫，非常有機會給予學生深刻的情境印象。</p>
 <div class="cell" data-paged.print="false">
@@ -266,12 +266,12 @@ div.csl-indent {
 </div>
 </div>
 </div>
-</section><section id="projects_writing" class="level2" data-number="8.3"><h2 data-number="8.3" class="anchored" data-anchor-id="projects_writing">
-<span class="header-section-number">8.3</span> 報告寫作建議</h2>
-<p>完成資料分析的寫作報告，實際的樣式要遵守呈現報告的用途指南，如期刊的投稿格式、教師指定的報告樣式。心理學的各種報告樣式，基本遵守美國心理學會頒佈的出版手冊<span class="citation" data-cites="americanpsychologicalassociationPublicationManualAmerican2010a">(<a href="#ref-americanpsychologicalassociationPublicationManualAmerican2010a" role="doc-biblioref">American Psychological Association, 2010</a>)</span>，編輯者可依實際需要調整部分寫作細節。寫作者養成依出版手冊撰寫論文報告的習慣，足以應付任何報告寫作要求。</p>
-<section id="報告格式與元素" class="level3" data-number="8.3.1"><h3 data-number="8.3.1" class="anchored" data-anchor-id="報告格式與元素">
-<span class="header-section-number">8.3.1</span> 報告格式與元素</h3>
-<p>此處引用 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 的建議，搭配預先註冊的觀念，說明一份完整報告的各部分寫作建議。</p>
+</section><section id="projects_writing" class="level2" data-number="7.3"><h2 data-number="7.3" class="anchored" data-anchor-id="projects_writing">
+<span class="header-section-number">7.3</span> 報告寫作建議</h2>
+<p>完成資料分析的寫作報告，實際的樣式要遵守呈現報告的用途指南，如期刊的投稿格式、教師指定的報告樣式。心理學的各種報告樣式，基本遵守美國心理學會頒佈的出版手冊<span class="citation" data-cites="americanpsychologicalassociationPublicationManualAmerican2010a">(<a href="references.html#ref-americanpsychologicalassociationPublicationManualAmerican2010a" role="doc-biblioref">American Psychological Association, 2010</a>)</span>，編輯者可依實際需要調整部分寫作細節。寫作者養成依出版手冊撰寫論文報告的習慣，足以應付任何報告寫作要求。</p>
+<section id="報告格式與元素" class="level3" data-number="7.3.1"><h3 data-number="7.3.1" class="anchored" data-anchor-id="報告格式與元素">
+<span class="header-section-number">7.3.1</span> 報告格式與元素</h3>
+<p>此處引用 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="references.html#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 的建議，搭配預先註冊的觀念，說明一份完整報告的各部分寫作建議。</p>
 <p><strong>標題頁</strong></p>
 <p>建議：口語化問句，描述獨變項操作如何導致依變項的測量結果。</p>
 <!---
@@ -341,7 +341,7 @@ div.csl-indent {
 </ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-americanpsychologicalassociationPublicationManualAmerican2010a" class="csl-entry" role="listitem">
 American Psychological Association (Ed.). (2010). <em>Publication manual of the <span>American Psychological Association</span></em> (6th ed). <span>American Psychological Association</span>.
 </div>
@@ -964,12 +964,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "複製成功");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "複製成功");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -1144,12 +1144,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./06-language.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./08-QRP.html" class="pagination-link">
-        <span class="nav-page-text">(APPENDIX) 附錄</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">產生不良研究的操作巧門</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
