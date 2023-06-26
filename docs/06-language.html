@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="如何使用這本書 本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。 以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。">
+<title>實驗心理學：開放科學取向 - 7&nbsp; 可重製的語言研究</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./07-project.html" rel="next">
+<link href="./05-memory.html" rel="prev">
+<link href="./images/logos/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="testpool/include/webex.css">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-language.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">實驗心理學：開放科學取向</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">bookdown::gitbook: default</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-fundamental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-case.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-chronometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-memory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-language.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(APPENDIX) 附錄</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#lang_overview" id="toc-lang_overview" class="nav-link active" data-scroll-target="#lang_overview"><span class="header-section-number">7.1</span> 語言心理學概述</a></li>
+  <li><a href="#lang_word" id="toc-lang_word" class="nav-link" data-scroll-target="#lang_word"><span class="header-section-number">7.2</span> 字詞辨識</a></li>
+  <li><a href="#lang_sentence" id="toc-lang_sentence" class="nav-link" data-scroll-target="#lang_sentence"><span class="header-section-number">7.3</span> 句子理解</a></li>
+  <li><a href="#lang_rep" id="toc-lang_rep" class="nav-link" data-scroll-target="#lang_rep"><span class="header-section-number">7.4</span> 語言心理學研究的再現與重製</a></li>
+  <li><a href="#lang_practice" id="toc-lang_practice" class="nav-link" data-scroll-target="#lang_practice"><span class="header-section-number">7.5</span> 習作</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/06-language.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="language" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>語言的心理學研究在實驗心理學的發展歷史，相對短於心理計時學與記憶研究。早期重要的研究方向來自發展更早的語言學(Linguistics)，一直到今天還是跨越心理學與語言學的研究領域。根據<a href="https://en.wikipedia.org/w/index.php?title=Psycholinguistics&amp;oldid=867220943">維基百科的條目</a>，語言心理學(language of psychology或psycholinguistics)一詞最早出現於美國心理學家傑克布．坎特(Jacob Robert Kantor)於1936年出版的著作《語法的客觀心理學》(An Objective Psychology of Grammar)，但是到了1946年坎特的學生尼可拉斯．普洛克(Nicholas Pronko)發表論文之後，語言心理學一詞才被學術社群知悉，進而促成各種專業期刊與研討會的成立。</p>
+<section id="lang_overview" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="lang_overview">
+<span class="header-section-number">7.1</span> 語言心理學概述</h2>
+<p>語言行為指理解口語或書寫文字，以及口說及書寫的表達。語言心理學研究各種語言行為相關的認知歷程與生理基礎，大致可分為四個方向，每個方向探討的主題都有對應語言學領域。四個方向包括(1)兒童如何習得語言？(2)成人如何理解語言？(3)成人如何產製語言？(4)人類如何學習母語之外的語言？</p>
+<p>根據人類語言的分析單位，語言學已發展出與心理學密不可分的五種專業領域。首先是<strong>語音學</strong>(Phonetics)：研究人類如何發聲與辨識語音的學科。最早的語音學研究可以追溯到西元前六百年，印度教僅透過口語傳播教義，為維持正確性而發展出來的學問。今天語音學研究者必須了解人類發聲器官構造(見圖@ref(fig:articulation))，每個部位的運動如何發出人類能辨識有意義單位 – 也就是音素(phoneme)。結合生理學測量與心理學實驗設計，語音學研究者掌握人類發出及區辨的音素，以及各種語言的發音方式。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Places_of_articulation.svg/500px-Places_of_articulation.svg.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">人類發聲器官剖面圖。詳見維基百科https://en.wikipedia.org/wiki/Place_of_articulation</figcaption></figure>
+</div>
+</div>
+</div>
+<p><strong>構詞學</strong>(Morphology)源於印歐語系語言的字詞結構研究，構成有意義的字詞結構基本單位稱為詞素(morpheme)。依結構與功能的差異，一種語言的詞素又分為可獨立表達意義的詞根(root)，形成屆折變化的詞幹(word stem)與詞綴(affix)。以英語字詞為例，dog與dogs都是共同推有詞根<code>dog</code>的詞幹，兩者差別附加空詞綴與<code>-s</code>詞綴。不過這種結構分類不完全適用中文，例如<em>同學</em>與<em>同學們</em>看似共有一個詞根，但是不管有沒有<em>們</em>，兩個詞在許多地方可以互相替換。有語言學家主張中文的構詞學，應該從複合詞(compund word)的角度定義詞素<span class="citation" data-cites="packardMorphologyChineseLinguistic2000">(<a href="#ref-packardMorphologyChineseLinguistic2000" role="doc-biblioref">Packard, 2000</a>)</span>。</p>
+<p><strong>語法學</strong>(Syntax)討論字詞的排列順序(word order)如何組成彼此都能理解的句子。一個句子的主要成份有主詞或主語(subject)、動詞或謂語(verb)、以及受詞或賓語(object)。每個成份必須使用合適的字詞組織，才能形成一種語言的合法句子。目前已知的人類語言，排列三種成份的順序各不相同：中文與英文都是主語-謂語-賓語；日文是主語-賓語-謂語；南島語系的多數語言是謂語-主語-賓語。</p>
+<p>儘管語法形式殊異，語言學者諾姆·杭士基(Noam Chomsky，圖@ref(fig:chomsky-photo))在1960年代出版的著作，提出生成語法(generative grammer)的主張，認為人類心智都有一部運作機制相同的語法產生器，將要表達的句子轉換符合母語語序的外部形式，或將要理解的句子轉換為語法產生器的內部形式。此主張影響許多後來的心理學家，透過計算機模擬或認知神經科學實驗等方式，探討人類的語法認知機制。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Noam_Chomsky_portrait_2015.jpg/360px-Noam_Chomsky_portrait_2015.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">諾姆·杭士基(1928-)</figcaption></figure>
+</div>
+</div>
+</div>
+<p>相對於構詞學與語法學研究字詞及句子的表現形式，<strong>語義學</strong>(Semantics)研究人類如何使用語言如何負載人類的思想。基礎的語義學研究是詞彙表義功能的分類，像是區分拼寫與發音相同但意義不同的同形同音詞(Homonym)，對比意義相同但是拼寫與發音不同的同義詞(synonym)。具備詞彙知識的成人在沒有辭典的時候，如何從存在長期記憶的字詞知識，辨別出能表達當下思想的詞彙，是語言心理學研究者一直探討的課題。本單元介紹的字詞識讀實驗使用的實驗方法：詞彙判斷作業(Lexical Decision Task)，是最常用的實驗程序。字詞的形式結構與語義特性，是這類研究最常探討的獨變項。</p>
+<p>專注一種研究方向的語言心理學研究者，都會再從上述領域選擇一個主題深入探討。這本書僅簡單介紹語言心理學的大致輪廓，如果有興趣了解重要主題的研究歷史，有影響力的理論與研究證據，可以閱讀專業的入門教材，例如 <span class="citation" data-cites="harleyPsychologyLanguageData2014">Harley (<a href="#ref-harleyPsychologyLanguageData2014" role="doc-biblioref">2014</a>)</span> 的〈語言心理學〉。</p>
+</section><section id="lang_word" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="lang_word">
+<span class="header-section-number">7.2</span> 字詞辨識</h2>
+<p>首先認識什麼是<strong>詞彙判斷作業</strong>，這個作業的名稱首見於 <span class="citation" data-cites="meyerFacilitationRecognizingPairs1971">Meyer &amp; Schvaneveldt (<a href="#ref-meyerFacilitationRecognizingPairs1971" role="doc-biblioref">1971</a>)</span> 的論文，而且程序與今天語言心理學研究者熟悉的版本有些不同。Meyers與Schvaneveldt安排的字詞配對有一半是兩個有意義的單詞(真詞，例如doctor - nurse; flower - dog)，另一半是一個有意義的單詞與無意義的字母組合(假詞，例如doubt - usking)。這篇論文報告兩種實驗程序：第一種是一次呈現一個配對，參與者要判斷是否都是真詞；第二種每次先呈現配對中的真詞，再呈現另一個詞，請參與者判斷最後呈現的是真詞還是假詞。無論是那一種程序，所有配對以隨機順序呈現給參與者，參與者在不到兩秒的時限之內，要做出正確判斷。</p>
+<p><span class="citation" data-cites="meyerFacilitationRecognizingPairs1971">Meyer &amp; Schvaneveldt (<a href="#ref-meyerFacilitationRecognizingPairs1971" role="doc-biblioref">1971</a>)</span> 安排的真詞配對有部分是有關聯性的單詞(associative words)，例如doctor - nurse，butter - bread。有關聯性的單詞再區分半，其中一半在實驗中以原來的配對呈現，另一半配對裡的字詞打散重組，形成無關聯性的單詞配對。研究者假設參與者判斷有關聯性的單詞配對，做出反應的時間會明顯少於無關聯性的單詞配對。他們報告的實驗結果符合這個假設，特別是先後呈現程序的實驗結果，從此被稱關聯性促發效應(Associative priming effect)，或者語義促發效應(Semantic priming effect)。隨著詞彙網路(lexical network)的理論與技術進展，語言心理學研究者採用更嚴謹的規格操作單詞配對的關聯性，語義促發效應已經變成各領域心理學都有興趣的課題。</p>
+<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的再現研究使用配對字詞先後呈現的程序，也是今天語言心理學研究最常使用的程序。他們選用的真詞來自 <span class="citation" data-cites="nelsonUniversitySouthFlorida2004">Nelson et al. (<a href="#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">2004</a>)</span> 建立的單詞自由聯想常模：這份常模累積數百位大學生以某個字詞(例如doctor)聯想到相關字詞(例如nurse)的人數比例，測量字詞配對之間的關聯性強度。就以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的再現實驗來說，他們挑選的120項配對平均關聯性強度有.65。至於假詞，今日英文詞彙判斷作業比起1970年代有較高的要求，基本需要是可發音，與真詞的構造不能有太大的差異，因此有研究者開發假詞資料庫，提供語言心理學實驗研究，例如 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 使用 <span class="citation" data-cites="keuleersWuggyMultilingualPseudoword2010">Keuleers &amp; Brysbaert (<a href="#ref-keuleersWuggyMultilingualPseudoword2010" role="doc-biblioref">2010</a>)</span> 開發的資料庫挑選實驗用的假詞。</p>
+<p>關聯性促發效應是有關聯性的字詞配對與無關聯性的字詞配對之間反應時間差異， <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的每組平均結果都有23毫秒到30毫秒的促發效應，換算於Cohen’s d都是.8以上，屬於大量級效果量<span class="citation" data-cites="cohenStatisticalPowerAnalysis1988">(Large effect size, 參考 <a href="#ref-cohenStatisticalPowerAnalysis1988" role="doc-biblioref">Cohen, 1988</a> )</span>。但是如果換成中文字詞，有沒有可能以相同人數獲得接近的效果量？</p>
+<p>在另一個使用詞彙判斷作業的經典研究， <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span> 探討另一道語言心理學重要課題：較常見的字詞為何反應比較快？最可能的原因如同我們在記憶單元學到的，較多的閱讀經驗能增加覆誦的機會，越常見的字詞越容易由長期記憶提取。如果讓參與者在實驗過程有重覆答題的機會，不常見的字詞應該得到比常見字詞更明顯的反應增益，測量結果這就是 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span> 定義的重覆促發效應(Repetition priming)。</p>
+<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 再現 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span> 的第三個實驗，安排兩個階段的詞彙判斷作業，以第二階段呈現的字詞反應時間，比較第一階段有呈現與沒有呈現的反應時間差異，測量三種字詞的重覆促發效應：常見的高頻真詞(Hige frequency words)；不常見的低頻真詞(Low frequency words)；以及假詞(nonwords)。高頻真詞與低頻真詞來自 <span class="citation" data-cites="newUseFilmSubtitles2007">New et al. (<a href="#ref-newUseFilmSubtitles2007" role="doc-biblioref">2007</a>)</span> 的字詞出現次數統計資料庫：每百萬個字詞樣本裡，選出的高頻真詞平均出現248次，低頻真詞平均出現1.22次。</p>
+<p>與 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span> 的結果相比， <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 測得的重覆促發效應少於前者：高頻真詞~ 30毫秒對比10毫秒；低頻真詞~ 63毫秒對比45毫秒。不過換算為效果量，低頻真詞的重覆促發效應(1.11)明顯高出高頻真詞的效應(0.39)一個量級，所以還是一項成功的再現成果。</p>
+</section><section id="lang_sentence" class="level2" data-number="7.3"><h2 data-number="7.3" class="anchored" data-anchor-id="lang_sentence">
+<span class="header-section-number">7.3</span> 句子理解</h2>
+<!---
+generated by RSyntaxTree(https://yohasebe.com/rsyntaxtree/, Yoichiro Hasebe)
+--->
+<p>各種語言使用的詞彙數目有限，但是人類有能力產生無限多條句子，而且擁有相同詞彙知識的人都能理解 – 如果不算特別設計的謎語或文體。杭士基的生成語法理論推動認知科學革命之後，語法結構如何影響句子理解的認知歷程，一直是許多認知心理學家的研究主題。最近的例子如 <span class="citation" data-cites="yangSentenceIntegrationProcesses2010">Yang et al. (<a href="#ref-yangSentenceIntegrationProcesses2010" role="doc-biblioref">2010</a>)</span> 運用腦電圖紀錄中文人士理解有子句的句子過程中，處理主語解析型子句：<em>老師介紹喜愛畢卡索的那位畫家</em>，與處理賓語解析型子句：<em>老師介紹畢卡索喜愛的那位畫家</em>之間的關鍵時段腦電位高峰。</p>
+<p>除了語法學能建立可做實驗驗證的語言心理學假設，另有一種取向好奇人類是否以圖像認知理解句子表達的意義。 <span class="citation" data-cites="ZwaanLanguageComprehendersMentally2002">Zwaan et al. (<a href="#ref-ZwaanLanguageComprehendersMentally2002" role="doc-biblioref">2002</a>)</span> 改良傳統的句圖比對作業，比較讀者閱讀一條句子之後，接著判斷圖片中的物件是否為句子提到的物件。圖片中的物件可能呈現符合句子描述的形態，也可能呈現不符合的形態，如圖@ref(fig:shape-example)。後續研究穩定發現，符合描述形態的圖片之反應時間中位數，顯著少於不符合描述形態的圖片。這段反應時間差異，今天被稱為形態模擬效應(Shape simulation effect)。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/00012.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Zwaan, Stanfield, 與 Yaxley (2002) 使用的刺激範例；取自Bergen (2012)。</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="lang_rep" class="level2" data-number="7.4"><h2 data-number="7.4" class="anchored" data-anchor-id="lang_rep">
+<span class="header-section-number">7.4</span> 語言心理學研究的再現與重製</h2>
+<p>語言心理學的重要理論與研究方法源於美國心理學與語言學，前述字詞辨識與句子理解實驗都是首見於以英語人士為參與者研究，有穩定再現結果的後續研究也是來自英語研究團隊。 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 設計的再現實驗也是招募英語人士。如果要使用其他語言進行研究，除了需要考慮樣本數，關鍵變項的操作需要使用規模相近的字詞資料庫挑選刺激字詞，才能確保獨變項操作與英語研究一致，例如聯想詞常模；字詞出現次數資料庫。</p>
+<p>除了參與者人數，刺激字詞數目也是語言心理學實驗的樣本數需考慮的條件。根本原因是刺激字詞數目也會決定實驗效應的型一與型二錯誤率，詳細說明可參考附錄@ref(power-estimation)。這裡以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 設定的字詞數目，討論三個實驗的達成預定結果有高考驗力的參與者人數。</p>
+<p>關聯性促發效應的Cohen’s d至少有0.8，是容易再現的實驗效果。如圖@ref(fig:association-priming)的估計，大約13人就能得到90%考驗力的再現結果。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Associative_Priming_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">估計關聯性促發效應之考驗力與參與者人數。</figcaption></figure>
+</div>
+</div>
+</div>
+<p><span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span> 的第三項實驗發現低頻詞的重覆促發效應是高頻詞的一倍以上，根據 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的實驗結果推測，如圖@ref(fig:repetition)所示，低頻字詞的重覆促發效應達到90%考驗力的人數，只高頻字詞(圖@ref(fig:repetition))的人數約六分之一。語 言心理學存在許多類似的效應，與字詞出現次數有明顯的交互作用，因此任何理論與假設，都要考慮字詞頻次如何影響要研究的關鍵效應。<!---多數有操作字詞出現次數的研究，都以低頻字詞能否出現預測的效應為目標。如果未來要再現這項實驗，或者檢驗字詞出現次數與關鍵效應的交互作用，都應考慮低頻字詞能獲得高考驗力實驗結果的樣本數。---></p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/LF_Repetition_N.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">估計低頻詞重覆促發效應之考驗力與參與者人數。左圖:低頻字詞，右圖:高頻字詞</figcaption></figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/HF_Repetition.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">估計低頻詞重覆促發效應之考驗力與參與者人數。左圖:低頻字詞，右圖:高頻字詞</figcaption></figure>
+</div>
+</div>
+</div>
+<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 重現的形態模擬效應效果量範圍在0.3到0.6之間，屬於中量級的效果量，以最低的0.315估計再現實驗所需人數 (圖@ref(fig:shape-simulation))，可知再現研究要重新發現同樣的結果且達到90%的考驗力，必須要累積80人以上的樣本。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Shape_Simulation_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">估計形態模擬效應之考驗力與參與者人數。</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="lang_practice" class="level2" data-number="7.5"><h2 data-number="7.5" class="anchored" data-anchor-id="lang_practice">
+<span class="header-section-number">7.5</span> 習作</h2>
+<ul>
+<li><p><span class="citation" data-cites="nelsonUniversitySouthFlorida2004">Nelson et al. (<a href="#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">2004</a>)</span> 收集的關聯性常模收錄4000條英文字詞與聯想詞的資料，每條字詞的聯想詞來自平均149位參與者的回答，統計每個聯想詞被提及的次數。請查閱文獻，了解目前有沒有規模相近的聯想詞常模？如果沒有相當規模的常模，要如何收集字詞關聯性的測量資料？</p></li>
+<li><p>SUBTLEX-US<span class="citation" data-cites="nelsonUniversitySouthFlorida2004">(<a href="#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">Nelson et al., 2004</a>)</span>統計收錄的字詞在百萬次語料之間的出現次數，這份資料庫的語料來源是什麼？如何估計收錄字詞的出現次數？中文字詞有沒有類似規模的資料庫？如何查找符合實驗操作的字詞？</p></li>
+<li><p>形態模擬效應實驗的完整材料可由原作者的<a href="https://osf.io/2dtrh/">後續研究</a>取得。如果要改造為中文實驗，你認為只翻譯英文句子為中文句子，還是操作一致的實驗嗎？實驗材料、作業程序、還有參與者背景等，這些條件應該如何考慮？</p></li>
+<li><p>在每項實驗的<code>Raw Data</code>表單裡，那些欄位是真正用於分析的依變項資料？那些欄位是獨變項？那些是計算參與者平均反應的必要欄位？</p></li>
+<li><p>為何有部分資料是極端值？這份公開資料處理極端值的方式是什麼？</p></li>
+<li><p>關聯性促發效果與重覆促發效果的原始論文都有報告其他實驗，形態模擬效應實驗還有其他類似的研究。請查閱文獻，舉出一個程序超過一半相同的研究，了解這項研究要檢驗的假設，變項的設計，程序與材料的設定，以及採用的分析方法。比較原始研究與你查閱的研究兩者異同。</p></li>
+<li><p>根據三項實驗的考驗力與樣本數分析，註冊再現研究要如何規劃與執行？</p></li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-bergenLouderWordsNew2012" class="csl-entry" role="listitem">
+Bergen, B. K. (2012). <em>Louder <span>Than Words</span>: <span>The New Science</span> of <span>How</span> the <span>Mind Makes Meaning</span></em>. <span>Basic Books</span>.
+</div>
+<div id="ref-chomskyAspectsTheorySyntax1965" class="csl-entry" role="listitem">
+Chomsky, N. (1965). <em>Aspects of the theory of syntax</em>. <span>Cambridge : MIT</span>.
+</div>
+<div id="ref-cohenStatisticalPowerAnalysis1988" class="csl-entry" role="listitem">
+Cohen, J. (1988). <em>Statistical power analysis for the behavioral sciences</em> (2nd ed.). <span>Erlbaum</span>.
+</div>
+<div id="ref-forsterRepetitionPrimingFrequency1984" class="csl-entry" role="listitem">
+Forster, K., &amp; Davis, C. (1984). Repetition priming and frequency attenuation in lexical access. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>10</em>(4), 680–698. <a href="https://doi.org/10.1037/0278-7393.10.4.680">https://doi.org/10.1037/0278-7393.10.4.680</a>
+</div>
+<div id="ref-harleyPsychologyLanguageData2014" class="csl-entry" role="listitem">
+Harley, T. A. (2014). <em>The psychology of language: From data to theory</em> (Fourth edition). <span>Psychology Press, Taylor &amp; Francis Group</span>.
+</div>
+<div id="ref-kantorObjectivePsychologyGrammar1936" class="csl-entry" role="listitem">
+Kantor, J. R. (1936). <em>An objective psychology of grammar.</em> <span>Indiana University Publications</span>. <a href="https://doi.org/10.1037/13513-000">https://doi.org/10.1037/13513-000</a>
+</div>
+<div id="ref-keuleersWuggyMultilingualPseudoword2010" class="csl-entry" role="listitem">
+Keuleers, E., &amp; Brysbaert, M. (2010). Wuggy: <span>A</span> multilingual pseudoword generator. <em>Behavior Research Methods</em>, <em>42</em>(3), 627–633. <a href="https://doi.org/10.3758/BRM.42.3.627">https://doi.org/10.3758/BRM.42.3.627</a>
+</div>
+<div id="ref-meyerFacilitationRecognizingPairs1971" class="csl-entry" role="listitem">
+Meyer, D. E., &amp; Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of words: <span>Evidence</span> of a dependence between retrieval operations. <em>Journal of Experimental Psychology</em>, <em>90</em>(2), 227–234. <a href="https://doi.org/10.1037/h0031564">https://doi.org/10.1037/h0031564</a>
+</div>
+<div id="ref-nelsonUniversitySouthFlorida2004" class="csl-entry" role="listitem">
+Nelson, D. L., McEvoy, C. L., &amp; Schreiber, T. A. (2004). The <span>University</span> of <span>South Florida</span> free association, rhyme, and word fragment norms. <em>Behavior Research Methods, Instruments, &amp; Computers</em>, <em>36</em>(3), 402–407. <a href="https://doi.org/10.3758/BF03195588">https://doi.org/10.3758/BF03195588</a>
+</div>
+<div id="ref-newUseFilmSubtitles2007" class="csl-entry" role="listitem">
+New, B., Brysbaert, M., Veronis, J., &amp; Pallier, C. (2007). The use of film subtitles to estimate word frequencies. <em>Applied Psycholinguistics</em>, <em>28</em>(04), 661–677. <a href="https://doi.org/10.1017/S014271640707035X">https://doi.org/10.1017/S014271640707035X</a>
+</div>
+<div id="ref-packardMorphologyChineseLinguistic2000" class="csl-entry" role="listitem">
+Packard, J. L. (2000). <em>The <span>Morphology</span> of <span>Chinese</span>: <span>A Linguistic</span> and <span>Cognitive Approach</span></em>. <span>Cambridge University Press</span>.
+</div>
+<div id="ref-pronkoLanguagePsycholinguisticsReview1946" class="csl-entry" role="listitem">
+Pronko, N. H. (1946). Language and psycholinguistics: A review. <em>Psychological Bulletin</em>, <em>43</em>(3), 189–239. <a href="https://doi.org/10.1037/h0056729">https://doi.org/10.1037/h0056729</a>
+</div>
+<div id="ref-yangSentenceIntegrationProcesses2010" class="csl-entry" role="listitem">
+Yang, C. L., Perfetti, C. A., &amp; Liu, Y. (2010). Sentence integration processes: <span>An ERP</span> study of <span>Chinese</span> sentence comprehension with relative clauses. <em>Brain and Language</em>, <em>112</em>(2), 85–100. <a href="https://doi.org/10.1016/j.bandl.2009.10.005">https://doi.org/10.1016/j.bandl.2009.10.005</a>
+</div>
+<div id="ref-zwaanParticipantNonnaiveteReproducibility2017" class="csl-entry" role="listitem">
+Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2017). Participant <span>Nonnaivet<span class="nocase">é</span></span> and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, 1–5. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
+</div>
+<div id="ref-ZwaanLanguageComprehendersMentally2002" class="csl-entry" role="listitem">
+Zwaan, R. A., Stanfield, R. A., &amp; Yaxley, R. H. (2002). Language <span>Comprehenders Mentally Represent</span> the <span>Shapes</span> of <span>Objects</span>. <em>Psychological Science</em>, <em>13</em>, 168–171. <a href="https://doi.org/10.1111/1467-9280.00430">https://doi.org/10.1111/1467-9280.00430</a>
+</div>
+</div>
+</section></main><!-- /main --><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./05-memory.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./07-project.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">CC-BY (2019-2023) 陳紹慶</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+</body></html>

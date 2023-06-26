@@ -1,0 +1,98 @@
+language: custum.yml
+project: 
+  type: "book"
+  output-dir: docs
+
+book:
+  title: "實驗心理學：開放科學取向"
+  author: "陳紹慶"
+#  css: style.css
+  description: 第一版(Quarto重製)
+  site-url: https://scgeeker.github.io/EXPPSY_Opensci/
+  repo-url: https://github.com/SCgeeker/EXPPSY_Opensci
+  repo-branch: master
+  repo-actions: [edit, issue]
+  sharing: [facebook, twitter]
+  date: "2023-06-26"
+  license: CC-BY
+  page-footer: "CC-BY (2019-2023) 陳紹慶" 
+  cover-image: images/logos/logo.png
+  image: images/logos/logo.png
+  favicon: images/logos/logo.png
+  cookie-consent: false
+  google-analytics: ''
+  page-navigation: true
+  search: true
+#  collapse-level: 1
+  chapters:
+    - 'index.qmd'
+    - '01-intro.qmd'
+    - '02-fundamental.qmd'
+    - '03-case.qmd'
+    - '04-chronometry.qmd'
+    - '05-memory.qmd'
+    - '06-language.qmd'
+    - '07-project.qmd'
+#    - '10-references.qmd'
+  appendices:
+#    - webexercises.qmd
+    - '08-QRP.qmd'
+    - '09-pilot.qmd'
+    - 'references.qmd'
+bibliography: include/book.bib
+csl: include/apa.csl
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css:
+    - https://use.fontawesome.com/releases/v5.13.0/css/all.css
+    - include/booktem.css
+    - include/webex.css
+    - include/glossary.css
+    - include/style.css
+    - testpool/include/webex.css
+    df-print: kable
+    code-link: true
+    code-fold: false
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    highlight-style: a11y
+    mainfont: ''
+    monofont: ''
+    include-after-body:
+    - include/webex.js
+    - include/script.js
+    - testpool/include/webex.js
+
+#format:
+#  html:
+#    theme: cosmo
+#    code-background: true
+#    code-copy: true
+#    css: style.css
+#    toc: true
+#  pdf:
+#    documentclass: scrreport
+#    keep-tex: true
+#    cite-method: natbib
+
+#book_filename: "EXPPSY_Opensci"
+#new_session: yes
+#output_dir: "docs"
+#delete_merged_file: true
+#clean: []
+#language:
+#  label:
+#    fig: '圖 '
+#    tab: '表 '
+#    app: '附錄 '
+#  ui:
+#    edit: "編輯"
+#    chapter_name: ["第", "單元"]

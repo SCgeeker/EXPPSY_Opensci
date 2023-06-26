@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="如何使用這本書 本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。 以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。">
+<title>實驗心理學：開放科學取向 - 5&nbsp; 可重製的心理計時學研究</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05-memory.html" rel="next">
+<link href="./03-case.html" rel="prev">
+<link href="./images/logos/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="testpool/include/webex.css">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-chronometry.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">實驗心理學：開放科學取向</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">bookdown::gitbook: default</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-fundamental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-case.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-chronometry.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-memory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-language.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(APPENDIX) 附錄</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#chrono_history" id="toc-chrono_history" class="nav-link active" data-scroll-target="#chrono_history"><span class="header-section-number">5.1</span> 心理計時學簡史</a></li>
+  <li>
+<a href="#chrono_process" id="toc-chrono_process" class="nav-link" data-scroll-target="#chrono_process"><span class="header-section-number">5.2</span> 心智歷程的彈性</a>
+  <ul class="collapse">
+<li><a href="#%E5%BF%83%E7%90%86%E8%A8%88%E6%99%82%E6%AD%B7%E7%A8%8B%E7%9A%84%E9%81%8B%E4%BD%9C%E6%A8%A1%E5%BC%8F%E5%81%87%E8%A8%AD" id="toc-心理計時歷程的運作模式假設" class="nav-link" data-scroll-target="#%E5%BF%83%E7%90%86%E8%A8%88%E6%99%82%E6%AD%B7%E7%A8%8B%E7%9A%84%E9%81%8B%E4%BD%9C%E6%A8%A1%E5%BC%8F%E5%81%87%E8%A8%AD"><span class="header-section-number">5.2.1</span> 心理計時歷程的運作模式假設</a></li>
+  </ul>
+</li>
+  <li><a href="#chrono_compatibility" id="toc-chrono_compatibility" class="nav-link" data-scroll-target="#chrono_compatibility"><span class="header-section-number">5.3</span> 刺激位置-動作位置相符</a></li>
+  <li><a href="#chrono_sat" id="toc-chrono_sat" class="nav-link" data-scroll-target="#chrono_sat"><span class="header-section-number">5.4</span> 速度與正確率互補</a></li>
+  <li><a href="#chrono_rep" id="toc-chrono_rep" class="nav-link" data-scroll-target="#chrono_rep"><span class="header-section-number">5.5</span> 心理計時實驗的再現與重製</a></li>
+  <li><a href="#chrono_practice" id="toc-chrono_practice" class="nav-link" data-scroll-target="#chrono_practice"><span class="header-section-number">5.6</span> 習作</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/04-chronometry.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="chronometry" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><section id="chrono_history" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="chrono_history">
+<span class="header-section-number">5.1</span> 心理計時學簡史</h2>
+<p><strong>心理計時學(Mental chronometry)</strong>是實驗心理學奠基的重要分支科目之一。這門科學設計各種反應作業，測量人類運用知覺察覺刺激，到執行動作的反應時間(response time)。十九世紀實驗心理學奠基者之一，英國<strong>法蘭西斯·高爾頓爵士(Sir Francis Galton，圖@ref(fig:ch04-fig01))</strong>，是首位有系統收集人類反應時間資料的科學家。高爾頓收集反應時間資料的目的是研究個別差異，特別是智力的差異。高爾頓曾在英國主辦的萬國博覽會，設立攤位收集倫敦地區上萬名男女老幼接受圖像與聲音的反應時間資料。自此之後測量的程序與工具不斷被改進，以及奠定第一代心理測驗理論的實證基礎。以樣本規模而言，高爾頓的研究工作可說是今日資料科學的先鋒。<span class="citation" data-cites="jensenClockingMindMental2006">(<a href="#ref-jensenClockingMindMental2006" role="doc-biblioref">Jensen, 2006</a>)</span></p>
+<!---
+<a title="By not stated [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Francis_Galton_1850s.jpg"><img width="128" alt="Francis Galton 1850s" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Francis_Galton_1850s.jpg"></a>
+--->
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Francis_Galton_1850s.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">法蘭西斯·高爾頓(1822-1911)</figcaption></figure>
+</div>
+</div>
+</div>
+<p>高爾頓完成他的工作之後，荷蘭驗光師<strong>法蘭西斯庫斯·唐德斯(Franciscus Donders, 圖@ref(fig:ch04-fig02))</strong>提出第一套有科學心理學意義的相減法(subtraction method)。唐德斯對心理計時學的好奇始於十九世紀歐洲科學界的公案：格林威治天文台觀測誤差疑雲<span class="citation" data-cites="mollonErrorsJudgementGreenwich1996">(<a href="#ref-mollonErrorsJudgementGreenwich1996" role="doc-biblioref">Mollon &amp; Perkins, 1996</a>)</span>。1796年63歲的台長與24歲的助理輪流於每日同一時段測量星體通過子午線的精確時間，經過一段時間的工作，台長發現助理的紀錄都比自己的慢一秒鐘，認為助理偷懶而開除他。後來兩人的紀錄引起當時生理學家的興趣，開啟<strong>人為誤差(Personal Equation)</strong>的研究，也是今天心理學持續探討因個別差異導致的<strong>測量誤差(Measurement errors)</strong>。</p>
+<!---
+<a title="By Alexander Seitz (Photographic company) [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Donders,_Franciscus_Cornelis_(1818_-_1889).jpg"><img width="128" alt="Donders, Franciscus Cornelis (1818 - 1889)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg/128px-Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg"></a>
+--->
+<div class="cell" data-paged.print="false">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg/306px-Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">法蘭西斯庫斯·唐德斯(1818-1889)</figcaption></figure>
+</div>
+</div>
+</div>
+<p>唐德斯的好友，德國生理學家<strong>赫爾曼·馮·亥姆霍茲(Hermann von Helmholtz)</strong>發明的肌動描記儀(myographion，圖@ref(fig:ch04-fig03))，是實現相減法的重要工具。用這套儀器的探針放置於身體的某個部位，能持續紀錄該部位肌肉的活動於圖紙。儀器在圖紙刻下記號的頻率是固定的，所以在設定好的情境中讓研究參與者運用該部位肌肉，就能從圖紙記錄推算研究參與者執行動作所花的反應時間。唐德斯的實驗是紀錄參與者嘴巴肌肉的動作，只要察覺到刺激，參與者立刻說出預定的口號做反應。以今天心理學家常使用的實驗方法來看，唐德斯的實驗是一種唸名作業(Naming)。</p>
+<div class="cell" data-paged.print="false">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="http://vlp.mpiwg-berlin.mpg.de/vlpimages/images/img5811.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">亥姆霍茲製作的肌動描記儀，出自 Cyon, Elie de.(1876)</figcaption></figure>
+</div>
+</div>
+</div>
+<p>1869年唐德斯在荷蘭的學術刊物發表他與同事合作的心理計時實驗結果，這份報告於1969年翻譯為英文於現代專業期刊重新出版<span class="citation" data-cites="dondersSpeedMentalProcesses1969">(<a href="#ref-dondersSpeedMentalProcesses1969" role="doc-biblioref">Donders, 1969</a>)</span>。報告描述如何運用肌動描記儀測量參與者對各種刺激的反應時間，以及如何比較不同情境測得的反應時間，所測得的心智歷程。因為儀器的限制，唐德斯不能控制刺激呈現的時間點，描記儀所刻下的標記是參與者察覺刺激到執行反應的時間差，因此相減法是唐德斯的時代能想出的最佳分析方法。</p>
+<p>唐德斯設計觸覺、視覺、與聽覺三種刺激，請參與者依順序進行反應。紀錄的反應時間在現代實驗心理學教材分別被稱為<strong>簡單反應時間(Simple Reaction Time)</strong>、<strong>選擇反應時間(Choice Reaction Time)</strong>、以及<strong>區辨反應時間(Discrimination Reaction Time)</strong>，命名背後與刺激的設計和預期測量的心智歷程有關。觸覺刺激是隨機碰觸參與者的左手或右手，參與者要報告那隻手被碰。所測得的心智歷程只有察覺(detection)與執行動作(execution)。視覺刺激是兩個或五個隨機挑出的字母，唸出是母音的字母，這段作業包括的心智歷程除了察覺與執行動作、還有區辨(discrimination)與選擇(choice)。聽覺刺激是由聽到的兩個或五個字母發音，說出是母音的發音，這段作業包括的心智歷程，比視覺刺激少了選擇。所以三段作業的反應時間結果，視覺減去聽覺的時間差是選擇心智歷程要花的時間，聽覺減去觸覺是區辨心智歷程會花的時間。</p>
+<p>由於儀器的限制，透過實驗設計，研究者只要相減兩個條件的測量結果，就能估計區辨與選擇兩段心智歷程所花的時間。唐德斯的研究模式也影響之後的心理學者，例如這項研究的參與者是包括唐德斯本人在內的六位同事好友，相互擔任實驗者與參與者收集資料，今日有許多基礎知覺實驗還是收集少數參與者的大量反應資料，檢驗假設的真實性。另一方面，隨著測量儀器的更新，以及人類神經生理的知識越來越成熟，心理科學家提出更精緻的理論與方法探討反應時間與心智歷程的關聯性。</p>
+<p>唐德斯的實驗方法被之後的心理學者改造之後，發現了一些能被穩定重現的心理學效應，例如叫色作業的Stroop效應<span class="citation" data-cites="stroopStudiesInterferenceSerial1935">(<a href="#ref-stroopStudiesInterferenceSerial1935" role="doc-biblioref">Stroop, 1935</a>)</span>。不論是使用紙筆配合碼錶計時，還是運作會記錄反應時間的電腦軟體，都能得到一致的結果。如同Stroop效應的心理學實驗證據，是心理計時學成為知覺、認知心理學，以及神經科學的發展基礎。這些領域的研究幾乎使用反應時間做測量依變項，同樣也面對測量誤差干擾測量結果的問題。為了讓新進研究者認識已知的測量誤差問題，以及找出解決測量誤差的更優方法，有部分心理學實驗研究法教材重視測量誤差的整理與已知的控制方法。</p>
+<p>這本書重視實驗程序結果的可重製，取用的三項心理計時實驗都經過多次再現，不論參與者的社會背景，只要有能力快速反應都會重現最初的結果。其中兩種作業：Flanker與Motor priming，都是深入解析歷程彈性變化的更新方法。Simon Task與Stroop效應並列選擇歷程的研究典範，開啟今日已知的認知心理學領域起始課題。你可意注意各種需要測量人類反應速度的專業場域，心理計時學方法以各種面貌呈現於專業人員的工作內容之中，像是電子遊戲設計與競賽訓練<span class="citation" data-cites="dyeIncreasingSpeedProcessing2009 kristofferHowImproveReaction2018">(<a href="#ref-dyeIncreasingSpeedProcessing2009" role="doc-biblioref">Dye et al., 2009</a>; <a href="#ref-kristofferHowImproveReaction2018" role="doc-biblioref">Kristoffer, 2018</a>)</span>。</p>
+</section><section id="chrono_process" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="chrono_process">
+<span class="header-section-number">5.2</span> 心智歷程的彈性</h2>
+<p>一項作業要辨識兩種以上刺激，花在區辨那個刺激是目標的這段反應時間是區辨歷程。若是參與者有兩種以上的反應選項，選擇歷程是決定對應選項的過程。如果無論是什麼樣的刺激，無論是什麼樣的反應選項，每個人所花的反應時間是相等的，那麼相減法足以應付任何測量條件。然而人類心智絕對不可能如此簡單， <span class="citation" data-cites="eriksenEffectsNoiseLetters1974">Eriksen &amp; Eriksen (<a href="#ref-eriksenEffectsNoiseLetters1974" role="doc-biblioref">1974</a>)</span> 設計的Flanker task呈現區辨與選擇歷程有如汽車的速度排檔機制， <span class="citation" data-cites="eimerEffectsMaskedStimuli1998">Eimer &amp; Schlaghecken (<a href="#ref-eimerEffectsMaskedStimuli1998" role="doc-biblioref">1998</a>)</span> 設計的Motor Priming發現遮蔽提示會拖慢反應速度。這兩種作業如何呈現心智歷程的彈性，我們以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的公開腳本與資料解析其中關鍵。</p>
+<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的Flank task設計兩套目標項目，例如字母A與E以及字母S與C，見到A或E要按左手反應鍵，見到S或C要按右手反應鍵。目標項目呈現於五個字母中間，與目標並排的其他四個字母則會是與目標相同的字母，要按同一個反應鍵的另一個字母，與另一套字母其中之一。這三種字母排列分別稱為<strong>刺激一致(stimuli congruent)</strong>、<strong>反應一致(response congruent)</strong>、與<strong>不一致(incongruent)</strong>。實驗結果顯示反應一致的平均反應時間比不一致短，以及刺激一致的平均反應時間比反應一致短。刺激一致與不一致之間的反應時間差距是完成這項作業的區辨歷程與選擇歷程，會花費的時間。那麼反應一致與其他兩種情況的反應時間差異，是節省了那一種歷程？</p>
+<p>Motor priming的作業看似較簡單，參與者只要看到指示向左的符號(<code>&lt;&lt;</code>)按左方反應鍵，看到指示向左的符號(<code>&gt;&gt;</code>)按右方反應鍵。關鍵操作是指示符號出現前，會閃現一個相符(compatible)或不符(incompatible)的指示符號，只在螢幕停留16毫秒，而且與要反應的指示符號之間有100毫秒的空白。這段空白會隨機置入遮蔽物(Masked)或不置入任何遮蔽物(Unmasked)。 <span class="citation" data-cites="eimerEffectsMaskedStimuli1998">Eimer &amp; Schlaghecken (<a href="#ref-eimerEffectsMaskedStimuli1998" role="doc-biblioref">1998</a>)</span> 的原始研究與 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的重製研究都發現不置入遮蔽物會加速參與者的反應，但是置入遮蔽物會拖慢反應。這項實驗結果顯示，即使不必對額外刺激做反應，閃現程序會減短或拉長心智歷程。至於是區辨或選擇歷程，你能提出解析可能原因的假設並設計實驗驗證嗎？</p>
+<section id="心理計時歷程的運作模式假設" class="level3" data-number="5.2.1"><h3 data-number="5.2.1" class="anchored" data-anchor-id="心理計時歷程的運作模式假設">
+<span class="header-section-number">5.2.1</span> 心理計時歷程的運作模式假設</h3>
+<p>雖然上述作業的刺激內容與反應選項各有特色，實驗條件導致的反應時間差異，最可能的原因都是區辨歷程或選擇歷程彈性調整。唐德斯的相減法能指出區辨與選擇歷程的本質，卻因為採用不同感官的資料，無法呈現區辨歷程與選擇歷程的變化。如果只根據唐德斯的方法與觀察資料，心理學者會錯誤地假設任何情況下，不同階段歷程的運作彼此獨立且互不影響。</p>
+<p>如果區辨與選擇歷程彼此獨立，我們不可能重覆發現Simon效應與flanker效應。刺激的呈現位置(Simon作業)與干擾項目(flanker作業)都應該是區辨歷程能排除的無關資訊，然而與反應選項不一致的項目還是要花上顯著較長的時間，才能做出確反應。flanker作業安排的<strong>反應一致</strong>項目，更顯示選擇反應選項的歷程，不一定是區辨刺激項目的歷程完全結束才會開始。</p>
+<p>不同階段歷程彼此獨立的假設也無法完全解釋Motor Priming的所有結果。如果歷程彼此獨立，應該預測不論有無置入遮蔽物，相符的指示符號都能縮短區辨歷程的時間，造成比不相符的指示符號反應更快的結果。然而實驗結果與此預測明顯不符合，所以 <span class="citation" data-cites="eimerEffectsMaskedStimuli1998">Eimer &amp; Schlaghecken (<a href="#ref-eimerEffectsMaskedStimuli1998" role="doc-biblioref">1998</a>)</span> 還有增加實驗條件以及其他測量方法，試圖找到能提出更充分解釋的線索。</p>
+</section></section><section id="chrono_compatibility" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="chrono_compatibility">
+<span class="header-section-number">5.3</span> 刺激位置-動作位置相符</h2>
+<p>Simon Task得名於第一篇論文的主要通訊作者<span class="citation" data-cites="craftProcessingSymbolicInformation1970">(<a href="#ref-craftProcessingSymbolicInformation1970" role="doc-biblioref">Craft &amp; Simon, 1970</a>)</span>，後續研究累積至今已成為認知心理學者研究人類處理刺激位置與動作位置不一致的心智歷程，首先運用的方法。圖@ref(fig:ch04-fig04)取自 <span class="citation" data-cites="boniniActionMonitoringMedial2014">Bonini et al. (<a href="#ref-boniniActionMonitoringMedial2014" role="doc-biblioref">2014</a>)</span> 的論文，是 <span class="citation" data-cites="craftProcessingSymbolicInformation1970">Craft &amp; Simon (<a href="#ref-craftProcessingSymbolicInformation1970" role="doc-biblioref">1970</a>)</span> 設計的一種版本。描繪的作業內容只有兩大類試驗：刺激與反應位置一致嘗試(Congruent Trials)；刺激與反應位置不一致嘗試(Incongruent Trials)，許多研究都能重製一致嘗試的平均反時間比不一致嘗試短的結果。而且不論刺激換成任何形式，或者改用別種感官刺激，都能重製相同結果。</p>
+<div class="cell" data-paged.print="false">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/SIMON-Trials.jpg" class="img-fluid figure-img" width="292"></p>
+<figcaption class="figure-caption">Simon Task試驗範例</figcaption></figure>
+</div>
+</div>
+</div>
+<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 重製的版本正如圖@ref(fig:ch04-fig04)一樣，只是安排不同的顏色與色塊形狀。即使參與者參加兩次，都能測得一致的結果。一致嘗試與不一致嘗試的關鍵差異是刺激位置，似乎與區辨歷程較有關係。但是這樣的想法能被現在看到的結果支持嗎？如果你認為不夠充分，應該設計什麼樣的實驗，驗證你心目中的主張呢？</p>
+</section><section id="chrono_sat" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="chrono_sat">
+<span class="header-section-number">5.4</span> 速度與正確率互補</h2>
+<p>心理計時學開始發展不久，科學家們就察覺收集的反應時間資料，經常有一部分參與者的反應時間相當短且正確率偏低，還有另一部分參與者的反應時間長且正確率偏高。前一種參與者通常是太緊張或急著完成實驗，沒有仔細區辨或選擇就執行動作；後一種參與者求好心切，已經充分區辨及選擇，還要花額外時間確認。這類資料如果佔一筆資料近半的比例，預期估計的心理歷程花費時間必然有所偏誤，如圖@ref(fig:ch04-fig05)的描述，兩類反應各自走向不同卻難以描述的歷程，疊加之後的資料分配，偏離預期估計值的程度有多大？這種現象泛見於任何以反應時間為測量依變項的實驗，稱為<strong>速度與正確率互補(Speed-Accuracy tradeoff)</strong>。</p>
+<div class="cell" data-paged.print="false">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/random_walk_model.jpg" class="img-fluid figure-img" width="796"></p>
+<figcaption class="figure-caption">圖解隨機遊走模型，過度追求正確的反應與過度追求速度的反應各為極端。</figcaption></figure>
+</div>
+</div>
+</div>
+<p>速度與正確率互補對各種實驗結果的影響因實驗條件與測量目標而異，心理學實驗常用的處理方式是去除或轉換個別參與者反應時間的極端值，就像 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 是將每位參與者每個情況的反應時間平均值延伸三個標準差以外的資料去除。雖然多數認知心理學的實驗能以此法得到不偏的目標反應時間估計值，在應用領域的心理計時實驗通常有高比例的速度與正確率互補資料，如何辨識與評估過快或過慢的反應時間，對估計目標歷程實際花費時間要校正的偏誤，是必須學習研究的課題。</p>
+<p>這裡使用 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 公開的flanker task原始反應資料，示範評估速度與正確率互補的入門方法。圖@ref(fig:ch04-fig06)將所有資料依與者被分派的刺激版本(差異刺激、相同刺激)與參與次序(第一次實驗、第二次實驗)，分成四大塊。每一大塊的資料是每位參與者在三個實驗條件：<strong>刺激一致(stimuli congruent)</strong>、<strong>反應一致(response congruent)</strong>、與<strong>不一致(incongruent)</strong>，做出正確反應的平均反應時間與正確率。這些資料繪成的迴歸線。能看出正確率與反應時間之間的增減越勢。如果一種實驗條件產生相當比例的速度與正確率互補資料，迴歸係數通常為正，就像圖@ref(fig:ch04-fig06)裡，除了差異刺激，第一次實驗之外三種情況的不一致(incongruent)反應資料。但是要確認速度與正確率互補對這個條件的反應資料，造成的影響會不會導致偏差的估計值？需要使用合適的<strong>推論統計方法</strong>進行分析。</p>
+<div class="cell" data-paged.print="false">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/flanker_SAT.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Zwaan et al.(2017) flanker task分組正確率~反應時間散佈圖及迴歸線。</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="chrono_rep" class="level2" data-number="5.5"><h2 data-number="5.5" class="anchored" data-anchor-id="chrono_rep">
+<span class="header-section-number">5.5</span> 心理計時實驗的再現與重製</h2>
+<p>我們還要從重製 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的三個實驗結果，學習如何規畫再現研究。首先我們需要得知各項實驗應測得的效果量，這個單元介紹的三項實驗都是計算不一致(incongruent)或不符合(congruent)的反應時間，與相對情況反應時間的重覆量數(repeated measurement)之Cohen’s d。除了根據論文的說明，驗證其中報告的效果量之外。應該注意到每個實驗的設計特點，與計算效果量取用的分組條件。Simon Task與Flanker Task都有四組效果量，然而Flanker Task只有計算<strong>反應一致(response congruent)</strong>與<strong>不一致(incongruent)</strong>的效果量，並未計算<strong>刺激一致(stimuli congruent)</strong>與其他兩者的效果量。經由閱讀原始文獻[<span class="citation" data-cites="craftProcessingSymbolicInformation1970">Craft &amp; Simon (<a href="#ref-craftProcessingSymbolicInformation1970" role="doc-biblioref">1970</a>)</span>; eriksenEffectsNoiseLetters1974]，你能不能由此理解各種作業要測量的心智歷程，各自根據的理論有何特點？</p>
+<p>Motor Priming比另外兩個實驗多了四個要分析的效果量，從之前的研究設計說明，我們知道這個實驗多出一個參與者內獨變項：有無置入遮蔽物。效果量的數值–包括正負與大小–似乎有很大的差異。根據原始文獻的內容<span class="citation" data-cites="eimerEffectsMaskedStimuli1998">(<a href="#ref-eimerEffectsMaskedStimuli1998" role="doc-biblioref">Eimer &amp; Schlaghecken, 1998</a>)</span>，你能不能找到這個實驗設定遮蔽物的任何理由？</p>
+<p>根據以上資料，現在要規劃一件再現實驗，其中一個重要的功課是應該徵求多少參與者？需要像 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 為每一個實驗徵求近兩百位嗎？以一個教學課程來說，這樣的人數對學生來說是不小的負擔。還好已經有不少提供科學研究者計算樣本數與考驗力的應用程式問世，在此使用<code>jpower</code>示範，說明再現研究要得到接近 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2017</a>)</span> 的結果，至少要多少參與者？</p>
+<!---
+R套件`simr` [@greenSIMRPackagePower2016]提供的函式庫，分析不同樣本數再現三個心理計時實驗資料。估計成功的再現實驗結果，得到與 @zwaanParticipantNonnaiveteReproducibility2017 相同的效果量時，最有可能達到的考驗力。三個實驗的刺激種類不多，每位參與者貢獻200次以上的反應，參與者人數是再現實驗能否在維持預期考驗力的條件下，再現結果與原始研究一致的關鍵。所有實驗都有分派兩種版本的刺激材料給參與者進行實驗，以下以各版本第一段，剔除極端值的原始反應資料估計考驗力與樣本數。
+--->
+<p>Simon作業的效果量是三個心理計時實驗裡，效果量最強的項目。由圖@ref(fig:simon-power)可知，兩種版本的實驗資料估計大約徵求8到13人，就可達到90%至100%的考驗力。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Simon_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">估計Simon作業之考驗力與參與者人數。</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Flanker作業的實驗結果最重要的效果量是<strong>反應一致(response congruent)</strong>與<strong>不一致(incongruent)</strong>的差異，是三組心理計時實驗最弱的效果量，由圖@ref(fig:flanker-power)可知，估計至少要徵求22位至40位參與者，才能達到約90%~100%的考驗力。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Flanker_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">估計Flanker作業之考驗力與參與者人數。</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Motor Priming有置入遮蔽物及未置入遮蔽物兩種條件，各有一種促發效應結果。無遮蔽物的實驗結果獲得的效果量小於有遮蔽物，從圖@ref(fig:motor-power)可知，有遮蔽物的情況需要徵求至少12位參與者，無遮蔽物的情況則需要徵求至少5位參與者，才能保障90%以上的考驗力。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Motor_Priming_Mask_N.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:有遮蔽物，右圖:無遮蔽物</figcaption></figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/Motor_Priming_Unmask.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">估計Motor Priming有遮蔽物之考驗力與參與者人數。左圖:有遮蔽物，右圖:無遮蔽物</figcaption></figure>
+</div>
+</div>
+</div>
+<!---
+
+::: {.cell paged.print='true'}
+::: {.cell-output-display}
+![估計Motor Priming無遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激](figs/MotorUnmasked_same_1.png){width=50%}
+:::
+
+::: {.cell-output-display}
+![估計Motor Priming無遮蔽物之考驗力與參與者人數。左圖:前後參與相同刺激，右圖:前後參與不同刺激](figs/MotorUnmasked_diff_1.png){width=50%}
+:::
+:::
+
+--->
+</section><section id="chrono_practice" class="level2" data-number="5.6"><h2 data-number="5.6" class="anchored" data-anchor-id="chrono_practice">
+<span class="header-section-number">5.6</span> 習作</h2>
+<ul>
+<li>在每項實驗的<code>Raw Data</code>表單裡，那些欄位是真正用於分析的依變項資料？那些欄位是獨變項？那些是計算參與者平均反應的必要欄位？</li>
+<li>為何有部分資料是極端值？這份公開資料處理極端值的方式是什麼？</li>
+<li>論文附錄呈現的每項實驗變異數分析，除了每項實驗的關鍵獨變項，都有一個參與梯次的參與者內變項，與一個兩梯次實驗材料是否相同的參與者間變項。變異數分析呈現這兩個獨變項都未影響實驗的關鍵效果，由這兩個獨變項的設定，與最後呈現的結果。經過重製分析結果，你認為這三個心理計時實驗具備可再現的條件是什麼？</li>
+<li>根據三項實驗的考驗力與樣本數分析，註冊再現研究要如何規劃與執行？</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-boniniActionMonitoringMedial2014" class="csl-entry" role="listitem">
+Bonini, F., Burle, B., Liegeois-Chauvel, C., Regis, J., Chauvel, P., &amp; Vidal, F. (2014). Action <span>Monitoring</span> and <span>Medial Frontal Cortex</span>: <span>Leading Role</span> of <span>Supplementary Motor Area</span>. <em>Science</em>, <em>343</em>(6173), 888–891. <a href="https://doi.org/10.1126/science.1247412">https://doi.org/10.1126/science.1247412</a>
+</div>
+<div id="ref-craftProcessingSymbolicInformation1970" class="csl-entry" role="listitem">
+Craft, J. L., &amp; Simon, J. R. (1970). Processing symbolic information from a visual display: <span>Interference</span> from an irrelevant directional cue. <em>Journal of Experimental Psychology</em>, <em>83</em>(3, Pt.1), 415–420. <a href="https://doi.org/10.1037/h0028843">https://doi.org/10.1037/h0028843</a>
+</div>
+<div id="ref-dondersSpeedMentalProcesses1969" class="csl-entry" role="listitem">
+Donders, F. C. (1969). On the speed of mental processes. <em>Acta Psychologica</em>, <em>30</em>, 412–431. <a href="https://doi.org/10.1016/0001-6918(69)90065-1">https://doi.org/10.1016/0001-6918(69)90065-1</a>
+</div>
+<div id="ref-dyeIncreasingSpeedProcessing2009" class="csl-entry" role="listitem">
+Dye, M. W. G., Green, C. S., &amp; Bavelier, D. (2009). Increasing <span>Speed</span> of <span>Processing With Action Video Games</span>. <em>Current Directions in Psychological Science</em>, <em>18</em>(6), 321–326. <a href="https://doi.org/10.1111/j.1467-8721.2009.01660.x">https://doi.org/10.1111/j.1467-8721.2009.01660.x</a>
+</div>
+<div id="ref-eimerEffectsMaskedStimuli1998" class="csl-entry" role="listitem">
+Eimer, M., &amp; Schlaghecken, F. (1998). Effects of masked stimuli on motor activation: <span>Behavioral</span> and electrophysiological evidence. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>24</em>(6), 1737–1747. <a href="https://doi.org/10.1037/0096-1523.24.6.1737">https://doi.org/10.1037/0096-1523.24.6.1737</a>
+</div>
+<div id="ref-eriksenEffectsNoiseLetters1974" class="csl-entry" role="listitem">
+Eriksen, B. A., &amp; Eriksen, C. W. (1974). Effects of noise letters upon the identification of a target letter in a nonsearch task. <em>Perception &amp; Psychophysics</em>, <em>16</em>(1), 143–149. <a href="https://doi.org/10.3758/BF03203267">https://doi.org/10.3758/BF03203267</a>
+</div>
+<div id="ref-jensenClockingMindMental2006" class="csl-entry" role="listitem">
+Jensen, A. R. (2006). <em>Clocking the mind: Mental chronometry and individual differences</em> (1st ed). <span>Elsevier</span>.
+</div>
+<div id="ref-kristofferHowImproveReaction2018" class="csl-entry" role="listitem">
+Kristoffer. (2018). How to <span>Improve Reaction Time</span> for <span>Gaming</span>. In <em>GPUGames</em>.
+</div>
+<div id="ref-mollonErrorsJudgementGreenwich1996" class="csl-entry" role="listitem">
+Mollon, J. D., &amp; Perkins, A. J. (1996). Errors of judgement at <span>Greenwich</span> in 1796. <em>Nature</em>, <em>380</em>, 101–102. <a href="https://doi.org/10.1038/380101a0">https://doi.org/10.1038/380101a0</a>
+</div>
+<div id="ref-stroopStudiesInterferenceSerial1935" class="csl-entry" role="listitem">
+Stroop, J. R. (1935). Studies of interference in serial verbal reactions. <em>Journal of Experimental Psychology</em>, <em>18</em>, 643–662.
+</div>
+<div id="ref-zwaanParticipantNonnaiveteReproducibility2017" class="csl-entry" role="listitem">
+Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2017). Participant <span>Nonnaivet<span class="nocase">é</span></span> and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, 1–5. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
+</div>
+</div>
+</section></main><!-- /main --><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./03-case.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./05-memory.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">CC-BY (2019-2023) 陳紹慶</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+</body></html>

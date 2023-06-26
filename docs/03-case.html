@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="如何使用這本書 本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。 以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。">
+<title>實驗心理學：開放科學取向 - 4&nbsp; 可重製的研究設計</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./04-chronometry.html" rel="next">
+<link href="./02-fundamental.html" rel="prev">
+<link href="./images/logos/logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交"
+  }
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="include/booktem.css">
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="testpool/include/webex.css">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-case.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">實驗心理學：開放科學取向</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="切换深色模式"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">bookdown::gitbook: default</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-fundamental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-case.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-chronometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-memory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的記憶研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-language.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(APPENDIX) 附錄</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">附录</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="切換部分">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">目录</h2>
+   
+  <ul>
+<li><a href="#case_intro" id="toc-case_intro" class="nav-link active" data-scroll-target="#case_intro"><span class="header-section-number">4.1</span> 案例介紹</a></li>
+  <li><a href="#case_reasons" id="toc-case_reasons" class="nav-link" data-scroll-target="#case_reasons"><span class="header-section-number">4.2</span> 為何需要再現實驗結果</a></li>
+  <li><a href="#case_prereg" id="toc-case_prereg" class="nav-link" data-scroll-target="#case_prereg"><span class="header-section-number">4.3</span> 預先註冊是什麼？</a></li>
+  <li><a href="#case_quality" id="toc-case_quality" class="nav-link" data-scroll-target="#case_quality"><span class="header-section-number">4.4</span> 預先註冊能保證研究品質嗎？</a></li>
+  <li><a href="#case_integrity" id="toc-case_integrity" class="nav-link" data-scroll-target="#case_integrity"><span class="header-section-number">4.5</span> 預先註冊能保證學術誠信嗎？</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/03-case.qmd" class="toc-action">编辑该页面</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">报告问题</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="case" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>在第@ref(intro)章，我們已經了解實驗程序的每一個環節，都存在左右產出知識品質良窳的因素。學習心理學實驗研究方法的重點除了熟悉運用隨機化程序，以及降低實驗結果裡混淆變項的比例，現在還有公開實驗方法與資料的思維與操作方法。開放方法與資料可保障實驗流程完全按照事前計畫處理，這是我們要學習預先註冊(Preregistration)的重要理由。</p>
+<p>我們先來認識一件研究案例的關鍵情節，這些關鍵情節會是你進行任何研究可能遇上的真實狀況。再從關鍵情節提出一些延伸問題，讓讀者經由個人反思，或著經由現場或網路相互討論，自行判斷研究可重製的真正價值。</p>
+<section id="case_intro" class="level2" data-number="4.1"><h2 data-number="4.1" class="anchored" data-anchor-id="case_intro">
+<span class="header-section-number">4.1</span> 案例介紹</h2>
+<p>本案例來自 <span class="citation" data-cites="laneSourceMaterials2018">Lane &amp; Urry (<a href="#ref-laneSourceMaterials2018" role="doc-biblioref">2018</a>)</span> 提供的公開資料。主人翁是正在攻讀發展心理學博士學位的Liliana Mayes，她的碩士論文收錄兩個實驗，是與指導教授Arden Blackburn及另一位年輕教授Garnet Hobson，三人合作所完成的。Blackburn是系上的資深教授，而Hobson是邁入生涯第五年的助理教授。</p>
+<p>Liliana的論文提出一個假設：五到六歲的兒童通過親手操作活動學習科學概念，會更了解科學理論。第一個實驗在當地科學博物館找了70位五至六歲參觀的小朋友。所有參與研究的小朋友先觀賞一段介紹食物鏈的影片以及同一位講解員的說明，之後隨機點名一些小朋友去畫鯊魚進食的圖片(控制組)，其他小朋友參考影片與講解重建食物鏈模型(實驗組)。活動結束後，由不了解實驗安排的大學生助理拿10個有關食物鏈的問題詢問小朋友。最後有16位小朋友的資料因為中途離開或者助理判斷小朋友並未完全理解問題，而沒有納入分析。最後實驗組與控制組各有27位小朋友，他們的每一題回答由四位不清楚實驗目的與分組安排的四位大學生，以0分(完全不正確)到10分(完全正確)，最後計算個人平均得分，計分結果請<a href="https://osf.io/pezyu/">點此下載</a>。Liliana做的獨立t檢定顯示實驗組的回答(平均值6.37，標準差0.91)顯著優於控制組(平均值5.82，標準差1.03)，<span class="math inline">\(t(52) = 2.10\)</span>, <span class="math inline">\(p = .040\)</span>。</p>
+<p>Liliana的第二個實驗是第一個實驗的重製版，場地換到指導教授的實驗室，並在開始前做好<strong>預先註冊</strong>，方式是把計畫書備份於Open Science Framework。邀請參觀過博物館的100位五至六歲小朋友到實驗室畫鯊魚，或者重建模型，然後回答10個問題。實驗結果接近第一個實驗，獨立t檢定顯示實驗組的回答(平均值5.56，標準差0.74)顯著優於控制組(平均值5.23，標準差0.86)，<span class="math inline">\(t(98) = 2.05\)</span>, <span class="math inline">\(p = .043\)</span>。計分結果請<a href="https://osf.io/74rcp/">點此下載</a>。</p>
+<p>Liliana接著在一次研討會發表後獲得許多正面回應，並寫好準備投期刊的論文初稿。此時她得到另一個研究團隊在他們的實驗室重現Liliana的研究，但是沒有得到顯著結果： <span class="math inline">\(t(498) = -1.29\)</span>, <span class="math inline">\(p = .196\)</span> ，資料請<a href="https://osf.io/9ucpz/">點此下載</a>。Liliana向兩位都會在論文共同掛名的指導教授請教意見，Balckburn鼓勵她儘快發表論文。Hobson無法給出具體建議，他認為這個團隊的樣本數更多，Liliana的研究效度會因此降低。</p>
+</section><section id="case_reasons" class="level2" data-number="4.2"><h2 data-number="4.2" class="anchored" data-anchor-id="case_reasons">
+<span class="header-section-number">4.2</span> 為何需要再現實驗結果</h2>
+<p>心理科學研究者都是為了確認理論的預測而設計實驗，實驗結果的再現是檢驗理論預測的最佳方式。談心理科學要如何看待理論的預測之前，我建議先看看人類當代科學發展最成熟的領域–天文學與物理學–最著名的例子，像是 <span class="citation" data-cites="HaLeiHuiXing2018"><span>《<span>哈雷彗星</span>》</span> (<a href="#ref-HaLeiHuiXing2018" role="doc-biblioref">2018</a>)</span> 與 <span class="citation" data-cites="ChongLiTouJingXiaoYing2018"><span>《<span>重力透鏡效應</span>》</span> (<a href="#ref-ChongLiTouJingXiaoYing2018" role="doc-biblioref">2018</a>)</span>。</p>
+<ul>
+<li><p>看過哈雷慧星的發現簡史，你認為哈雷運用牛頓力學預測慧星軌道之前的天文學觀測，為何難以確認是同一個慧星？</p></li>
+<li><p>1919年的日全食觀測之後，為何科學家要繼續進行觀測，才能一致公認廣義相對論的預測？</p></li>
+</ul>
+<p>哈雷慧星與重力透鏡效應分別是牛頓運動定律與廣義相對論最佳預測案例，兩種理論的預測都是累積數十年的甚至上千年的觀測紀錄，才被現代科學家一致承認，在充分觀測條件之下有近乎無誤差的預測能力。天文學及物理學的觀測必須在嚴格的控制下進行，才能保障最新一次的觀察結果與之前的觀察結果完全一致。哲學家卡爾．波普爾(Karl Popper)對這些案例有深刻的剖析，重要著作<strong>科學發現的邏輯(The Logic of Scientific Discovery)</strong><span class="citation" data-cites="popperLogicScientificDiscovery2002">(<a href="#ref-popperLogicScientificDiscovery2002" role="doc-biblioref">Popper, 2002</a>)</span>的其中一節，他提出科學發現的再現是科學知識必備條件的主張：</p>
+<blockquote class="blockquote">
+<p>只有當某些事件能按照定律或規律性重複發生時，像在可 重複的實驗裡的情況那樣，我們的觀察在原則上才能被任何人所檢驗。在我們重複 和檢驗它們之前，我們甚至對自己的觀察也不大認真對待，也不承認它們是科學的 觀察。只有根據這些重複，我們才確信我們處理的並不僅是一個孤立的「巧合」， 而是原則上可以主體間相互檢驗的事件，因為它們有規律性和可重複性。<span class="citation" data-cites="bopuerKeXueFaXianDeLuoJi2008">(<a href="#ref-bopuerKeXueFaXianDeLuoJi2008" role="doc-biblioref">波普尔 等, 2008</a>)</span></p>
+</blockquote>
+<p>我們回頭看Liliana Mayes的研究，值得討論幾個問題：</p>
+<ol type="1">
+<li><p>如果Liliana的假設經得起更多實驗的檢驗，會帶來什麼影響？</p></li>
+<li><p>為什麼Liliana設計的第二個實驗，是以更嚴格的條件重做第一個實驗？</p></li>
+<li><p>為什麼Balckburn鼓勵Liliana盡快發表？對於Liliana的生涯發展有什麼好處與壞處？</p></li>
+<li><p>為什麼Hobson認為應該重視其他研究者的再現結果？對於Hobson與Liliana的生涯發展有什麼好處與壞處？</p></li>
+</ol>
+<p>心理科學有許多能穩定再現的研究結果，只是大多數像哈雷之前的天文學紀錄，還在等待一個好理論能統整出有意思又可靠的預測。此外，心理科學還有更多研究結果並未累積有系統的直接再現(direct replication)，而是不斷出現與原初研究的條件有部分不同的概念性再現實驗(conceptual replication)。我的個人網誌<span class="citation" data-cites="chenshaoqingJiLuYiJingChuXianYuJiJiangChuXianDeZaiXianWeiJi2016Ban2016">(<a href="#ref-chenshaoqingJiLuYiJingChuXianYuJiJiangChuXianDeZaiXianWeiJi2016Ban2016" role="doc-biblioref">陳紹慶, 2016</a>)</span>曾解釋這兩個關鍵詞，我將原本的文字摘要如下：</p>
+<blockquote class="blockquote">
+<p>直接再現(direct replication)：其它實驗室按照原始研究的方法細節，於不同地點時間完整照表操課收集資料，檢視能否再現原始研究的發現。這種再現模式在有規模的實驗室之間經常發生，一篇緊接著原創性研究出現的研究論文，首先會嘗試直接再現原始研究的發現。不過最理想的直接再現研究並不存在，即使是在曾進行原創研究的地點，以相同的設備進行，能招募的參與者已經不同於原始研究。有共識的直接再現模式是由原始研究者提供研究材料，甚至資料分析程序，讓其它研究者在不同地點以最逼近原始條件的空間設備進行再現。或者諮詢原始研究者的意見，在許可範圍內變更部分研究細節，APS公開的RRR項目皆屬稍做變動的直接再現。</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>概念性再現(conceptual replication)：原始研究的關鍵操作，以假設條件可容許，但是與原始研究相異的方式設置，在其它控制變項接近原始研究進行的再現研究。例如自我耗損實驗有其它學者使用其它物品，例如檸檬汁，或可以耗損意志力的其它方法，例如這項RRR使用的挑字母作業，能得到相同效應的結果。概念性再現通常用來測試假說的通用性，也有許多學者認為這是改善實驗研究的外在效度，最佳的方案之一。</p>
+</blockquote>
+</section><section id="case_prereg" class="level2" data-number="4.3"><h2 data-number="4.3" class="anchored" data-anchor-id="case_prereg">
+<span class="header-section-number">4.3</span> 預先註冊是什麼？</h2>
+<p>本書一開始討論的知識循環(見圖@ref(fig:ch01-fig01))，以及導致研究品質低落的各種巧門(見圖@ref(fig:DF-checklist))，其中最容易產生問題的環節在資料分析。一開始設定假設及設計，還有收集資料都有巧門，不過大多數要配合資料分析出現的瑕疵操作，才會真正導致品質低落的研究結果。因為過去心理科學研究者不去察覺或姑息這些瑕疵操作，產生大量難以再現的研究結果。為了幫助心理科學研究人員今後能按照計畫分析資料，即使有必要更改分析策略，也要詳實紀錄更改的原因與過程，有研究者開始推動<strong>預先註冊(Preregistration)</strong><span class="citation" data-cites="chambers_trust_2013 lindsayResearchPreregistration1012016 schonbrodtVoluntaryCommitmentResearch2015 simmons21WordSolution2012">(<a href="#ref-chambers_trust_2013" role="doc-biblioref">Chambers 等, 2013</a>; <a href="#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">Lindsay 等, 2016</a>; <a href="#ref-schonbrodtVoluntaryCommitmentResearch2015" role="doc-biblioref">Schönbrodt 等, 2015</a>; <a href="#ref-simmons21WordSolution2012" role="doc-biblioref">Simmons 等, 2012</a>)</span>。</p>
+<p>所以，在資料分析過程隨時檢閱研究計畫書已經寫下的分析工作項目，就是實現<strong>預先註冊</strong>。本章案例的主角Liliana在開始收集第二個實驗的資料前，就將研究計畫書於有版本控制的網路平台(請參考第@ref(toolbox)章)做好備份，提醒研究者自己資料分析該完成的項目以及推論分析結果的準則。由於一般申請研究經費或學位論文考試的研究計畫書，內容不是只有假設的預測、研究設計要素與分析項目等關鍵而已， <span class="citation" data-cites="simmons21WordSolution2012">Simmons 等 (<a href="#ref-simmons21WordSolution2012" role="doc-biblioref">2012</a>)</span> 就主張預先註冊只要寫下全長21個英文字的宣言，研究者保證分析紀錄的公開透明即可。</p>
+<p>一些心理學專業期刊開始鼓勵有<strong>預先註冊</strong>的研究論文，乃至在評審過程協助研究者收集資料前確認所有工作項目與判斷標準。不過並非所有心理學研究者贊同預先註冊的做法，主要的質疑意見有二：預先註冊會壓抑研究者自由探索產生洞見的機會；預先註冊只適要於如實驗理學有嚴格操作定義的領域<span class="citation" data-cites="_pre-registration_2013 goldin-meadowWhyPreregistrationMakes2016">(<a href="#ref-goldin-meadowWhyPreregistrationMakes2016" role="doc-biblioref">Goldin-Meadow, 2016</a>; <a href="#ref-_pre-registration_2013" role="doc-biblioref">Scott, 2013</a>)</span>。本書是實驗心理學研究指南，第二項意見不予評論，我們可以從第一項意見討論更深入的議題：嘗試各種手段而得到統計顯著的結果，得到的是「洞見」還是「偏見」？</p>
+<ul>
+<li><p>如果我已經收集完資料，分析資料之前才備份我的計畫書，這樣還能算是<strong>預先註冊</strong>嗎？</p></li>
+<li><p>分析資料時，發現如果採用不同於已預先註冊的分析方法，可以產生更有意義的資訊，我是不是不應該這樣做？</p></li>
+</ul>
+<p>後續三章提供的再現研究專案範本，除了預先註冊的簡要宣告，還有建議同學操作時應紀錄的項目。<strong>預先註冊</strong>措施其實是幫助研究者實現科學研究實事求是的基本原則，無論研究者的資歷，依研究計畫提到的重點完成應做的資料收集與分析工作，就能保障研究結果有一定的品質。</p>
+</section><section id="case_quality" class="level2" data-number="4.4"><h2 data-number="4.4" class="anchored" data-anchor-id="case_quality">
+<span class="header-section-number">4.4</span> 預先註冊能保證研究品質嗎？</h2>
+<p>我們曾在第@ref(intro)章談過<strong>產生不良知識的瑕疵操作</strong>，預先註冊是協助研究者在研究過程後半段，記得前半段立下的目標，避免結論與假設偏離太遠的措施。能不能達成效果，必須看研究者自已有沒有實踐的決心。更進一步的建議是研究者應該公開研究材料與分析資料，讓其他研究者能重現過程中的所有細節<span class="citation" data-cites="robertsCommitmentBetterResearch2016">(<a href="#ref-robertsCommitmentBetterResearch2016" role="doc-biblioref">Roberts 等, 2016</a>)</span>，也就是這一章標題「可重製的研究」所描述的研究呈現方式。</p>
+<p>再看一次Liliana的案例，她的第二個實驗有預先註冊措施，並且得到顯著的結果。取用實驗一的公開資料，進行考驗力分析，我們能看到其他研究者使用更多人數，卻無法再現Liliana研究結果的一些原因。</p>
+<p>今日許多統計軟體能計算實驗結果的效果量，不過只有jamovi 0.9版<span class="citation" data-cites="jamoviprojectJamoviVersionComputer2018">(<a href="#ref-jamoviprojectJamoviVersionComputer2018" role="doc-biblioref">2018</a>)</span>可擴充估算考驗力的套件jpower<span class="citation" data-cites="moreyJpowerFunctionsCompute2018">(<a href="#ref-moreyJpowerFunctionsCompute2018" role="doc-biblioref">Morey, 2018</a>)</span>。使用jamovi重現實驗一的統計分析，我們得知這次實驗結果的效果量是0.573，使用jpower估算得知，要以.80的考驗力重現實驗一結果，實驗組與控制組人數至少要有49人。所以Liliana的實驗二收集的人數符合最低標準，可以說有一定的研究品質，有起碼的參考價值。</p>
+<p>不過jpower報表顯示(見圖@ref(fig:jpower))，除非這個實驗結果的效果量高達0.736，不然之後的研究依然有可能無法成功重現相同的結果。jamovi分析存檔可以<a href="https://raw.githubusercontent.com/SCgeeker/EXPPSY_Opensci/master/docs/data/mayes_data_study1.omv">由此下載</a>。</p>
+<div class="cell" data-paged.print="true">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="figs/jpower-01.png" class="img-fluid figure-img" width="1240"></p>
+<figcaption class="figure-caption">Liliana Mayes實驗一結果的考驗力與預定最少人數估算</figcaption></figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>只以實驗結果有沒有出現統計顯著來判斷研究品質，會有什麼樣的盲點？</p></li>
+<li><p>如果Liliana的論文只能使用兩個實驗的資料，她要如何說明為何其他研究者無法重覆她的發現？</p></li>
+</ul></section><section id="case_integrity" class="level2" data-number="4.5"><h2 data-number="4.5" class="anchored" data-anchor-id="case_integrity">
+<span class="header-section-number">4.5</span> 預先註冊能保證學術誠信嗎？</h2>
+<p><strong>學術誠信</strong>其實是每個人當學生的第一天起就被教育的觀念，相信在學學生讀者都可以在自己的學生手冊裡找到類似這樣的文字：「違反考試規則或學術倫理者，得處分…」。考試不得作弊的道理很簡單：以任何詐騙手段獲取成績的作為，將破壞任何人對你個人學歷證明的信任基礎。同樣地，以不實手法獲取發表機會的學術成果，也會破壞大眾對科學專業的信任。</p>
+<p>那麼使用瑕疵操作而得以發表的研究報告，會不會損害學術誠信？如果這個問題是肯定的，我們才能回答預先註冊能否保證研究者個人與作品的學術誠信。藉著Liliana公開研究成果的幾種可能發展，我想提出一些讓讀者思考的切入點。</p>
+<ol type="1">
+<li>Liliana將兩個實驗結果及資料完整發表，論文並未提到無法成功重現的研究結果。</li>
+</ol>
+<ul>
+<li><p>如果Liliana沒有把預先註冊計畫與資料紀錄完整公開，你能不能判斷他們的研究過程存在瑕疵操作？</p></li>
+<li><p>如果Liliana有把預先註冊計畫與資料紀錄完整公開，而且你尚未得知有人無法重現他們的結果。你會不會信任他們的發現？</p></li>
+<li><p>如果Liliana有把預先註冊計畫與資料紀錄完整公開，但是你已經得知有人無法重現他們的結果。你會不會信任他們的發現？</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Liliana將兩個實驗結果及資料完整發表，論文提到無法成功重現的研究結果。</li>
+</ol>
+<ul>
+<li><p>如果Liliana只有文字的說明，你能不能接受他們的發現是有意義的？</p></li>
+<li><p>如果Liliana增加資料分析，說明要更多的樣本有可能無法成功重現，你會如何看待他們的發現？</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Liliana與兩位指導教授決定比照另一個團隊的做法，將第二個實驗的樣本數擴充為500人，完成預先註冊準備再做一次。</li>
+</ol>
+<ul>
+<li><p>這個新實驗如果成功重現之前兩個實驗的結果，Liliana發表的報告可不可以否定他人無法重現的結果？</p></li>
+<li><p>這個新實驗如果無法重現之前兩個實驗的結果，Liliana發表的報告結論要如何整合他人無法重現的結果？</p></li>
+<li><p>Liliana適不適合親自操作這個新實驗？不論你的看法是肯定或否定，你主張的依據是什麼？</p></li>
+</ul>
+<p>這三種可能發展的背後，你可以想像Liliana是誠實地按表操課，也可以想像她在某個環節禁不起運用巧門的誘惑。請記下你想得出的任何情節與個人看法，將來實際操作有預先註冊的研究計畫時，對照你的實際作為是否應證你想到的瑕疵作為，或者避免了運用巧門造成的偏誤。</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-chambers_trust_2013" class="csl-entry" role="listitem">
+Chambers, C., Munafo, M., &amp; signatories, more than 80. (2013). Trust in Science Would Be Improved by Study Pre-Registration. <em>The Guardian</em>.
+</div>
+<div id="ref-goldin-meadowWhyPreregistrationMakes2016" class="csl-entry" role="listitem">
+Goldin-Meadow, S. (2016). Why <span>Preregistration Makes Me Nervous</span>. <em>APS Observer</em>, <em>29</em>(7).
+</div>
+<div id="ref-jamoviprojectJamoviVersionComputer2018" class="csl-entry" role="listitem">
+jamovi project. (2018). <em>Jamovi (<span>Version</span> 0.9) [<span>Computer Software</span>]</em>.
+</div>
+<div id="ref-laneSourceMaterials2018" class="csl-entry" role="listitem">
+Lane, K., &amp; Urry, H. L. (2018). <em>Source <span>Materials</span></em>. osf.io/z3cxh.
+</div>
+<div id="ref-lindsayResearchPreregistration1012016" class="csl-entry" role="listitem">
+Lindsay, S., Simons, D., &amp; Lilienfeld, S. (2016). Research <span>Preregistration</span> 101. <em>Observer</em>, <em>29</em>(10), 14–16.
+</div>
+<div id="ref-moreyJpowerFunctionsCompute2018" class="csl-entry" role="listitem">
+Morey, R. (2018). <em>Jpower: Functions to Compute Power for Various Designs</em>.
+</div>
+<div id="ref-popperLogicScientificDiscovery2002" class="csl-entry" role="listitem">
+Popper, K. (2002). <em>The <span>Logic</span> of <span>Scientific Discovery</span></em> (2 edition). <span>Routledge</span>.
+</div>
+<div id="ref-robertsCommitmentBetterResearch2016" class="csl-entry" role="listitem">
+Roberts, B. W., Zwaan, R. A., &amp; Campbell, L. (2016). A <span>Commitment</span> to <span>Better Research Practices</span> (<span>BRPs</span>) in <span>Psychological Science</span>. 收入 <em>lornecampbell</em>.
+</div>
+<div id="ref-schonbrodtVoluntaryCommitmentResearch2015" class="csl-entry" role="listitem">
+Schönbrodt, F. D., Maier, M., Heene, M., &amp; Zehetleitner, M. (2015). Voluntary Commitment to Research Transparency. 收入 <em>Commitment to Research Transparency</em>. http://www.researchtransparency.org.
+</div>
+<div id="ref-_pre-registration_2013" class="csl-entry" role="listitem">
+Scott, S. (2013). Pre-Registration Would Put Science in Chains. <em>Times Higher Education (THE)</em>.
+</div>
+<div id="ref-simmons21WordSolution2012" class="csl-entry" role="listitem">
+Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2012). <em>A 21 <span>Word Solution</span></em> ({{SSRN Scholarly Paper}} ID 2160588). <span>Social Science Research Network</span>.
+</div>
+<div id="ref-HaLeiHuiXing2018" class="csl-entry" role="listitem">
+<span>哈雷彗星</span>. (2018). <em>維基百科，自由的百科全書</em>.
+</div>
+<div id="ref-bopuerKeXueFaXianDeLuoJi2008" class="csl-entry" role="listitem">
+波普尔, 查汝强, 邱仁宗, &amp; 万木春. (2008). <em><span>科学发现的逻辑</span></em>. <span>中国美术学院出版社</span>.
+</div>
+<div id="ref-ChongLiTouJingXiaoYing2018" class="csl-entry" role="listitem">
+<span>重力透鏡效應</span>. (2018). <em>維基百科，自由的百科全書</em>.
+</div>
+<div id="ref-chenshaoqingJiLuYiJingChuXianYuJiJiangChuXianDeZaiXianWeiJi2016Ban2016" class="csl-entry" role="listitem">
+陳紹慶. (2016). <span>纪錄已經出現與即將出現的再現危機~2016版</span>. 收入 <em>暗微幽光</em>. http://scchen.com/zh/post/text_2016004/.
+</div>
+</div>
+</section></main><!-- /main --><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script><script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "已复制");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "已复制");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./02-fundamental.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./04-chronometry.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">CC-BY (2019-2023) 陳紹慶</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+</body></html>
