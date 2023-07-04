@@ -6,15 +6,15 @@
 
 取用範圍包括Week 1 \~ Week 6 以及Week 8。各部分主題與核心文獻列表如下。
 
-| 週次 | 主題                                        | 核心文獻                                                                                              |
+| 週次 | 主題                                        | 核心文獻                                                                                             |
 |:---------------:|:-------------------|:----------------------------------|
-|  1   | Reproducibility and replicability knowledge | @munafoManifestoReproducibleScience2017 , @gelmanGardenForkingPaths2013                               |
-|  2   | Conceptual and statistical knowledge        |                                                                                                       |
-|  3   | Reproducible analyses                       |                                                                                                       |
-|  4   | Preregistration                             |                                                                                                       |
-|  5   | FAIR data and materials                     |                                                                                                       |
-|  6   | Replication research                        |                                                                                                       |
-|  8   | Pedagogy                                    | @chopikHowWhetherTeach2018, @frankTeachingReplication2012, @waggePublishingResearchUndergraduate2019a |
+|  1   | Reproducibility and replicability knowledge | @mccabeCapturingDataEmergency2019a, @gelmanGardenForkingPaths2013                                    |
+|  2   | Conceptual and statistical knowledge        | @greenlandStatisticalTestsValues2016a , @buttonPowerFailureWhy2013a                                  |
+|  3   | Reproducible analyses                       | @wilsonGoodEnoughPractices2017a, @brown_grim_2017                                                    |
+|  4   | Preregistration                             | @nosekPreregistrationRevolution2018b, @havenPreregisteringQualitativeResearch2019                    |
+|  5   | FAIR data and materials                     | @levensteinDataSharingCaring2018a, @gilmorePracticalSolutionsSharing2018a                            |
+|  6   | Replication research                        | @klein2018, @graheHarnessingUndiscoveredResource2012                                                 |
+|  8   | Pedagogy                                    | @chopikHowWhetherTeach2018, @frankTeachingReplication2012, @waggePublishingResearchUndergraduate2019 |
 
 ### 資源2 醫學研究證據等級
 
