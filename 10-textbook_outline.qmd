@@ -18,7 +18,7 @@
 
 ### 資源2 醫學研究證據等級
 
-來源包括全球脊髓研究期刊的編輯啟事 [@globalspinej.DefinitionLevelsEvidence2015] 以及維基百科「證據等級」條目 [@HierarchyEvidence2023] 。說明實驗研究法與心理學領域會使用的各種研究方法，以符合科學方法標準運用，能展現的證據強度。
+來源包括全球脊髓研究期刊的編輯啟事 [@globalspinej.DefinitionLevelsEvidence2015] 以及維基百科「[證據等級](https://en.wikipedia.org/w/index.php?title=Hierarchy_of_evidence&oldid=1159294856)」條目 [@HierarchyEvidence2023] 。說明實驗研究法與心理學領域會使用的各種研究方法，以符合科學方法標準運用，能展現的證據強度。
 
 ### 資源3 科學方法圖解
 
