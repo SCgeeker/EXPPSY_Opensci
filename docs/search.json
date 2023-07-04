@@ -317,14 +317,14 @@
   {
     "objectID": "10-textbook_outline.html#寫作資源",
     "href": "10-textbook_outline.html#寫作資源",
-    "title": "附錄 C — 協作版教科書大綱",
+    "title": "附錄 C — 協作版教科書寫作計畫",
     "section": "C.1 寫作資源",
     "text": "C.1 寫作資源\n\nC.1.1 資源1 Forrt O&R 101\n取用範圍包括Week 1 ~ Week 6 以及Week 8。各部分主題與核心文獻列表如下。\n\n\n\n\n\n\n\n\n週次\n主題\n核心文獻\n\n\n\n\n1\nReproducibility and replicability knowledge\n(munafoManifestoReproducibleScience2017?) , (gelmanGardenForkingPaths2013?)\n\n\n2\nConceptual and statistical knowledge\n\n\n\n3\nReproducible analyses\n\n\n\n4\nPreregistration\n\n\n\n5\nFAIR data and materials\n\n\n\n6\nReplication research\n\n\n\n8\nPedagogy\nChopik et al. (2018), (frankTeachingReplication2012?), (waggePublishingResearchUndergraduate2019a?)\n\n\n\n\n\nC.1.2 資源2 醫學研究證據等級\n來源包括全球脊髓研究期刊的編輯啟事 (globalspinej.DefinitionLevelsEvidence2015?) 以及維基百科「證據等級」條目 (HierarchyEvidence2023?) 。說明實驗研究法與心理學領域會使用的各種研究方法，以符合科學方法標準運用，能展現的證據強度。\n\n\nC.1.3 資源3 科學方法圖解\n採用 Rao (1997) 提供的科學之輪圖解，說明實驗科學的循環過程。\n\n\n\n科學研究流程。取自 Rao (1997)。\n\n\n\n\n\n科學研究流程。取自Donovan 與 Mickey著，Bayesian Statistics for Beginners: A Step-by-Step Approach。黃駿譯。\n\n\n\n\nC.1.4 資源4 Scribbr研究方法條目\n節取與實驗研究法有直接內容的條目。\n\n\nC.1.5 資源5 9項認知心理學再現研究\n\n源自 Zwaan et al. (2017) 取九項認知心理學重要實驗，測試一項實驗讓同一位參與者進行兩次，兩次實驗結果的統計顯著性、效果量、以及貝氏因子等評估實驗結果可再現性的指標是否有差異。如果有差異，表示參與者對實驗程序是否陌生(Nonnaiveté)，能影響實驗結果的可再現性。如果沒有差異，表示實驗程序具有可重製性(reproducibility)。\n使用 Zwaan et al. (2017) 的9項實驗公開資料，設計範例專案。"
   },
   {
     "objectID": "10-textbook_outline.html#預想章節內容",
     "href": "10-textbook_outline.html#預想章節內容",
-    "title": "附錄 C — 協作版教科書大綱",
+    "title": "附錄 C — 協作版教科書寫作計畫",
     "section": "C.2 預想章節內容",
     "text": "C.2 預想章節內容\n\n待協作者會議討論\n\n\nChapter 1\n\n以開放科學取向學習實驗研究法的理由：取用資源1之week 8核心論文，搭配資源2討論實驗研究方在心理學研究應達到，但是未真正達到的原因。\n整合資料1之week 1核心論文的歧路花園觀點，以及資源3科學研究流程圖解，討論研究流程各環節的學習關鍵及誤區。\n以完成一項實驗研究流程會經過的路口及要做的選擇，擬訂全書布局。\n\nChapter 2\n\n核心主題：演繹推理\n資源1 week3 預先註註冊核心論文\n資源4條目： Writing Strong Research Questions , Writing hypotheses, Inductive vs. Deductive Research Approach , What Is Deductive Reasoning?\n可能遭遇的QRP\n\nChapter 3\n\n核心主題：設計有高證據力的實驗\n資源1 week 1, week 2, week4, week 6\n資源4條目：Guide to Experimental Design ,\n資源5：重覆實驗設定\n可能遭遇的QRP\n\nChapter 4\n\n核心主題：歸納推理\n資源1 week 3, week 4, week 5, week 6\n資源4條目：Inductive vs. Deductive Research Approach , Inductive Reasoning ,\n可能遭遇的QRP\n\nChapter 5\n\n核心主題：可重製的記憶實驗\n資源5記憶實驗公開資料\n\n\n\n\nChapter 6\n\n核心主題：可重製的知覺實驗\n資源5知覺實驗公開資料\n\nChapter 7\n\n核心主題：可重製的語言實驗\n資源5語言實驗公開資料\n\nChapter 8\n\n核心主題：計畫及報告的寫作與表達\n\nAppendix\n\n如何產生新想法\n效果量的計算方法\n其他…\n\n\n\n\n\n\nChopik, W. J., Bremner, R. H., Defever, A. M., & Keller, V. N. (2018). How (and Whether) to Teach Undergraduates About the Replication Crisis in Psychological Science. Teaching of Psychology, 45(2), 158–163. https://doi.org/10.1177/0098628318762900\n\n\nRao, C. R. (1997). Statistics and truth: Putting chance to work (2nd ed). World Scientific.\n\n\nZwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., & Zeelenberg, R. (2017). Participant Nonnaiveté and the reproducibility of cognitive psychology. Psychonomic Bulletin & Review, 1–5. https://doi.org/10.3758/s13423-017-1348-y"
   }
