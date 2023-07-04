@@ -38,8 +38,10 @@ book:
 #    - webexercises.qmd
     - '08-QRP.qmd'
     - '09-pilot.qmd'
+    - '10-textbook_outline.qmd'
     - 'references.qmd'
 bibliography: include/book.bib
+link-citations: true
 csl: include/apa.csl
 format:
   html:

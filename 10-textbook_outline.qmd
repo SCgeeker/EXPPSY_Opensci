@@ -1,0 +1,115 @@
+# 協作版教科書大綱 {#textbook}
+
+## 寫作資源
+
+### 資源1 [Forrt O&R 101](https://docs.google.com/document/d/1pfFro5MbwBHzzXTeM_lE1gjFuq7AnnKWSDWkVwOBAtE/edit#heading=h.9uywlkccaw1)
+
+取用範圍包括Week 1 \~ Week 6 以及Week 8。各部分主題與核心文獻列表如下。
+
+| 週次 | 主題                                        | 核心文獻                                                                                              |
+|:---------------:|:-------------------|:----------------------------------|
+|  1   | Reproducibility and replicability knowledge | @munafoManifestoReproducibleScience2017 , @gelmanGardenForkingPaths2013                               |
+|  2   | Conceptual and statistical knowledge        |                                                                                                       |
+|  3   | Reproducible analyses                       |                                                                                                       |
+|  4   | Preregistration                             |                                                                                                       |
+|  5   | FAIR data and materials                     |                                                                                                       |
+|  6   | Replication research                        |                                                                                                       |
+|  8   | Pedagogy                                    | @chopikHowWhetherTeach2018, @frankTeachingReplication2012, @waggePublishingResearchUndergraduate2019a |
+
+### 資源2 醫學研究證據等級
+
+來源包括全球脊髓研究期刊的編輯啟事 [@globalspinej.DefinitionLevelsEvidence2015] 以及維基百科「證據等級」條目 [@HierarchyEvidence2023] 。說明實驗研究法與心理學領域會使用的各種研究方法，以符合科學方法標準運用，能展現的證據強度。
+
+### 資源3 科學方法圖解
+
+採用 @raoStatisticsTruthPutting1997 提供的**科學之輪**圖解，說明實驗科學的循環過程。
+
+![科學研究流程。取自 Rao (1997)。](images/scimethod.png){fig-align="center"}
+
+[![科學研究流程。取自Donovan 與 Mickey著，Bayesian Statistics for Beginners: A Step-by-Step Approach。黃駿譯。](images/scimethod_color.JPG)](https://www.tenlong.com.tw/products/9789863127468)
+
+### 資源4 Scribbr研究方法條目
+
+節取與實驗研究法有直接內容的[條目](https://www.scribbr.com/category/methodology/)。
+
+### 資源5 9項認知心理學再現研究
+
+1.  源自 @zwaanParticipantNonnaiveteReproducibility2017 取九項認知心理學重要實驗，測試一項實驗讓同一位參與者進行兩次，兩次實驗結果的統計顯著性、效果量、以及貝氏因子等評估實驗結果可再現性的指標是否有差異。如果有差異，表示參與者對實驗程序是否陌生(Nonnaiveté)，能影響實驗結果的可再現性。如果沒有差異，表示實驗程序具有可重製性(reproducibility)。
+2.  使用 @zwaanParticipantNonnaiveteReproducibility2017 的9項實驗公開資料，設計範例專案。
+
+## 預想章節內容
+
+> 待協作者會議討論
+
+-   Chapter 1
+
+    -   以開放科學取向學習實驗研究法的理由：取用資源1之week 8核心論文，搭配資源2討論實驗研究方在心理學研究應達到，但是未真正達到的原因。
+
+    -   整合資料1之week 1核心論文的歧路花園觀點，以及資源3科學研究流程圖解，討論研究流程各環節的學習關鍵及誤區。
+
+    -   以完成一項實驗研究流程會經過的路口及要做的選擇，擬訂全書布局。
+
+-   Chapter 2
+
+    -   核心主題：演繹推理
+
+    -   資源1 week3 預先註註冊核心論文
+
+    -   資源4條目： [Writing Strong Research Questions](https://www.scribbr.com/research-process/research-questions/) , [Writing hypotheses](https://www.scribbr.com/methodology/hypothesis/), [Inductive vs. Deductive Research Approach](https://www.scribbr.com/methodology/inductive-deductive-reasoning/) , [What Is Deductive Reasoning?](https://www.scribbr.com/methodology/deductive-reasoning/)
+
+    -   可能遭遇的QRP
+
+-   Chapter 3
+
+    -   核心主題：設計有高證據力的實驗
+
+    -   資源1 week 1, week 2, week4, week 6
+
+    -   資源4條目：[Guide to Experimental Design](https://www.scribbr.com/methodology/experimental-design/) ,
+
+    -   資源5：重覆實驗設定
+
+    -   可能遭遇的QRP
+
+-   Chapter 4
+
+    -   核心主題：歸納推理
+
+    -   資源1 week 3, week 4, week 5, week 6
+
+    -   資源4條目：[Inductive vs. Deductive Research Approach](https://www.scribbr.com/methodology/inductive-deductive-reasoning/) , [Inductive Reasoning](https://www.scribbr.com/methodology/inductive-reasoning/) ,
+
+    -   可能遭遇的QRP
+
+-   Chapter 5
+
+    -   核心主題：可重製的記憶實驗
+
+    -   資源5記憶實驗公開資料
+
+```{=html}
+<!-- -->
+```
+-   Chapter 6
+
+    -   核心主題：可重製的知覺實驗
+
+    -   資源5知覺實驗公開資料
+
+-   Chapter 7
+
+    -   核心主題：可重製的語言實驗
+
+    -   資源5語言實驗公開資料
+
+-   Chapter 8
+
+    -   核心主題：計畫及報告的寫作與表達
+
+-   Appendix
+
+    -   如何產生新想法
+
+    -   效果量的計算方法
+
+    -   其他...
