@@ -7,7 +7,7 @@
 取用範圍包括Week 1 \~ Week 6 以及Week 8。各部分主題與核心文獻列表如下。
 
 | 週次 | 主題                                        | 核心文獻                                                                                             |
-|:---------------:|:-------------------|:----------------------------------|
+|:----:|:--------------------------------------------|:-----------------------------------------------------------------------------------------------------|
 |  1   | Reproducibility and replicability knowledge | @mccabeCapturingDataEmergency2019a, @gelmanGardenForkingPaths2013                                    |
 |  2   | Conceptual and statistical knowledge        | @greenlandStatisticalTestsValues2016a , @buttonPowerFailureWhy2013a                                  |
 |  3   | Reproducible analyses                       | @wilsonGoodEnoughPractices2017a, @brown_grim_2017                                                    |
@@ -87,9 +87,8 @@
 
     -   資源5記憶實驗公開資料
 
-```{=html}
 <!-- -->
-```
+
 -   Chapter 6
 
     -   核心主題：可重製的知覺實驗
