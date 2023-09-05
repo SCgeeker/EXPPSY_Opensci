@@ -2,15 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.427">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="陳紹慶、龔俊嘉、周蔚倫、林君昱">
-<meta name="dcterms.date" content="2023-06-26">
 <meta name="description" content="第一版(Quarto重製)">
 
-<title>實驗心理學：開放科學取向</title>
+<title>實驗心理學：開放科學取向 - 8&nbsp; 可重製的研究報告寫作</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro.html" rel="next">
+<link href="./09-QRP.html" rel="next">
+<link href="./07-language.html" rel="prev">
 <link href="./images/logos/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -65,8 +64,6 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,8 +80,7 @@ div.csl-indent {
     "search-more-matches-text": "更多本頁符合搜索條件結果",
     "search-clear-button-title": "清除搜索條件",
     "search-detached-cancel-button-title": "取消搜索",
-    "search-submit-button-title": "提交搜索",
-    "search-label": "搜索"
+    "search-submit-button-title": "提交搜索"
   }
 }</script>
 
@@ -106,10 +102,10 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">導讀</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-writing.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製的研究報告寫作</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -123,7 +119,7 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">實驗心理學：開放科學取向</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -147,14 +143,14 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="搜索"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">導讀</span></a>
   </div>
 </li>
@@ -202,7 +198,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-writing.html" class="sidebar-item-text sidebar-link">
+  <a href="./08-writing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製的研究報告寫作</span></span></a>
   </div>
 </li>
@@ -251,45 +247,26 @@ div.csl-indent {
     <h2 id="toc-title">目錄</h2>
    
   <ul>
-  <li><a href="#導讀" id="toc-導讀" class="nav-link active" data-scroll-target="#導讀">導讀</a>
+  <li><a href="#projects_writing" id="toc-projects_writing" class="nav-link active" data-scroll-target="#projects_writing"><span class="header-section-number">8.1</span> 報告寫作建議</a>
   <ul class="collapse">
-  <li><a href="#寫作動機" id="toc-寫作動機" class="nav-link" data-scroll-target="#寫作動機">寫作動機</a></li>
-  <li><a href="#本書的設計理念" id="toc-本書的設計理念" class="nav-link" data-scroll-target="#本書的設計理念">本書的設計理念</a></li>
-  <li><a href="#如何使用這本書" id="toc-如何使用這本書" class="nav-link" data-scroll-target="#如何使用這本書">如何使用這本書</a></li>
+  <li><a href="#報告格式與元素" id="toc-報告格式與元素" class="nav-link" data-scroll-target="#報告格式與元素"><span class="header-section-number">8.1.1</span> 報告格式與元素</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/index.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/08-writing.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">實驗心理學：開放科學取向</h1>
+<h1 class="title"><span id="writing" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製的研究報告寫作</span></span></h1>
 </div>
 
-<div>
-  <div class="description">
-    第一版(Quarto重製)
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">作者</div>
-    <div class="quarto-title-meta-contents">
-             <p>陳紹慶、龔俊嘉、周蔚倫、林君昱 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">發布日期</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 26, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -297,95 +274,87 @@ div.csl-indent {
 
 </header>
 
-
-<section id="導讀" class="level1 unnumbered">
-<h1 class="unnumbered">導讀</h1><p><img src="images/logos/logo.png" title="實驗心理學：開放科學取向" class="quarto-cover-image img-fluid"></p>
-<section id="寫作動機" class="level3">
-<h3 class="anchored" data-anchor-id="寫作動機">寫作動機</h3>
-<p>心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是心理科學研究養成入門。有百年歷史的心理學系都將這門課程設定為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到學涯起點，寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑。但是寫作這本書的第一版的2017年，正是心理科學再現危機(Replication Crisis)，逐漸轉變為心理科學可信度危機(Credibility Crisis)的時候 <span class="citation" data-cites="vazireImplicationsCredibilityRevolution2018 nosekReplicabilityRobustnessReproducibility2022">(<a href="references.html#ref-nosekReplicabilityRobustnessReproducibility2022" role="doc-biblioref">Nosek et al., 2022</a>; <a href="references.html#ref-vazireImplicationsCredibilityRevolution2018" role="doc-biblioref">Vazire, 2018</a>)</span>。</p>
-<p>2011年是歐美心理學界深刻感受粗糙的研究方法長期損害心理科學品質的關鍵時間。當年有曾於「科學」(Science)發表研究的荷蘭社會與人格心理學者Diederik Stapel被揭發研究造假<span class="citation" data-cites="stapelFakingScienceTrue2014">(<a href="references.html#ref-stapelFakingScienceTrue2014" role="doc-biblioref">Stapel, 2014</a>)</span>，以及美國資深社會與人格心理學者Daryl Bem發表結論有爭議且結果難以重現的超感知覺研究<span class="citation" data-cites="bemFeelingFutureExperimental2011">(<a href="references.html#ref-bemFeelingFutureExperimental2011" role="doc-biblioref">Bem, 2011</a>)</span>。後續緊接發生的類以案例，啟發一群心理學者提出改進心理科學研究流程的主張<span class="citation" data-cites="chambers_trust_2013 lindsayResearchPreregistration1012016">(<a href="references.html#ref-chambers_trust_2013" role="doc-biblioref">Chambers et al., 2013</a>; <a href="references.html#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">Lindsay et al., 2016</a>)</span>，並付諸於大規模再現研究<span class="citation" data-cites="camererEvaluatingReplicabilitySocial2018 kleinInvestigatingVariationReplicability2014 opensciencecollaborationEstimatingReproducibilityPsychological2015">(<a href="references.html#ref-camererEvaluatingReplicabilitySocial2018" role="doc-biblioref">Camerer et al., 2018</a>; <a href="references.html#ref-kleinInvestigatingVariationReplicability2014" role="doc-biblioref">Klein et al., 2014</a>; <a href="references.html#ref-opensciencecollaborationEstimatingReproducibilityPsychological2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span>。各種再現研究的結果顯示令人難以接受的事實：2015年之前發表於頂尖期刊的多數心理學研究，經過嚴謹設計的再現研究與資料分析，能重現原始發現的比例未達一半。對於正在學學習的學生來說，<strong>今天聽到教授講述某個有啟發性的研究，明天得知這項研究證據經不起考驗</strong>，這樣的狀況不再是只會從一些實驗室聽到的傳說故事，而是在任何大學學習場域隨時都會發生的情節。</p>
-<p>所謂「危機也是轉機」，在可信度危機時代開始接觸心理學的學生，更有機會發覺清楚的學習方向，這本教科書正是為了幫助學生認識如何設計有品質的心理學實驗，也能啟發獨立評估心理科學研究品質的多元能力。在這次的改版，我們定義「研究品質」能反應在研究結果的<i class="fa-solid fa-info-circle" aria-label="info-circle"></i><strong>證據強度</strong>。如何評估心理學實驗的證據強度，還有設計達到預期證據強度的實驗研究，不是能一蹴可及的目標，這本書提供一個明確學習起點：<strong>看到讓你想認識的研究結果，你會不會先去找看看研究者有沒有公開資料與預先註冊研究計畫？</strong> – 這也是這本書自我定位「開放科學取向」的基本理由。</p>
-<div class="callout callout-style-default callout-note callout-titled" title="簡介'證據強度'">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-簡介’證據強度’
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>簡單的解釋是一份測試兩種預測結果相異的實驗模型的實驗研究，清楚指示兩種模型預測相對成功程度的綜合指標。在各種實證科學領域，各式證據強度指標陸續產生，科學研究社群如何運用證據強度指標尚在觀察。</p>
-</div>
-</div>
-</div>
-</section>
-<section id="本書的設計理念" class="level3">
-<h3 class="anchored" data-anchor-id="本書的設計理念">本書的設計理念</h3>
-<p>建立學習情境才能保持學習者對重要課題的興趣與專注，基於相關學習理論及建議操作<span class="citation" data-cites="laveSituatedLearningLegitimate1991 chapmanUpgradeYourCargo2016">(<a href="references.html#ref-chapmanUpgradeYourCargo2016" role="doc-biblioref">Chapman, 2016</a>; <a href="references.html#ref-laveSituatedLearningLegitimate1991" role="doc-biblioref">Lave &amp; Wenger, 1991</a>)</span>，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。<!---第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。---></p>
-</section>
-<section id="如何使用這本書" class="level3">
-<h3 class="anchored" data-anchor-id="如何使用這本書">如何使用這本書</h3>
-<!--- 
-
-version 1 backup
-
--   寫作動機
-
-心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是研究操作養成入門。有百年歷史的心理學系都將這門課程設為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到起點。寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑，但是我寫這本書的時機，正是心理科學重製危機(Replication Crisis)，逐漸轉變為心理科學品質危機(Quality Crisis)。 
-
-2011年是歐美心理學界深刻感受粗糙的研究方法長期損害心理科學品質的關鍵一年。當年有曾於「科學」(Science)發表研究的荷蘭社會與人格心理學者Diederik Stapel被揭發研究造假[@stapelFakingScienceTrue2014]，以及美國資深社會與人格心理學者Daryl Bem發表結論有爭議且結果難以重現的超感知覺研究[@bemFeelingFutureExperimental2011]。後續緊接發生的類以案例，啟發一群心理學者提出改進心理科學研究流程的主張[@chambers_trust_2013; @lindsayResearchPreregistration1012016]，並付諸於大規模再現研究[@camererEvaluatingReplicabilitySocial2018;  @opensciencecollaborationEstimatingReproducibilityPsychological2015]。行動結果顯示令人難以接受的事實：近幾年發表於頂尖期刊的多數心理學研究，經過嚴謹的設計再現研究與分析，能重現原始發現的比例未達一半。對於正在學學習的學生來說，今天聽到教授講述某個有啟發性的研究，明天得知這項研究證據經不起考驗，這樣的狀況不再是想像，而是隨時可能會發生的日常情節。
-
-如何讓心理學學生在品質危機時代，有個清楚的方向，是我編寫這本書的目的。首先是心理建設：今天起要學習實驗研究法的學生，正面臨放任心理科學每況愈下，或參與重建品質的抉擇機會。不論你會不會以心理學研究為終生事業，有能明辨心理科學研究品質的眼光，就能為重建心理科學品質貢獻一點力量。什麼樣的知識份子是一位有明辨心理科學研究品質的心理學人，這本書有個明確學習目標：**看到讓你想分享的研究結果，你會先去找研究者有沒有公開資料與註冊研究計畫？**
-
--   本書的設計理念
-
-建立學習情境才能保持學習者對重要課題的專注，基於相關學習理論及建議操作[@laveSituatedLearningLegitimate1991; @chapmanUpgradeYourCargo2016]，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。
-
--   如何使用這本書
-
-本書第二單元介紹心理科學領域的開放科學實踐者常用的工具，先展示出來是讓學生得知會在規劃及執行再現專案的過程，會運用的工具。我建議教師在配合第三到第六單元，設計讓學生學習使用各種工具的作業。第三到第六單元設計的內容，是個人熟知或有完整考資源的心理學研究課題，教師可根據個人專長，參考單元架構設計自己的課程內容。第七單元整理最新預先註冊案例及個人教研經驗，提供教師及學生規劃及執行自己的專案。
-
-以電子書寫作能在每一次的改良過程，持續融合最新的資訊及有用指南。最初版電子書上線前，已經在OSF逐年更新教學大綱及參考資訊，現在彙整於公開的OSF專案( osf.io/a4ctm/ )。除了我自己的教學資料，也歡迎取用本書的教師運用OSF公開教學資料。本書附錄將逐年紀錄，見證心理學研究教學的改進過程。
-
+<section id="projects_writing" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="projects_writing"><span class="header-section-number">8.1</span> 報告寫作建議</h2>
+<p>完成資料分析的寫作報告，實際的樣式要遵守呈現報告的用途指南，如期刊的投稿格式、教師指定的報告樣式。心理學的各種報告樣式，基本遵守美國心理學會頒佈的出版手冊<span class="citation" data-cites="americanpsychologicalassociationPublicationManualAmerican2010a">(<a href="references.html#ref-americanpsychologicalassociationPublicationManualAmerican2010a" role="doc-biblioref">American Psychological Association, 2010</a>)</span>，編輯者可依實際需要調整部分寫作細節。寫作者養成依出版手冊撰寫論文報告的習慣，足以應付任何報告寫作要求。</p>
+<section id="報告格式與元素" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="報告格式與元素"><span class="header-section-number">8.1.1</span> 報告格式與元素</h3>
+<p>此處引用 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="references.html#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 的建議，搭配預先註冊的觀念，說明一份完整報告的各部分寫作建議。</p>
+<p><strong>標題頁</strong></p>
+<p>建議：口語化問句，描述獨變項操作如何導致依變項的測量結果。</p>
+<!---
+範例：故事情境會不會讓你覺得故事主角誤會看到的事情？
 --->
+<p><strong>摘要</strong></p>
+<p>建議：以百餘字簡介整份研究報告的要點。</p>
+<ul>
+<li>開頭句說明研究目標與規劃研究的想法。</li>
+<li>簡述研究狀況與參與者條件。</li>
+<li>簡述研究方法：獨變項的設定，依變項的測量方式。</li>
+<li>簡述主要發現：除了重要統計指標，也可用一句話說明。</li>
+<li>字數未達上限，可說明研究結果的重要貢獻。</li>
+</ul>
+<p><strong>緒論</strong></p>
+<ul>
+<li>三建議：開場以簡明易懂的案例或通俗知識說明標題涵義；呈現與這次研究最有關係的兩到三項過去發現；建立這次研究假設到方法的邏輯關聯。</li>
+<li>三不可：一網打盡所有過去發現；仔細描述所有相關研究的細節；用雜文筆調寫作。</li>
+<li>目標：以過去文獻說明獨變項設定與使用測量方法的理由，預測可能發現的結果。</li>
+<li>假設：使用精確用詞描述獨變項與依變項，說明預測成立的原理。</li>
+</ul>
+<p><strong>方法</strong></p>
+<ul>
+<li>說明如何進行實驗的重要細節，讓其他研究者足以根據描述完整再現這次研究為原則。</li>
+<li>可適當引用放置公開材料的資料庫網址，提供讀者自行取用。</li>
+</ul>
+<p><strong>設計</strong></p>
+<ul>
+<li>明列獨變項的隨機分派方法、依變項的測量與分數轉換、不做分派的控制變項處置方式、非主要依變項的其他變項如何測量。</li>
+<li>交互平衡是最常見的隨機分派方法。</li>
+<li>說明估計考驗力的方法。有相同設計的過去研究，可做為估計考驗力的資訊。</li>
+</ul>
+<p><strong>參與者</strong></p>
+<ul>
+<li>說明參與者加入研究的管道．平均背景資訊與權益保障措施。</li>
+<li>說明參與者人數，年齡範圍等，最好有考驗力分析做輔助資訊。</li>
+</ul>
+<p><strong>材料</strong></p>
+<ul>
+<li>介紹使用的字詞、問卷、電腦設備等。不需交待詳細內容與規格，而是展現獨變項操作的差異化條件。</li>
+<li>文字或圖像材料可放置於可取用的網路資料庫，提供讀者可獲得材料的連結。</li>
+</ul>
+<p><strong>程序</strong></p>
+<ul>
+<li>說明執行研究的正確過程，足以讓其他研究者重新再現。研究過程使用的指示語、說明、紀錄表等次級文件、可發佈於可取用的網路資料庫。</li>
+</ul>
+<p><strong>結果</strong></p>
+<ul>
+<li>通常先呈現描述統計，再呈現推論統計。這個部分不應詮釋統計結果。</li>
+<li>研究者要正確且清晰地報告結果，APA寫作規範有數值與統計符號的建議表達。</li>
+<li>採用動態文本(dynamic documents)寫作，讀者能使用公開資料查核報告中的數據與圖表。</li>
+<li>如果一句話要呈現的數值超過三個種類，而且總共有十個以上的數字，最好使用表格呈現。</li>
+</ul>
+<p><strong>討論</strong></p>
+<ul>
+<li>使用一般的書面語概述實驗結果，以及指出是否符合假設的預測。</li>
+<li>比較與之前研究的同異處。</li>
+<li>這項研究結果能擴展的知識界限。</li>
+<li>未來可改進的地方。</li>
+<li>如果研究結果有可應用性，可表達之。如果有註冊計畫書，應限制在計畫設定的範圍之內。</li>
+<li>以三句或四句結尾，通常是摘要的後半部。</li>
+</ul>
+<p><strong>參考文獻</strong></p>
+<ul>
+<li>依指定樣示排列。</li>
+<li>運用能管理與編輯樣式的書目管理軟體，編輯事半功倍。</li>
+</ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
-<div id="ref-bemFeelingFutureExperimental2011" class="csl-entry" role="listitem">
-Bem, D. J. (2011). Feeling the future: Experimental evidence for anomalous retroactive influences on cognition and affect. <em>Journal of Personality and Social Psychology</em>, <em>100</em>, 407–425. <a href="https://doi.org/10.1037/a0021524">https://doi.org/10.1037/a0021524</a>
+<div id="ref-americanpsychologicalassociationPublicationManualAmerican2010a" class="csl-entry" role="listitem">
+American Psychological Association (Ed.). (2010). <em>Publication manual of the <span>American Psychological Association</span></em> (6th ed). <span>American Psychological Association</span>.
 </div>
-<div id="ref-camererEvaluatingReplicabilitySocial2018" class="csl-entry" role="listitem">
-Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H. (2018). Evaluating the replicability of social science experiments in <span>Nature</span> and <span>Science</span> between 2010 and 2015. <em>Nature Human Behaviour</em>, 1. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>
-</div>
-<div id="ref-chambers_trust_2013" class="csl-entry" role="listitem">
-Chambers, C., Munafo, M., &amp; signatories, more than 80. (2013, June 5). Trust in science would be improved by study pre-registration. <em>The Guardian: Science</em>. <a href="http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration">http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration</a>
-</div>
-<div id="ref-chapmanUpgradeYourCargo2016" class="csl-entry" role="listitem">
-Chapman, D. (2016, December 31). <em>Upgrade your cargo cult for the win</em>. <span>Meaningness</span>. <a href="https://meaningness.com/metablog/upgrade-your-cargo-cult">https://meaningness.com/metablog/upgrade-your-cargo-cult</a>
-</div>
-<div id="ref-kleinInvestigatingVariationReplicability2014" class="csl-entry" role="listitem">
-Klein, R. A., Ratliff, K. A., Vianello, M., Adams Jr, R. B., Bahník, Š., Bernstein, M. J., Bocian, K., Brandt, M. J., Brooks, B., Brumbaugh, C. C., Cemalcilar, Z., Chandler, J., Cheong, W., Davis, W. E., Devos, T., Eisner, M., Frankowska, N., Furrow, D., Galliani, E. M., … Nosek, B. A. (2014). Investigating <span>Variation</span> in <span>Replicability</span>. <em>Social Psychology</em>, <em>45</em>, 142–152. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>
-</div>
-<div id="ref-laveSituatedLearningLegitimate1991" class="csl-entry" role="listitem">
-Lave, J., &amp; Wenger, E. (1991). <em>Situated learning: Legitimate peripheral participation</em>. <span>Cambridge University Press</span>.
-</div>
-<div id="ref-lindsayResearchPreregistration1012016" class="csl-entry" role="listitem">
-Lindsay, S., Simons, D., &amp; Lilienfeld, S. (2016). Research <span>Preregistration</span> 101. <em>Observer</em>, <em>29</em>(10), 14–16. <a href="https://www.psychologicalscience.org/observer/research-preregistration-101">https://www.psychologicalscience.org/observer/research-preregistration-101</a>
-</div>
-<div id="ref-nosekReplicabilityRobustnessReproducibility2022" class="csl-entry" role="listitem">
-Nosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., Fidler, F., Hilgard, J., Struhl, M. K., Nuijten, M. B., Rohrer, J. M., Romero, F., Scheel, A. M., Scherer, L. D., Schönbrodt, F. D., &amp; Vazire, S. (2022). Replicability, <span>Robustness</span>, and <span>Reproducibility</span> in <span>Psychological Science</span>. <em>Annual Review of Psychology</em>, <em>73</em>(1), annurev-psych-020821-114157. <a href="https://doi.org/10.1146/annurev-psych-020821-114157">https://doi.org/10.1146/annurev-psych-020821-114157</a>
-</div>
-<div id="ref-opensciencecollaborationEstimatingReproducibilityPsychological2015" class="csl-entry" role="listitem">
-Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
-</div>
-<div id="ref-stapelFakingScienceTrue2014" class="csl-entry" role="listitem">
-Stapel, D. (2014). <em>Faking <span>Science</span>: <span>A True Story</span> of <span>Academic Fraud</span></em> (N. J. L. Brown, Trans.).
-</div>
-<div id="ref-vazireImplicationsCredibilityRevolution2018" class="csl-entry" role="listitem">
-Vazire, S. (2018). Implications of the <span>Credibility Revolution</span> for <span>Productivity</span>, <span>Creativity</span>, and <span>Progress</span>. <em>Perspectives on Psychological Science: A Journal of the Association for Psychological Science</em>, <em>13</em>(4), 411–417. <a href="https://doi.org/10.1177/1745691617751884">https://doi.org/10.1177/1745691617751884</a>
+<div id="ref-saulHowWriteLab2011" class="csl-entry" role="listitem">
+Saul, M. (2011). <em>How to <span>Write</span> a <span>Lab Report</span> | <span>Simply Psychology</span></em>. <a href="https://www.simplypsychology.org/research-report.html">https://www.simplypsychology.org/research-report.html</a>
 </div>
 </div>
 </section>
@@ -1182,10 +1151,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./07-language.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">緒論</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./09-QRP.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">產生不良研究的操作巧門</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

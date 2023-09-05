@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02-fundamental.html" rel="next">
+<link href="./02-deductive.html" rel="next">
 <link href="./index.html" rel="prev">
 <link href="./images/logos/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -163,20 +163,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-fundamental.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span></a>
+  <a href="./02-deductive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">演繹推理</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-case.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">可重製的研究設計</span></span></a>
+  <a href="./03-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">可重製的實驗設計</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-chronometry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
+  <a href="./04-inductive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">歸納推理</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -187,14 +187,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-language.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+  <a href="./06-chronometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">可重製的心理計時學研究</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-project.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製研究實作指南</span></span></a>
+  <a href="./07-language.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">可重製的研究報告寫作</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -208,19 +214,19 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-QRP.html" class="sidebar-item-text sidebar-link">
+  <a href="./09-QRP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">產生不良研究的操作巧門</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-pilot.html" class="sidebar-item-text sidebar-link">
+  <a href="./10-pilot.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">效果量的計算方法</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-textbook_outline.html" class="sidebar-item-text sidebar-link">
+  <a href="./11-textbook_outline.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">協作版教科書寫作計畫</span></span></a>
   </div>
 </li>
@@ -319,12 +325,12 @@ div.csl-indent {
 </section>
 <section id="intro_opensci_opencode" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="intro_opensci_opencode"><span class="header-section-number">1.1.2</span> 開放資料及分析程式碼</h3>
-<p>閱讀論文報告的重點除了作者提出的問題假設，還有研究結果的解讀，心理科學家還要能解讀表達統計分析資訊的圖表，以及各項數值。如果讀者是熟悉資料到統計資訊的分析流程的科學家，看到圖表與數值，會不由自主地反推論文作者如何從原始資料，使用熟悉的工具，一步一步地輸出為圖表數值。資料科學家 <span class="citation" data-cites="peng2011">Peng (<a href="references.html#ref-peng2011" role="doc-biblioref">2011</a>)</span> 提出<strong>計算可重製性(computational reproducibility)</strong>的主張，說明凡是有輸出統計資訊的論文，作者有責任公開原始資料及資料欄位說明(Open Data)，以及產製圖表及統計數值的分析程式碼或套裝軟體腳本(Open Code)。當前推動開放科學操作的各領域科學家，提倡需要分析數據的科學研究人員，應該認識公平四原則(FAIR principles)，持續學習使用符合四原則的最新操作方法 <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016a wilkinsonDesignFrameworkExemplar2018">(<a href="references.html#ref-wilkinsonFAIRGuidingPrinciples2016a" role="doc-biblioref">Wilkinson et al., 2016</a>, <a href="references.html#ref-wilkinsonDesignFrameworkExemplar2018" role="doc-biblioref">2018</a>)</span> 。</p>
+<p>閱讀論文報告的重點除了作者提出的問題假設，還有研究結果的解讀，心理科學家還要能解讀表達統計分析資訊的圖表，以及各項數值。如果讀者是熟悉資料到統計資訊的分析流程的科學家，看到圖表與數值，會不由自主地反推論文作者如何從原始資料，使用熟悉的工具，一步一步地輸出為圖表數值。資料科學家 <span class="citation" data-cites="pengReproducibleResearchComputational2011">Peng (<a href="references.html#ref-pengReproducibleResearchComputational2011" role="doc-biblioref">2011</a>)</span> 提出<strong>計算可重製性(computational reproducibility)</strong>的主張，說明凡是有輸出統計資訊的論文，作者有責任公開原始資料及資料欄位說明(Open Data)，以及產製圖表及統計數值的分析程式碼或套裝軟體腳本(Open Code)。當前推動開放科學操作的各領域科學家，提倡需要分析數據的科學研究人員，應該認識公平四原則(FAIR principles)，持續學習使用符合四原則的最新操作方法 <span class="citation" data-cites="wilkinsonFAIRGuidingPrinciples2016 wilkinsonDesignFrameworkExemplar2018">(<a href="references.html#ref-wilkinsonFAIRGuidingPrinciples2016" role="doc-biblioref">Wilkinson et al., 2016</a>, <a href="references.html#ref-wilkinsonDesignFrameworkExemplar2018" role="doc-biblioref">2018</a>)</span> 。</p>
 </section>
 <section id="intro_opensci_openmaterials" class="level3" data-number="1.1.3">
 <h3 data-number="1.1.3" class="anchored" data-anchor-id="intro_opensci_openmaterials"><span class="header-section-number">1.1.3</span> 開放研究材料</h3>
 <p>實驗心理學與許多科學領域一樣，收集資料與分析資料都是專業研究人員要具備的基本能力。雖然場景不同，收集資料與分析資料都是講求按照已設定的規章計畫執行及判斷。以前的實驗心理學課程放較多的篇幅談如何設計有收集有效資料的實驗，從計算的可重製性延伸，這本書講究<strong>方法的可重製性(Reproducibility of methodology)</strong>，討論如何設計任何有能力的研究者，皆可重製的實驗方法。方法的可重製性不只是心理學，也是所有需要收集資料的科學領域都要達到的共同標準。</p>
-<p>根據美國國家科學基金會的報告 <span class="citation" data-cites="zotero-23517">(<a href="references.html#ref-zotero-23517" role="doc-biblioref"><strong>zotero-23517?</strong></a>)</span>，可重製的研究方法需要能讓任何經過合格科學研究訓練的人員，有足夠的資訊重新設計及執行已發表的研究，且得到同樣經得起分析檢驗的實驗結果。所以心理學的<strong>開放研究材料</strong>(Open Materials)，不只是將實驗用的問卷或程序腳本等材料開放讓任何人取用，還有讓有經過訓練的研究人員能執行有效的重製研究。透過本書學習實驗研究的學生，將透過後續單元的講授及習作，成長為有能力運用研究報告的開放資訊，設計及執行重製研究的研究人員。</p>
+<p>根據美國國家科學基金會的特別工作小組會議報告 <span class="citation" data-cites="committeeonreproducibilityandreplicabilityinscienceReproducibilityReplicabilityScience2019a">(<a href="references.html#ref-committeeonreproducibilityandreplicabilityinscienceReproducibilityReplicabilityScience2019a" role="doc-biblioref">Committee on Reproducibility and Replicability in Science, 2019</a>)</span> ，可重製的研究方法需要能讓任何經過合格科學研究訓練的人員，有足夠的資訊重新設計及執行已發表的研究，且得到同樣經得起分析檢驗的實驗結果。所以心理學的<strong>開放研究材料</strong>(Open Materials)，不只是將實驗用的問卷或程序腳本等材料開放讓任何人取用，還有讓有經過訓練的研究人員能執行有效的重製研究。透過本書學習實驗研究的學生，將透過各單元提供的習作，成長為有能力運用研究報告的開放資訊，設計及執行重製研究的研究人員。</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="開放知識的價值" style="color: gray">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -439,7 +445,7 @@ div.csl-indent {
 <p>即使學透實驗設計與統計分析的原則技巧，實驗研究過程中需要透過人類大腦思考的時候(也就是 <a href="#fig-scimethod">圖&nbsp;<span>1.1</span></a> 裡的箭頭)，無論研究人員有沒有意識，必然存在主觀意識介入，影響階段性成果的時刻。這些受到主觀意識影響的研究操作，在研究報告通常不會揭露，導致其他研究者無法重製，進而造成研究結果無法再現。所以為了使用本書學習的讀者，或者根據本書發展課程的教師，這一節整理最新的預先註冊模板，以及註冊報告投稿指引，提供有需要的讀者使用。本書後續單元將使用其中一套模版，設計成學習作業。</p>
 <section id="預先註冊" class="level3" data-number="1.5.1">
 <h3 data-number="1.5.1" class="anchored" data-anchor-id="預先註冊"><span class="header-section-number">1.5.1</span> 預先註冊</h3>
-<p>簡單的操作說明是研究者必須按照嚴格按照研究計畫的設定，按步執行及紀錄收集及分析資料的步驟。本書作者認為，一份能讓研究者按步執行的預先計畫書，至少要有四項條件：(1)有明確的研究問題(Research Question)；(2)掌握樣本母群與合理樣本數(Population and sample size)；(3)能回應研究問題的研究設計(General design)；(4)依照設定的變項(variables)或已編碼的資料集(dataset)處理資料。 在編寫本書時，已經出現因應各式研究需要或平台條件，而設計的預先註冊模板，</p>
+<p>簡單的操作說明是研究者必須按照嚴格按照研究計畫的設定，按步執行及紀錄收集及分析資料的步驟。本書作者認為，一份能讓研究者按步執行的預先計畫書，至少要有四項條件：(1)有明確的研究問題(Research Question)；(2)掌握樣本母群與合理樣本數(Population and sample size)；(3)能回應研究問題的研究設計(General design)；(4)依照設定的變項(variables)或已編碼的資料集(dataset)處理資料。 在編寫本書時，已經出現因應各式研究需要或平台條件，而設計的預先註冊模板，如下表的整理。</p>
 <table class="table">
 <caption>預先註冊模板彙整。改編自 Penningon (2023) 表5.3。</caption>
 <thead>
@@ -458,7 +464,7 @@ div.csl-indent {
 <tr class="even">
 <td><a href="https://osf.io/zab38/wiki/home/">OSF Prereg</a></td>
 <td>量化/實驗研究</td>
-<td><span class="citation" data-cites="bowmanOSFPreregTemplate2020">Bowman et al. (<a href="references.html#ref-bowmanOSFPreregTemplate2020" role="doc-biblioref">n.d.</a>)</span></td>
+<td><span class="citation" data-cites="bowmanOSFPreregTemplate2020">Bowman et al. (<a href="references.html#ref-bowmanOSFPreregTemplate2020" role="doc-biblioref">2020</a>)</span></td>
 </tr>
 <tr class="odd">
 <td><a href="https://www.psycharchives.org/en/item/088c79cb-237c-4545-a9e2-3616d6cc8453">PRP-Quant</a></td>
@@ -468,12 +474,12 @@ div.csl-indent {
 <tr class="even">
 <td><a href="https://osf.io/jqxfz/">Secondary data preregistration</a></td>
 <td>既存資料再分析/量化</td>
-<td><span class="citation" data-cites="vandenakkerPreregistrationSecondaryData2021">Akker et al. (<a href="references.html#ref-vandenakkerPreregistrationSecondaryData2021" role="doc-biblioref">2021</a>)</span></td>
+<td><span class="citation" data-cites="vandenakkerPreregistrationSecondaryData2021">van den Akker et al. (<a href="references.html#ref-vandenakkerPreregistrationSecondaryData2021" role="doc-biblioref">2021</a>)</span></td>
 </tr>
 <tr class="odd">
 <td><a href="https://osf.io/dvb2e/">fMRI preregistration</a></td>
 <td>功能核磁共振成像實驗設計</td>
-<td><span class="citation" data-cites="beyerFMRIPreregistrationTemplate2021">Beyer et al. (<a href="references.html#ref-beyerFMRIPreregistrationTemplate2021" role="doc-biblioref">n.d.</a>)</span></td>
+<td><span class="citation" data-cites="beyerFMRIPreregistrationTemplate2021">Beyer et al. (<a href="references.html#ref-beyerFMRIPreregistrationTemplate2021" role="doc-biblioref">2021</a>)</span></td>
 </tr>
 <tr class="even">
 <td><a href="https://osf.io/zab38/wiki/home/">Replication Recipe</a></td>
@@ -483,7 +489,7 @@ div.csl-indent {
 <tr class="odd">
 <td><a href="https://osf.io/k5wns/">Preregistration in social psychology</a></td>
 <td>量化/實驗社會心理學</td>
-<td><span class="citation" data-cites="vantveerPreRegistrationSocialPsychology2017">van’t Veer &amp; Giner-Sorolla (<a href="references.html#ref-vantveerPreRegistrationSocialPsychology2017" role="doc-biblioref">2017</a>)</span></td>
+<td><span class="citation" data-cites="vantveerPreRegistrationSocialPsychology2017">van’t Veer &amp; Giner-Sorolla (<a href="references.html#ref-vantveerPreRegistrationSocialPsychology2017" role="doc-biblioref">2017, April 7</a>)</span></td>
 </tr>
 <tr class="even">
 <td><a href="https://doi.org/10.6084/mq.figshare.16665981.v1">Cognitive modelling</a></td>
@@ -524,9 +530,71 @@ We would not have been able to get to where we are now, in a period of deep refl
 </section>
 <section id="intro_improve" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="intro_improve"><span class="header-section-number">1.6</span> 設計高強度證據的實驗研究法</h2>
-<p>（需要其他章節寫作告一段設，再確定這一節的主題及內容） 介紹本書布局，如何使用本書學習以及找尋真正有助實踐科學方法的資源</p>
-<p>描述如何透過開放合作專案，讓學生透過實作研究專案，學習最高證據力的實驗研究方法。</p>
+<p>本書以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 重製的九項認知心理學研究為主要教材，第二單元到第四單元以九項原始研究及重製研究的公開資料，學習研究者如何運用<strong>演繹推理</strong>設定研究問題與研究假設，如何根據研究假設提出有效的<strong>實驗設計</strong>，以及如何運用<strong>歸納推理</strong>選擇合適的統計模型以分析實驗資料。第五單元到第七單元依序以九項實驗的研究主題，習作如何規劃與執行符合預先註冊原則的實驗研究。九項實驗的主題及文獻來源如下表：</p>
+<table class="table">
+<caption><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 九項重製研究的主題及實驗課題。</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">研究主題</th>
+<th style="text-align: center;">實驗課題</th>
+<th style="text-align: center;">參考文獻</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">記憶</td>
+<td style="text-align: center;">序列效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="greeneSpacingEffectsMemory1989">Greene (<a href="references.html#ref-greeneSpacingEffectsMemory1989" role="doc-biblioref">1989</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">記憶</td>
+<td style="text-align: center;">假記憶典範</td>
+<td style="text-align: center;"><span class="citation" data-cites="roedigerCreatingFalseMemories1995">Roediger &amp; McDermott (<a href="references.html#ref-roedigerCreatingFalseMemories1995" role="doc-biblioref">1995</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">記憶</td>
+<td style="text-align: center;">區間效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="greeneSpacingEffectsMemory1989">Greene (<a href="references.html#ref-greeneSpacingEffectsMemory1989" role="doc-biblioref">1989</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">知覺</td>
+<td style="text-align: center;">反應-位置相符效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="craftProcessingSymbolicInformation1970">Craft &amp; Simon (<a href="references.html#ref-craftProcessingSymbolicInformation1970" role="doc-biblioref">1970</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">知覺</td>
+<td style="text-align: center;">反應-方向相符效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="eimerEffectsMaskedStimuli1998">Eimer &amp; Schlaghecken (<a href="references.html#ref-eimerEffectsMaskedStimuli1998" role="doc-biblioref">1998</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">知覺</td>
+<td style="text-align: center;">誘導物干擾效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="eriksenEffectsNoiseLetters1974">Eriksen &amp; Eriksen (<a href="references.html#ref-eriksenEffectsNoiseLetters1974" role="doc-biblioref">1974</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">語言</td>
+<td style="text-align: center;">重覆反應效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">Forster &amp; Davis (<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref">1984</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">語言</td>
+<td style="text-align: center;">關聯性促發效應</td>
+<td style="text-align: center;"><span class="citation" data-cites="meyerFacilitationRecognizingPairs1971">Meyer &amp; Schvaneveldt (<a href="references.html#ref-meyerFacilitationRecognizingPairs1971" role="doc-biblioref">1971</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">語言</td>
+<td style="text-align: center;">物件形狀模擬</td>
+<td style="text-align: center;"><span class="citation" data-cites="zwaanLanguageComprehendersMentally2002">Zwaan et al. (<a href="references.html#ref-zwaanLanguageComprehendersMentally2002" role="doc-biblioref">2002</a>)</span></td>
+</tr>
+</tbody>
+</table>
 <!--- recycled words
+（需要其他章節寫作告一段設，再確定這一節的主題及內容） 
+布局，如何使用本書學習以及找尋真正有助實踐科學方法的資源
+
+描述如何透過開放合作專案，讓學生透過實作研究專案，學習最高證據力的實驗研究方法。
+
+
 
 > 歧路花園範例文字
 觀看健康飲食廣告後，人們是否會做更多的運動？
@@ -693,20 +761,17 @@ Wagge et al. highlight classroom replications by students as a way to improve re
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
-<div id="ref-vandenakkerPreregistrationSecondaryData2021" class="csl-entry" role="listitem">
-Akker, O. R. van den, Weston, S., Campbell, L., Chopik, B., Damian, R., Davis-Kean, P., Hall, A., Kosie, J., Kruse, E., Olsen, J., Ritchie, S., Valentine, K. D., van ’t Veer, A., &amp; Bakker, M. (2021). Preregistration of secondary data analysis: A template and tutorial. <em>Meta-Psychology</em>, <em>5</em>. <a href="https://doi.org/10.15626/MP.2020.2625">https://doi.org/10.15626/MP.2020.2625</a>
-</div>
 <div id="ref-beyerFMRIPreregistrationTemplate2021" class="csl-entry" role="listitem">
-Beyer, F., Flannery, J., Gau, R., Janssen, L., Schaare, L., Hartmann, H., Nilsonne, G., Martin, S., Khalil, A., Lipp, I., Puhlmann, L., Heinrichs, H., Mohamed, A., Herholz, P., Sicorello, M., &amp; Panagoulas, E. (n.d.). <em>A fMRI pre-registration template</em>.
+Beyer, F., Flannery, J., Gau, R., Janssen, L., Schaare, L., Hartmann, H., Nilsonne, G., Martin, S., Khalil, A., Lipp, I., Puhlmann, L., Heinrichs, H., Mohamed, A., Herholz, P., Sicorello, M., &amp; Panagoulas, E. (2021, September 21). <em>A <span class="nocase">fMRI</span> pre-registration template</em>. <a href="https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b">https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b</a>
 </div>
 <div id="ref-bosnjakTemplatePreregistrationQuantitative2022" class="csl-entry" role="listitem">
-Bosnjak, M., Fiebach, C. J., Mellor, D., Mueller, S., O’Connor, D. B., Oswald, F. L., &amp; Sokol, R. I. (2022). A template for preregistration of quantitative research in psychology: Report of the joint psychological societies preregistration task force. <em>American Psychologist</em>, <em>77</em>(4), 602–615. <a href="https://doi.org/10.1037/amp0000879">https://doi.org/10.1037/amp0000879</a>
+Bosnjak, M., Fiebach, C. J., Mellor, D., Mueller, S., O’Connor, D. B., Oswald, F. L., &amp; Sokol, R. I. (2022). A template for preregistration of quantitative research in psychology: <span>Report</span> of the joint psychological societies preregistration task force. <em>American Psychologist</em>, <em>77</em>(4), 602–615. <a href="https://doi.org/10.1037/amp0000879">https://doi.org/10.1037/amp0000879</a>
 </div>
 <div id="ref-bowmanOSFPreregTemplate2020" class="csl-entry" role="listitem">
-Bowman, S., DeHaven, A. C., Errington, T. M., Hardwicke, T. E., Mellor, D. T., Nosek, B. A., &amp; Soderberg, C. K. (n.d.). <em>OSF prereg template</em>. <a href="https://doi.org/10.31222/osf.io/epgjd">https://doi.org/10.31222/osf.io/epgjd</a>
+Bowman, S., DeHaven, A. C., Errington, T. M., Hardwicke, T. E., Mellor, D. T., Nosek, B. A., &amp; Soderberg, C. K. (2020, January 22). <em><span>OSF Prereg Template</span></em>. <a href="https://doi.org/10.31222/osf.io/epgjd">https://doi.org/10.31222/osf.io/epgjd</a>
 </div>
 <div id="ref-brandtReplicationRecipeWhat2014a" class="csl-entry" role="listitem">
-Brandt, M. J., IJzerman, H., Dijksterhuis, A., Farach, F. J., Geller, J., Giner-Sorolla, R., Grange, J. A., Perugini, M., Spies, J. R., &amp; van ’t Veer, A. (2014). The replication recipe: What makes for a convincing replication? <em>Journal of Experimental Social Psychology</em>, <em>50</em>, 217–224. <a href="https://doi.org/10.1016/j.jesp.2013.10.005">https://doi.org/10.1016/j.jesp.2013.10.005</a>
+Brandt, M. J., IJzerman, H., Dijksterhuis, A., Farach, F. J., Geller, J., Giner-Sorolla, R., Grange, J. A., Perugini, M., Spies, J. R., &amp; van ’t Veer, A. (2014). The <span>Replication Recipe</span>: <span>What</span> makes for a convincing replication? <em>Journal of Experimental Social Psychology</em>, <em>50</em>, 217–224. <a href="https://doi.org/10.1016/j.jesp.2013.10.005">https://doi.org/10.1016/j.jesp.2013.10.005</a>
 </div>
 <div id="ref-camererEvaluatingReplicabilitySocial2018" class="csl-entry" role="listitem">
 Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H. (2018). Evaluating the replicability of social science experiments in <span>Nature</span> and <span>Science</span> between 2010 and 2015. <em>Nature Human Behaviour</em>, 1. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>
@@ -715,58 +780,79 @@ Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, 
 Chambers, C. (2017). <em>The <span>Seven Deadly Sins</span> of <span>Psychology</span>: <span>A Manifesto</span> for <span>Reforming</span> the <span>Culture</span> of <span>Scientific Practice</span></em>. <span>Princeton University Press</span>.
 </div>
 <div id="ref-chambers_trust_2013" class="csl-entry" role="listitem">
-Chambers, C., Munafo, M., &amp; signatories, more than 80. (2013). Trust in science would be improved by study pre-registration. <em>The Guardian</em>.
+Chambers, C., Munafo, M., &amp; signatories, more than 80. (2013, June 5). Trust in science would be improved by study pre-registration. <em>The Guardian: Science</em>. <a href="http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration">http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration</a>
 </div>
 <div id="ref-chopikHowWhetherTeach2018" class="csl-entry" role="listitem">
 Chopik, W. J., Bremner, R. H., Defever, A. M., &amp; Keller, V. N. (2018). How (and <span>Whether</span>) to <span>Teach Undergraduates About</span> the <span>Replication Crisis</span> in <span>Psychological Science</span>. <em>Teaching of Psychology</em>, <em>45</em>(2), 158–163. <a href="https://doi.org/10.1177/0098628318762900">https://doi.org/10.1177/0098628318762900</a>
 </div>
 <div id="ref-collingStatisticalInferenceReplication2021" class="csl-entry" role="listitem">
-Colling, L. J., &amp; Szűcs, D. (2021). Statistical Inference and the Replication Crisis. <em>Review of Philosophy and Psychology</em>, <em>12</em>(1), 121–147. <a href="https://doi.org/10.1007/s13164-018-0421-4">https://doi.org/10.1007/s13164-018-0421-4</a>
+Colling, L. J., &amp; Szűcs, D. (2021). Statistical <span>Inference</span> and the <span>Replication Crisis</span>. <em>Review of Philosophy and Psychology</em>, <em>12</em>(1), 121–147. <a href="https://doi.org/10.1007/s13164-018-0421-4">https://doi.org/10.1007/s13164-018-0421-4</a>
+</div>
+<div id="ref-committeeonreproducibilityandreplicabilityinscienceReproducibilityReplicabilityScience2019a" class="csl-entry" role="listitem">
+Committee on Reproducibility and Replicability in Science. (2019). <em>Reproducibility and <span>Replicability</span> in <span>Science</span></em>. <a href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>
+</div>
+<div id="ref-craftProcessingSymbolicInformation1970" class="csl-entry" role="listitem">
+Craft, J. L., &amp; Simon, J. R. (1970). Processing symbolic information from a visual display: <span>Interference</span> from an irrelevant directional cue. <em>Journal of Experimental Psychology</em>, <em>83</em>(3), 415–420. <a href="https://doi.org/10.1037/h0028843">https://doi.org/10.1037/h0028843</a>
 </div>
 <div id="ref-crüwellPreregistrationDiverseContexts2021" class="csl-entry" role="listitem">
 Crüwell, S., &amp; Evans, N. J. (2021). Preregistration in diverse contexts: A preregistration template for the application of cognitive models. <em>Royal Society Open Science</em>, <em>8</em>(10), 210155. <a href="https://doi.org/10.1098/rsos.210155">https://doi.org/10.1098/rsos.210155</a>
 </div>
+<div id="ref-eimerEffectsMaskedStimuli1998" class="csl-entry" role="listitem">
+Eimer, M., &amp; Schlaghecken, F. (1998). Effects of masked stimuli on motor activation: <span>Behavioral</span> and electrophysiological evidence. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>24</em>(6), 1737–1747. <a href="https://doi.org/10.1037/0096-1523.24.6.1737">https://doi.org/10.1037/0096-1523.24.6.1737</a>
+</div>
+<div id="ref-eriksenEffectsNoiseLetters1974" class="csl-entry" role="listitem">
+Eriksen, B. A., &amp; Eriksen, C. W. (1974). Effects of noise letters upon the identification of a target letter in a nonsearch task. <em>Perception &amp; Psychophysics</em>, <em>16</em>(1), 143–149. <a href="https://doi.org/10.3758/BF03203267">https://doi.org/10.3758/BF03203267</a>
+</div>
+<div id="ref-forsterRepetitionPrimingFrequency1984" class="csl-entry" role="listitem">
+Forster, K., &amp; Davis, C. (1984). Repetition priming and frequency attenuation in lexical access. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>10</em>(4), 680–698. <a href="https://doi.org/10.1037/0278-7393.10.4.680">https://doi.org/10.1037/0278-7393.10.4.680</a>
+</div>
 <div id="ref-frankTeachingReplication2012" class="csl-entry" role="listitem">
-Frank, M. C., &amp; Saxe, R. (2012). Teaching Replication. <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 600–604. <a href="https://doi.org/10.1177/1745691612460686">https://doi.org/10.1177/1745691612460686</a>
+Frank, M. C., &amp; Saxe, R. (2012). Teaching <span>Replication</span>. <em>Perspectives on Psychological Science</em>, <em>7</em>(6), 600–604. <a href="https://doi.org/10.1177/1745691612460686">https://doi.org/10.1177/1745691612460686</a>
 </div>
 <div id="ref-gibsonRoleValuesJudging2021" class="csl-entry" role="listitem">
-Gibson, E. W. (2021). The Role of <span><em>p</em></span> -Values in Judging the Strength of Evidence and Realistic Replication Expectations. <em>Statistics in Biopharmaceutical Research</em>, <em>13</em>(1), 6–18. <a href="https://doi.org/10.1080/19466315.2020.1724560">https://doi.org/10.1080/19466315.2020.1724560</a>
+Gibson, E. W. (2021). The <span>Role</span> of <span><em>p</em></span> -<span>Values</span> in <span>Judging</span> the <span>Strength</span> of <span>Evidence</span> and <span>Realistic Replication Expectations</span>. <em>Statistics in Biopharmaceutical Research</em>, <em>13</em>(1), 6–18. <a href="https://doi.org/10.1080/19466315.2020.1724560">https://doi.org/10.1080/19466315.2020.1724560</a>
 </div>
 <div id="ref-globalspinej.DefinitionLevelsEvidence2015" class="csl-entry" role="listitem">
-Global Spine J. (2015). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671889">Definition of levels of evidence (<span>LoE</span>) and overall strength of evidence (<span>SoE</span>)</a>. <em>Global Spine Journal</em>, <em>5</em>(6), 539.
+Global Spine J. (2015). Definition of levels of evidence (<span>LoE</span>) and overall strength of evidence (<span>SoE</span>). <em>Global Spine Journal</em>, <em>5</em>(6), 539. <a href="https://doi.org/10.1055/s-0035-1570346">https://doi.org/10.1055/s-0035-1570346</a>
 </div>
 <div id="ref-goodmanWhatDoesResearch2016" class="csl-entry" role="listitem">
 Goodman, S. N., Fanelli, D., &amp; Ioannidis, J. P. A. (2016). What does research reproducibility mean? <em>Science Translational Medicine</em>, <em>8</em>(341), 341ps12–341ps12. <a href="https://doi.org/10.1126/scitranslmed.aaf5027">https://doi.org/10.1126/scitranslmed.aaf5027</a>
 </div>
+<div id="ref-greeneSpacingEffectsMemory1989" class="csl-entry" role="listitem">
+Greene, R. L. (1989). Spacing effects in memory: <span>Evidence</span> for a two-process account. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>15</em>(3), 371–377. <a href="https://doi.org/10.1037/0278-7393.15.3.371">https://doi.org/10.1037/0278-7393.15.3.371</a>
+</div>
 <div id="ref-havenPreregisteringQualitativeResearch2020a" class="csl-entry" role="listitem">
-Haven, T. L., Errington, T. M., Gleditsch, K. S., Grootel, L. van, Jacobs, A. M., Kern, F. G., Piñeiro, R., Rosenblatt, F., &amp; Mokkink, L. B. (2020). Preregistering Qualitative Research: A Delphi Study. <em>International Journal of Qualitative Methods</em>, <em>19</em>, 1609406920976417. <a href="https://doi.org/10.1177/1609406920976417">https://doi.org/10.1177/1609406920976417</a>
+Haven, T. L., Errington, T. M., Gleditsch, K. S., van Grootel, L., Jacobs, A. M., Kern, F. G., Piñeiro, R., Rosenblatt, F., &amp; Mokkink, L. B. (2020). Preregistering <span>Qualitative Research</span>: <span>A Delphi Study</span>. <em>International Journal of Qualitative Methods</em>, <em>19</em>, 1609406920976417. <a href="https://doi.org/10.1177/1609406920976417">https://doi.org/10.1177/1609406920976417</a>
 </div>
 <div id="ref-havenPreregisteringQualitativeResearch2019" class="csl-entry" role="listitem">
 Haven, T. L., &amp; Grootel, D. L. V. (2019). Preregistering qualitative research. <em>Accountability in Research</em>, <em>26</em>(3), 229–244. <a href="https://doi.org/10.1080/08989621.2019.1580147">https://doi.org/10.1080/08989621.2019.1580147</a>
 </div>
 <div id="ref-ioannidisMetaresearchWhyResearch2018" class="csl-entry" role="listitem">
-Ioannidis, J. P. A. (2018). Meta-research: Why research on research matters. <em>PLOS Biology</em>, <em>16</em>(3), e2005468. <a href="https://doi.org/10.1371/journal.pbio.2005468">https://doi.org/10.1371/journal.pbio.2005468</a>
+Ioannidis, J. P. A. (2018). Meta-research: <span>Why</span> research on research matters. <em>PLOS Biology</em>, <em>16</em>(3), e2005468. <a href="https://doi.org/10.1371/journal.pbio.2005468">https://doi.org/10.1371/journal.pbio.2005468</a>
 </div>
 <div id="ref-ioannidisMetaresearchEvaluationImprovement2015" class="csl-entry" role="listitem">
-Ioannidis, J. P. A., Fanelli, D., Dunne, D. D., &amp; Goodman, S. N. (2015). Meta-research: Evaluation and Improvement of Research Methods and Practices. <em>PLOS Biology</em>, <em>13</em>(10), e1002264. <a href="https://doi.org/10.1371/journal.pbio.1002264">https://doi.org/10.1371/journal.pbio.1002264</a>
+Ioannidis, J. P. A., Fanelli, D., Dunne, D. D., &amp; Goodman, S. N. (2015). Meta-research: <span>Evaluation</span> and <span>Improvement</span> of <span>Research Methods</span> and <span>Practices</span>. <em>PLOS Biology</em>, <em>13</em>(10), e1002264. <a href="https://doi.org/10.1371/journal.pbio.1002264">https://doi.org/10.1371/journal.pbio.1002264</a>
+</div>
+<div id="ref-meyerFacilitationRecognizingPairs1971" class="csl-entry" role="listitem">
+Meyer, D. E., &amp; Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of words: <span>Evidence</span> of a dependence between retrieval operations. <em>Journal of Experimental Psychology</em>, <em>90</em>(2), 227–234. <a href="https://doi.org/10.1037/h0031564">https://doi.org/10.1037/h0031564</a>
 </div>
 <div id="ref-opensciencecollaborationEstimatingReproducibilityPsychological2015" class="csl-entry" role="listitem">
 Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
 </div>
 <div id="ref-pageToolsAssessingRisk2018a" class="csl-entry" role="listitem">
-Page, M. J., McKenzie, J. E., &amp; Higgins, J. P. T. (2018). Tools for assessing risk of reporting biases in studies and syntheses of studies: a systematic review. <em>BMJ Open</em>, <em>8</em>(3), e019703. <a href="https://doi.org/10.1136/bmjopen-2017-019703">https://doi.org/10.1136/bmjopen-2017-019703</a>
+Page, M. J., McKenzie, J. E., &amp; Higgins, J. P. T. (2018). Tools for assessing risk of reporting biases in studies and syntheses of studies: A systematic review. <em>BMJ Open</em>, <em>8</em>(3), e019703. <a href="https://doi.org/10.1136/bmjopen-2017-019703">https://doi.org/10.1136/bmjopen-2017-019703</a>
 </div>
-<div id="ref-peng2011" class="csl-entry" role="listitem">
-Peng, R. D. (2011). Reproducible research in computational science. <em>Science (New York, N.y.)</em>, <em>334</em>(6060), 1226–1227. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>
+<div id="ref-pengReproducibleResearchComputational2011" class="csl-entry" role="listitem">
+Peng, R. D. (2011). Reproducible <span>Research</span> in <span>Computational Science</span>. <em>Science</em>, <em>334</em>(6060), 1226–1227. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>
 </div>
 <div id="ref-penningtonStudentGuideOpen2023" class="csl-entry" role="listitem">
-Pennington, C. R. (2023). <em>A student’s guide to open science: using the replication crisis to reform psychology</em>. Open University Press.
+Pennington, C. R. (2023). <em>A student’s guide to open science: Using the replication crisis to reform psychology</em>. <span>Open University Press</span>.
 </div>
 <div id="ref-petersonMetascienceScientificSocial2023" class="csl-entry" role="listitem">
-Peterson, D., &amp; Panofsky, A. (2023). Metascience as a Scientific Social Movement. <em>Minerva</em>, <em>61</em>(2), 147–174. <a href="https://doi.org/10.1007/s11024-023-09490-3">https://doi.org/10.1007/s11024-023-09490-3</a>
+Peterson, D., &amp; Panofsky, A. (2023). Metascience as a <span>Scientific Social Movement</span>. <em>Minerva</em>, <em>61</em>(2), 147–174. <a href="https://doi.org/10.1007/s11024-023-09490-3">https://doi.org/10.1007/s11024-023-09490-3</a>
 </div>
 <div id="ref-pocockMakingSenseStatistics2015" class="csl-entry" role="listitem">
-Pocock, S. J., McMurray, J. J. V., &amp; Collier, T. J. (2015). Making Sense of Statistics in Clinical&nbsp;Trial&nbsp;Reports: Part 1 of a 4-Part Series on Statistics for Clinical Trials. <em>Journal of the American College of Cardiology</em>, <em>66</em>(22), 2536–2549. <a href="https://doi.org/10.1016/j.jacc.2015.10.014">https://doi.org/10.1016/j.jacc.2015.10.014</a>
+Pocock, S. J., McMurray, J. J. V., &amp; Collier, T. J. (2015). Making <span>Sense</span> of <span>Statistics</span> in <span>Clinical&nbsp;Trial&nbsp;Reports</span>: <span>Part</span> 1 of a 4-<span>Part Series</span> on <span>Statistics</span> for <span>Clinical Trials</span>. <em>Journal of the American College of Cardiology</em>, <em>66</em>(22), 2536–2549. <a href="https://doi.org/10.1016/j.jacc.2015.10.014">https://doi.org/10.1016/j.jacc.2015.10.014</a>
 </div>
 <div id="ref-raoStatisticsTruthPutting1997" class="csl-entry" role="listitem">
 Rao, C. R. (1997). <em>Statistics and truth: Putting chance to work</em> (2nd ed). <span>World Scientific</span>.
@@ -774,29 +860,41 @@ Rao, C. R. (1997). <em>Statistics and truth: Putting chance to work</em> (2nd ed
 <div id="ref-ritchieScienceFictionsHow2020" class="csl-entry" role="listitem">
 Ritchie, S. (2020). <em>Science fictions: How fraud, bias, negligence, and hype undermine the search for truth</em> (First edition). <span>Metropolitan Books ; Henry Holt and Company</span>.
 </div>
+<div id="ref-roedigerCreatingFalseMemories1995" class="csl-entry" role="listitem">
+Roediger, H. L., &amp; McDermott, K. B. (1995). Creating false memories: <span>Remembering</span> words not presented in lists. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>21</em>, 803–814. <a href="https://doi.org/10.1037/0278-7393.21.4.803">https://doi.org/10.1037/0278-7393.21.4.803</a>
+</div>
 <div id="ref-simmonsFalsePositiveCitations2018" class="csl-entry" role="listitem">
-Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2018). False-Positive Citations. <em>Perspectives on Psychological Science</em>, <em>13</em>(2), 255–259. <a href="https://doi.org/10.1177/1745691617698146">https://doi.org/10.1177/1745691617698146</a>
+Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2018). False-<span>Positive Citations</span>. <em>Perspectives on Psychological Science</em>, <em>13</em>(2), 255–259. <a href="https://doi.org/10.1177/1745691617698146">https://doi.org/10.1177/1745691617698146</a>
 </div>
 <div id="ref-simmonsPreregistrationWhyHow2021" class="csl-entry" role="listitem">
-Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2021). Pre-registration: Why and How. <em>Journal of Consumer Psychology</em>, <em>31</em>(1), 151–162. <a href="https://doi.org/10.1002/jcpy.1208">https://doi.org/10.1002/jcpy.1208</a>
+Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2021). Pre-registration: <span>Why</span> and <span>How</span>. <em>Journal of Consumer Psychology</em>, <em>31</em>(1), 151–162. <a href="https://doi.org/10.1002/jcpy.1208">https://doi.org/10.1002/jcpy.1208</a>
 </div>
 <div id="ref-soderbergInitialEvidenceResearch2021a" class="csl-entry" role="listitem">
-Soderberg, C. K., Errington, T. M., Schiavone, S. R., Bottesini, J., Thorn, F. S., Vazire, S., Esterling, K. M., &amp; Nosek, B. A. (2021). Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, <em>5</em>(8), 990–997. <a href="https://doi.org/10.1038/s41562-021-01142-4">https://doi.org/10.1038/s41562-021-01142-4</a>
+Soderberg, C. K., Errington, T. M., Schiavone, S. R., Bottesini, J., Thorn, F. S., Vazire, S., Esterling, K. M., &amp; Nosek, B. A. (2021). Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, <em>5</em>(8, 8), 990–997. <a href="https://doi.org/10.1038/s41562-021-01142-4">https://doi.org/10.1038/s41562-021-01142-4</a>
 </div>
 <div id="ref-stewartWhyProspectiveRegistration2012" class="csl-entry" role="listitem">
 Stewart, L., Moher, D., &amp; Shekelle, P. (2012). Why prospective registration of systematic reviews makes sense. <em>Systematic Reviews</em>, <em>1</em>(1), 7. <a href="https://doi.org/10.1186/2046-4053-1-7">https://doi.org/10.1186/2046-4053-1-7</a>
 </div>
+<div id="ref-vandenakkerPreregistrationSecondaryData2021" class="csl-entry" role="listitem">
+van den Akker, O. R., Weston, S., Campbell, L., Chopik, B., Damian, R., Davis-Kean, P., Hall, A., Kosie, J., Kruse, E., Olsen, J., Ritchie, S., Valentine, K. D., van ’t Veer, A., &amp; Bakker, M. (2021). Preregistration of secondary data analysis: <span>A</span> template and tutorial. <em>Meta-Psychology</em>, <em>5</em>. <a href="https://doi.org/10.15626/MP.2020.2625">https://doi.org/10.15626/MP.2020.2625</a>
+</div>
 <div id="ref-vantveerPreRegistrationSocialPsychology2017" class="csl-entry" role="listitem">
-van’t Veer, A. E., &amp; Giner-Sorolla, R. (2017). <em>Pre-registration in social psychology<span></span>a discussion and suggested template</em>. <a href="https://osf.io/4frms">osf.io/4frms</a>
+van’t Veer, A. E., &amp; Giner-Sorolla, R. (2017, April 7). <em>Pre-<span>Registration</span> in <span>Social Psychology</span>—a <span>Discussion</span> and <span>Suggested Template</span></em>. <a href="https://osf.io/4frms">osf.io/4frms</a>
 </div>
 <div id="ref-waggePublishingResearchUndergraduate2019" class="csl-entry" role="listitem">
-Wagge, J. R., Brandt, M. J., Lazarevic, L. B., Legate, N., Christopherson, C., Wiggins, B., &amp; Grahe, J. E. (2019). Publishing research with undergraduate students via replication work: The collaborative replications and education project. <em>Frontiers in Psychology</em>, <em>10</em>. <a href="https://www.frontiersin.org/article/10.3389/fpsyg.2019.00247">https://www.frontiersin.org/article/10.3389/fpsyg.2019.00247</a>
+Wagge, J. R., Brandt, M. J., Lazarevic, L. B., Legate, N., Christopherson, C., Wiggins, B., &amp; Grahe, J. E. (2019). Publishing <span>Research With Undergraduate Students</span> via <span>Replication Work</span>: <span>The Collaborative Replications</span> and <span>Education Project</span>. <em>Frontiers in Psychology</em>, <em>10</em>. <a href="https://www.frontiersin.org/article/10.3389/fpsyg.2019.00247">https://www.frontiersin.org/article/10.3389/fpsyg.2019.00247</a>
 </div>
-<div id="ref-wilkinsonFAIRGuidingPrinciples2016a" class="csl-entry" role="listitem">
-Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Da Silva Santos, L. B., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1), 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
+<div id="ref-wilkinsonFAIRGuidingPrinciples2016" class="csl-entry" role="listitem">
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Da Silva Santos, L. B., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The <span>FAIR Guiding Principles</span> for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1), 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
 </div>
 <div id="ref-wilkinsonDesignFrameworkExemplar2018" class="csl-entry" role="listitem">
-Wilkinson, M. D., Sansone, S.-A., Schultes, E., Doorn, P., Bonino Da Silva Santos, L. O., &amp; Dumontier, M. (2018). A design framework and exemplar metrics for FAIRness. <em>Scientific Data</em>, <em>5</em>(1), 180118. <a href="https://doi.org/10.1038/sdata.2018.118">https://doi.org/10.1038/sdata.2018.118</a>
+Wilkinson, M. D., Sansone, S.-A., Schultes, E., Doorn, P., Bonino Da Silva Santos, L. O., &amp; Dumontier, M. (2018). A design framework and exemplar metrics for <span>FAIRness</span>. <em>Scientific Data</em>, <em>5</em>(1), 180118. <a href="https://doi.org/10.1038/sdata.2018.118">https://doi.org/10.1038/sdata.2018.118</a>
+</div>
+<div id="ref-zwaanParticipantNonnaiveteReproducibility2017" class="csl-entry" role="listitem">
+Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2018). Participant <span>Nonnaiveté</span> and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1968–1972. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
+</div>
+<div id="ref-zwaanLanguageComprehendersMentally2002" class="csl-entry" role="listitem">
+Zwaan, R. A., Stanfield, R. A., &amp; Yaxley, R. H. (2002). Language comprehenders mentally represent the shapes of objects. <em>Psychological Science</em>, <em>13</em>, 168–171. <a href="https://doi.org/10.1111/1467-9280.00430">https://doi.org/10.1111/1467-9280.00430</a>
 </div>
 </div>
 </section>
@@ -1606,8 +1704,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02-fundamental.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">科學思考輔助工具</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02-deductive.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">演繹推理</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
