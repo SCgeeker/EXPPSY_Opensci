@@ -1,0 +1,3 @@
+Daniel Laken's post-study questions:
+
+https://lakens.github.io/statistical_inferences/01-pvalue.html#test-yourself

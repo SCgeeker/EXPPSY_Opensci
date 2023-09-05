@@ -5,7 +5,7 @@ project:
 
 book:
   title: "實驗心理學：開放科學取向"
-  author: "陳紹慶"
+  author: "陳紹慶、龔俊嘉、周蔚倫、林君昱"
 #  css: style.css
   description: 第一版(Quarto重製)
   site-url: https://scgeeker.github.io/EXPPSY_Opensci/
@@ -27,18 +27,18 @@ book:
   chapters:
     - 'index.qmd'
     - '01-intro.qmd'
-    - '02-fundamental.qmd'
-    - '03-case.qmd'
-    - '04-chronometry.qmd'
+    - '02-deductive.qmd'
+    - '03-design.qmd'
+    - '04-inductive.qmd'
     - '05-memory.qmd'
-    - '06-language.qmd'
-    - '07-project.qmd'
-#    - '10-references.qmd'
+    - '06-chronometry.qmd'
+    - '07-language.qmd'
+    - '08-writing.qmd'
   appendices:
 #    - webexercises.qmd
-    - '08-QRP.qmd'
-    - '09-pilot.qmd'
-    - '10-textbook_outline.qmd'
+    - '09-QRP.qmd'
+    - '10-pilot.qmd'
+    - '11-textbook_outline.qmd'
     - 'references.qmd'
 bibliography: include/book.bib
 link-citations: true

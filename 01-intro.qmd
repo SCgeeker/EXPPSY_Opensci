@@ -1,67 +1,387 @@
 # 緒論 {#intro}
 
-> (這段待改寫)
+> "According to the hypothetico-deductive method, to which psychology at least nominally adheres, a scientist begins by formulating a hypothesis that addresses some aspect of a relevant theory. With the hypothesis decided, the scientist then conducts an experiment and allows the data to determine whether or not the hypothesis was supported. This outcome then feeds into revision (and possible rejection) of the theory, stimulating an iterative cycle of hypothesis generation, hypothesis testing, and theoretical advance." --- Chris Chambers (2017)
+
+> "Science has cured diseases, mapped the brain, forecasted the climate, and split the atom; it's the best method we have of figuring out how the universe works and of bending it to our will. It is, in other words, our best way of moving towards the truth." --- Stuart Ritchie (2022)
+
+本章開頭引述的段落來自兩本英文科普書：*七大罪* [@chambersSevenDeadlySins2017]以及*科幻小說* [@ritchieScienceFictionsHow2020]，作者都是參與心理科學再現危機(Replication crisis)重要事件的第一線心理科學研究者。這兩段話在書中的脈絡都是與讀者討論彼此認知的**科學方法**(scientific method)[^01-intro-1]，究竟出了什麼問題？這兩本書在開放科學提倡者之間有極大迴響，但是在更大眾的出版市場，影響力相當有限。本書主筆之一認為無法發揮更大影響力的主因，是這兩本書定位目標讀者，必須是有科學研究經驗的專業科學家或公民科學參與者。這群讀者對於**科學方法**的了解是透過親身參與，而非只是透過閱讀專業書藉或參考資料，記憶他人給你的解釋而已。透過介紹這兩本書，使用本書學習心理學實驗研究方法的同學應該能明白這本教科書的真正功能 -- 引導你完整參與實驗研究的過程。如果你認真完成至少一項本書提供的研究專案範本(或者與你的指導教授合作的研究專案)，產生閱讀*七大罪*與*科幻小說*的興趣，就達到我們編寫這本教科書的中長程目標之一了。
+
+科學心理學顧名思義也是運用**科學方法**探究心理學知識，那麼學習起點當然是要認識什麼是**科學方法**。讀過前一段後，你應該知道親身體會比記憶各種來源名詞的解釋更重要，所以本書第一章先透過介紹普及開放科學的實踐方式，以及比較實驗研究與其他研究方法的證據等級(Level of evidence)，向你說明為何學習實驗研究法，是心理學研究者掌握**科學方法**的最佳途徑。接著我們會討論現實的心理科學研究場景，是如何更新知識；基於開放及可重製原則的研究操作，是如何生產強度最高的實驗證據、或是檢核已出版研究的證據品質。最後，透過介紹本書的學習架構，我們提供一些進一步思考的課題，讓同學從實踐開放與可重製研究專案的過程中，形成**科學方法**的概念。
+
+也許有些同學在繼續讀下去的時候(或者聽教授繼續解釋)，會被一些既定印象困惑。其中一些應該像是「科學方法不就是操作科學儀器嗎？」、「心理學的科學方法不就是編量表、寫實驗程式碼嗎？」。其實這些印象只是科學研究過程的一部分，也許是來自你的親身經歷或者聽聞某些學長姐描述的經驗，完整的**科學方法**涵蓋從提出問題到收集分析資料，做出結論的科學研究過程。操作儀器的活動比較容易影像化，比較容易觸及大眾眼球，影像記憶較深刻的學生也許要花些功夫克服這些印象，才能繼續學習。如果你有這樣的困惑，又很難靠個人意志擺脫，不妨與你所在學校的專業教授當面聊一聊。
+
+另外還有一些困惑初學者的問題可能是「科學問題不都是從觀察週遭環境出來的嗎？」、「心理學的問題不都是來自對人類的觀察嗎？」。其實心理學做為一個相對年輕的科學領域，重要課題都是從其他發展歷史更久的科學領域提煉出來，才逐漸形成新的知識體系。心理學者形成研究問題的主要來源是透過閱讀文獻，與其他科學研究人員討論，還有在參與實際研究的過程中發覺形成。所以很多心理系學生會覺得閱讀文獻的訓練，比與人互動的訓練更多；或者閱讀量要先達到一定程度，甚至要透過考核，才能進行與人互動的訓練。也許有些心理學者確實能在現實觀察中得到研究靈感，不過我們認為**觀察經驗是形成研究問題的助力，而非研究問題的主要來源**。與實驗研究法更有關的現實狀況是，**許多有突破性的科學心理學研究，其實是改進之前的研究成果**。本書後半部介紹的示範研究專案，都有可追溯的文獻歷史。我們希望透過本書提供的學習架構，讓有此疑惑的同學們，了解為何收集整理以及閱讀心理學論文，也是學習**科學方法**的重要部分。
+
+::: {.callout-tip title="推薦英語podcast" collapse="true" style="color: gray"}
+也許有些早慧，有真實科學研究經驗的學生己經了解科學方法是一套產生可靠知識的流程。除了這一章稍後的介紹，如果有同學想透過閱讀經典科學方法書藉，又想訓練英語聽力，推薦收聽加州柏克萊大學博士生[Smriti Mehta](https://twitter.com/smreeteemehta)與荷蘭愛因荷芬科技大學教授[Daniël Lakens](https://twitter.com/lakens)一起主持的podcast - [Nullius in Verba](https://nulliusinverba.podbean.com/)。podcast名稱是拉丁文，來自[英國皇家學會](https://royalsociety.org/about-us/history/)創立初期立下的座右銘，意思是「不要輕信他人的話語」(take nobody's word for it)。2023年2月正式上架，各集主題是討論影響科學方法內涵的重要書藉或人物言行。
+:::
+
+## 開放科學的實踐方法 {#intro_opensci}
+
+如果用「開放科學」搜尋網路資訊，通常會找到幾個相關名詞：**預印本**(preprint)、**開放資料**(open data)、**開放研究材料**(open materials)、**開放分析程式碼**(open code)、**預先註冊**(Preregistration)、還有**註冊報告**(Registered Report)，這些名詞都是指涉實現科學研究過程一部分的活動。 本書參考最近出版，寫給大學生的西文教科書，新世代的西方大學教育者還有介紹**大型團隊協作研究(Big Team Science)**與**整合科學(Meta Science)** [@penningtonStudentGuideOpen2023]。這一節我們介紹與形成研究問題有關**預印本**、**開放資料**與**開放分析程式碼**、以及**開放研究材料**。
+
+### 透過預印本發表最新研究 {#intro_opensci_preprint}
+
+除了透過發表專書（book）或期刊論文（journal paper），預印本（preprint）是有意願以公開方式分享最新發現的研究者們採用的發表媒介。就像書或論文，研究者的發表都要透過編輯主持的同儕評審，獲得認可才會向大眾公開。不過在目前的學術界生態，書與期刊論文都是透過商業出版社發行，讀者都必須要付費 -- 無論是個人自掏腰包還是經由機構訂購，對於想讓所有潛在讀者都能無限制地取得知識內容的研究者，都會響應開放取用（Open Access）方案。如果是採用出版社的開放取用方案，研究者必須要付一筆文稿處理費用（Article Process Cost, APC），因此這樣的方案稱為黃金開放取用（Golden Open Access）。當然，不是所有研究者有足夠的經費能支付文稿處理費用，更多研究者是將交付出版社排版前的最後定稿，自行上傳到預印本平台（preprint servers）向全世界公開。因為研究者不需要支付任何費用，這種方式又稱為綠色開放取用（Green Open Access）。
+
+因為通過同儕評審的書稿或論文定稿，是研究者透過預印本平公開發表的最大宗發表類型，內容都有一定品質。如果通過同審評審的作品，將經由商業出版社發行，研究者必須要留意與出版社簽訂的發行合約，是否允許研究者自行公開排版前定稿。並且必須要以開放授權的模式，讓讀者能合理使用發表內容。近年隨著開放科學觀點的普及，以及重要知識領域的快速發展，許多研究者在取得出版社許可，或者了解出版平台完全支持不需付費的開放取用政策，會在同儕評審過程期間，就將文稿直接上傳預印本平台公開。2020年新冠肺炎開始肆虐，全世界尚無有效藥物及疫苗的時期，許多研發藥物及疫苗的研究團隊，都會在開發取得一定成果時，審核還在進行時就將試驗報告以預印本公開，讓各界專家能掌握最新進展，向大眾說明科學界對新冠肺炎的最新認識，以及運用藥物及疫苗的正確資訊。
+
+英語世界的心理學研究者也習慣採用預印本模式，公開剛完成的預先註冊計畫書或剛完成投稿的研究報告，提供各界公開評議其研究過程。各種由學術組織或出版機構經驗的預印本平台，都可以讓研究者根據作品的讀者群或用途，選擇適合的平台公開。
+
+### 開放資料及分析程式碼 {#intro_opensci_opencode}
+
+閱讀論文報告的重點除了作者提出的問題假設，還有研究結果的解讀，心理科學家還要能解讀表達統計分析資訊的圖表，以及各項數值。如果讀者是熟悉資料到統計資訊的分析流程的科學家，看到圖表與數值，會不由自主地反推論文作者如何從原始資料，使用熟悉的工具，一步一步地輸出為圖表數值。資料科學家 @pengReproducibleResearchComputational2011 提出**計算可重製性(computational reproducibility)**的主張，說明凡是有輸出統計資訊的論文，作者有責任公開原始資料及資料欄位說明(Open Data)，以及產製圖表及統計數值的分析程式碼或套裝軟體腳本(Open Code)。當前推動開放科學操作的各領域科學家，提倡需要分析數據的科學研究人員，應該認識公平四原則(FAIR principles)，持續學習使用符合四原則的最新操作方法 [@wilkinsonFAIRGuidingPrinciples2016; @wilkinsonDesignFrameworkExemplar2018] 。
+
+### 開放研究材料 {#intro_opensci_openmaterials}
+
+實驗心理學與許多科學領域一樣，收集資料與分析資料都是專業研究人員要具備的基本能力。雖然場景不同，收集資料與分析資料都是講求按照已設定的規章計畫執行及判斷。以前的實驗心理學課程放較多的篇幅談如何設計有收集有效資料的實驗，從計算的可重製性延伸，這本書講究**方法的可重製性(Reproducibility of methodology)**，討論如何設計任何有能力的研究者，皆可重製的實驗方法。方法的可重製性不只是心理學，也是所有需要收集資料的科學領域都要達到的共同標準。
+
+根據美國國家科學基金會的特別工作小組會議報告 [@committeeonreproducibilityandreplicabilityinscienceReproducibilityReplicabilityScience2019a] ，可重製的研究方法需要能讓任何經過合格科學研究訓練的人員，有足夠的資訊重新設計及執行已發表的研究，且得到同樣經得起分析檢驗的實驗結果。所以心理學的**開放研究材料**(Open Materials)，不只是將實驗用的問卷或程序腳本等材料開放讓任何人取用，還有讓有經過訓練的研究人員能執行有效的重製研究。透過本書學習實驗研究的學生，將透過各單元提供的習作，成長為有能力運用研究報告的開放資訊，設計及執行重製研究的研究人員。
+
+::: {.callout-tip title="開放知識的價值" collapse="true" style="color: gray"}
+:::
+
+## 為何要以開放科學操作學習實驗研究
+
+隨機控制試驗(Randomized Controlled Trails)是目前所有科學領域都能接受，可直接確認因果關係的研究方法。與其他已知分析資料的研究方法相比，隨機控制試驗有最高的證據等級 (level of evidence)。在有巨量研究資料發表的生物醫學研究領域，已經有跨國學術組織如GRADE (Grading of Recommendations Assessment, Development and Evaluation) 制定了證據品質分級指引，將各種醫學研究使用的研究方法，依證據可靠度將證據分為四個等級[@globalspinej.DefinitionLevelsEvidence2015]：
+
+-   高確信度：高度確信現有證據能反映真實效應，未來研究極不可能改變效應估計值。
+-   中確信度：中度確信現有證據能反映真實效應，未來研究可能會改變效應估計值。
+-   低確信度：低度確信現有證據能反映真實效應，未來研究極可能會改變效應估計值。
+-   極低確信度：無法獲得有效證據或現有證據無法下定論。
+
+研究方法的證據等級由強至弱排序如下：
+
+1.  系統性文獻回顧與整合分析
+
+系統性文獻回顧整合多項主題相關，高確信度的原始研究，針對一項科學主題進行全面性的文獻搜集與批判性評價。整合分析利用統計方法綜合多個獨立研究的效應量(effect size)，能提高統計效力，減少結論出錯的機會。因此，系統性文獻回顧與整合分析的證據等級排序最高(高確信度)。
+
+2.  隨機控制試驗
+
+隨機控制試驗通過隨機分組和對照組設計，可以有效控制混淆變項的影響，保障內在效度(internal validity)達到水準。因此，隨機控制試驗的證據強度僅次於整合分析(中確信度)。
+
+3.  世代研究（cohort study）及縱貫研究（longitude study）
+
+世代研究長期追蹤特定世代人群，能有效減少代間效應()。縱貫研究根據設定的基準條件招募個案，同時開始收集個案變化的完整資料,具有時序性證據優勢。但是兩種方法都無法有效控制混淆變項，因此證據等級較低(低確信度)。
+
+4.  橫斷研究（cross section study）
+
+橫斷研究鎖定某一時間點取得的資料，分析變項間的關聯性，但無法推論因果關係，證據力較弱(低確信度)。
+
+5.  個案報告與個案系列報告
+
+個案報告記錄特定個人的特質與經驗。個案系列報告收集一系列相似的個人記錄。雖然能提供初步知識，但是證據品質較低(極低確信度)。
+
+6.  專家意見
+
+雖有其價值,但屬於最低等級的證據(極低確信度)。
+
+透過上述評比，可以看出研究方法的證據等級，與研究設計的嚴謹程度，以及排除研究結果出錯的可能性極有關係。進一步地說，我們看到任何最新發表的研究結果，都要預期可能被未來發表的研究更新。所以根據這一套等級指引，我們可以評估以上研究方法產生的結，被指出各種錯誤，而被更新或廢棄的風險程度：
+
+-   低出錯風險：研究遵循優質設計、執行及避免出錯的原則。
+-   中低出錯風險：研究可能存在某些錯誤，但不太可能使結果失效或引入顯著偏差。
+-   中高出錯風險：研究設計與執行存在顯著缺陷，可能增加出錯風險並使結果失效。
+-   高出錯風險：研究可能存在顯著錯誤。例如缺乏比較組別，無法直接評估重要指標。
+
+我們設想讀者或參與課程的學生都已經學過基礎統計，應該知道現代實驗科學大量依賴p值(p value)判斷隨機控制試驗的實驗結果，有沒有出現設計實驗時的預期效果。生物醫學領域有學者主張如果採用上述各種方法的研究，最後是以p值判斷研究結論，應該設定對應證據強度的建議判斷指標[@gibsonRoleValuesJudging2021; @pocockMakingSenseStatistics2015]。心理科學領域的開放科學提倡者，則主張除了次數主義統計學(Frequentist statistics)，心理學家也應該學習使用貝氏統計(Bayesian statistics)[@collingStatisticalInferenceReplication2021]。提倡者的理由是次數主義統計學只強調控制干擾實驗結果的誤差，並未直接估計應測出的實驗效果。貝氏統計提供量化方法，研究者能用貝氏統計指標量測支持假設的證據強度，更適合要得到確證性結論的心理學研究。本書之後的單元將再深入討論兩種統計思維，我們先來討論科學心理學的知識更新進程。
+
+## 科學心理學知識的更新循環 {#intro_cycle}
+
+現代實驗科學的生產知識流程源自十七世紀英國哲學家弗蘭西斯·培根提出的**排除歸納法**[^01-intro-2]，這是人類思想史的第一套科學方法論。此後隨著科學的總體發展，科學方法論述不斷改進，但是任何一家方法學論述都有歸納推理(Inductive Reasoning)和演繹推理(Deductive Reasoning)兩種思考過程。
+
+在隨機方法及機率建模等統計方法成為當代科學實驗重要工具，科學方法形成更新知識的循環流程，大致有七個步驟：
+
+1.  創建假說：透過演繹推理，根據現有知識和理論提出假說。
+
+2.  做出預測：基於假說，預測可能的實驗結果。
+
+3.  設計實驗：使用統計原理，設計有效的實驗以產生相關數據。
+
+4.  收集資料：按照設計進行實驗、收集資料。
+
+5.  檢驗假設：使用統計方法分析資料，檢驗假說預測的正確性。
+
+6.  修改假說：如果分析結果與預測不符，運用歸納推理改良假說。
+
+7.  重複循環：持續進行上述步驟，歸納新的知識以及建立新的假說。
+
+這個循環反映科學方法的本質-假說永遠都可能被新的實驗資料推翻。科學研究的目標不是找出「絕對真理」，而是建立與事實一致的有效工作假說，作為暫時的知識基礎。統計方法在「設計實驗」和「檢驗假說」這兩個步驟發揮關鍵作用，科學家能夠有效利用資料進行創造性思考，不斷完善假說，以求能更準確地描述自然現象。
+
+![科學研究流程。改編自 @raoStatisticsTruthPutting1997 ，第123頁插圖。](images/sci_cycle.png){#fig-scimethod fig-align="center"}
+
+本章開頭引述的兩本書提到的**科學方法**，正是符合多數科學家共識的知識生產循環流程，我們改編 @raoStatisticsTruthPutting1997 的圖解，形成 @fig-scimethod 的循環流程圖。圖中的橢圓代表能用文字或可視覺化的圖表呈現的階段性產物，箭頭代表每個階段的思考過程。所有科學研究方法的課程，都是帶領學習者調整、改造自已的思考過程，按照符合科學原則的流程檢視自己己經知道與尚未知道的事物。
+
+## 現實的知識更新進程 {#intro_update}
+
+如果讀者可以認同真正的科學研究應該按照如同 @fig-scimethod 的循環流程，才能持續產生有益人類文明發展的知識。那麼請做好心理準備，接下來我們要談一談現實的科學研究狀況。
+
+本章一開始提到一個有些聳動的名詞：**再現危機(Replication crisis)**，這是泛指心理科學領域從2011年起，透過檢討違反學術倫理的個案，以及多項跨實驗室合作再現專案，可成功再現原始研究結果不及一半，眾多心理學者意識到的各種問題[參考 @penningtonStudentGuideOpen2023 的名詞解釋]。最常被討論的問題有**發表偏誤**(Publication Bias)，**不正當的研究操作**(Questionable Research Practices, QRPs)，以及**缺乏透明度**(lack of transparency)[^01-intro-3]。最後一種問題的根源是許多心理科學及其他領域的研究者缺乏開放的觀念，解方正是稍早我們先談過的幾項開放科學操作：[預印本](#intro_opensci_preprint)、[開放資料及分析程式碼](#intro_opensci_opencode)、[開放研究材料](#intro_opensci_openmaterials)。而前兩種問題的根源是無法被再現的原始研究者，並未充分按照[前一節](#intro_cycle)介紹的科學方法完成知識更新流程。
+
+@frankTeachingReplication2012 與 @chopikHowWhetherTeach2018 都指出許多有創新意義的心理學研究，缺乏保障信度的再現研究支持。由於研究者在研究過程中，並不總是按照**科學方法**提示的思考過程應嚴格遵循的原則，特別是與統計分析有關的「設計實驗」和「檢驗假說」兩個步驟。不正當的研究操作之一是未明確區分探索性和確證性研究。@chopikHowWhetherTeach2018 指出，心理學研究經常從初步的探索結果擷取決定性的結論，而非進行嚴格的假設檢驗，導致研究者高估證據力。發表偏誤的來源則是只有符合研究者預期且統計顯著的結果能被期刊接受，但是不符合預期或無法再現的研究結果無法得到發表的機會。 @frankTeachingReplication2012 指出摻雜發表偏誤的一系列研究會讓其他研究者高估實驗效應，以及扭曲整合分析的估計值。
+
+總而言之，再現危機突顯的問題，顯示科學研究不只是直線式地檢驗假設、收集及分析資料、然後歸納出結論。每一步思考過程都很容易受到人類偏見影響，產生不只一種行動選擇。因此，實際的科學研究進程，其實更像是進入一座花園迷宮，前方路徑有分歧的歧路花園[^01-intro-4]。
+
+::: {.callout-tip title="心理科學研究過程的歧路花園" collapse="true" style="color: grey"}
+\
+改編自 Pennington (2023), 圖3.8 An example of the garden of forking paths. Starting with a research question, a Teacher can make many different methodological and analytical decisions that impact the research findings Making such decisions based on the results can lead to false positives
+
+![](images/GFP_example.png)
+:::
+
+## 可重製的研究操作 {#intro_good}
+
+延續*開放科學的實踐方法*一節介紹的研究操作，除了增加研究過程的透明度，我們現在也知道，要設定一種合理標準，保障研究過程的可重製性及研究結果的再現程度。因此這一節介紹的**預先註冊**、**註冊報告**、**大型合作研究專案**及**整合科學**，目的是評估已知研究的可重製程度，或者保障原創或再現研究的可重製性。
+
+即使學透實驗設計與統計分析的原則技巧，實驗研究過程中需要透過人類大腦思考的時候(也就是 @fig-scimethod 裡的箭頭)，無論研究人員有沒有意識，必然存在主觀意識介入，影響階段性成果的時刻。這些受到主觀意識影響的研究操作，在研究報告通常不會揭露，導致其他研究者無法重製，進而造成研究結果無法再現。所以為了使用本書學習的讀者，或者根據本書發展課程的教師，這一節整理最新的預先註冊模板，以及註冊報告投稿指引，提供有需要的讀者使用。本書後續單元將使用其中一套模版，設計成學習作業。
+
+### 預先註冊
+
+簡單的操作說明是研究者必須按照嚴格按照研究計畫的設定，按步執行及紀錄收集及分析資料的步驟。本書作者認為，一份能讓研究者按步執行的預先計畫書，至少要有四項條件：(1)有明確的研究問題(Research Question)；(2)掌握樣本母群與合理樣本數(Population and sample size)；(3)能回應研究問題的研究設計(General design)；(4)依照設定的變項(variables)或已編碼的資料集(dataset)處理資料。 在編寫本書時，已經出現因應各式研究需要或平台條件，而設計的預先註冊模板，如下表的整理。
+
+| 模板名稱                                                                                | 適用目的                       | 參考文獻                                                                                  |
+|---------------------------|------------------|---------------------------|
+| [AsPredicted.org](https://aspredicted.org)                                              | 量化/實驗研究                  | @simmonsFalsePositiveCitations2018; @simmonsPreregistrationWhyHow2021                     |
+| [OSF Prereg](https://osf.io/zab38/wiki/home/)                                           | 量化/實驗研究                  | @bowmanOSFPreregTemplate2020                                                              |
+| [PRP-Quant](https://www.psycharchives.org/en/item/088c79cb-237c-4545-a9e2-3616d6cc8453) | 量化/實驗研究                  | @bosnjakTemplatePreregistrationQuantitative2022                                           |
+| [Secondary data preregistration](https://osf.io/jqxfz/)                                 | 既存資料再分析/量化            | @vandenakkerPreregistrationSecondaryData2021                                              |
+| [fMRI preregistration](https://osf.io/dvb2e/)                                           | 功能核磁共振成像實驗設計       | @beyerFMRIPreregistrationTemplate2021                                                     |
+| [Replication Recipe](https://osf.io/zab38/wiki/home/)                                   | 再現研究設計                   | @brandtReplicationRecipeWhat2014a                                                         |
+| [Preregistration in social psychology](https://osf.io/k5wns/)                           | 量化/實驗社會心理學            | @vantveerPreRegistrationSocialPsychology2017                                              |
+| [Cognitive modelling](https://doi.org/10.6084/mq.figshare.16665981.v1)                  | 認知模型建構及測試             | @crüwellPreregistrationDiverseContexts2021                                                |
+| [Qualitative preregistration](https://osf.io/zab38/wiki/home/)                          | 質性研究                       | @havenPreregisteringQualitativeResearch2019; @havenPreregisteringQualitativeResearch2020a |
+| [Systematic reviews](https://www.crd.york.ac.uk/prospero/)                              | 人類和動物研究的系統性文獻回顧 | @pageToolsAssessingRisk2018a; @stewartWhyProspectiveRegistration2012                      |
+
+: 預先註冊模板彙整。改編自 Penningon (2023) 表5.3。
+
+### 註冊報告
+
+預先註冊計畫經由未參與計畫的同儕評審核可，研究人員再依計畫執行，就是運作註冊報告的基本規則。因為需要邀請公正且無利益衝突的專家擔任評審，目前註冊報告的運作，主要依靠學術期刊等論文發表平台。通過同儕評審的預先註冊報告，會取得期刊的原則性接受(in-principle acceptance, IPA)。如果研究者希望突顯主要參與人員的責任，並保障研究過程能完整公開，將取得原則性接受的研究計畫發佈在預印本平台，是能提昇學術倫理高度的作為。
+
+至於採用預先註冊或註冊報告的研究會不會有較佳的研究品質，2021年有研究團隊[@soderbergInitialEvidenceResearch2021a]從多種心理學與神經科學期刊挑選29篇註冊報告論文與57篇傳統模式發表論文，隨機配成兩篇一組再邀請7000多位相關領域學者進行出版後評審，成功回收的300多筆評審顯示，註冊報告論文的研究方法及計分析研究度，以及整體品質指標評分，都顯著高於傳統發表論文。儘管創新程度並無明顯差異，這項初步調查顯示註冊報告正在朝向提倡者想要改善當前科學研究只重視研究結果新奇性，卻忽略研究過程嚴謹程度而有害科學規範的現況[@chambers_trust_2013]。
+
+### 大型合作研究專案
+
+多人合作並發表在高影響力期刊的研究專案[@opensciencecollaborationEstimatingReproducibilityPsychological2015; @camererEvaluatingReplicabilitySocial2018]，是讓全球心理科學界不得不注意再現危機的信號源。 除了由博士級研究人員主持的合作專案，本書特別介紹世界各地負責大學生實驗心理學教學的教師們，所組織的草根聯盟，帶領任職學校的大學生針對某些已發表的心理學研究，進行再現研究專案。最早發起組織聯盟的教師們主張，讓大學部學生直接再現最新心理學實驗研究的最大好處，是能揭露誇大的研究證據與修正發表偏差，以及讓學生由最新研究探討設計一項研究的思考脈絡[@frankTeachingReplication2012]。 @waggePublishingResearchUndergraduate2019 強調透過學生自行執行的再現專案，有助於提高學生對研究再現性的意識，並且能從實作中實踐有助提高可重製性的科學研究操作。可重製的科學研究操作有三個層次：方法、結果和推論。方法可重製是指公開報告提供足夠的方法細節以便其他人員獨立再現；結果可重製是指同樣設計的獨立研究，皆能取得相同或相似結果；推論可重製是指從獨立的再現研究，或重新分析資料能得出相同結論 [@goodmanWhatDoesResearch2016] 。
+
+<!---在講授概論科目的教學現場，@chopikHowWhetherTeach2018 提供有完整程序的授課教材，向學生說明心理科學的再現危機，彙整專家看法與統計方法被誤用的問題。上課前後評估學生對於有驚人發現的社會人格心理學研究的看法，接受評估的學生認為，清楚區分探索性和確證性研究，還有採用合適的證據標準是解決再現危機的實際辦法。 --->
+
+### 整合科學/後設科學研究
+
+再現危機不只是心理科學獨有的現象，需要使用隨機量化研究的社會科學及自然科學領域，也有超過一半的出版研究再現率未達理想標準的問題。跨越領域的方法學革新，促成整合科學(Metascience)或後設科學研究(Meta-research)全新領域的誔生。長期關注生物醫學領域方法學問題的統計學者 Ioannidis，倡議後科設科學科學是探討各種實證科學研究的方法學、報告規範、可重製性、評審方式以及研究動機的形成 [@ioannidisMetaresearchEvaluationImprovement2015; @ioannidisMetaresearchWhyResearch2018]。
+
+簡言之，整合科學或後設科學研究是以可受檢核的量化分析，探討科學家如何從事科學研究的領域。整合分析(Meta-analysis)是整合科學研究者會使用的分析方法之一，不過以整合科學關心的層面，整合分析的功能主要是評估實證研究方法改善效果。社會學者David Peterson與Aaron Panofsky整理歐美學術界過去十五年的發展，發現對於特定科學領域的再現危機帶來的誠信問題，有意識從事改革的實驗科學家、統計學者、資料科學家、以及開放科學實踐者等各種身份的學術工作者，很多人的生涯發展都會投身貢獻整合科學[@petersonMetascienceScientificSocial2023]。本書作者認為，以開放科學操作學習心理學實驗，是開啟學習者進入整合科學/後設科學研究的一道途徑。
+
+```{=html}
+<!---Metascience/Meta-research
+
+We would not have been able to get to where we are now, in a period of deep reflection and scientific reform, without the discipline of meta-research. Meta- research is defined as the study of research itself, including its methods, reporting, reproducibility, evaluation and incentives (Ioannidis 2018). It has roots at the very beginning of the scientific method, with philosophers such as Francis Bacon arguing for more openness and collaboration. However, such arguments were not underpinned by systematic empirical research until recently, when the repli- cation crisis gave rise to the meta-research discipline (Hardwicke et al. 2020). This section is deliberately short because meta-research has been interwoven throughout these pages, for example informing us of how researchers have engaged in QRPS driven by incentive structures to provide one explanation for the replication crisis (John et al. 2012), and evaluating the effectiveness of open science initiatives such as preregistration (e.g. TARG Meta-Research Group and Collaborators 2022) and Registered Reports (e.g. Scheel et al. 2021). But it rightly deserves this section of its own. This is because meta-research can help calibrate the research ecosystem towards higher standards by developing and providing empirical evidence for the many proposed reform initiatives (Hardwicke et al. 2020). By understanding the replication crisis and open science reform, perhaps you could conduct meta-research and improve the research landscape! --->
+```
+## 設計高強度證據的實驗研究法 {#intro_improve}
+
+本書以 @zwaanParticipantNonnaiveteReproducibility2017 重製的九項認知心理學研究為主要教材，第二單元到第四單元以九項原始研究及重製研究的公開資料，學習研究者如何運用**演繹推理**設定研究問題與研究假設，如何根據研究假設提出有效的**實驗設計**，以及如何運用**歸納推理**選擇合適的統計模型以分析實驗資料。第五單元到第七單元依序以九項實驗的研究主題，習作如何規劃與執行符合預先註冊原則的實驗研究。九項實驗的主題及文獻來源如下表：
+
+
+|研究主題|實驗課題|參考文獻|
+|:---:|:---:|:---:|
+|記憶|序列效應| @greeneSpacingEffectsMemory1989 |
+|記憶|假記憶典範| @roedigerCreatingFalseMemories1995 |
+|記憶|區間效應| @greeneSpacingEffectsMemory1989 |
+|知覺|反應-位置相符效應| @craftProcessingSymbolicInformation1970 |
+|知覺|反應-方向相符效應| @eimerEffectsMaskedStimuli1998 |
+|知覺|誘導物干擾效應| @eriksenEffectsNoiseLetters1974 |
+|語言|重覆反應效應| @forsterRepetitionPrimingFrequency1984 |
+|語言|關聯性促發效應| @meyerFacilitationRecognizingPairs1971 |
+|語言|物件形狀模擬| @zwaanLanguageComprehendersMentally2002 |
+
+
+: @zwaanParticipantNonnaiveteReproducibility2017 九項重製研究的主題及實驗課題。
+
+
+
+```{=html}
+<!--- recycled words
+（需要其他章節寫作告一段設，再確定這一節的主題及內容） 
+布局，如何使用本書學習以及找尋真正有助實踐科學方法的資源
+
+描述如何透過開放合作專案，讓學生透過實作研究專案，學習最高證據力的實驗研究方法。
+
+
+
+> 歧路花園範例文字
+觀看健康飲食廣告後，人們是否會做更多的運動？
+
+測試觀看健康飲食廣告組與對照組之間的運動差異。
+
+這個差異在男性和女性之間是否顯著？
+
+在接下來的一小時和一星期內進行運動測量時，這個差異是否顯著？
+
+當在接下來的一小時內進行運動測量時，高BMI與低BMI的人群之間是否顯著？
+
+「BMI較高的個體在觀看健康飲食廣告後的一小時內做更多的運動。」
+
+強制研究預註冊和數據共享有助於糾正發表偏倚。
+
+製造理想的可發表結果的可疑分析實踐也很常見。Simmons等人描述了排除異常值、測試多個依變項和切換統計模型等"p值變革"策略。這破壞了p值和顯著性檢驗的效力。預先註冊研究設計和分析方案可避免此類策略。
+
+不充分的研究實踐,如統計力不足的研究、選擇性報告和未公開的數據處理靈活性,削弱了可重複性。解決方法涉及適當的統計力分析、完整報告所有測量和公開數據。評論者和讀者也應批判地評價方法論。
+
+遵循科學原則和承認探索性詢問至關重要,以產生可靠和可重複的結果。持續改革促進方法論、分析和報告的透明性和嚴謹性。
+
+
+
+
+> 什麼是科學方法？
 >
+> 如何正確運用科學方法，比知道有什麼科學方法更重要。
+
 > 許多領域的心理學家運用心理學實驗掌握人類心智運作的原理，以及運用原理增益人類生活品質的訣竅。認知心理學家經由仔細設計的記憶實驗，了解人類記憶一長串項目最有效的方法[@eriksenEffectsNoiseLetters1974]，以及複習曾學習內容的較佳安排[@greeneSpacingEffectsMemory1989]；社會心理學家藉由實驗確認社會助長的現象[@triplettDynamogenicFactorsPacemaking1898]，以及促成個人服從權威的社會條件[@milgramBehavioralStudyObedience1963]；神經心理學家結合認知作業與腦功能造影技術，掌握不同腦區處理認知作業的差別[@posnerImagesMind1999]。諸如此類的實例，散見於各領域心理學教科書、科普傳播、還有你有機會閱讀的大量論文。
 >
 > 每個促進心理學知識進步的實驗，大多數改良已存在的實驗方法，經歷多次嘗試，才獲得令人信服的結果。**如何規劃及執行有效可靠的實驗方法，分析收集的資料，判斷分析結果是否證實假設**；吸收這個過程的經驗是心理學實驗法的學習目標。一項研究活動需要事先計畫與事後完整的報告，研究結果才能成為能為眾人運用的知識。科普傳播也是以完整報告為報導來源，了解實驗研究流程有助傳達正確資訊。本章從了解知識更新循環，認識心理學實驗的普遍流程。
 
-## 開放科學的實踐方式包括什麼？ {#intro_sci}
+--->
+```
+```{=html}
+<!--- summary of NSF report by claude
+The document discusses reproducibility in several places. Here are some key statements about reproducibility:
 
-@penningtonStudentGuideOpen2023 給大學生的指引
+- Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials and procedures as were used by the original investigator. 
 
-### 預印本發表最新研究
+- To make reproduction possible, efficient, and informative, researchers should sufficiently document the details of the procedures used to collect data, to convert observations into analyzable data, and to analyze data.
 
-預印本(preprint)
+- The document recommends that each report of NSF-funded research should be accompanied by detailed documentation on procedures to enable an independent researcher to reproduce the results.
 
-### 開放資料及分析程式碼
+- The document suggests requiring researchers to archive all materials used for data collection, data transformation, and data analysis in a publicly accessible online storage facility to enable reproducibility. 
 
-計算可重製性(computational reproducibility)
+- The document states that if issues of confidentiality preclude sharing all raw data, perhaps summary statistics can be provided to allow others to reproduce findings.
 
-### 開放研究材料
+- The document recommends research to evaluate various approaches to determining whether a finding replicates, and to assess which approach(es) are most helpful for reaching valid conclusions about replicability.
 
-方法的可重製性(Reproducibility of methodology)
+In summary, the document emphasizes the importance of reproducibility through detailed documentation, data/materials archiving, and transparency to allow independent researchers to duplicate prior study results. It also calls for research to determine optimal approaches for assessing reproducibility.
 
-### 預先註冊
+The authors don't directly state why they wrote this document, but some context can be inferred:
 
-預先註冊(Preregistration)
+- The document is a report from a Subcommittee on Replicability in Science that was established by the NSF SBE Advisory Committee. 
 
-### 註冊報告
+- In the Introduction, the authors note there is accumulating evidence that some scientific findings thought to be robust may in fact be illusory. This suggests issues around reproducibility of research findings.
 
-註冊報告(Registered Report)
+- The document mentions the Subcommittee was tasked with investigating actions NSF SBE could take to promote robust research practices and scientific replicability.
 
-### 合作研究專案及整合科學
+- In the Background section, it states the Subcommittee designed a proposal for a workshop on "Robust Research in the SBE Sciences" to assess the scope of issues with replicability and review recommendations to address it. 
 
-合作研究(Big Team Science)
+- The document then summarizes the workshop discussions and recommendations.
 
-整合科學(Meta Science)
+So in essence, the Subcommittee was formed to examine issues with research replicability and make recommendations to NSF SBE. This document seems to be their report summarizing the findings and recommendations from their workshop, to provide input to NSF SBE on promoting robust research practices.
+--->
+```
+```{=html}
+<!---
+prompts: Below text is from the chapter 5 of the book "Statistics and truth: putting chance to work". Generate an essay for section (3) Scientific methods and knowledge update cycle.
 
-## 為何要經由實踐開放科學學習心理學實驗法
 
-生物醫學研究的證據等級 (level of evidence) @globalspinej.DefinitionLevelsEvidence2015
+科學方法
 
-Grades of Recommendation Assessment, Development and Evaluation (GRADE) Working Group 根據研究結果風險水準，提出研究方法證據等級表
+Statistics: an Inevitable Instrument in Search of Truth 
 
-生醫學界進一步嘗試找到可評估證據強度(Strength of Evidence)的指標
+1. Statistics and truth 
 
-@gibsonRoleValuesJudging2021 @pocockMakingSenseStatistics2015 主張使用p value做為證據強度的指標
+"But as for certain truth, no man known it, Nor will he know it; neither of the gods, Nor yet of the things of which I speak. And even if he were by chance utter The final truth, he would himself not know it; For all is but awoven web of guesses." - Xenophanes of Kolophon 
 
-心理科學的反思 @collingStatisticalInferenceReplication2021
+In the first two chapters, I referred to uncertainty in our real world. Uncertainty may arise through lack of information, lack of sufficient knowledge in utilizing available information, errors in measurements even using sophisticated instruments, acts of God (catastrophes), vagaries of human behaviour (the most unpredictable of all phenomena), random behaviour of fundamental particles requiring probabilistic rather than deterministic laws in explaining natural phenomena, etc. I mentioned how quantification of uncertainty enables us to devise methods to reduce, control or take uncertainty into account in making decisions. In third and fourth chapters I discussed strategies of data analysis for extracting information from observed data and dealing with uncertainty. I emphasized the need to have clean, relevant and honest data and to use appropriate models in extracting information. In this chapter I shall pursue the same theme a little further and discuss through some examples the role of statistics in the wider context of acquiring new knowledge or searching for truth to understand nature and taking optimal decisions in our daily life.
 
-## 科學心理學知識的更新循環 {#intro_cycle}
+What is knowledge and how do we acquire it? What are the thought processes involved and the nature of investigations to be carried out? These questions have baffled the human intellect and remained for a long time the subject of philosophical discourses. However, recent advances in logic and statistical science opened up a systematic way of acquiring new knowledge, interpreted in a pragmatic rather than the metaphysical sense of "true knowledge".
 
-![科學研究流程。改編自 @raoStatisticsTruthPutting1997 ，第123頁插圖。](images/sci_cycle.png){fig-align="center"}
+1.1 Scientific Laws 
 
-## 現實的知識更新陷阱 {#intro_update}
+"Scientijic laws are not advanced by the principal of authority or justified by faith or medieval philosophy; statistics is the only court of appeal to new knowledge." - P.C. Mahalanobis
 
-@chopikHowWhetherTeach2018 與 @frankTeachingReplication2012 說明心理科學的再現危機
+"A beautiful theory, killed by a nasty, ugly little fact." - Thomas H. Huxley
 
-重要事件及啟示
+Science deals with knowledge of natural phenomena and its improvement. Such knowledge is usually abstracted in terms of laws (axioms or theories) which enable prediction of future events within requisite limits of accuracy and which provide the basis for technological research and applications. Thus, we have Newton's laws of motion, Einstein's theory of relativity, Bohr's atomic model, Raman effect, Mendel's laws of inheritance, double helix DNA, Darwin's theory of evolution, etc., on which the modem technology depends. We may never know what the true laws are. Our search is only for working hypotheses which are supported by observational facts and which, in course of time, may be replaced by better working hypotheses with more supporting evidence from a wider set of data and provide wider applicability. We study the world as it seems to be. "It does not matter to science whether there are really electrons or not provided things behave as if there were" (Macmurray, 1939). The scientific method of investigation involves the following endless cycle (or spiral) which is an elaboratin of Popper's formula(P1 ->   TT -> EE -> P2) where P1, P2 stand for initial theory and its modification respectively, TT for testing theory and EE for elimination of errors.
 
-## 開放科學原則及可重製研究操作 {#intro_good}
+Every hypothesis is possibly rejected with the accumulation of more data, a situation bluntly described by Karl Popper:
 
-介紹本書布局，如何使用本書學習以及找尋相關資源
+"Supporting evidence for a scientific hypothesis is merely an attempt at falsification which failed."
 
-## 設計最高證據力的實驗研究法 {#intro_improve}
+The scientific method as shown in the above diagram involved two logical processes - deductive reasoning and inductive reasoning. A detailed discussion of the difference between two is given in Chapter 2. 
 
-@waggePublishingResearchUndergraduate2019 描述如何透過開放合作專案，讓學生透過實作研究專案，學習最高證據力的實驗研究方法。
+As shown in the above diagram, there are two phases in the scientific method: paths (a)-> (b) and (c) -> (d) come under the subject field of research and the creative role played by the scientist and the other paths (e) -> (f) and (g) -> (h) come under the realm of statistics. Through collection of relevant and valid data by efficiently designed experiments and appropriate data analysis to test given hypotheses and to provide clues for possible alternatives, statistics enables the scientist to have a full play for his creative imagination to discover new phenomena without allowing them to run riot and waste in advancing new concepts which have no relation to existing facts. Statistical methods have been of great value especially in biological and social sciences where the range of variation in observations is often large and the number of observations is often limited; only statistical analysis can give a quantitative estimate of the significance of the findings in such situations.
+
+Commenting on the importance of designing an efficient experiment in scientific work (path (e) -> (f) in the above diagram), using statistical principles, R.A. Fisher (1957) says,
+
+"A complete overhauling of the process of the collection, or of experimental design, may often increase the yield ten or twelve fold, for the same cost in time and labor. To consult a statistician after an experiment is finished is often merely to ask him to conduct a *post mortem* examination. He can perhaps say what the experiment died of."
+--->
+```
+```{=html}
+<!---
+prompt: Attached papers are the critical readings for this chapter. I'm going to pick up some examples the scientists do not follow the scientific methods as described previously. Try to pick up them and write an essay.
+
+Based on the attached papers, here is an essay discussing examples where scientists did not properly follow scientific methods:
+
+The scientific method involves systematic processes like hypothesis generation, experiment design, data collection, and critical analysis to acquire new knowledge. However, scientists do not always rigidly follow these principles in practice. The attached papers provide several examples where questionable research practices undermine the goals of science.
+
+One issue is failing to distinguish between exploratory and confirmatory research. As Chopik et al. discuss, psychology research often extracts definitive conclusions from initial exploratory findings without rigorous hypothesis testing. This inflates the perceived strength of evidence. Solutions involve clearly delineating exploratory versus confirmatory work and applying suitable standards of proof.
+
+Publication bias is another problem, where only successful studies are published while negative findings remain hidden. Frank and Saxe note this distorts meta-analyses and exaggerates effects for planning future studies. Replication failures are also rarely published. Mandating study preregistration and data sharing helps counter publication bias. 
+
+Questionable analytic practices that produce the desired, publishable results are also common. Simmons et al. describe "p-hacking" strategies like excluding outliers, testing multiple dependent variables, and switching statistical models. This flexibility invalidates p-values and significance testing. Preregistering the study design and analysis plan prevents such tactics.
+
+Sloppy research practices like underpowered studies, selective reporting, and undisclosed data flexibility undermine replicability. Solutions involve proper power analysis, fully reporting all measures, and making data openly accessible. Reviewers and readers should also critically evaluate methodology.
+
+Overall, these examples demonstrate that science involves more than mechanically testing hypotheses. It is an intricate process vulnerable to human biases. Following sound scientific principles and acknowledging exploratory inquiry is essential for producing reliable, replicable findings. Ongoing reforms promote transparency and rigor in methodology, analysis, and reporting.
+
+Good. Could you highlight each questionable research behavior from the two papers possibly harm the steps of scientific methods that are illustrated in section (3) Scientific methods and knowledge update cycle?
+
+Sure, here is an analysis linking the questionable research practices to specific steps of the scientific method:
+
+1. Creating hypotheses
+
+- Extracting definitive conclusions from exploratory research can lead to untested, inflated hypotheses for future confirmatory research (Chopik et al.)
+
+2. Making predictions 
+
+- Basing predictions on inflated effects from publication bias and undisclosed data practices sets up unrealistic expectations (Frank & Saxe)
+
+3. Designing experiments 
+
+- Underpowered studies with low statistical power provide ambiguous results (Frank & Saxe)
+
+4. Collecting data
+
+- Undisclosed data exclusion and flexibility corrupts the raw data and analysis (Simmons et al.)
+
+5. Analyzing results
+
+- Questionable analytic practices like p-hacking invalidate statistical testing and distort results (Simmons et al.)
+
+6. Modifying hypotheses
+
+- Failing to publish negative results inhibits updating hypotheses to fit empirical evidence (Frank & Saxe) 
+
+7. Repeating the cycle
+
+- Publication bias and emphasis on positive results hinders self-correction via replication (Frank & Saxe)
+
+In summary, questionable practices introduce bias and distortion across all steps of the scientific method. This prevents the iterative process of knowledge acquisition predicted by the idealized model. Promoting transparency and reproducibility is crucial for aligning scientific practice with scientific principles.
+--->
+```
+```{=html}
+<!---
+prompt: From the three attached pdf files, summarize the elaborations about "reproducibility" and explain why reproducibility is import. Align the English and Traditional Chinese essay in parallel.
+
+English:
+
+The papers emphasize reproducibility is essential for verifying research findings and self-correction in science. Goodman et al. describe three types of reproducibility: methods, results, and inferential. Methods reproducibility means enough methodological detail is provided for independent replication. Results reproducibility means an independent study achieves the same or similar results. Inferential reproducibility means drawing the same conclusions from independent replication or reanalysis.
+
+Wagge et al. highlight classroom replications by students as a way to improve reproducibility and teach good practices. Frank and Saxe argue replication uncovers inflated evidence and publication bias. All urge transparency, open data sharing, proper methodology, and distinguishing exploratory from confirmatory research. Reproducibility builds cumulative knowledge and an interconnected web of findings.
+
+--->
+```
+
+[^01-intro-1]: 英文維基百科條目\~ https://en.wikipedia.org/wiki/Scientific_method
+
+[^01-intro-2]: https://zh.wikipedia.org/zh-tw/%E5%9F%B9%E6%A0%B9%E6%B3%95
+
+[^01-intro-3]: 參考FORRT詞彙表Reproducibility crisis (aka Replicability or replication crisis) \~ https://forrt.org/glossary/reproducibility-crisis-aka-replicab/
+
+[^01-intro-4]: 參考FORRT詞彙表Garden of forking paths \~ https://forrt.org/glossary/garden-of-forking-paths/
