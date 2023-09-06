@@ -6,6 +6,8 @@
 
 本章開頭引述的段落來自兩本英文科普書：*七大罪* [@chambersSevenDeadlySins2017]以及*科幻小說* [@ritchieScienceFictionsHow2020]，作者都是參與心理科學再現危機(Replication crisis)重要事件的第一線心理科學研究者。這兩段話在書中的脈絡都是與讀者討論彼此認知的**科學方法**(scientific method)[^01-intro-1]，究竟出了什麼問題？這兩本書在開放科學提倡者之間有極大迴響，但是在更大眾的出版市場，影響力相當有限。本書主筆之一認為無法發揮更大影響力的主因，是這兩本書定位目標讀者，必須是有科學研究經驗的專業科學家或公民科學參與者。這群讀者對於**科學方法**的了解是透過親身參與，而非只是透過閱讀專業書藉或參考資料，記憶他人給你的解釋而已。透過介紹這兩本書，使用本書學習心理學實驗研究方法的同學應該能明白這本教科書的真正功能 -- 引導你完整參與實驗研究的過程。如果你認真完成至少一項本書提供的研究專案範本(或者與你的指導教授合作的研究專案)，產生閱讀*七大罪*與*科幻小說*的興趣，就達到我們編寫這本教科書的中長程目標之一了。
 
+[^01-intro-1]: 英文維基百科條目\~ https://en.wikipedia.org/wiki/Scientific_method
+
 科學心理學顧名思義也是運用**科學方法**探究心理學知識，那麼學習起點當然是要認識什麼是**科學方法**。讀過前一段後，你應該知道親身體會比記憶各種來源名詞的解釋更重要，所以本書第一章先透過介紹普及開放科學的實踐方式，以及比較實驗研究與其他研究方法的證據等級(Level of evidence)，向你說明為何學習實驗研究法，是心理學研究者掌握**科學方法**的最佳途徑。接著我們會討論現實的心理科學研究場景，是如何更新知識；基於開放及可重製原則的研究操作，是如何生產強度最高的實驗證據、或是檢核已出版研究的證據品質。最後，透過介紹本書的學習架構，我們提供一些進一步思考的課題，讓同學從實踐開放與可重製研究專案的過程中，形成**科學方法**的概念。
 
 也許有些同學在繼續讀下去的時候(或者聽教授繼續解釋)，會被一些既定印象困惑。其中一些應該像是「科學方法不就是操作科學儀器嗎？」、「心理學的科學方法不就是編量表、寫實驗程式碼嗎？」。其實這些印象只是科學研究過程的一部分，也許是來自你的親身經歷或者聽聞某些學長姐描述的經驗，完整的**科學方法**涵蓋從提出問題到收集分析資料，做出結論的科學研究過程。操作儀器的活動比較容易影像化，比較容易觸及大眾眼球，影像記憶較深刻的學生也許要花些功夫克服這些印象，才能繼續學習。如果你有這樣的困惑，又很難靠個人意志擺脫，不妨與你所在學校的專業教授當面聊一聊。
@@ -89,6 +91,8 @@
 
 現代實驗科學的生產知識流程源自十七世紀英國哲學家弗蘭西斯·培根提出的**排除歸納法**[^01-intro-2]，這是人類思想史的第一套科學方法論。此後隨著科學的總體發展，科學方法論述不斷改進，但是任何一家方法學論述都有歸納推理(Inductive Reasoning)和演繹推理(Deductive Reasoning)兩種思考過程。
 
+[^01-intro-2]: https://zh.wikipedia.org/zh-tw/%E5%9F%B9%E6%A0%B9%E6%B3%95
+
 在隨機方法及機率建模等統計方法成為當代科學實驗重要工具，科學方法形成更新知識的循環流程，大致有七個步驟：
 
 1.  創建假說：透過演繹推理，根據現有知識和理論提出假說。
@@ -117,9 +121,13 @@
 
 本章一開始提到一個有些聳動的名詞：**再現危機(Replication crisis)**，這是泛指心理科學領域從2011年起，透過檢討違反學術倫理的個案，以及多項跨實驗室合作再現專案，可成功再現原始研究結果不及一半，眾多心理學者意識到的各種問題[參考 @penningtonStudentGuideOpen2023 的名詞解釋]。最常被討論的問題有**發表偏誤**(Publication Bias)，**不正當的研究操作**(Questionable Research Practices, QRPs)，以及**缺乏透明度**(lack of transparency)[^01-intro-3]。最後一種問題的根源是許多心理科學及其他領域的研究者缺乏開放的觀念，解方正是稍早我們先談過的幾項開放科學操作：[預印本](#intro_opensci_preprint)、[開放資料及分析程式碼](#intro_opensci_opencode)、[開放研究材料](#intro_opensci_openmaterials)。而前兩種問題的根源是無法被再現的原始研究者，並未充分按照[前一節](#intro_cycle)介紹的科學方法完成知識更新流程。
 
+[^01-intro-3]: 參考FORRT詞彙表Reproducibility crisis (aka Replicability or replication crisis) \~ https://forrt.org/glossary/reproducibility-crisis-aka-replicab/
+
 @frankTeachingReplication2012 與 @chopikHowWhetherTeach2018 都指出許多有創新意義的心理學研究，缺乏保障信度的再現研究支持。由於研究者在研究過程中，並不總是按照**科學方法**提示的思考過程應嚴格遵循的原則，特別是與統計分析有關的「設計實驗」和「檢驗假說」兩個步驟。不正當的研究操作之一是未明確區分探索性和確證性研究。@chopikHowWhetherTeach2018 指出，心理學研究經常從初步的探索結果擷取決定性的結論，而非進行嚴格的假設檢驗，導致研究者高估證據力。發表偏誤的來源則是只有符合研究者預期且統計顯著的結果能被期刊接受，但是不符合預期或無法再現的研究結果無法得到發表的機會。 @frankTeachingReplication2012 指出摻雜發表偏誤的一系列研究會讓其他研究者高估實驗效應，以及扭曲整合分析的估計值。
 
 總而言之，再現危機突顯的問題，顯示科學研究不只是直線式地檢驗假設、收集及分析資料、然後歸納出結論。每一步思考過程都很容易受到人類偏見影響，產生不只一種行動選擇。因此，實際的科學研究進程，其實更像是進入一座花園迷宮，前方路徑有分歧的歧路花園[^01-intro-4]。
+
+[^01-intro-4]: 參考FORRT詞彙表Garden of forking paths \~ https://forrt.org/glossary/garden-of-forking-paths/
 
 ::: {.callout-tip title="心理科學研究過程的歧路花園" collapse="true" style="color: grey"}
 \
@@ -180,23 +188,19 @@ We would not have been able to get to where we are now, in a period of deep refl
 
 本書以 @zwaanParticipantNonnaiveteReproducibility2017 重製的九項認知心理學研究為主要教材，第二單元到第四單元以九項原始研究及重製研究的公開資料，學習研究者如何運用**演繹推理**設定研究問題與研究假設，如何根據研究假設提出有效的**實驗設計**，以及如何運用**歸納推理**選擇合適的統計模型以分析實驗資料。第五單元到第七單元依序以九項實驗的研究主題，習作如何規劃與執行符合預先註冊原則的實驗研究。九項實驗的主題及文獻來源如下表：
 
-
-|研究主題|實驗課題|參考文獻|
-|:---:|:---:|:---:|
-|記憶|序列效應| @greeneSpacingEffectsMemory1989 |
-|記憶|假記憶典範| @roedigerCreatingFalseMemories1995 |
-|記憶|區間效應| @greeneSpacingEffectsMemory1989 |
-|知覺|反應-位置相符效應| @craftProcessingSymbolicInformation1970 |
-|知覺|反應-方向相符效應| @eimerEffectsMaskedStimuli1998 |
-|知覺|誘導物干擾效應| @eriksenEffectsNoiseLetters1974 |
-|語言|重覆反應效應| @forsterRepetitionPrimingFrequency1984 |
-|語言|關聯性促發效應| @meyerFacilitationRecognizingPairs1971 |
-|語言|物件形狀模擬| @zwaanLanguageComprehendersMentally2002 |
-
+| 研究主題 |     實驗課題      |                參考文獻                 |
+|:--------:|:-----------------:|:---------------------------------------:|
+|   記憶   |     序列效應      |     @greeneSpacingEffectsMemory1989     |
+|   記憶   |    假記憶典範     |   @roedigerCreatingFalseMemories1995    |
+|   記憶   |     區間效應      |     @greeneSpacingEffectsMemory1989     |
+|   知覺   | 反應-位置相符效應 | @craftProcessingSymbolicInformation1970 |
+|   知覺   | 反應-方向相符效應 |     @eimerEffectsMaskedStimuli1998      |
+|   知覺   |  誘導物干擾效應   |     @eriksenEffectsNoiseLetters1974     |
+|   語言   |   重覆反應效應    | @forsterRepetitionPrimingFrequency1984  |
+|   語言   |  關聯性促發效應   | @meyerFacilitationRecognizingPairs1971  |
+|   語言   |   物件形狀模擬    | @zwaanLanguageComprehendersMentally2002 |
 
 : @zwaanParticipantNonnaiveteReproducibility2017 九項重製研究的主題及實驗課題。
-
-
 
 ```{=html}
 <!--- recycled words
@@ -377,11 +381,3 @@ Wagge et al. highlight classroom replications by students as a way to improve re
 
 --->
 ```
-
-[^01-intro-1]: 英文維基百科條目\~ https://en.wikipedia.org/wiki/Scientific_method
-
-[^01-intro-2]: https://zh.wikipedia.org/zh-tw/%E5%9F%B9%E6%A0%B9%E6%B3%95
-
-[^01-intro-3]: 參考FORRT詞彙表Reproducibility crisis (aka Replicability or replication crisis) \~ https://forrt.org/glossary/reproducibility-crisis-aka-replicab/
-
-[^01-intro-4]: 參考FORRT詞彙表Garden of forking paths \~ https://forrt.org/glossary/garden-of-forking-paths/
