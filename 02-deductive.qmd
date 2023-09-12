@@ -10,15 +10,19 @@ Zotero主程式、雲端、附加模組(Add-ons)
 
 [主程式介紹](https://scchen.com/zh/post/zotero/)
 
+[附加模組清單](https://www.zotero.org/support/plugins)
 
 - 收集文獻全文
 
 主程式全文搜尋器
 Sci-Hub plugin for zotero
 
-- 管理文獻檔案
 
+- 優化文獻資訊管理
+
+Better BibTeX for Zotero
 Zotfile
+
 
 - 文獻筆記工具
 
@@ -37,8 +41,6 @@ MS Word
 LibreOffice Writer
 google doc
 
-Better BibTeX for Zotero
-
 - 雲端共享管理
 
 
@@ -46,9 +48,36 @@ Better BibTeX for Zotero
 <!---這個單元介紹學習與執行研究過程經常運用的輔助工具。各種工具都能免費取用，而且持續 更新。建議讀者初次閱讀約略了解這個單元提供的資訊即可，其後學習遇到需要運用某種工具時，再來參閱相關資訊。--->
 
 
-## 筆記技巧及管理 {#toolbox_manage}
+## 筆記技巧及知識管理 {#toolbox_manage}
+
+- 如何從研究論文萃取重要資訊
+
+```
+> 反向思考知識更新循環
+
+- 由思考成果尋找合適的筆記技巧
+- 由思考成果設計筆記原則
+- 運用zotero附加模組彙整筆記技巧
+```
 
 
+## 演繹推理習作
+
+
+### 設定研究問題
+
+- 為何 @zwaanParticipantNonnaiveteReproducibility2017 要重製九項認知心理學實驗？
+
+- @zwaanParticipantNonnaiveteReproducibility2017 選擇的九項實驗有什麼科學意義？
+
+
+### 設定研究假設
+
+- @zwaanParticipantNonnaiveteReproducibility2017 如何定義非生手參與者(Participant nonnaiveté)
+
+- @zwaanParticipantNonnaiveteReproducibility2017 如何定義實驗結果的重製性(reproducibility of experimental effects)
+
+- @zwaanParticipantNonnaiveteReproducibility2017 的論文裡那一個段落具體描述研究假設？
 
 <!---
 文明社會的基石是有典藏與傳播知識產物的機構，很多人首先會想到的機構應該是圖書館。一切資訊都可以數位化與網路化的今日，越來越少人依賴實體圖書館提供的服務。這種趨勢帶來知識的碎形化，許多學生要寫報告時都直接上網收集資料，報告內容欠缺組織與忽視資料來源。本節分享google scholar[^1]搭配Zotero[^2]的使用心得，讀者可依個人習慣建立個人化知識管理系統。

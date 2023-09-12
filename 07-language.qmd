@@ -7,9 +7,16 @@ nocite: |
 
 > 本單元學習目標：語言研究的知識更新。可能的混淆因素~ participants' strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。
 
-- 預先註冊範本 [AsPredicted.org](https://aspredicted.org)  
+
+- 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？
+
+- 評估在本地執行重製實驗的可行性？什麼條件需要進行調整？
 
 
+[^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
+
+
+# 舊版教材回顧 {#language_old}
 
 語言的心理學研究在實驗心理學的發展歷史，相對短於心理計時學與記憶研究。早期重要的研究方向來自發展更早的語言學(Linguistics)，一直到今天還是跨越心理學與語言學的研究領域。根據[維基百科的條目](https://en.wikipedia.org/w/index.php?title=Psycholinguistics&oldid=867220943)，語言心理學(language of psychology或psycholinguistics)一詞最早出現於美國心理學家傑克布．坎特(Jacob Robert Kantor)於1936年出版的著作《語法的客觀心理學》(An Objective Psychology of Grammar)，但是到了1946年坎特的學生尼可拉斯．普洛克(Nicholas Pronko)發表論文之後，語言心理學一詞才被學術社群知悉，進而促成各種專業期刊與研討會的成立。
 
