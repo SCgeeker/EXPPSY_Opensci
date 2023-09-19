@@ -14,22 +14,22 @@ Zotero主程式、雲端、附加模組(Add-ons)
 
 - 收集文獻全文
 
-主程式全文搜尋器
+主程式全文搜尋器; 
 Sci-Hub plugin for zotero
 
 
 - 優化文獻資訊管理
 
-Better BibTeX for Zotero
+Better BibTeX for Zotero;
 Zotfile
 
 
 - 文獻筆記工具
 
-主程式pdf瀏覽器
-zotero pdf translate
-Mdnotes for Zotero
-Zotero Better Notes
+主程式pdf瀏覽器;
+zotero pdf translate;
+Mdnotes for Zotero;
+Zotero Better Notes;
 Zotero GPT
 
 - 文獻關聯勘查
@@ -38,8 +38,8 @@ Inciteful Zotero Pulgin
 
 - 文書編輯輔助
 
-MS Word
-LibreOffice Writer
+MS Word;
+LibreOffice Writer;
 google doc
 
 - 雲端共享管理
