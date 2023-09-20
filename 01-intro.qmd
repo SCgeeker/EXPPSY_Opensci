@@ -93,7 +93,7 @@
 
 隨機方法及機率建模等統計方法成為當代科學實驗重要工具，科學方法形成更新知識的循環流程，大致有七個步驟：
 
-1.  創建假說：透過演繹推理，根據現有知識和理論提出假說。
+1.  創建假說[^01-intro-5]：透過演繹推理，根據現有知識和理論提出假說。
 
 2.  做出預測：基於假說演繹事件發生過程，推測可能的實驗結果。
 
@@ -383,3 +383,5 @@ Wagge et al. highlight classroom replications by students as a way to improve re
 [^01-intro-3]: 參考FORRT詞彙表Reproducibility crisis (aka Replicability or replication crisis) \~ https://forrt.org/glossary/reproducibility-crisis-aka-replicab/
 
 [^01-intro-4]: 參考FORRT詞彙表Garden of forking paths \~ https://forrt.org/glossary/garden-of-forking-paths/
+
+[^01-intro-5]: 科學假設的必要條件是[可否證性](https://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7)，無法滿足此條件的假設陳述，是無法運用科學方法驗證的虛假學說。
