@@ -2,9 +2,15 @@
 
 > 本單元學習目標：(1)探討為何 @zwaanParticipantNonnaiveteReproducibility2017 要挑選九項實驗進行重製; (2) 根據原始研究與重製研究文獻，學習研究者如何演繹研究問題及假設
 
+本書一開始就提到，科學論文及專業書藉是科學研究者取得研究問題的重要來源。**開放取用**讓專業科學研究者能取得需要的文獻，從整理及閱讀文獻取得資訊形成科學問題，甚至可測試的研究假設，就要依賴研究者的**演繹推理**工夫。培養與精進研究者的演繹推理，就是**開放教育**的使命，也是本單元的重點。
 
+本章首先介紹開源文獻管理軟體[zotero](https://www.zotero.org/)，這套軟體能幫助研究者收集整理要轉化出科學問題的文獻，官方及核心使用者開發的附加元件(plugins)，能協助研究者筆記文獻重點及個人想法，以及輔助撰寫報告時，編輯要引用的文獻及參考書目。接著分享形成研究問題及假設的建議及技巧，透過案例展示以及習作練習，讓讀者從閱讀 @zwaanParticipantNonnaiveteReproducibility2017 的重製實驗及原始文獻，接觸專業研究者如何進行演繹推理。
+
+<!---個人知識管理(Personal Knowledge Management, PKM)的觀念及技巧， --->
 
 ## 演繹推理輔助工具 {#toolbox}
+
+[zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]。
 
 Zotero主程式、雲端、附加模組(Add-ons)
 
@@ -133,7 +139,7 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 
 
-
+[^02-deductive-1]: TBA
 
 
 

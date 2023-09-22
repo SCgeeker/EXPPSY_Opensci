@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.427">
+<meta name="generator" content="quarto-1.3.353">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="第一版(Quarto重製)">
 <title>實驗心理學：開放科學取向 - 2&nbsp; 演繹推理</title>
@@ -75,8 +75,7 @@ div.csl-indent {
     "search-more-matches-text": "更多本頁符合搜索條件結果",
     "search-clear-button-title": "清除搜索條件",
     "search-detached-cancel-button-title": "取消搜索",
-    "search-submit-button-title": "提交搜索",
-    "search-label": "搜索"
+    "search-submit-button-title": "提交搜索"
   }
 }</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <link rel="stylesheet" href="include/booktem.css">
@@ -95,7 +94,7 @@ div.csl-indent {
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-deductive.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">演繹推理</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -105,7 +104,7 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">實驗心理學：開放科學取向</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -129,7 +128,7 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="搜索"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -260,8 +259,12 @@ div.csl-indent {
 </header><blockquote class="blockquote">
 <p>本單元學習目標：(1)探討為何 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 要挑選九項實驗進行重製; (2) 根據原始研究與重製研究文獻，學習研究者如何演繹研究問題及假設</p>
 </blockquote>
+<p>本書一開始就提到，科學論文及專業書藉是科學研究者取得研究問題的重要來源。<strong>開放取用</strong>讓專業科學研究者能取得需要的文獻，從整理及閱讀文獻取得資訊形成科學問題，甚至可測試的研究假設，就要依賴研究者的<strong>演繹推理</strong>工夫。培養與精進研究者的演繹推理，就是<strong>開放教育</strong>的使命，也是本單元的重點。</p>
+<p>本章首先介紹開源文獻管理軟體<a href="https://www.zotero.org/">zotero</a>，這套軟體能幫助研究者收集整理要轉化出科學問題的文獻，官方及核心使用者開發的附加元件(plugins)，能協助研究者筆記文獻重點及個人想法，以及輔助撰寫報告時，編輯要引用的文獻及參考書目。接著分享形成研究問題及假設的建議及技巧，透過案例展示以及習作練習，讓讀者從閱讀 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的重製實驗及原始文獻，接觸專業研究者如何進行演繹推理。</p>
+<!---個人知識管理(Personal Knowledge Management, PKM)的觀念及技巧， --->
 <section id="toolbox" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="toolbox">
 <span class="header-section-number">2.1</span> 演繹推理輔助工具</h2>
+<p><a href="https://www.zotero.org/">zotero</a>是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
 <p>Zotero主程式、雲端、附加模組(Add-ons)</p>
 <p><a href="https://scchen.com/zh/post/zotero/">主程式介紹</a></p>
 <p><a href="https://www.zotero.org/support/plugins">附加模組清單</a></p>
@@ -379,7 +382,10 @@ div.csl-indent {
 Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2018). Participant <span>Nonnaiveté</span> and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1968–1972. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
 </div>
 </div>
-</section></section></main><!-- /main --><script>
+</section></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
+<ol>
+<li id="fn1"><p>TBA<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></main><!-- /main --><script>
 
 /* update total correct if #webex-total_correct exists */
 update_total_correct = function() {
