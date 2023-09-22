@@ -33,10 +33,10 @@ Zotfile
 - 文獻筆記工具
 
 主程式pdf瀏覽器;
-zotero pdf translate;
-Mdnotes for Zotero;
-Zotero Better Notes;
-Zotero GPT
+zotero pdf translate; 
+Zotero GPT; 
+Mdnotes for Zotero
+<!---;Zotero Better Notes;--->
 
 - 文獻關聯勘查
 

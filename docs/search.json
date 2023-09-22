@@ -361,7 +361,11 @@
     "href": "02-deductive.html#toolbox",
     "title": "2  演繹推理",
     "section": "\n2.1 演繹推理輔助工具",
+<<<<<<< HEAD
     "text": "2.1 演繹推理輔助工具\nzotero是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件1。\nZotero主程式、雲端、附加模組(Add-ons)\n主程式介紹\n附加模組清單\n\n收集文獻全文\n\n主程式全文搜尋器; Sci-Hub plugin for zotero\n\n優化文獻資訊管理\n\nBetter BibTeX for Zotero; Zotfile\n\n文獻筆記工具\n\n主程式pdf瀏覽器; zotero pdf translate; Mdnotes for Zotero; Zotero Better Notes; Zotero GPT\n\n文獻關聯勘查\n\nInciteful Zotero Pulgin\n\n文書編輯輔助\n\nMS Word; LibreOffice Writer; google doc\n\n雲端共享管理"
+=======
+    "text": "2.1 演繹推理輔助工具\nZotero主程式、雲端、附加模組(Add-ons)\n主程式介紹\n附加模組清單\n\n收集文獻全文\n\n主程式全文搜尋器; Sci-Hub plugin for zotero\n\n優化文獻資訊管理\n\nBetter BibTeX for Zotero; Zotfile\n\n文獻筆記工具\n\n主程式pdf瀏覽器; zotero pdf translate; Zotero GPT; Mdnotes for Zotero \n\n文獻關聯勘查\n\nInciteful Zotero Pulgin\n\n文書編輯輔助\n\nMS Word; LibreOffice Writer; google doc\n\n雲端共享管理"
+>>>>>>> 9e7e5700790957b7125ded589f437ef068980547
   },
   {
     "objectID": "02-deductive.html#toolbox_manage",
