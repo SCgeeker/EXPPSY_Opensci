@@ -10,13 +10,15 @@
 
 ## 演繹推理輔助工具 {#toolbox}
 
-[zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]。
+[zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]，依照使用者個人習慣設定主程式[^02-deductive-2]，就可以透過外掛元件匯入從網路搜尋到的文獻書目資訊[^02-deductive-3]，能取得全文pdf的文獻，也可以匯入指定資料夾[^02-deductive-4]。
 
+閱讀文獻並筆記重點[^02-deductive-5]，是演繹推理活動的開始。zotero有許多由開發團隊及各地精熟使用者開發的[附加模組](https://www.zotero.org/support/plugins)，本書作者群推薦要學習實驗研究法的讀者，運用zotfile管理及匯出已建立好的筆記[^02-deductive-6]，整合多種翻譯引擎的pdf translate[^02-deductive-7]，還有能以已收錄的文獻書目，搜尋有引用關係的新舊文獻inciteful[^02-deductive-8]。
+
+<!---
 Zotero主程式、雲端、附加模組(Add-ons)
 
 [主程式介紹](https://scchen.com/zh/post/zotero/)
 
-[附加模組清單](https://www.zotero.org/support/plugins)
 
 - 收集文獻全文
 
@@ -36,7 +38,7 @@ Zotfile
 zotero pdf translate; 
 Zotero GPT; 
 Mdnotes for Zotero
-<!---;Zotero Better Notes;--->
+;Zotero Better Notes;
 
 - 文獻關聯勘查
 
@@ -52,7 +54,7 @@ google doc
 
 
 
-<!---這個單元介紹學習與執行研究過程經常運用的輔助工具。各種工具都能免費取用，而且持續 更新。建議讀者初次閱讀約略了解這個單元提供的資訊即可，其後學習遇到需要運用某種工具時，再來參閱相關資訊。--->
+這個單元介紹學習與執行研究過程經常運用的輔助工具。各種工具都能免費取用，而且持續 更新。建議讀者初次閱讀約略了解這個單元提供的資訊即可，其後學習遇到需要運用某種工具時，再來參閱相關資訊。--->
 
 
 ## 筆記技巧及知識管理 {#toolbox_manage}
@@ -137,11 +139,22 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 --->
 
 
-
-
 [^02-deductive-1]: TBA
 
+[^02-deductive-2]: TBA
 
+[^02-deductive-3]: TBA
+
+
+[^02-deductive-4]: <br/>(1)找到要取得書目的文獻DOI並複製。<br/><img src="images/z-a4-1.png"><br/>(2)進到zotero頁面，點選🪄圖示，開啟輸入視窗。<br/><img src="images/z-a4-2.png"><br/>(3)將DOI填入輸入視窗。<br/><img src="images/z-a4-3.png"><br/>(4)書目匯入成功後，按滑鼠右鍵，點選「找到可用的pdf」。<br/><img src="images/z-a4-4.png"><br/>(5)點選後跳轉至此頁面，搜尋pdf中。<br/><img src="images/z-a4-5.png"><br/>(6)打勾表示有可用pdf，zotero會自動下載pdf檔案。<br/><img src="images/z-a4-6.png"><br/>(7)回到zotero主程式視窗，出現pdf圖示代表已完成下載。<br/><img src="images/z-a4-7.png">
+
+[^02-deductive-5]: <br/>(1)從zotero主程式視窗，選取一個已經將連結放入其中的文獻文件。<br/><img src="images/z-a5-1.png"><br/>(2)將游標移到想檢視的文獻書目，點擊滑鼠的右鍵，可看到如下圖的選單畫面。由選單開啟pdf檢視器。<br/><img src="images/z-a5-2.png"><br/>(3)點擊pdf檢視器分頁，即可檢視文件內容。<br/><img src="images/z-a5-3.png"><br/>(4)檢視器的畫線功能可標記你感興趣或是你覺得是重點的一句話。<br/><img src="images/z-a5-4.png"><br/>(5)畫線子選單提供多種畫筆顏色標記，還可以對標記範圍紀錄個人註解。<br/><img src="images/z-a5-5.png"><br/>(6)點擊下圖用紅筆圈起來的圖示，可開啟畫記清單。<br/><img src="images/z-a5-6.png"><br/>(7)畫記清單裡紀錄可持續編輯，也可以加入自己建立的筆記當中。<br/><img src="images/z-a5-7.png"><br/>(8)點選如以下畫面右側，紅圈標示的加號圖示，就會建立附加於這條書目的筆記。<br/><img src="images/z-a5-8.png"><br/>(9)將游標移到加號並點擊滑鼠的右鍵，開啟筆記建立選單。<br/><img src="images/z-a5-9.png"><br/>(10)可以選擇**新增項目筆記**來建立空白項目筆記，或是選擇擇**由標註來新增項目筆記**以已經建立的畫記建立筆記，如下圖示範。<br/><img src="images/z-a5-10.png"><br/>(11)**新增項目筆記**建立的空白項目筆記如以下畫面，可自行打字編輯。<br/><img src="images/z-a5-11.png"><br/>(12)或者如以下連續畫面示範，把畫記清單裡的項目拖到項目筆記裡。<br/><img src="images/z-a5-12.png"><br/><br/><img src="images/z-a5-13.png"><br/>(13)之後要找自己之前畫的重點在哪裡，可以點擊左側畫記清單的項目，或者右側筆記裡的條目，就會跳到pdf文件裡的重點畫線。<br/><img src="images/z-a5-14.png"><br/><br/><img src="images/z-a5-15.png"><br/>
+
+[^02-deductive-6]: <br/>(1)到[Zotfile下載網頁](http://zotfile.com/)，下載的檔案副檔名為.xpi的安裝檔案。<br/><img src="images/z-a6-1.png"><br/>(2)從Zotero主程式選單點選工具 > 附加元件，開啟附加元件管理頁面。<br/><img src="images/z-a6-2.jpg"><br/>(3)將第一步下載的Zotfile 安裝檔案拖曳到附加元件管理頁面，按下安裝即可。<br/><img src="images/z-a6-3b.jpg"><br/><img src="images/z-a6-3a.jpg"><br/>(4)安裝完畢後，請重新啟動 Zotero ，就可以在**工具**選單之下看到`Zotfile Preferences`。<br/><img src="images/z-a6-4.jpg"><br/>(5)設定Zotfile。初次設定會出現如以下畫面的訊息視窗，按下OK即可。<br/><img src="images/z-a6-6a.jpg"><br/>(6)如果還未準備好與個人平板裝置同步，可依照以下連續畫面示範取消同步功能。<br/><img src="images/z-a6-6b.jpg"><br/><img src="images/z-a6-5.png"><br/>(7)如果曾經在其他pdf閱讀軟體畫記重點，可使用Zotfile的功能，將重點匯入zotero，如以下連續畫面示範。<br/><img src="images/z-a6-6d.png"><br/><img src="images/z-a6-6e.png">
+
+[^02-deductive-7]: <br/>(1)安裝Zotero PDF Translate~搜尋或點擊這套附加元件的[GitHub 網頁](https://github.com/windingwind/zotero-pdf-translate)，如以下畫面。<br/><img src="images/z-a7-1.png"><br/>(2)在網頁中下滑，就會在網頁的右側看到 Releases 的字樣，點進去後即可下載，如以下畫面紅框處。<br/><img src="images/z-a7-2.png"><br/>(3)下載之後，就可以在電腦中找到 “ zotero-pdf-translate.xpi ” 的檔案。<br/><img src="images/z-a7-3.png"><br/>(4)開啟zotero附加元件管理頁面。如以下畫面示範。<br/><img src="images/z-a7-4.png"><br/>(5)把先前下載的 xpi 檔案拖移進去，安裝成功如以下畫面。<br/><img src="images/z-a7-5.png"><br/>(6)設定Zotero PDF Translate~開啟`編輯` 的`偏好設定`，如以下畫面示範。<br/><img src="images/z-a7-6.png"><br/>(7)切換到`翻譯`子頁面，即可選擇個人偏好的設定，如以下畫面示範。<br/><img src="images/z-a7-7.png">
+
+[^02-deductive-8]: TBA
 
 
 
