@@ -139,7 +139,7 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 --->
 
 
-[^02-deductive-1]: TBA
+[^02-deductive-1]: <br/>(1)點擊內文連結或搜尋zotero官網，開啟後點選**下載Download**按鈕進入下載頁面。<br/><img src="images/z-a1-1.jpg"><br/>(2)網站會自動偵側個人設備的作業系統及瀏覽器版本，提供相容的主程式與連結器的下載及安裝連結，建議兩件都要下載安裝。<br/><img src="images/z-a1-2.jpg"><br/>(3)WINDOWS版主程式安裝成功，會在桌面出現圖標，可直接點擊啟動主程式。<br/><img src="images/z-a1-3.jpg"><br/>(4)連結器安裝成功時，通常會在網址列旁邊看到元件圖示。<br/><img src="images/z-a1-4.jpg">
 
 [^02-deductive-2]: <br/>(1)安裝完成後，未安裝其他附加元件之前，先做三項基本設定。由主程式選項的`編輯`選擇`偏好設定`，可開啟如以下畫面的設定視窗，預設是`一般`子視窗，建議除了**群組**的項目方塊，其他方塊都取消勾選。<br/><img src="images/z-a2-2.png"><br/>(2)如果有註冊zotero雲端帳號，切換到`同步`子視窗，設定已註冊的帳號密碼，之後開啟zotero有連上網路時，會自動同步。<br/><img src="images/z-a2-1.png"><br/>(3)如果有需要切換主程式介面語言，到`進階`子視窗可更改設定。<br/><img src="images/z-a2-3.png">
 
@@ -153,8 +153,7 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 [^02-deductive-7]: <br/>(1)安裝Zotero PDF Translate~搜尋或點擊這套附加元件的[GitHub 網頁](https://github.com/windingwind/zotero-pdf-translate)，如以下畫面。<br/><img src="images/z-a7-1.png"><br/>(2)在網頁中下滑，就會在網頁的右側看到 Releases 的字樣，點進去後即可下載，如以下畫面紅框處。<br/><img src="images/z-a7-2.png"><br/>(3)下載之後，就可以在電腦中找到 “ zotero-pdf-translate.xpi ” 的檔案。<br/><img src="images/z-a7-3.png"><br/>(4)開啟zotero附加元件管理頁面。如以下畫面示範。<br/><img src="images/z-a7-4.png"><br/>(5)把先前下載的 xpi 檔案拖移進去，安裝成功如以下畫面。<br/><img src="images/z-a7-5.png"><br/>(6)設定Zotero PDF Translate~開啟`編輯` 的`偏好設定`，如以下畫面示範。<br/><img src="images/z-a7-6.png"><br/>(7)切換到`翻譯`子頁面，即可選擇個人偏好的設定，如以下畫面示範。<br/><img src="images/z-a7-7.png">
 
-[^02-deductive-8]: TBA
-
+[^02-deductive-8]: <br/>(1)搜尋或由zotero附加元件清單網頁，找到[inciteful的github網頁](https://github.com/inciteful-xyz/inciteful-zotero-plugin)，最新版安裝檔案的連結點擊**Releases**即可開啟。<br/><img src="images/z-a8-1.png"><br/>(2)建議用滑鼠右鍵點選*另存新檔*，下載下圖的xpi檔案。安裝方法與前面介紹的Zotfile和translate一樣。<br/><img src="images/z-a8-2.png"><br/>(3)inciteful的功能主要有兩種。下圖示範第一種`Graph Search`，檢視單一文獻被後來出版的論文引用的關聯資訊。圖中的示範書目是 @zwaanParticipantNonnaiveteReproducibility2017 。<br/><img src="images/z-a8-3.png"><br/>(4)有連上網路的話，會在預設網路瀏覽器開啟這篇文獻的資訊頁，包括目前被引用的狀況，有引用及被引用的論文書目連結。<br/><img src="images/z-a8-4.png"><br/>(5)第二種功能`Connect Papers`是用至少兩篇論文為線索，查看至今有引用其中一篇論文的文獻關聯。下圖的示範書目是 @roedigerCreatingFalseMemories1995 與 @zwaanParticipantNonnaiveteReproducibility2017 。<br/><img src="images/z-a8-5.png"><br/>(6)因為 @roedigerCreatingFalseMemories1995 是經典的記憶研究，所以文獻引用網路相當壯觀。<br/><img src="images/z-a8-5.png">
 
 
 
