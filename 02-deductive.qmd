@@ -10,7 +10,7 @@
 
 ## 演繹推理輔助工具 {#toolbox}
 
-[zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]，依照使用者個人習慣設定主程式[^02-deductive-2]，就可以透過外掛元件匯入從網路搜尋到的文獻書目資訊[^02-deductive-3]，能取得全文pdf的文獻，也可以匯入指定資料夾[^02-deductive-4]。
+[zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]，依照使用者個人習慣設定主程式[^02-deductive-2]，就可以透過外掛元件匯入從網路搜尋平台到的文獻書目資訊，像是[google scholar](https://scholar.google.com.tw/)[^02-deductive-3]，能取得全文pdf的文獻，也可以匯入指定資料夾[^02-deductive-4]。若是讀者會在不只一種個人設備使用zotero，建議在官方網站註冊一個雲端帳號，就能在不同設備之間同步收錄的文獻書目及自建筆記。
 
 閱讀文獻並筆記重點[^02-deductive-5]，是演繹推理活動的開始。zotero有許多由開發團隊及各地精熟使用者開發的[附加模組](https://www.zotero.org/support/plugins)，本書作者群推薦要學習實驗研究法的讀者，運用zotfile管理及匯出已建立好的筆記[^02-deductive-6]，整合多種翻譯引擎的pdf translate[^02-deductive-7]，還有能以已收錄的文獻書目，搜尋有引用關係的新舊文獻inciteful[^02-deductive-8]。
 
@@ -141,10 +141,9 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 [^02-deductive-1]: TBA
 
-[^02-deductive-2]: TBA
+[^02-deductive-2]: <br/>(1)安裝完成後，未安裝其他附加元件之前，先做三項基本設定。由主程式選項的`編輯`選擇`偏好設定`，可開啟如以下畫面的設定視窗，預設是`一般`子視窗，建議除了**群組**的項目方塊，其他方塊都取消勾選。<br/><img src="images/z-a2-2.png"><br/>(2)如果有註冊zotero雲端帳號，切換到`同步`子視窗，設定已註冊的帳號密碼，之後開啟zotero有連上網路時，會自動同步。<br/><img src="images/z-a2-1.png"><br/>(3)如果有需要切換主程式介面語言，到`進階`子視窗可更改設定。<br/><img src="images/z-a2-3.png">
 
-[^02-deductive-3]: TBA
-
+[^02-deductive-3]: <br/>(1)使用網路搜尋或內文連結開啟google scholar首頁，如果有登入個人的google帳號，會在首頁左上角看到*我的個人學術檔案*以及*我的圖書館*。<br/><img src="images/z-a3-1.png"><br/>(2)以下以“青少年憂鬱症的相關成因”示範如何搜索文獻。將想搜尋的關鍵詞輸入搜尋列。<br/><img src="images/z-a3-2.png"><br/>(3)這次找到一共有876項結果。<br/><img src="images/z-a3-3.png"><br/>(4)如果想要更細一點，可以在最左那一欄，按自己的要求篩選。<br/><img src="images/z-a3-4.png"><br/>(5)限縮搜尋範圍到2019年後，可以看出搜尋結果變得更少，然後就可以找自己感興趣的文獻點進去查看。<br/><img src="images/z-a3-5.png"><br/>(6)改用英文搜尋，會發現更多搜尋結果。<br/><img src="images/z-a3-6.png"><br/>(7)進一步用引號“”分解關鍵詞，能有效減少搜尋結果。<br/><img src="images/z-a3-7.png"><br/>(8)如果發現感興趣的文獻可以選擇儲存，加入自己的圖書館。<br/><img src="images/z-a3-8.png"><br/>(9)儲存時能建立或加入已建立的閱讀清單。<br/><img src="images/z-a3-9.png"><br/>(10)由google scholar首頁進入*我的圖書館*，可瀏覽已經收錄的書目。<br/><img src="images/z-a3-10.png">
 
 [^02-deductive-4]: <br/>(1)找到要取得書目的文獻DOI並複製。<br/><img src="images/z-a4-1.png"><br/>(2)進到zotero頁面，點選🪄圖示，開啟輸入視窗。<br/><img src="images/z-a4-2.png"><br/>(3)將DOI填入輸入視窗。<br/><img src="images/z-a4-3.png"><br/>(4)書目匯入成功後，按滑鼠右鍵，點選「找到可用的pdf」。<br/><img src="images/z-a4-4.png"><br/>(5)點選後跳轉至此頁面，搜尋pdf中。<br/><img src="images/z-a4-5.png"><br/>(6)打勾表示有可用pdf，zotero會自動下載pdf檔案。<br/><img src="images/z-a4-6.png"><br/>(7)回到zotero主程式視窗，出現pdf圖示代表已完成下載。<br/><img src="images/z-a4-7.png">
 
