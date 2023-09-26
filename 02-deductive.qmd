@@ -64,9 +64,9 @@ google doc
 ```
 > 反向思考知識更新循環
 
+- 運用zotero附加模組彙整筆記技巧
 - 由思考成果尋找合適的筆記技巧
 - 由思考成果設計筆記原則
-- 運用zotero附加模組彙整筆記技巧
 ```
 
 
@@ -79,6 +79,7 @@ google doc
 
 - @zwaanParticipantNonnaiveteReproducibility2017 選擇的九項實驗有什麼科學意義？
 
+- 九項實驗各有什麼科學意義？如何從各項實驗的原始論文以及 @zwaanParticipantNonnaiveteReproducibility2017 彙整出來？如何找到彰顯各項實驗科學意義的相關文獻？
 
 ### 設定研究假設
 
@@ -87,6 +88,8 @@ google doc
 - @zwaanParticipantNonnaiveteReproducibility2017 如何定義實驗結果的重製性(reproducibility of experimental effects)
 
 - @zwaanParticipantNonnaiveteReproducibility2017 的論文裡那一個段落具體描述研究假設？
+
+- 各項原始實驗的假設是什麼？ @zwaanParticipantNonnaiveteReproducibility2017 設定的假設與原始實驗有什麼差異？能否從有引有關係的論文找出假設有變化或維持一致的研究演進路徑？
 
 <!---
 文明社會的基石是有典藏與傳播知識產物的機構，很多人首先會想到的機構應該是圖書館。一切資訊都可以數位化與網路化的今日，越來越少人依賴實體圖書館提供的服務。這種趨勢帶來知識的碎形化，許多學生要寫報告時都直接上網收集資料，報告內容欠缺組織與忽視資料來源。本節分享google scholar[^1]搭配Zotero[^2]的使用心得，讀者可依個人習慣建立個人化知識管理系統。
