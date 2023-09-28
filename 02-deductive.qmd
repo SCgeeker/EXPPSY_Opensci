@@ -160,4 +160,4 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 
 
-[^02-deductive-9]: <br/>(1)只要pdf檔案的文字可以直接複製，zotero的**突線文字**功能可直接畫線並做註解，**選擇區域**可擷取pdf內特定區域畫面，並對擷區畫面做註解。如下圖的示範。<br/><img src="images/z-a9-0.png"><br/>(2)要將畫線註解進一步編輯，除了拖放每一條畫線到項目筆記，也可以用**由標註來新增筆記功能**，將所有畫線及擷圖匯出為獨立的項目筆記。<br/><img src="images/z-a9-1.png"><br/>(3)要將所有畫線與擷圖匯出到zotero之外，使用其他工具進一步編輯加工時，使用**匯出筆記**功能，就能將包含這些條目的項目筆記匯出為獨立檔案。<br/><img src="images/z-a9-2.png"><br/>(4)匯出格式有*Markdown*、*HTML*、以及*Zotero RDF*三種，推薦*Markdown*適合最多編輯場景。<br/><img src="images/z-a9-3.png">
+[^02-deductive-9]: <br/>(1)只要pdf檔案的文字可以直接複製，zotero的**突顯文字**功能可直接畫線並做註解，**選擇區域**可擷取特定區域畫面，並對擷取畫面做註解。如下圖的示範。<br/><img src="images/z-a9-0.png"><br/>(2)要將畫線註解進一步編輯，除了拖放每一條畫線到項目筆記，也可以用**由標註來新增筆記功能**，將所有畫線及擷圖匯出為獨立的項目筆記。<br/><img src="images/z-a9-1.png"><br/>(3)要將所有畫線與擷圖匯出到zotero之外，使用其他工具進一步編輯加工時，使用**匯出筆記**功能，就能將包含這些條目的項目筆記匯出為獨立檔案。<br/><img src="images/z-a9-2.png"><br/>(4)匯出格式有*Markdown*、*HTML*、以及*Zotero RDF*三種，推薦*Markdown*適合最多編輯場景。<br/><img src="images/z-a9-3.png">
