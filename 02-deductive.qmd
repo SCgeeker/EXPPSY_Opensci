@@ -12,7 +12,7 @@
 
 [zotero](https://www.zotero.org/)是由美國喬治梅森大學的歷史與新媒體中心(Roy Rosenzweig Center for History and New Media，CHNM)開發維護的文獻管理軟體。讀者透過這一段開頭的超連結，開啟官方網站，可直接下載及安裝主程式以及網路瀏覽器外掛元件[^02-deductive-1]，依照使用者個人習慣設定主程式[^02-deductive-2]，就可以透過外掛元件匯入從網路搜尋平台到的文獻書目資訊，像是[google scholar](https://scholar.google.com.tw/)[^02-deductive-3]，能取得全文pdf的文獻，也可以匯入指定資料夾[^02-deductive-4]。若是讀者會在不只一種個人設備使用zotero，建議在官方網站註冊一個雲端帳號，就能在不同設備之間同步收錄的文獻書目及自建筆記。
 
-閱讀文獻並筆記重點[^02-deductive-5]，是演繹推理活動的開始。zotero有許多由開發團隊及各地精熟使用者開發的[附加模組](https://www.zotero.org/support/plugins)，本書作者群推薦要學習實驗研究法的讀者，運用zotfile管理及匯出已建立好的筆記[^02-deductive-6]，整合多種翻譯引擎的pdf translate[^02-deductive-7]，還有能以已收錄的文獻書目，搜尋有引用關係的新舊文獻inciteful[^02-deductive-8]。
+閱讀文獻並筆記重點[^02-deductive-5]，是演繹推理活動的開始。zotero有許多由開發團隊及各地精熟使用者開發的[附加模組](https://www.zotero.org/support/plugins)，本書作者群推薦要學習實驗研究法的讀者，除了主程式已內建的畫線筆記功能[^02-deductive-9]，也可以使用zotfile管理及匯出已建立好的筆記[^02-deductive-6]，整合多種翻譯引擎的pdf translate[^02-deductive-7]，還有能以已收錄的文獻書目，搜尋有引用關係的新舊文獻inciteful[^02-deductive-8]。
 
 <!---
 Zotero主程式、雲端、附加模組(Add-ons)
@@ -160,3 +160,4 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 
 
+[^02-deductive-9]: <br/>(1)只要pdf檔案的文字可以直接複製，zotero的**突線文字**功能可直接畫線並做註解，**選擇區域**可擷取pdf內特定區域畫面，並對擷區畫面做註解。如下圖的示範。<br/><img src="images/z-a9-0.png"><br/>(2)要將畫線註解進一步編輯，除了拖放每一條畫線到項目筆記，也可以用**由標註來新增筆記功能**，將所有畫線及擷圖匯出為獨立的項目筆記。<br/><img src="images/z-a9-1.png"><br/>(3)要將所有畫線與擷圖匯出到zotero之外，使用其他工具進一步編輯加工時，使用**匯出筆記**功能，就能將包含這些條目的項目筆記匯出為獨立檔案。<br/><img src="images/z-a9-2.png"><br/>(4)匯出格式有*Markdown*、*HTML*、以及*Zotero RDF*三種，推薦*Markdown*適合最多編輯場景。<br/><img src="images/z-a9-3.png">
