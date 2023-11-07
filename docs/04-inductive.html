@@ -85,6 +85,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <link rel="stylesheet" href="include/booktem.css">
@@ -248,8 +250,15 @@ div.csl-indent {
     <h2 id="toc-title">目錄</h2>
    
   <ul>
-  <li><a href="#toolbox_stat" id="toc-toolbox_stat" class="nav-link active" data-scroll-target="#toolbox_stat"><span class="header-section-number">4.1</span> 開源統計軟體</a></li>
-  <li><a href="#projects_ethics" id="toc-projects_ethics" class="nav-link" data-scroll-target="#projects_ethics"><span class="header-section-number">4.2</span> 研究倫理基本須知</a></li>
+  <li><a href="#data_residual" id="toc-data_residual" class="nav-link active" data-scroll-target="#data_residual"><span class="header-section-number">4.1</span> 原始資料結構與測量誤差</a>
+  <ul class="collapse">
+  <li><a href="#算術平均數演練" id="toc-算術平均數演練" class="nav-link" data-scroll-target="#算術平均數演練"><span class="header-section-number">4.1.1</span> 算術平均數演練</a></li>
+  </ul></li>
+  <li><a href="#toolbox_stat" id="toc-toolbox_stat" class="nav-link" data-scroll-target="#toolbox_stat"><span class="header-section-number">4.2</span> 開源統計軟體</a>
+  <ul class="collapse">
+  <li><a href="#實驗結果的可重製指標" id="toc-實驗結果的可重製指標" class="nav-link" data-scroll-target="#實驗結果的可重製指標"><span class="header-section-number">4.2.1</span> 實驗結果的可重製指標</a></li>
+  </ul></li>
+  <li><a href="#projects_ethics" id="toc-projects_ethics" class="nav-link" data-scroll-target="#projects_ethics"><span class="header-section-number">4.3</span> 研究倫理基本須知</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/04-inductive.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
     </div>
@@ -277,25 +286,386 @@ div.csl-indent {
 <p>本單元學習目標：以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 重製的九項實驗，學習各種實驗設計搭配的統計方法，如何確認測出關鍵效應。認識心理學研究常見的效果量指標，以及估計方法。延伸學習：如何使用開源統計軟體重製實驗資料分析。</p>
 </blockquote>
 <!---
-本單元依預先註冊[@lindsayResearchPreregistration1012016]與註冊報告[@attenperceptpsychophysRegisteredReportsReplications2013]的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。 --->
+本單元依預先註冊[@lindsayResearchPreregistration1012016]與註冊報告[@attenperceptpsychophysRegisteredReportsReplications2013]的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。
+
+- 根據九項重製實驗結果的描述統計資訊，如何判斷實驗結果可有效評估研究假設？
+
+
+- 根據九項實驗的來源文獻(見 @tbl-9RP )，如何摘要表現測得實驗效果的統計資訊？
+
+
+- 摘要 @zwaanParticipantNonnaiveteReproducibility2017 的統計結果，如何說明重製實驗與原始實驗結果一致？
+
+
+- @zwaanParticipantNonnaiveteReproducibility2017 的研究假設有沒有得到支持？如何從論文裡摘要他們的說法
+
+
+- @zwaanParticipantNonnaiveteReproducibility2017 指出的研究結果推論限制是什麼？會不會影響一開始的實驗假設？
+
+ --->
+<section id="data_residual" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="data_residual"><span class="header-section-number">4.1</span> 原始資料結構與測量誤差</h2>
+<p>根據 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的實驗設計<strong>Wave(Within Participant)</strong> X <strong>Similarity(Between Participant)</strong> X <strong>Specific Condition(Within Participant)</strong>，九項重製實驗資料具備通用資料結構。</p>
+<p>定義算術元素：</p>
+<p>刺激相同的參與者~ <span class="math inline">\(P_{s1}, P_{s2}, ... P_{sn}\)</span></p>
+<p>刺激不同的參與者~ <span class="math inline">\(P_{d1}, P_{d2}, ... P_{dn}\)</span></p>
+<p><strong>Wave</strong> ~ <span class="math inline">\(w_1, w_2\)</span></p>
+<p><strong>Similarity</strong> ~ <span class="math inline">\(S_s, S_d\)</span></p>
+<p><strong>Condition</strong> ~ <span class="math inline">\(C_1, C_2\)</span></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">參與者分組</th>
+<th style="text-align: center;">參與者代碼</th>
+<th style="text-align: center;">獨變項因子組合</th>
+<th style="text-align: center;">依變項平均分數</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{11s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{21s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Same</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n1s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{11s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{21s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Same</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n1s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{12s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{22s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Same</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n2s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{12s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{22s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Same</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_sC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n2s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{11s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{21s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Different</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n1s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1d1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{11s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{21s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Different</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_1S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n1s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1d2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{12s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{22s1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Different</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n2s1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1d1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{12s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{s2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{22s2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Different</td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P_{sn}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(w_2S_dC_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(Y_{n2s2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{Y}_{.1d2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<section id="算術平均數演練" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="算術平均數演練"><span class="header-section-number">4.1.1</span> 算術平均數演練</h3>
 <ul>
-<li><p>根據九項重製實驗結果的描述統計資訊，如何判斷實驗結果可有效評估研究假設？</p></li>
-<li><p>根據九項實驗的來源文獻(見 <a href="01-intro.html#tbl-9RP">表&nbsp;<span>1.2</span></a> )，如何摘要表現測得實驗效果的統計資訊？</p></li>
-<li><p>摘要 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的統計結果，如何說明重製實驗與原始實驗結果一致？</p></li>
-<li><p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的研究假設有沒有得到支持？如何從論文裡摘要他們的說法</p></li>
-<li><p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 指出的研究結果推論限制是什麼？會不會影響一開始的實驗假設？</p></li>
+<li><p>總體實驗效果要如何計算？</p></li>
+<li><p>如何比較不同參與者分組的實驗效果？</p></li>
+<li><p>如何比較不同梯次的實驗效果？</p></li>
+<li><p>如何比較不同參與者分組、不同梯次的實驗效果？</p></li>
+<li><p>由 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的<a href="https://static-content.springer.com/esm/art%3A10.3758%2Fs13423-017-1348-y/MediaObjects/13423_2017_1348_MOESM1_ESM.docx">附件</a>列出的每個實驗主要依項描述統計表( Table S1 ~ Table S10 )，表格內的數值對應那些算術平均數？</p></li>
 </ul>
-<section id="toolbox_stat" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="toolbox_stat"><span class="header-section-number">4.1</span> 開源統計軟體</h2>
+<!--- 歸納推理（一） --->
+<ul>
+<li>從 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的<a href="https://osf.io/ghv6m/">公開資料</a>下載每個實驗Mean開頭的csv檔，計算每個檔案內欄位的算術平均數。能否使用這些計算結果重製附錄的表格？</li>
+</ul>
+</section>
+</section>
+<section id="toolbox_stat" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="toolbox_stat"><span class="header-section-number">4.2</span> 開源統計軟體</h2>
 <!---前一節介紹的三種實驗平台匯出的實驗資料都是長表格，每一列(row)只包含一個觀察值，除了OpenSesame與formr有系統預設欄位資料， psytoolkit的每一欄都是實驗腳本裡有設定的變項。每一份匯出的檔案都是以主要依變項的反應單位排列，只要事先設定的分析計畫要以主要依變項的平均值進行分析，就可以使用試算表的樞紐分析功能計算。
 
 樞紐分析的結果是常用統計分析方法的資料集合，如t檢定、變異數分析。我建議使用JASP與jamovi等開源統計軟體進行分析，使用方式可參考我的網誌[^10]。
 
 [^10]: --->
-<p><a href="https://scchen.com/zh/post/jasp-jamovi/">開源統計軟體介紹</a></p>
+<p>補充資料：<a href="https://scgeeker.github.io/lsj-book-zh_tw/">用jamovi上手統計學</a> 之<a href="https://scgeeker.github.io/lsj-book-zh_tw/Prelude-Part-V.html">線性模型的學習取向</a></p>
+<blockquote class="blockquote">
+<p>如果<strong>Wave</strong>與<strong>Similarity</strong>不影響<strong>specific condition</strong>的平均值差異，一項重製實驗的原始平均值，非常有可能符合以下線性模型：</p>
+</blockquote>
+<p><span class="math display">\[Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)\]</span></p>
+<p><span class="math inline">\(\alpha\)</span> ~ <strong>Wave</strong></p>
+<p><span class="math inline">\(\beta\)</span> ~ <strong>Similarity</strong></p>
+<p><span class="math inline">\(\gamma\)</span> ~ <strong>specific condition</strong></p>
+<p><span class="math inline">\(\varepsilon\)</span> ~ <strong>residuals</strong> 下標符號提示參與者間獨變項</p>
+<blockquote class="blockquote">
+<p>如果<strong>Wave</strong>與<strong>Similarity</strong>並無差異，則符合以下線性模型</p>
+</blockquote>
+<p><span class="math display">\[Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)\]</span></p>
+<p>模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。</p>
+<ul>
+<li><p>如何透過線性模型選擇jamovi分析模組？</p></li>
+<li><p>如何透過線性模型了解jamovi分析模組的選項設定？</p></li>
+<li><p>運用所學，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。</p></li>
+</ul>
+<section id="實驗結果的可重製指標" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="實驗結果的可重製指標"><span class="header-section-number">4.2.1</span> 實驗結果的可重製指標</h3>
+<ul>
+<li>樣本效果普遍程度</li>
+</ul>
+<p><span class="citation" data-cites="moorePervasivenessEffectsSamplebased2023">(<a href="references.html#ref-moorePervasivenessEffectsSamplebased2023" role="doc-biblioref">Moore et al., 2023</a>)</span></p>
+<ul>
+<li>考驗力分析與樣本數估計</li>
+</ul>
 </section>
-<section id="projects_ethics" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="projects_ethics"><span class="header-section-number">4.2</span> 研究倫理基本須知</h2>
+</section>
+<section id="projects_ethics" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="projects_ethics"><span class="header-section-number">4.3</span> 研究倫理基本須知</h2>
 <p>科學研究能增進人類對這個世界的了解，是每個領域科學家進行研究的主要動機。行為與社會科學的研究對象是人類，運用各種方式取得人類行為資料是研究之必需。儘管研究有崇高的目標，任何取得資料的方式都不能侵害個人利益，或造成任何可能的風險。以下引述 <span class="citation" data-cites="saulHowWriteLab2011">Saul (<a href="references.html#ref-saulHowWriteLab2011" role="doc-biblioref">2011</a>)</span> 整理的基本須知，補充最近應該考慮的例子：</p>
 <ul>
 <li>獲取資料的方式是否會引發參與者心理或生理的不適？ 例如：詢問個人性別不只設計兩個選項，讓跨性別人士自由決定要不要告知。</li>
@@ -308,6 +678,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-moorePervasivenessEffectsSamplebased2023" class="csl-entry" role="listitem">
+Moore, S., Speelman, C. P., &amp; McGann, M. (2023). Pervasiveness of effects in sample-based experimental psychology: <span class="nocase">A Re-examination</span> of replication data from nine famous psychology experiments. <em>New Ideas in Psychology</em>, <em>68</em>, 100978. <a href="https://doi.org/10.1016/j.newideapsych.2022.100978">https://doi.org/10.1016/j.newideapsych.2022.100978</a>
+</div>
 <div id="ref-saulHowWriteLab2011" class="csl-entry" role="listitem">
 Saul, M. (2011). <em>How to <span>Write</span> a <span>Lab Report</span> | <span>Simply Psychology</span></em>. <a href="https://www.simplypsychology.org/research-report.html">https://www.simplypsychology.org/research-report.html</a>
 </div>

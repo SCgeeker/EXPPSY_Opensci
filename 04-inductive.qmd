@@ -3,7 +3,7 @@
 > 本單元學習目標：以 @zwaanParticipantNonnaiveteReproducibility2017 重製的九項實驗，學習各種實驗設計搭配的統計方法，如何確認測出關鍵效應。認識心理學研究常見的效果量指標，以及估計方法。延伸學習：如何使用開源統計軟體重製實驗資料分析。
 
 <!---
-本單元依預先註冊[@lindsayResearchPreregistration1012016]與註冊報告[@attenperceptpsychophysRegisteredReportsReplications2013]的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。 --->
+本單元依預先註冊[@lindsayResearchPreregistration1012016]與註冊報告[@attenperceptpsychophysRegisteredReportsReplications2013]的指南，介紹如何準備研究計畫，以及撰寫研究報告。之前單元提供的再現研究習作，可參考這個單元規劃與執行研究，並完成最後的研究報告。
 
 - 根據九項重製實驗結果的描述統計資訊，如何判斷實驗結果可有效評估研究假設？
 
@@ -19,6 +19,88 @@
 
 - @zwaanParticipantNonnaiveteReproducibility2017 指出的研究結果推論限制是什麼？會不會影響一開始的實驗假設？
 
+ --->
+ 
+ 
+## 原始資料結構與測量誤差 {#data_residual}
+
+根據 @zwaanParticipantNonnaiveteReproducibility2017 的實驗設計**Wave(Within Participant)** X **Similarity(Between Participant)** X **Specific Condition(Within Participant)**，九項重製實驗資料具備通用資料結構。
+
+定義算術元素：
+
+刺激相同的參與者~ $P_{s1}, P_{s2}, ... P_{sn}$
+
+刺激不同的參與者~ $P_{d1}, P_{d2}, ... P_{dn}$
+
+**Wave** ~ $w_1, w_2$
+
+**Similarity** ~ $S_s, S_d$
+
+**Condition** ~ $C_1, C_2$
+
+|參與者分組|參與者代碼|獨變項因子組合|依變項平均分數|
+|:---:|:---:|:---:|:---:|
+||$P_{s1}$|$w_1S_sC_1$|$Y_{11s1}$|
+||$P_{s2}$|$w_1S_sC_1$|$Y_{21s1}$|
+|Same|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_1S_sC_1$|$Y_{n1s1}$|
+||||$\overline{Y}_{.1s1}$|
+||$P_{s1}$|$w_1S_sC_2$|$Y_{11s2}$|
+||$P_{s2}$|$w_1S_sC_2$|$Y_{21s2}$|
+|Same|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_1S_sC_2$|$Y_{n1s2}$|
+||||$\overline{Y}_{.1s2}$|
+||$P_{s1}$|$w_2S_sC_1$|$Y_{12s1}$|
+||$P_{s2}$|$w_2S_sC_1$|$Y_{22s1}$|
+|Same|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_2S_sC_1$|$Y_{n2s1}$|
+||||$\overline{Y}_{.1s1}$|
+||$P_{s1}$|$w_2S_sC_2$|$Y_{12s2}$|
+||$P_{s2}$|$w_2S_sC_2$|$Y_{22s2}$|
+|Same|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_2S_sC_2$|$Y_{n2s2}$|
+||||$\overline{Y}_{.1s2}$|
+||$P_{s1}$|$w_1S_dC_1$|$Y_{11s1}$|
+||$P_{s2}$|$w_1S_dC_1$|$Y_{21s1}$|
+|Different|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_1S_dC_1$|$Y_{n1s1}$|
+||||$\overline{Y}_{.1d1}$|
+||$P_{s1}$|$w_1S_dC_2$|$Y_{11s2}$|
+||$P_{s2}$|$w_1S_dC_2$|$Y_{21s2}$|
+|Different|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_1S_dC_2$|$Y_{n1s2}$|
+||||$\overline{Y}_{.1d2}$|
+||$P_{s1}$|$w_2S_dC_1$|$Y_{12s1}$|
+||$P_{s2}$|$w_2S_dC_1$|$Y_{22s1}$|
+|Different|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_2S_dC_1$|$Y_{n2s1}$|
+||||$\overline{Y}_{.1d1}$|
+||$P_{s1}$|$w_2S_dC_2$|$Y_{12s2}$|
+||$P_{s2}$|$w_2S_dC_2$|$Y_{22s2}$|
+|Different|$\vdots$|$\vdots$|$\vdots$|
+||$\vdots$|$\vdots$|$\vdots$|
+||$P_{sn}$|$w_2S_dC_2$|$Y_{n2s2}$|
+||||$\overline{Y}_{.1d2}$|
+
+### 算術平均數演練
+
+- 總體實驗效果要如何計算？
+- 如何比較不同參與者分組的實驗效果？
+- 如何比較不同梯次的實驗效果？
+- 如何比較不同參與者分組、不同梯次的實驗效果？
+
+- 由 @zwaanParticipantNonnaiveteReproducibility2017 的[附件](https://static-content.springer.com/esm/art%3A10.3758%2Fs13423-017-1348-y/MediaObjects/13423_2017_1348_MOESM1_ESM.docx)列出的每個實驗主要依項描述統計表( Table S1 ~ Table S10 )，表格內的數值對應那些算術平均數？
+
+<!--- 歸納推理（一） --->
+- 從 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](https://osf.io/ghv6m/)下載每個實驗Mean開頭的csv檔，計算每個檔案內欄位的算術平均數。能否使用這些計算結果重製附錄的表格？
+
 
 
 
@@ -28,7 +110,58 @@
 
 樞紐分析的結果是常用統計分析方法的資料集合，如t檢定、變異數分析。我建議使用JASP與jamovi等開源統計軟體進行分析，使用方式可參考我的網誌[^10]。
 
-[^10]: --->[開源統計軟體介紹](https://scchen.com/zh/post/jasp-jamovi/) 
+[^10]: --->
+
+補充資料：[用jamovi上手統計學](https://scgeeker.github.io/lsj-book-zh_tw/) 之[線性模型的學習取向](https://scgeeker.github.io/lsj-book-zh_tw/Prelude-Part-V.html)
+
+> 如果**Wave**與**Similarity**不影響**specific condition**的平均值差異，一項重製實驗的原始平均值，非常有可能符合以下線性模型：
+
+$$Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)$$
+
+$\alpha$ ~ **Wave**
+
+$\beta$ ~ **Similarity**
+
+$\gamma$ ~ **specific condition**
+
+$\varepsilon$ ~ **residuals** 下標符號提示參與者間獨變項
+
+> 如果**Wave**與**Similarity**並無差異，則符合以下線性模型
+
+$$Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)$$
+
+模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。
+
+- 如何透過線性模型選擇jamovi分析模組？
+- 如何透過線性模型了解jamovi分析模組的選項設定？
+
+
+- 運用所學，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。
+
+
+### 實驗結果的可重製指標
+
+- 樣本效果普遍程度
+
+[@moorePervasivenessEffectsSamplebased2023]
+
+
+- 敏感度分析
+
+實驗設計必知三角關係：考驗力 - 樣本數 - 效果量
+
+1. 估計應測得之效果量
+
+> 由報告統計值換算效果量
+
+> 由原始資料估計效果量
+
+2. 設定應達考驗力水準
+
+
+3. 估計最小有意義樣本數
+
+
 
 
 ## 研究倫理基本須知 ## {#projects_ethics}
