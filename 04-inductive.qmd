@@ -104,6 +104,8 @@
 
 
 
+
+
 ## 開源統計軟體 {#toolbox_stat}
 
 <!---前一節介紹的三種實驗平台匯出的實驗資料都是長表格，每一列(row)只包含一個觀察值，除了OpenSesame與formr有系統預設欄位資料， psytoolkit的每一欄都是實驗腳本裡有設定的變項。每一份匯出的檔案都是以主要依變項的反應單位排列，只要事先設定的分析計畫要以主要依變項的平均值進行分析，就可以使用試算表的樞紐分析功能計算。
@@ -112,7 +114,28 @@
 
 [^10]: --->
 
+
 補充資料：[用jamovi上手統計學](https://scgeeker.github.io/lsj-book-zh_tw/) 之[線性模型的學習取向](https://scgeeker.github.io/lsj-book-zh_tw/Prelude-Part-V.html)
+
+### 效果量的估計與運用
+
+- [Cohen's d計算器](https://effect-size-calculator.herokuapp.com/) by James Uanhoro
+
+- jamovi的t檢定模組
+
+> 重製附錄內統計表的Cohen's d 
+> (1) 從各條件平均值
+> (2) 從每位參與者的平均分數
+
+- 提示題: 如何選擇估計效果量的公式及計算器？
+
+- 提示題: 如果文獻報告沒有提供效果量，要怎麼估計？
+
+
+- 解讀 @zwaanParticipantNonnaiveteReproducibility2017 之Figure 1。
+
+
+### 統計分析模型
 
 > 如果**Wave**與**Similarity**不影響**specific condition**的平均值差異，一項重製實驗的原始平均值，非常有可能符合以下線性模型：
 
@@ -161,7 +184,11 @@ $$Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)$$
 
 3. 估計最小有意義樣本數
 
+### 直接再現重製研究的評估
 
+在台灣地區找除了慣用語言，其他條件儘可能一致的人士參與九項認知實驗的再重製，要考慮那些條件？
+
+1. 
 
 
 ## 研究倫理基本須知 ## {#projects_ethics}
