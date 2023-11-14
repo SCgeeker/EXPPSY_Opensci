@@ -254,10 +254,10 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#算術平均數演練" id="toc-算術平均數演練" class="nav-link" data-scroll-target="#算術平均數演練"><span class="header-section-number">4.1.1</span> 算術平均數演練</a></li>
   </ul></li>
-  <li><a href="#toolbox_stat" id="toc-toolbox_stat" class="nav-link" data-scroll-target="#toolbox_stat"><span class="header-section-number">4.2</span> 開源統計軟體</a>
+  <li><a href="#toolbox_stat" id="toc-toolbox_stat" class="nav-link" data-scroll-target="#toolbox_stat"><span class="header-section-number">4.2</span> 運用統計方法歸納實驗結果</a>
   <ul class="collapse">
-  <li><a href="#效果量的估計與運用" id="toc-效果量的估計與運用" class="nav-link" data-scroll-target="#效果量的估計與運用"><span class="header-section-number">4.2.1</span> 效果量的估計與運用</a></li>
-  <li><a href="#統計分析模型" id="toc-統計分析模型" class="nav-link" data-scroll-target="#統計分析模型"><span class="header-section-number">4.2.2</span> 統計分析模型</a></li>
+  <li><a href="#實驗設計與統計分析模型" id="toc-實驗設計與統計分析模型" class="nav-link" data-scroll-target="#實驗設計與統計分析模型"><span class="header-section-number">4.2.1</span> 實驗設計與統計分析模型</a></li>
+  <li><a href="#效果量的估計與運用" id="toc-效果量的估計與運用" class="nav-link" data-scroll-target="#效果量的估計與運用"><span class="header-section-number">4.2.2</span> 效果量的估計與運用</a></li>
   <li><a href="#實驗結果的可重製指標" id="toc-實驗結果的可重製指標" class="nav-link" data-scroll-target="#實驗結果的可重製指標"><span class="header-section-number">4.2.3</span> 實驗結果的可重製指標</a></li>
   <li><a href="#直接再現重製研究的評估" id="toc-直接再現重製研究的評估" class="nav-link" data-scroll-target="#直接再現重製研究的評估"><span class="header-section-number">4.2.4</span> 直接再現重製研究的評估</a></li>
   </ul></li>
@@ -631,15 +631,37 @@ div.csl-indent {
 </section>
 </section>
 <section id="toolbox_stat" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="toolbox_stat"><span class="header-section-number">4.2</span> 開源統計軟體</h2>
+<h2 data-number="4.2" class="anchored" data-anchor-id="toolbox_stat"><span class="header-section-number">4.2</span> 運用統計方法歸納實驗結果</h2>
 <!---前一節介紹的三種實驗平台匯出的實驗資料都是長表格，每一列(row)只包含一個觀察值，除了OpenSesame與formr有系統預設欄位資料， psytoolkit的每一欄都是實驗腳本裡有設定的變項。每一份匯出的檔案都是以主要依變項的反應單位排列，只要事先設定的分析計畫要以主要依變項的平均值進行分析，就可以使用試算表的樞紐分析功能計算。
 
 樞紐分析的結果是常用統計分析方法的資料集合，如t檢定、變異數分析。我建議使用JASP與jamovi等開源統計軟體進行分析，使用方式可參考我的網誌[^10]。
 
 [^10]: --->
 <p>補充資料：<a href="https://scgeeker.github.io/lsj-book-zh_tw/">用jamovi上手統計學</a> 之<a href="https://scgeeker.github.io/lsj-book-zh_tw/Prelude-Part-V.html">線性模型的學習取向</a></p>
-<section id="效果量的估計與運用" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="效果量的估計與運用"><span class="header-section-number">4.2.1</span> 效果量的估計與運用</h3>
+<section id="實驗設計與統計分析模型" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="實驗設計與統計分析模型"><span class="header-section-number">4.2.1</span> 實驗設計與統計分析模型</h3>
+<blockquote class="blockquote">
+<p>如果<strong>Wave</strong>與<strong>Similarity</strong>不影響<strong>specific condition</strong>的平均值差異，一項重製實驗的每次試驗原始分數，即符合線性模型(1)：</p>
+</blockquote>
+<p><span class="math display">\[Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)\]</span> <em>i</em> = 1,2,3, …, 160</p>
+<p><span class="math inline">\(\alpha\)</span> ~ <strong>Wave</strong>, <em>j</em> = 1, 2</p>
+<p><span class="math inline">\(\beta\)</span> ~ <strong>Similarity</strong>, <em>k</em> = s, d</p>
+<p><span class="math inline">\(\gamma\)</span> ~ <strong>specific condition</strong>, <em>l</em> = 1, 2</p>
+<p><span class="math inline">\(\varepsilon\)</span> ~ <strong>residuals</strong> 下標符號提示參與者間獨變項</p>
+<blockquote class="blockquote">
+<p>如果<strong>Wave</strong>與<strong>Similarity</strong>並無差異，則符合線性模型(1):</p>
+</blockquote>
+<p><span class="math display">\[Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)\]</span></p>
+<p><em>i</em> = 1,2,3, …, 160</p>
+<p><span class="math inline">\(\gamma\)</span> ~ <strong>specific condition</strong>, <em>l</em> = 1, 2, 3, …, 8</p>
+<p>模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。</p>
+<ul>
+<li>如何透過線性模型選擇jamovi分析模組？</li>
+<li>如何透過線性模型了解jamovi分析模組的選項設定？</li>
+</ul>
+</section>
+<section id="效果量的估計與運用" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="效果量的估計與運用"><span class="header-section-number">4.2.2</span> 效果量的估計與運用</h3>
 <ul>
 <li><p><a href="https://effect-size-calculator.herokuapp.com/">Cohen’s d計算器</a> by James Uanhoro</p></li>
 <li><p>jamovi的t檢定模組</p></li>
@@ -652,34 +674,12 @@ div.csl-indent {
 <li><p>提示題: 如果文獻報告沒有提供效果量，要怎麼估計？</p></li>
 <li><p>解讀 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 之Figure 1。</p></li>
 </ul>
-</section>
-<section id="統計分析模型" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="統計分析模型"><span class="header-section-number">4.2.2</span> 統計分析模型</h3>
 <blockquote class="blockquote">
-<p>如果<strong>Wave</strong>與<strong>Similarity</strong>不影響<strong>specific condition</strong>的平均值差異，一項重製實驗的原始平均值，非常有可能符合以下線性模型：</p>
+<p>運用以上介紹，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。</p>
 </blockquote>
-<p><span class="math display">\[Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)\]</span></p>
-<p><span class="math inline">\(\alpha\)</span> ~ <strong>Wave</strong></p>
-<p><span class="math inline">\(\beta\)</span> ~ <strong>Similarity</strong></p>
-<p><span class="math inline">\(\gamma\)</span> ~ <strong>specific condition</strong></p>
-<p><span class="math inline">\(\varepsilon\)</span> ~ <strong>residuals</strong> 下標符號提示參與者間獨變項</p>
-<blockquote class="blockquote">
-<p>如果<strong>Wave</strong>與<strong>Similarity</strong>並無差異，則符合以下線性模型</p>
-</blockquote>
-<p><span class="math display">\[Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)\]</span></p>
-<p>模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。</p>
-<ul>
-<li><p>如何透過線性模型選擇jamovi分析模組？</p></li>
-<li><p>如何透過線性模型了解jamovi分析模組的選項設定？</p></li>
-<li><p>運用所學，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。</p></li>
-</ul>
 </section>
 <section id="實驗結果的可重製指標" class="level3" data-number="4.2.3">
 <h3 data-number="4.2.3" class="anchored" data-anchor-id="實驗結果的可重製指標"><span class="header-section-number">4.2.3</span> 實驗結果的可重製指標</h3>
-<ul>
-<li>樣本效果普遍程度</li>
-</ul>
-<p><span class="citation" data-cites="moorePervasivenessEffectsSamplebased2023">(<a href="references.html#ref-moorePervasivenessEffectsSamplebased2023" role="doc-biblioref">Moore et al., 2023</a>)</span></p>
 <ul>
 <li>敏感度分析</li>
 </ul>
@@ -697,12 +697,21 @@ div.csl-indent {
 <li><p>設定應達考驗力水準</p></li>
 <li><p>估計最小有意義樣本數</p></li>
 </ol>
+<ul>
+<li>樣本效果普遍程度</li>
+</ul>
+<p><span class="citation" data-cites="moorePervasivenessEffectsSamplebased2023">Moore et al. (<a href="references.html#ref-moorePervasivenessEffectsSamplebased2023" role="doc-biblioref">2023</a>)</span> 示範三步驟檢核法。</p>
 </section>
 <section id="直接再現重製研究的評估" class="level3" data-number="4.2.4">
 <h3 data-number="4.2.4" class="anchored" data-anchor-id="直接再現重製研究的評估"><span class="header-section-number">4.2.4</span> 直接再現重製研究的評估</h3>
-<p>在台灣地區找除了慣用語言，其他條件儘可能一致的人士參與九項認知實驗的再重製，要考慮那些條件？</p>
+<p>在台灣地區要儘可能地再重製九項認知實驗，要考慮那些條件？</p>
 <ol type="1">
-<li></li>
+<li>在地或國外參與者</li>
+<li>實驗環境是實體空間或網路</li>
+<li>實驗軟體及平台的選擇</li>
+<li>因軟體及平台的設定，實驗程序需要的設定</li>
+<li>因參與者的背景，實驗材料要做的調整</li>
+<li>設定重製實驗結果需有統計考驗力為90%，要招募的參與者人數</li>
 </ol>
 </section>
 </section>

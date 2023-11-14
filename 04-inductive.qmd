@@ -103,10 +103,7 @@
 
 
 
-
-
-
-## 開源統計軟體 {#toolbox_stat}
+## 運用統計方法歸納實驗結果 {#toolbox_stat}
 
 <!---前一節介紹的三種實驗平台匯出的實驗資料都是長表格，每一列(row)只包含一個觀察值，除了OpenSesame與formr有系統預設欄位資料， psytoolkit的每一欄都是實驗腳本裡有設定的變項。每一份匯出的檔案都是以主要依變項的反應單位排列，只要事先設定的分析計畫要以主要依變項的平均值進行分析，就可以使用試算表的樞紐分析功能計算。
 
@@ -116,6 +113,37 @@
 
 
 補充資料：[用jamovi上手統計學](https://scgeeker.github.io/lsj-book-zh_tw/) 之[線性模型的學習取向](https://scgeeker.github.io/lsj-book-zh_tw/Prelude-Part-V.html)
+
+
+### 實驗設計與統計分析模型
+
+> 如果**Wave**與**Similarity**不影響**specific condition**的平均值差異，一項重製實驗的每次試驗原始分數，即符合線性模型(1)：
+
+$$Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)$$
+_i_ = 1,2,3, ..., 160
+
+$\alpha$ ~ **Wave**, _j_ = 1, 2
+
+$\beta$ ~ **Similarity**, _k_ = s, d
+
+$\gamma$ ~ **specific condition**, _l_ = 1, 2
+
+$\varepsilon$ ~ **residuals** 下標符號提示參與者間獨變項
+
+> 如果**Wave**與**Similarity**並無差異，則符合線性模型(1):
+
+$$Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)$$
+
+_i_ = 1,2,3, ..., 160
+
+$\gamma$ ~ **specific condition**, _l_ = 1, 2, 3, ..., 8
+
+
+模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。
+
+- 如何透過線性模型選擇jamovi分析模組？
+- 如何透過線性模型了解jamovi分析模組的選項設定？
+
 
 ### 效果量的估計與運用
 
@@ -135,39 +163,10 @@
 - 解讀 @zwaanParticipantNonnaiveteReproducibility2017 之Figure 1。
 
 
-### 統計分析模型
-
-> 如果**Wave**與**Similarity**不影響**specific condition**的平均值差異，一項重製實驗的原始平均值，非常有可能符合以下線性模型：
-
-$$Y_{ijkl} \sim \overline{Y}_{...} + \alpha_j + \beta_k + \gamma_l + \varepsilon_{i(k)}  \dots (1)$$
-
-$\alpha$ ~ **Wave**
-
-$\beta$ ~ **Similarity**
-
-$\gamma$ ~ **specific condition**
-
-$\varepsilon$ ~ **residuals** 下標符號提示參與者間獨變項
-
-> 如果**Wave**與**Similarity**並無差異，則符合以下線性模型
-
-$$Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)$$
-
-模型(1)適用多因子變異數分析，模型(2)適用單因子變異數分析或t檢定。
-
-- 如何透過線性模型選擇jamovi分析模組？
-- 如何透過線性模型了解jamovi分析模組的選項設定？
-
-
-- 運用所學，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。
+> 運用以上介紹，嘗試重製附錄中每項實驗的統計資訊，以及Table S1 ~ Table S10的效果量數值。
 
 
 ### 實驗結果的可重製指標
-
-- 樣本效果普遍程度
-
-[@moorePervasivenessEffectsSamplebased2023]
-
 
 - 敏感度分析
 
@@ -184,11 +183,22 @@ $$Y_{il} \sim \overline{Y_{.}} + \gamma_{l} + \varepsilon_i  \dots (2)$$
 
 3. 估計最小有意義樣本數
 
+
+- 樣本效果普遍程度
+
+@moorePervasivenessEffectsSamplebased2023 示範三步驟檢核法。
+
+
 ### 直接再現重製研究的評估
 
-在台灣地區找除了慣用語言，其他條件儘可能一致的人士參與九項認知實驗的再重製，要考慮那些條件？
+在台灣地區要儘可能地再重製九項認知實驗，要考慮那些條件？
 
-1. 
+1. 在地或國外參與者
+2. 實驗環境是實體空間或網路
+3. 實驗軟體及平台的選擇
+4. 因軟體及平台的設定，實驗程序需要的設定
+5. 因參與者的背景，實驗材料要做的調整
+6. 設定重製實驗結果需有統計考驗力為90%，要招募的參與者人數
 
 
 ## 研究倫理基本須知 ## {#projects_ethics}
