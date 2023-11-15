@@ -4,6 +4,10 @@
 > 本單元學習目標：知覺研究的知識更新。可能的混淆因素~carry-over effect; speed-accuracy tradeoff。資料分析重點 ~ 極端值的設定及處理。如何使用開源實驗平台重製知覺實驗。如何使用開源統計軟體規劃實驗資料分析。
 
 
+- [Simon task示範網頁](https://www.psytoolkit.org/experiment-library/simon.html)
+
+- [Flank task示範網頁](https://www.psytoolkit.org/experiment-library/flanker.html)
+
 - 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項知覺實驗，重製實驗設計條件與原始實驗的相同及相異之處？
 
 - 評估在本地執行重製實驗的可行性？什麼條件需要進行調整？
