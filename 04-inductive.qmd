@@ -170,7 +170,9 @@ $\gamma$ ~ **specific condition**, _l_ = 1, 2, 3, ..., 8
 
 - 敏感度分析
 
-實驗設計必知三角關係：考驗力 - 樣本數 - 效果量
+要得到可靠的歸納推理結論，實驗設計必須考慮三角關係：考驗力 - 樣本數 - 效果量([視覺化解說](https://rpsychologist.com/d3/nhst/))
+
+
 
 1. 估計應測得之效果量
 
@@ -182,6 +184,10 @@ $\gamma$ ~ **specific condition**, _l_ = 1, 2, 3, ..., 8
 
 
 3. 估計最小有意義樣本數
+
+```{r jpower-setting, fig.cap="jpower相依樣本t檢定估計最小樣本數設定示範。應設定參數有最小目標效果量(Minimally-interesting effect size)、Minimum desired power(目標考驗力水準)、型一錯誤率(Type 1 error rate)、單尾或雙尾檢定(Tails)。", echo=FALSE}
+knitr::include_graphics("figs/jpower_setting.png")
+```
 
 
 - 樣本效果普遍程度

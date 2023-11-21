@@ -5,10 +5,13 @@ nocite: |
 
 # 可重製的語言研究 {#language}
 
-> 本單元學習目標：語言研究的知識更新。可能的混淆因素~ participants' strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。
+> 本單元學習目標：
 
 - [語義促發之詞彙判斷作業示範網頁](https://www.psytoolkit.org/experiment-library/ldt.html)
 
+
+<!---
+語言研究的知識更新。可能的混淆因素~ participants' strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。
 
 - 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？
 
@@ -16,7 +19,7 @@ nocite: |
 
 
 [^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
-
+--->
 
 # 舊版教材回顧 {#language_old}
 

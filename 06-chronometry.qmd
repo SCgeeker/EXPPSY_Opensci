@@ -1,12 +1,16 @@
 # 可重製的心理計時學研究 {#chronometry}
 
 
-> 本單元學習目標：知覺研究的知識更新。可能的混淆因素~carry-over effect; speed-accuracy tradeoff。資料分析重點 ~ 極端值的設定及處理。如何使用開源實驗平台重製知覺實驗。如何使用開源統計軟體規劃實驗資料分析。
+> 本單元學習目標：
 
 
 - [Simon task示範網頁](https://www.psytoolkit.org/experiment-library/simon.html)
 
 - [Flank task示範網頁](https://www.psytoolkit.org/experiment-library/flanker.html)
+
+<!---
+
+知覺研究的知識更新。可能的混淆因素~carry-over effect; speed-accuracy tradeoff。資料分析重點 ~ 極端值的設定及處理。如何使用開源實驗平台重製知覺實驗。如何使用開源統計軟體規劃實驗資料分析。
 
 - 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項知覺實驗，重製實驗設計條件與原始實驗的相同及相異之處？
 
@@ -14,7 +18,7 @@
 
 
 [^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
-
+--->
 
 
 # 舊版教材回顧 {#chrono_old}

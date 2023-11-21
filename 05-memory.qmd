@@ -5,7 +5,13 @@ nocite: |
 
 # 可重製的記憶研究 {#memory}
 
-> 本單元學習目標：記憶研究的知識更新。可能的混淆因素~task demand; celling or flooring。資料分析重點 ~ 正確率/錯誤率的整理、信號敏感度。如何使用開源實驗平台重製記憶實驗。如何使用開源統計軟體規劃實驗資料分析。
+> 本單元學習目標：(1) psytoolkit問卷設定、發佈及資料收集。(2)
+
+
+
+<!---
+
+記憶研究的知識更新。可能的混淆因素~task demand; celling or flooring。資料分析重點 ~ 正確率/錯誤率的整理、信號敏感度。如何使用開源實驗平台重製記憶實驗。如何使用開源統計軟體規劃實驗資料分析。
 
 - 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項記憶實驗，重製實驗設計條件與原始實驗的相同及相異之處？
 
@@ -13,7 +19,6 @@ nocite: |
 
 [^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
 
-<!---
 > 如何設定確證性分析程序？
 > 如何設定探索性分析程序？
 --->
