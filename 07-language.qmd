@@ -5,9 +5,11 @@ nocite: |
 
 # 可重製的語言研究 {#language}
 
-> 本單元學習目標：
 
 - [語義促發之詞彙判斷作業示範網頁](https://www.psytoolkit.org/experiment-library/ldt.html)
+
+
+> 本單元學習目標： (1) 比較實驗範例與 @zwaanParticipantNonnaiveteReproducibility2017 設計的實驗程序差異； (2) 了解 psytoolkit實驗設定、發佈及資料收集； (3) 使用psytoolkit實驗重現假記憶實驗。
 
 
 <!---

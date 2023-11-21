@@ -5,8 +5,10 @@ nocite: |
 
 # 可重製的記憶研究 {#memory}
 
-> 本單元學習目標：(1) psytoolkit問卷設定、發佈及資料收集。(2)
+- [假記憶線上實驗範例](https://psych.hanover.edu/javatest/cle/cognition/cognition/falsememory_instructions.html)
 
+
+> 本單元學習目標： (1) 比較實驗範例與 @zwaanParticipantNonnaiveteReproducibility2017 設計的實驗程序差異； (2) 了解 psytoolkit問卷設定、發佈及資料收集； (3) 使用psytoolkit問卷重現假記憶實驗。
 
 
 <!---

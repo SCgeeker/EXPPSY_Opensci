@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.427">
+<meta name="generator" content="quarto-1.3.353">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="第一版(Quarto重製)">
 <title>實驗心理學：開放科學取向 - 7&nbsp; 可重製的語言研究</title>
@@ -75,8 +75,7 @@ div.csl-indent {
     "search-more-matches-text": "更多本頁符合搜索條件結果",
     "search-clear-button-title": "清除搜索條件",
     "search-detached-cancel-button-title": "取消搜索",
-    "search-submit-button-title": "提交搜索",
-    "search-label": "搜索"
+    "search-submit-button-title": "提交搜索"
   }
 }</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <link rel="stylesheet" href="include/booktem.css">
@@ -95,7 +94,7 @@ div.csl-indent {
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-language.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -105,7 +104,7 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">實驗心理學：開放科學取向</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -129,7 +128,7 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="搜索"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -258,14 +257,22 @@ div.csl-indent {
   </div>
   
 
-</header><blockquote class="blockquote">
-<p>本單元學習目標：語言研究的知識更新。可能的混淆因素~ participants’ strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。</p>
-</blockquote>
-<ul>
-<li><p><a href="https://www.psytoolkit.org/experiment-library/ldt.html">語義促發之詞彙判斷作業示範網頁</a></p></li>
-<li><p>運用預先註冊範本 <a href="https://aspredicted.org">AsPredicted.org</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>列出的項目，檢驗 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？</p></li>
-<li><p>評估在本地執行重製實驗的可行性？什麼條件需要進行調整？</p></li>
+</header><ul>
+<li><a href="https://www.psytoolkit.org/experiment-library/ldt.html">語義促發之詞彙判斷作業示範網頁</a></li>
 </ul>
+<blockquote class="blockquote">
+<p>本單元學習目標： (1) 比較實驗範例與 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 設計的實驗程序差異； (2) 了解 psytoolkit實驗設定、發佈及資料收集； (3) 使用psytoolkit實驗重現假記憶實驗。</p>
+</blockquote>
+<!---
+語言研究的知識更新。可能的混淆因素~ participants' strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。
+
+- 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？
+
+- 評估在本地執行重製實驗的可行性？什麼條件需要進行調整？
+
+
+[^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
+--->
 <section id="language_old" class="level1" data-number="8"><h1 data-number="8">
 <span class="header-section-number">8</span> 舊版教材回顧</h1>
 <p>語言的心理學研究在實驗心理學的發展歷史，相對短於心理計時學與記憶研究。早期重要的研究方向來自發展更早的語言學(Linguistics)，一直到今天還是跨越心理學與語言學的研究領域。根據<a href="https://en.wikipedia.org/w/index.php?title=Psycholinguistics&amp;oldid=867220943">維基百科的條目</a>，語言心理學(language of psychology或psycholinguistics)一詞最早出現於美國心理學家傑克布．坎特(Jacob Robert Kantor)於1936年出版的著作《語法的客觀心理學》(An Objective Psychology of Grammar)，但是到了1946年坎特的學生尼可拉斯．普洛克(Nicholas Pronko)發表論文之後，語言心理學一詞才被學術社群知悉，進而促成各種專業期刊與研討會的成立。</p>
@@ -403,10 +410,7 @@ Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstr
 Zwaan, R. A., Stanfield, R. A., &amp; Yaxley, R. H. (2002). Language comprehenders mentally represent the shapes of objects. <em>Psychological Science</em>, <em>13</em>, 168–171. <a href="https://doi.org/10.1111/1467-9280.00430">https://doi.org/10.1111/1467-9280.00430</a>
 </div>
 </div>
-</section></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
-<ol>
-<li id="fn1"><p>COS提供的<a href="https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing">google doc版本</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></main><!-- /main --><script>
+</section></section></main><!-- /main --><script>
 
 /* update total correct if #webex-total_correct exists */
 update_total_correct = function() {
