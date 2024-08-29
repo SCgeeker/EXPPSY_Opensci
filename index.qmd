@@ -1,5 +1,13 @@
 # 導讀 {.unnumbered}
 
+<!---
+
+Quarto book editing guide
+https://quarto.org/docs/books/
+
+--->
+
+
 ### 寫作動機
 
 心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是心理科學研究養成入門。有百年歷史的心理學系都將這門課程設定為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到學涯起點，寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑。但是寫作這本書的第一版的2017年，正是心理科學再現危機(Replication Crisis)，逐漸轉變為心理科學可信度危機(Credibility Crisis)的時候 [@vazireImplicationsCredibilityRevolution2018; @nosekReplicabilityRobustnessReproducibility2022]。

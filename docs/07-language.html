@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.427">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="第一版(Quarto重製)">
+<meta name="description" content="第二版">
 <title>實驗心理學：開放科學取向 - 7&nbsp; 可重製的語言研究</title>
 <style>
 code{white-space: pre-wrap;}
@@ -48,7 +48,6 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <link href="./08-writing.html" rel="next">
 <link href="./06-chronometry.html" rel="prev">
-<link href="./images/logos/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +74,8 @@ div.csl-indent {
     "search-more-matches-text": "更多本頁符合搜索條件結果",
     "search-clear-button-title": "清除搜索條件",
     "search-detached-cancel-button-title": "取消搜索",
-    "search-submit-button-title": "提交搜索"
+    "search-submit-button-title": "提交搜索",
+    "search-label": "搜索"
   }
 }</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <link rel="stylesheet" href="include/booktem.css">
@@ -94,7 +94,7 @@ div.csl-indent {
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-language.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切換側邊欄" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -104,7 +104,7 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">實驗心理學：開放科學取向</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/SCgeeker/EXPPSY_Opensci" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -128,7 +128,7 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="搜索"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -142,7 +142,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">緒論</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">緒論~科學方法</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -154,7 +154,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">可重製的實驗設計</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">實驗設計：反向解構</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -230,21 +230,15 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">目錄</h2>
    
   <ul>
-<li>
-<a href="#language_old" id="toc-language_old" class="nav-link active" data-scroll-target="#language_old"><span class="header-section-number">8</span> 舊版教材回顧</a>
-  <ul class="collapse">
-<li><a href="#lang_overview" id="toc-lang_overview" class="nav-link" data-scroll-target="#lang_overview"><span class="header-section-number">8.1</span> 語言心理學概述</a></li>
-  <li><a href="#lang_word" id="toc-lang_word" class="nav-link" data-scroll-target="#lang_word"><span class="header-section-number">8.2</span> 字詞辨識</a></li>
-  <li><a href="#lang_sentence" id="toc-lang_sentence" class="nav-link" data-scroll-target="#lang_sentence"><span class="header-section-number">8.3</span> 句子理解</a></li>
-  <li><a href="#lang_rep" id="toc-lang_rep" class="nav-link" data-scroll-target="#lang_rep"><span class="header-section-number">8.4</span> 語言心理學研究的再現與重製</a></li>
-  <li><a href="#lang_practice" id="toc-lang_practice" class="nav-link" data-scroll-target="#lang_practice"><span class="header-section-number">8.5</span> 習作</a></li>
-  </ul>
-</li>
+<li><a href="#sec-language_overview" id="toc-sec-language_overview" class="nav-link active" data-scroll-target="#sec-language_overview"><span class="header-section-number">7.1</span> 語言心理學概述</a></li>
+  <li><a href="#sec-language_word" id="toc-sec-language_word" class="nav-link" data-scroll-target="#sec-language_word"><span class="header-section-number">7.2</span> 字詞辨識</a></li>
+  <li><a href="#sec-language_sentence" id="toc-sec-language_sentence" class="nav-link" data-scroll-target="#sec-language_sentence"><span class="header-section-number">7.3</span> 句子理解</a></li>
+  <li><a href="#sec-language_rep" id="toc-sec-language_rep" class="nav-link" data-scroll-target="#sec-language_rep"><span class="header-section-number">7.4</span> 語言心理學研究的再現與重製</a></li>
   </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/07-language.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title"><span id="language" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></h1>
+<h1 class="title"><span id="sec-language" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">可重製的語言研究</span></span></h1>
 </div>
 
 
@@ -261,141 +255,157 @@ div.csl-indent {
 <li><a href="https://www.psytoolkit.org/experiment-library/ldt.html">語義促發之詞彙判斷作業示範網頁</a></li>
 </ul>
 <blockquote class="blockquote">
-<p>本單元學習目標： (1) 比較實驗範例與 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 設計的實驗程序差異； (2) 了解 psytoolkit實驗設定、發佈及資料收集； (3) 使用psytoolkit實驗重現假記憶實驗。</p>
+<p>本單元學習目標： (1) 比較實驗範例與 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 設計的實驗程序差異； (2) 了解開源實驗平台設定、發佈及資料收集； (3) 使用開源實驗平台重現知覺實驗。</p>
 </blockquote>
 <!---
 語言研究的知識更新。可能的混淆因素~ participants' strategy。資料分析重點 ~ by-participant and by-item averaged data。如何使用開源實驗平台重製語言實驗。如何使用開源統計軟體規劃實驗資料分析。
 
-- 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @zwaanParticipantNonnaiveteReproducibility2017 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？
+- 運用預先註冊範本 [AsPredicted.org](https://aspredicted.org)[^1]列出的項目，檢驗 @Zwaan-2018 的各項語言實驗，重製實驗設計條件與原始實驗的相同及相異之處？
 
 - 評估在本地執行重製實驗的可行性？什麼條件需要進行調整？
 
 
 [^1]: COS提供的[google doc版本](https://docs.google.com/document/d/1CjgYOIVcs4x_xWD-bJa1h75CTH_E9yLY2lb5Mv4Qi8c/edit?usp=sharing)
+
+# 舊版教材回顧 {#language_old}
 --->
-<section id="language_old" class="level1" data-number="8"><h1 data-number="8">
-<span class="header-section-number">8</span> 舊版教材回顧</h1>
 <p>語言的心理學研究在實驗心理學的發展歷史，相對短於心理計時學與記憶研究。早期重要的研究方向來自發展更早的語言學(Linguistics)，一直到今天還是跨越心理學與語言學的研究領域。根據<a href="https://en.wikipedia.org/w/index.php?title=Psycholinguistics&amp;oldid=867220943">維基百科的條目</a>，語言心理學(language of psychology或psycholinguistics)一詞最早出現於美國心理學家傑克布．坎特(Jacob Robert Kantor)於1936年出版的著作《語法的客觀心理學》(An Objective Psychology of Grammar)，但是到了1946年坎特的學生尼可拉斯．普洛克(Nicholas Pronko)發表論文之後，語言心理學一詞才被學術社群知悉，進而促成各種專業期刊與研討會的成立。</p>
-<section id="lang_overview" class="level2" data-number="8.1"><h2 data-number="8.1" class="anchored" data-anchor-id="lang_overview">
-<span class="header-section-number">8.1</span> 語言心理學概述</h2>
+<section id="sec-language_overview" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="sec-language_overview">
+<span class="header-section-number">7.1</span> 語言心理學概述</h2>
 <p>語言行為指理解口語或書寫文字，以及口說及書寫的表達。語言心理學研究各種語言行為相關的認知歷程與生理基礎，大致可分為四個方向，每個方向探討的主題都有對應語言學領域。四個方向包括(1)兒童如何習得語言？(2)成人如何理解語言？(3)成人如何產製語言？(4)人類如何學習母語之外的語言？</p>
-<p>根據人類語言的分析單位，語言學已發展出與心理學密不可分的五種專業領域。首先是<strong>語音學</strong>(Phonetics)：研究人類如何發聲與辨識語音的學科。最早的語音學研究可以追溯到西元前六百年，印度教僅透過口語傳播教義，為維持正確性而發展出來的學問。今天語音學研究者必須了解人類發聲器官構造(見圖@ref(fig:articulation))，每個部位的運動如何發出人類能辨識有意義單位 – 也就是音素(phoneme)。結合生理學測量與心理學實驗設計，語音學研究者掌握人類發出及區辨的音素，以及各種語言的發音方式。</p>
+<p>根據人類語言的分析單位，語言學已發展出與心理學密不可分的五種專業領域。首先是<strong>語音學</strong>(Phonetics)：研究人類如何發聲與辨識語音的學科。最早的語音學研究可以追溯到西元前六百年，印度教僅透過口語傳播教義，為維持正確性而發展出來的學問。今天語音學研究者必須了解人類發聲器官構造(見 <a href="#fig-articulation">圖&nbsp;<span>7.1</span></a> )，每個部位的運動如何發出人類能辨識有意義單位 – 也就是音素(phoneme)。結合生理學測量與心理學實驗設計，語音學研究者掌握人類發出及區辨的音素，以及各種語言的發音方式。</p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-articulation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Places_of_articulation.svg/500px-Places_of_articulation.svg.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">人類發聲器官剖面圖。詳見維基百科https://en.wikipedia.org/wiki/Place_of_articulation</figcaption></figure>
+<figcaption class="figure-caption">圖&nbsp;7.1: 人類發聲器官剖面圖。詳見維基百科https://en.wikipedia.org/wiki/Place_of_articulation</figcaption></figure>
 </div>
 </div>
 </div>
 <p><strong>構詞學</strong>(Morphology)源於印歐語系語言的字詞結構研究，構成有意義的字詞結構基本單位稱為詞素(morpheme)。依結構與功能的差異，一種語言的詞素又分為可獨立表達意義的詞根(root)，形成屆折變化的詞幹(word stem)與詞綴(affix)。以英語字詞為例，dog與dogs都是共同推有詞根<code>dog</code>的詞幹，兩者差別附加空詞綴與<code>-s</code>詞綴。不過這種結構分類不完全適用中文，例如<em>同學</em>與<em>同學們</em>看似共有一個詞根，但是不管有沒有<em>們</em>，兩個詞在許多地方可以互相替換。有語言學家主張中文的構詞學，應該從複合詞(compund word)的角度定義詞素<span class="citation" data-cites="packardMorphologyChineseLinguistic2000">(<a href="references.html#ref-packardMorphologyChineseLinguistic2000" role="doc-biblioref">Packard, 2000</a>)</span>。</p>
 <p><strong>語法學</strong>(Syntax)討論字詞的排列順序(word order)如何組成彼此都能理解的句子。一個句子的主要成份有主詞或主語(subject)、動詞或謂語(verb)、以及受詞或賓語(object)。每個成份必須使用合適的字詞組織，才能形成一種語言的合法句子。目前已知的人類語言，排列三種成份的順序各不相同：中文與英文都是主語-謂語-賓語；日文是主語-賓語-謂語；南島語系的多數語言是謂語-主語-賓語。</p>
-<p>儘管語法形式殊異，語言學者諾姆·杭士基(Noam Chomsky，圖@ref(fig:chomsky-photo))在1960年代出版的著作，提出生成語法(generative grammer)的主張，認為人類心智都有一部運作機制相同的語法產生器，將要表達的句子轉換符合母語語序的外部形式，或將要理解的句子轉換為語法產生器的內部形式。此主張影響許多後來的心理學家，透過計算機模擬或認知神經科學實驗等方式，探討人類的語法認知機制。</p>
+<p>儘管語法形式殊異，語言學者諾姆·杭士基(Noam Chomsky， <a href="#fig-chomsky-photo">圖&nbsp;<span>7.2</span></a> )在1960年代出版的著作，提出生成語法(generative grammer)的主張，認為人類心智都有一部運作機制相同的語法產生器，將要表達的句子轉換符合母語語序的外部形式，或將要理解的句子轉換為語法產生器的內部形式。此主張影響許多後來的心理學家，透過計算機模擬或認知神經科學實驗等方式，探討人類的語法認知機制。</p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-chomsky-photo" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Noam_Chomsky_portrait_2015.jpg/360px-Noam_Chomsky_portrait_2015.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">諾姆·杭士基(1928-)</figcaption></figure>
+<figcaption class="figure-caption">圖&nbsp;7.2: 諾姆·杭士基(1928-)</figcaption></figure>
 </div>
 </div>
 </div>
 <p>相對於構詞學與語法學研究字詞及句子的表現形式，<strong>語義學</strong>(Semantics)研究人類如何使用語言如何負載人類的思想。基礎的語義學研究是詞彙表義功能的分類，像是區分拼寫與發音相同但意義不同的同形同音詞(Homonym)，對比意義相同但是拼寫與發音不同的同義詞(synonym)。具備詞彙知識的成人在沒有辭典的時候，如何從存在長期記憶的字詞知識，辨別出能表達當下思想的詞彙，是語言心理學研究者一直探討的課題。本單元介紹的字詞識讀實驗使用的實驗方法：詞彙判斷作業(Lexical Decision Task)，是最常用的實驗程序。字詞的形式結構與語義特性，是這類研究最常探討的獨變項。</p>
-<p>專注一種研究方向的語言心理學研究者，都會再從上述領域選擇一個主題深入探討。這本書僅簡單介紹語言心理學的大致輪廓，如果有興趣了解重要主題的研究歷史，有影響力的理論與研究證據，可以閱讀專業的入門教材，例如 <span class="citation" data-cites="harleyPsychologyLanguageData2014">Harley (<a href="references.html#ref-harleyPsychologyLanguageData2014" role="doc-biblioref">2014</a>)</span> 的〈語言心理學〉。</p>
-</section><section id="lang_word" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="lang_word">
-<span class="header-section-number">8.2</span> 字詞辨識</h2>
-<p>首先認識什麼是<strong>詞彙判斷作業</strong>，這個作業的名稱首見於 <span class="citation" data-cites="meyerFacilitationRecognizingPairs1971">(<a href="references.html#ref-meyerFacilitationRecognizingPairs1971" role="doc-biblioref"><strong>meyerFacilitationRecognizingPairs1971?</strong></a>)</span> 的論文，而且程序與今天語言心理學研究者熟悉的版本有些不同。Meyers與Schvaneveldt安排的字詞配對有一半是兩個有意義的單詞(真詞，例如doctor - nurse; flower - dog)，另一半是一個有意義的單詞與無意義的字母組合(假詞，例如doubt - usking)。這篇論文報告兩種實驗程序：第一種是一次呈現一個配對，參與者要判斷是否都是真詞；第二種每次先呈現配對中的真詞，再呈現另一個詞，請參與者判斷最後呈現的是真詞還是假詞。無論是那一種程序，所有配對以隨機順序呈現給參與者，參與者在不到兩秒的時限之內，要做出正確判斷。</p>
-<p><span class="citation" data-cites="meyerFacilitationRecognizingPairs1971">(<a href="references.html#ref-meyerFacilitationRecognizingPairs1971" role="doc-biblioref"><strong>meyerFacilitationRecognizingPairs1971?</strong></a>)</span> 安排的真詞配對有部分是有關聯性的單詞(associative words)，例如doctor - nurse，butter - bread。有關聯性的單詞再區分半，其中一半在實驗中以原來的配對呈現，另一半配對裡的字詞打散重組，形成無關聯性的單詞配對。研究者假設參與者判斷有關聯性的單詞配對，做出反應的時間會明顯少於無關聯性的單詞配對。他們報告的實驗結果符合這個假設，特別是先後呈現程序的實驗結果，從此被稱關聯性促發效應(Associative priming effect)，或者語義促發效應(Semantic priming effect)。隨著詞彙網路(lexical network)的理論與技術進展，語言心理學研究者採用更嚴謹的規格操作單詞配對的關聯性，語義促發效應已經變成各領域心理學都有興趣的課題。</p>
-<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的再現研究使用配對字詞先後呈現的程序，也是今天語言心理學研究最常使用的程序。他們選用的真詞來自 <span class="citation" data-cites="nelsonUniversitySouthFlorida2004">Nelson et al. (<a href="references.html#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">2004</a>)</span> 建立的單詞自由聯想常模：這份常模累積數百位大學生以某個字詞(例如doctor)聯想到相關字詞(例如nurse)的人數比例，測量字詞配對之間的關聯性強度。就以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的再現實驗來說，他們挑選的120項配對平均關聯性強度有.65。至於假詞，今日英文詞彙判斷作業比起1970年代有較高的要求，基本需要是可發音，與真詞的構造不能有太大的差異，因此有研究者開發假詞資料庫，提供語言心理學實驗研究，例如 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 使用 <span class="citation" data-cites="keuleersWuggyMultilingualPseudoword2010">Keuleers &amp; Brysbaert (<a href="references.html#ref-keuleersWuggyMultilingualPseudoword2010" role="doc-biblioref">2010</a>)</span> 開發的資料庫挑選實驗用的假詞。</p>
-<p>關聯性促發效應是有關聯性的字詞配對與無關聯性的字詞配對之間反應時間差異， <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的每組平均結果都有23毫秒到30毫秒的促發效應，換算於Cohen’s d都是.8以上，屬於大量級效果量<span class="citation" data-cites="cohenStatisticalPowerAnalysis1988">(Large effect size, 參考 <a href="references.html#ref-cohenStatisticalPowerAnalysis1988" role="doc-biblioref"><strong>cohenStatisticalPowerAnalysis1988?</strong></a> )</span>。但是如果換成中文字詞，有沒有可能以相同人數獲得接近的效果量？</p>
-<p>在另一個使用詞彙判斷作業的經典研究， <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">(<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref"><strong>forsterRepetitionPrimingFrequency1984?</strong></a>)</span> 探討另一道語言心理學重要課題：較常見的字詞為何反應比較快？最可能的原因如同我們在記憶單元學到的，較多的閱讀經驗能增加覆誦的機會，越常見的字詞越容易由長期記憶提取。如果讓參與者在實驗過程有重覆答題的機會，不常見的字詞應該得到比常見字詞更明顯的反應增益，測量結果這就是 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">(<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref"><strong>forsterRepetitionPrimingFrequency1984?</strong></a>)</span> 定義的重覆促發效應(Repetition priming)。</p>
-<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 再現 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">(<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref"><strong>forsterRepetitionPrimingFrequency1984?</strong></a>)</span> 的第三個實驗，安排兩個階段的詞彙判斷作業，以第二階段呈現的字詞反應時間，比較第一階段有呈現與沒有呈現的反應時間差異，測量三種字詞的重覆促發效應：常見的高頻真詞(Hige frequency words)；不常見的低頻真詞(Low frequency words)；以及假詞(nonwords)。高頻真詞與低頻真詞來自 <span class="citation" data-cites="newUseFilmSubtitles2007">New et al. (<a href="references.html#ref-newUseFilmSubtitles2007" role="doc-biblioref">2007</a>)</span> 的字詞出現次數統計資料庫：每百萬個字詞樣本裡，選出的高頻真詞平均出現248次，低頻真詞平均出現1.22次。</p>
-<p>與 <span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">(<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref"><strong>forsterRepetitionPrimingFrequency1984?</strong></a>)</span> 的結果相比， <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 測得的重覆促發效應少於前者：高頻真詞~ 30毫秒對比10毫秒；低頻真詞~ 63毫秒對比45毫秒。不過換算為效果量，低頻真詞的重覆促發效應(1.11)明顯高出高頻真詞的效應(0.39)一個量級，所以還是一項成功的再現成果。</p>
-</section><section id="lang_sentence" class="level2" data-number="8.3"><h2 data-number="8.3" class="anchored" data-anchor-id="lang_sentence">
-<span class="header-section-number">8.3</span> 句子理解</h2>
+<p>專注一種研究方向的語言心理學研究者，都會再從上述領域選擇一個主題深入探討。這個單元僅簡單介紹語言心理學的大致輪廓，如果有興趣了解重要主題的研究歷史，有影響力的理論與研究證據，可以閱讀專業的入門教材或科普書藉，例如〈語言的力量〉<span class="citation" data-cites="WeiAoLiQia.MaLiAn-2024">(<a href="references.html#ref-WeiAoLiQia.MaLiAn-2024" role="doc-biblioref">薇奧理卡‧瑪利安, 2024</a>)</span>。</p>
+</section><section id="sec-language_word" class="level2" data-number="7.2"><h2 data-number="7.2" class="anchored" data-anchor-id="sec-language_word">
+<span class="header-section-number">7.2</span> 字詞辨識</h2>
+<p>首先認識什麼是<strong>詞彙判斷作業</strong>，這個作業的名稱首見於 <span class="citation" data-cites="Meyer-1971">Meyer &amp; Schvaneveldt (<a href="references.html#ref-Meyer-1971" role="doc-biblioref">1971</a>)</span> 的論文，而且程序與今天語言心理學研究者熟悉的版本有些不同。Meyers與Schvaneveldt安排的字詞配對有一半是兩個有意義的單詞(真詞，例如doctor - nurse; flower - dog)，另一半是一個有意義的單詞與無意義的字母組合(假詞，例如doubt - usking)。這篇論文報告兩種實驗程序：第一種是一次呈現一個配對，參與者要判斷是否都是真詞；第二種每次先呈現配對中的真詞，再呈現另一個詞，請參與者判斷最後呈現的是真詞還是假詞。無論是那一種程序，所有配對以隨機順序呈現給參與者，參與者在不到兩秒的時限之內，要做出正確判斷。</p>
+<p><span class="citation" data-cites="Meyer-1971">Meyer &amp; Schvaneveldt (<a href="references.html#ref-Meyer-1971" role="doc-biblioref">1971</a>)</span> 安排的真詞配對有部分是有關聯性的單詞(associative words)，例如doctor - nurse，butter - bread。有關聯性的單詞再區分半，其中一半在實驗中以原來的配對呈現，另一半配對裡的字詞打散重組，形成無關聯性的單詞配對。研究者假設參與者判斷有關聯性的單詞配對，做出反應的時間會明顯少於無關聯性的單詞配對。他們報告的實驗結果符合這個假設，特別是先後呈現程序的實驗結果，從此被稱關聯性促發效應(Associative priming effect)，或者語義促發效應(Semantic priming effect)。隨著詞彙網路(lexical network)的理論與技術進展，語言心理學研究者採用更嚴謹的規格操作單詞配對的關聯性，語義促發效應已經變成各領域心理學都有興趣的課題。</p>
+<p><span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 的再現研究使用配對字詞先後呈現的程序，也是今天語言心理學研究最常使用的程序。他們選用的真詞來自 <span class="citation" data-cites="Nelson-2004">Nelson et al. (<a href="references.html#ref-Nelson-2004" role="doc-biblioref">2004</a>)</span> 建立的單詞自由聯想常模：這份常模累積數百位大學生以某個字詞(例如doctor)聯想到相關字詞(例如nurse)的人數比例，測量字詞配對之間的關聯性強度。就以 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 的再現實驗來說，他們挑選的120項配對平均關聯性強度有.65。至於假詞，今日英文詞彙判斷作業比起1970年代有較高的要求，基本需要是可發音，與真詞的構造不能有太大的差異，因此有研究者開發假詞資料庫，提供語言心理學實驗研究，例如 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 使用 <span class="citation" data-cites="Keuleers-2010">Keuleers &amp; Brysbaert (<a href="references.html#ref-Keuleers-2010" role="doc-biblioref">2010</a>)</span> 開發的資料庫挑選實驗用的假詞。</p>
+<p>關聯性促發效應是有關聯性的字詞配對與無關聯性的字詞配對之間反應時間差異， <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 的每組平均結果都有23毫秒到30毫秒的促發效應，換算於Cohen’s d都是.8以上，屬於大量級效果量<span class="citation" data-cites="cohen_statistical_1988">(Large effect size, 參考 <a href="references.html#ref-cohen_statistical_1988" role="doc-biblioref">Cohen, 1988</a> )</span>。但是如果換成中文字詞，有沒有可能以相同人數獲得接近的效果量？</p>
+<p>在另一個使用詞彙判斷作業的經典研究， <span class="citation" data-cites="Forster-1984">Forster &amp; Davis (<a href="references.html#ref-Forster-1984" role="doc-biblioref">1984</a>)</span> 探討另一道語言心理學重要課題：較常見的字詞為何反應比較快？最可能的原因如同我們在記憶單元學到的，較多的閱讀經驗能增加覆誦的機會，越常見的字詞越容易由長期記憶提取。如果讓參與者在實驗過程有重覆答題的機會，不常見的字詞應該得到比常見字詞更明顯的反應增益，測量結果這就是 <span class="citation" data-cites="Forster-1984">Forster &amp; Davis (<a href="references.html#ref-Forster-1984" role="doc-biblioref">1984</a>)</span> 定義的重覆促發效應(Repetition priming)。</p>
+<p><span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 再現 <span class="citation" data-cites="Forster-1984">Forster &amp; Davis (<a href="references.html#ref-Forster-1984" role="doc-biblioref">1984</a>)</span> 的第三個實驗，安排兩個階段的詞彙判斷作業，以第二階段呈現的字詞反應時間，比較第一階段有呈現與沒有呈現的反應時間差異，測量三種字詞的重覆促發效應：常見的高頻真詞(Hige frequency words)；不常見的低頻真詞(Low frequency words)；以及假詞(nonwords)。高頻真詞與低頻真詞來自 <span class="citation" data-cites="newUseFilmSubtitles2007">New et al. (<a href="references.html#ref-newUseFilmSubtitles2007" role="doc-biblioref">2007</a>)</span> 的字詞出現次數統計資料庫：每百萬個字詞樣本裡，選出的高頻真詞平均出現248次，低頻真詞平均出現1.22次。</p>
+<p>與 <span class="citation" data-cites="Forster-19844">(<a href="references.html#ref-Forster-19844" role="doc-biblioref"><strong>Forster-19844?</strong></a>)</span> 的結果相比， <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 測得的重覆促發效應少於前者：高頻真詞~ 30毫秒對比10毫秒；低頻真詞~ 63毫秒對比45毫秒。不過換算為效果量，低頻真詞的重覆促發效應(1.11)明顯高出高頻真詞的效應(0.39)一個量級，所以還是一項成功的再現成果。</p>
+</section><section id="sec-language_sentence" class="level2" data-number="7.3"><h2 data-number="7.3" class="anchored" data-anchor-id="sec-language_sentence">
+<span class="header-section-number">7.3</span> 句子理解</h2>
 <!---
 generated by RSyntaxTree(https://yohasebe.com/rsyntaxtree/, Yoichiro Hasebe)
 --->
-<p>各種語言使用的詞彙數目有限，但是人類有能力產生無限多條句子，而且擁有相同詞彙知識的人都能理解 – 如果不算特別設計的謎語或文體。杭士基的生成語法理論推動認知科學革命之後，語法結構如何影響句子理解的認知歷程，一直是許多認知心理學家的研究主題。最近的例子如 <span class="citation" data-cites="yangSentenceIntegrationProcesses2010">Yang et al. (<a href="references.html#ref-yangSentenceIntegrationProcesses2010" role="doc-biblioref">2010</a>)</span> 運用腦電圖紀錄中文人士理解有子句的句子過程中，處理主語解析型子句：<em>老師介紹喜愛畢卡索的那位畫家</em>，與處理賓語解析型子句：<em>老師介紹畢卡索喜愛的那位畫家</em>之間的關鍵時段腦電位高峰。</p>
-<p>除了語法學能建立可做實驗驗證的語言心理學假設，另有一種取向好奇人類是否以圖像認知理解句子表達的意義。 <span class="citation" data-cites="zwaanLanguageComprehendersMentally2002">Zwaan et al. (<a href="references.html#ref-zwaanLanguageComprehendersMentally2002" role="doc-biblioref">2002</a>)</span> 改良傳統的句圖比對作業，比較讀者閱讀一條句子之後，接著判斷圖片中的物件是否為句子提到的物件。圖片中的物件可能呈現符合句子描述的形態，也可能呈現不符合的形態，如圖@ref(fig:shape-example)。後續研究穩定發現，符合描述形態的圖片之反應時間中位數，顯著少於不符合描述形態的圖片。這段反應時間差異，今天被稱為形態模擬效應(Shape simulation effect)。</p>
+<p>各種語言使用的詞彙數目有限，但是人類有能力產生無限多條句子，而且擁有相同詞彙知識的人都能理解 – 如果不算特別設計的謎語或文體。杭士基的生成語法理論推動認知科學革命之後，語法結構如何影響句子理解的認知歷程，一直是許多認知心理學家的研究主題。例如 <span class="citation" data-cites="yangSentenceIntegrationProcesses2010">Yang et al. (<a href="references.html#ref-yangSentenceIntegrationProcesses2010" role="doc-biblioref">2010</a>)</span> 運用腦電圖紀錄中文人士理解有子句的句子過程中，處理主語解析型子句：<em>老師介紹喜愛畢卡索的那位畫家</em>，與處理賓語解析型子句：<em>老師介紹畢卡索喜愛的那位畫家</em>之間的關鍵時段腦電位高峰。</p>
+<p>除了語法學能建立可做實驗驗證的語言心理學假設，另有一種取向好奇人類是否以圖像認知理解句子表達的意義。 <span class="citation" data-cites="Zwaan-2002">Zwaan et al. (<a href="references.html#ref-Zwaan-2002" role="doc-biblioref">2002</a>)</span> 改良傳統的句圖比對作業，比較讀者閱讀一條句子之後，接著判斷圖片中的物件是否為句子提到的物件。圖片中的物件可能呈現符合句子描述的形態，也可能呈現不符合的形態，如 <a href="#fig-shape-example">圖&nbsp;<span>7.3</span></a> 。後續研究穩定發現，符合描述形態的圖片之反應時間中位數，顯著少於不符合描述形態的圖片。這段反應時間差異，今天被稱為形態模擬效應(Shape simulation effect)。</p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-shape-example" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="figs/00012.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Zwaan, Stanfield, 與 Yaxley (2002) 使用的刺激範例；取自Bergen (2012)。</figcaption></figure>
+<figcaption class="figure-caption">圖&nbsp;7.3: Zwaan, Stanfield, 與 Yaxley (2002) 使用的刺激範例；取自Bergen (2012)。</figcaption></figure>
 </div>
 </div>
 </div>
-</section><section id="lang_rep" class="level2" data-number="8.4"><h2 data-number="8.4" class="anchored" data-anchor-id="lang_rep">
-<span class="header-section-number">8.4</span> 語言心理學研究的再現與重製</h2>
-<p>語言心理學的重要理論與研究方法源於美國心理學與語言學，前述字詞辨識與句子理解實驗都是首見於以英語人士為參與者研究，有穩定再現結果的後續研究也是來自英語研究團隊。 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 設計的再現實驗也是招募英語人士。如果要使用其他語言進行研究，除了需要考慮樣本數，關鍵變項的操作需要使用規模相近的字詞資料庫挑選刺激字詞，才能確保獨變項操作與英語研究一致，例如聯想詞常模；字詞出現次數資料庫。</p>
-<p>除了參與者人數，刺激字詞數目也是語言心理學實驗的樣本數需考慮的條件。根本原因是刺激字詞數目也會決定實驗效應的型一與型二錯誤率，詳細說明可參考附錄@ref(power-estimation)。這裡以 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 設定的字詞數目，討論三個實驗的達成預定結果有高考驗力的參與者人數。</p>
-<p>關聯性促發效應的Cohen’s d至少有0.8，是容易再現的實驗效果。如圖@ref(fig:association-priming)的估計，大約13人就能得到90%考驗力的再現結果。</p>
+</section><section id="sec-language_rep" class="level2" data-number="7.4"><h2 data-number="7.4" class="anchored" data-anchor-id="sec-language_rep">
+<span class="header-section-number">7.4</span> 語言心理學研究的再現與重製</h2>
+<p>語言心理學的重要理論與研究方法源於美國心理學與語言學，前述字詞辨識與句子理解實驗都是首見於以英語人士為參與者研究，有穩定再現結果的後續研究也是來自英語研究團隊。 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 設計的再現實驗也是招募英語人士。如果要使用其他語言進行研究，除了需要考慮樣本數，關鍵變項的操作需要使用規模相近的字詞資料庫挑選刺激字詞，才能確保獨變項操作與英語研究一致，例如聯想詞常模；字詞出現次數資料庫。</p>
+<p>除了參與者人數，刺激字詞數目也是語言心理學實驗的樣本數需考慮的條件。根本原因是刺激字詞數目也會決定實驗效應的型一與型二錯誤率，詳細說明可參考附錄####。這裡以 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 設定的字詞數目，討論三個實驗的達成預定結果有高考驗力的參與者人數。</p>
+<p>關聯性促發效應的Cohen’s d至少有0.8，是容易再現的實驗效果。如 <a href="#fig-association-priming">圖&nbsp;<span>7.4</span></a> 的估計，大約13人就能得到90%考驗力的再現結果。</p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-association-priming" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="figs/Associative_Priming_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">估計關聯性促發效應之考驗力與參與者人數。</figcaption></figure>
+<figcaption class="figure-caption">圖&nbsp;7.4: 估計關聯性促發效應之考驗力與參與者人數。</figcaption></figure>
 </div>
 </div>
 </div>
-<p><span class="citation" data-cites="forsterRepetitionPrimingFrequency1984">(<a href="references.html#ref-forsterRepetitionPrimingFrequency1984" role="doc-biblioref"><strong>forsterRepetitionPrimingFrequency1984?</strong></a>)</span> 的第三項實驗發現低頻詞的重覆促發效應是高頻詞的一倍以上，根據 <span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 的實驗結果推測，如圖@ref(fig:repetition)所示，低頻字詞的重覆促發效應達到90%考驗力的人數，只高頻字詞(圖@ref(fig:repetition))的人數約六分之一。語 言心理學存在許多類似的效應，與字詞出現次數有明顯的交互作用，因此任何理論與假設，都要考慮字詞頻次如何影響要研究的關鍵效應。<!---多數有操作字詞出現次數的研究，都以低頻字詞能否出現預測的效應為目標。如果未來要再現這項實驗，或者檢驗字詞出現次數與關鍵效應的交互作用，都應考慮低頻字詞能獲得高考驗力實驗結果的樣本數。---></p>
+<p><span class="citation" data-cites="Forster-1984">Forster &amp; Davis (<a href="references.html#ref-Forster-1984" role="doc-biblioref">1984</a>)</span> 的第三項實驗發現低頻詞的重覆促發效應是高頻詞的一倍以上，根據 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 的實驗結果推測，如 <a href="#fig-repetition">圖&nbsp;<span>7.5</span></a> 所示，低頻字詞的重覆促發效應達到90%考驗力的人數，只有高頻字詞的人數約六分之一。語言心理學研究存在許多與字詞出現次數有明顯的交互作用的效應，因此任何理論與假設，都要考慮字詞頻次如何影響研究目標的關鍵效應。<!---多數有操作字詞出現次數的研究，都以低頻字詞能否出現預測的效應為目標。如果未來要再現這項實驗，或者檢驗字詞出現次數與關鍵效應的交互作用，都應考慮低頻字詞能獲得高考驗力實驗結果的樣本數。---></p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="figs/LF_Repetition_N.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">估計低頻詞重覆促發效應之考驗力與參與者人數。左圖:低頻字詞，右圖:高頻字詞</figcaption></figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="figs/HF_Repetition.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">估計低頻詞重覆促發效應之考驗力與參與者人數。左圖:低頻字詞，右圖:高頻字詞</figcaption></figure>
+<div id="fig-repetition" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="figs/Repetition_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">圖&nbsp;7.5: 估計低頻詞重覆促發效應之考驗力與參與者人數。左圖:低頻字詞，右圖:高頻字詞</figcaption></figure>
 </div>
 </div>
 </div>
-<p><span class="citation" data-cites="zwaanParticipantNonnaiveteReproducibility2017">Zwaan et al. (<a href="references.html#ref-zwaanParticipantNonnaiveteReproducibility2017" role="doc-biblioref">2018</a>)</span> 重現的形態模擬效應效果量範圍在0.3到0.6之間，屬於中量級的效果量，以最低的0.315估計再現實驗所需人數 (圖@ref(fig:shape-simulation))，可知再現研究要重新發現同樣的結果且達到90%的考驗力，必須要累積80人以上的樣本。</p>
+<p><span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 重現的形態模擬效應效果量範圍在0.3到0.6之間，屬於中量級的效果量，以最低的0.315估計再現實驗所需人數 ( <a href="#fig-shape-simulation">圖&nbsp;<span>7.6</span></a> )，可知再現研究要重新發現同樣的結果且達到90%的考驗力，必須要累積80人以上的樣本。</p>
 <div class="cell" data-paged.print="true">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-shape-simulation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="figs/Shape_Simulation_N.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">估計形態模擬效應之考驗力與參與者人數。</figcaption></figure>
+<figcaption class="figure-caption">圖&nbsp;7.6: 估計形態模擬效應之考驗力與參與者人數。</figcaption></figure>
 </div>
 </div>
 </div>
-</section><section id="lang_practice" class="level2" data-number="8.5"><h2 data-number="8.5" class="anchored" data-anchor-id="lang_practice">
-<span class="header-section-number">8.5</span> 習作</h2>
+<!---
+## 習作 ## {#lang_practice}
+--->
+<div class="callout callout-style-default callout-note callout-titled" title="習作" style="color: red">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+習作
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ul>
-<li><p><span class="citation" data-cites="nelsonUniversitySouthFlorida2004">Nelson et al. (<a href="references.html#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">2004</a>)</span> 收集的關聯性常模收錄4000條英文字詞與聯想詞的資料，每條字詞的聯想詞來自平均149位參與者的回答，統計每個聯想詞被提及的次數。請查閱文獻，了解目前有沒有規模相近的聯想詞常模？如果沒有相當規模的常模，要如何收集字詞關聯性的測量資料？</p></li>
-<li><p>SUBTLEX-US<span class="citation" data-cites="nelsonUniversitySouthFlorida2004">(<a href="references.html#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref">Nelson et al., 2004</a>)</span>統計收錄的字詞在百萬次語料之間的出現次數，這份資料庫的語料來源是什麼？如何估計收錄字詞的出現次數？中文字詞有沒有類似規模的資料庫？如何查找符合實驗操作的字詞？</p></li>
+<li><p><span class="citation" data-cites="nelsonUniversitySouthFlorida2004">(<a href="references.html#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref"><strong>nelsonUniversitySouthFlorida2004?</strong></a>)</span> 收集的關聯性常模收錄4000條英文字詞與聯想詞的資料，每條字詞的聯想詞來自平均149位參與者的回答，統計每個聯想詞被提及的次數。請查閱文獻，了解目前有沒有規模相近的聯想詞常模？如果沒有相當規模的常模，要如何收集字詞關聯性的測量資料？</p></li>
+<li><p>SUBTLEX-US<span class="citation" data-cites="nelsonUniversitySouthFlorida2004">(<a href="references.html#ref-nelsonUniversitySouthFlorida2004" role="doc-biblioref"><strong>nelsonUniversitySouthFlorida2004?</strong></a>)</span>統計收錄的字詞在百萬次語料之間的出現次數，這份資料庫的語料來源是什麼？如何估計收錄字詞的出現次數？中文字詞有沒有類似規模的資料庫？如何查找符合實驗操作的字詞？</p></li>
 <li><p>形態模擬效應實驗的完整材料可由原作者的<a href="https://osf.io/2dtrh/">後續研究</a>取得。如果要改造為中文實驗，你認為只翻譯英文句子為中文句子，還是操作一致的實驗嗎？實驗材料、作業程序、還有參與者背景等，這些條件應該如何考慮？</p></li>
 <li><p>在每項實驗的<code>Raw Data</code>表單裡，那些欄位是真正用於分析的依變項資料？那些欄位是獨變項？那些是計算參與者平均反應的必要欄位？</p></li>
 <li><p>為何有部分資料是極端值？這份公開資料處理極端值的方式是什麼？</p></li>
 <li><p>關聯性促發效果與重覆促發效果的原始論文都有報告其他實驗，形態模擬效應實驗還有其他類似的研究。請查閱文獻，舉出一個程序超過一半相同的研究，了解這項研究要檢驗的假設，變項的設計，程序與材料的設定，以及採用的分析方法。比較原始研究與你查閱的研究兩者異同。</p></li>
 <li><p>根據三項實驗的考驗力與樣本數分析，註冊再現研究要如何規劃與執行？</p></li>
 </ul>
+</div>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-chomskyAspectsTheorySyntax1965" class="csl-entry" role="listitem">
-Chomsky, N. (1965). <em>Aspects of the theory of syntax</em>. <span>Cambridge : MIT</span>.
+Chomsky, N. (1965). <em>Aspects of the theory of syntax</em>. Cambridge : MIT.
 </div>
-<div id="ref-harleyPsychologyLanguageData2014" class="csl-entry" role="listitem">
-Harley, T. A. (2014). <em>The psychology of language: From data to theory</em> (Fourth edition). <span>Psychology Press, Taylor &amp; Francis Group</span>.
+<div id="ref-cohen_statistical_1988" class="csl-entry" role="listitem">
+Cohen, J. (1988). <em>Statistical power analysis for the behavioral sciences</em> (2nd ed). L. Erlbaum Associates.
+</div>
+<div id="ref-Forster-1984" class="csl-entry" role="listitem">
+Forster, K., &amp; Davis, C. (1984). Repetition priming and frequency attenuation in lexical access. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>10</em>(4), 680–698. <a href="https://doi.org/10.1037/0278-7393.10.4.680">https://doi.org/10.1037/0278-7393.10.4.680</a>
 </div>
 <div id="ref-kantorObjectivePsychologyGrammar1936" class="csl-entry" role="listitem">
-Kantor, J. R. (1936). <em>An objective psychology of grammar.</em> <span>Indiana University Publications</span>. <a href="https://doi.org/10.1037/13513-000">https://doi.org/10.1037/13513-000</a>
+Kantor, J. R. (1936). <em>An objective psychology of grammar.</em> Indiana University Publications. <a href="https://doi.org/10.1037/13513-000">https://doi.org/10.1037/13513-000</a>
 </div>
-<div id="ref-keuleersWuggyMultilingualPseudoword2010" class="csl-entry" role="listitem">
+<div id="ref-Keuleers-2010" class="csl-entry" role="listitem">
 Keuleers, E., &amp; Brysbaert, M. (2010). Wuggy: <span>A</span> multilingual pseudoword generator. <em>Behavior Research Methods</em>, <em>42</em>(3), 627–633. <a href="https://doi.org/10.3758/BRM.42.3.627">https://doi.org/10.3758/BRM.42.3.627</a>
 </div>
-<div id="ref-nelsonUniversitySouthFlorida2004" class="csl-entry" role="listitem">
+<div id="ref-Meyer-1971" class="csl-entry" role="listitem">
+Meyer, D. E., &amp; Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of words: <span>Evidence</span> of a dependence between retrieval operations. <em>Journal of Experimental Psychology</em>, <em>90</em>(2), 227–234. <a href="https://doi.org/10.1037/h0031564">https://doi.org/10.1037/h0031564</a>
+</div>
+<div id="ref-Nelson-2004" class="csl-entry" role="listitem">
 Nelson, D. L., McEvoy, C. L., &amp; Schreiber, T. A. (2004). The <span>University</span> of <span>South Florida</span> free association, rhyme, and word fragment norms. <em>Behavior Research Methods, Instruments, &amp; Computers</em>, <em>36</em>(3), 402–407. <a href="https://doi.org/10.3758/BF03195588">https://doi.org/10.3758/BF03195588</a>
 </div>
 <div id="ref-newUseFilmSubtitles2007" class="csl-entry" role="listitem">
 New, B., Brysbaert, M., Veronis, J., &amp; Pallier, C. (2007). The use of film subtitles to estimate word frequencies. <em>Applied Psycholinguistics</em>, <em>28</em>(04), 661–677. <a href="https://doi.org/10.1017/S014271640707035X">https://doi.org/10.1017/S014271640707035X</a>
 </div>
 <div id="ref-packardMorphologyChineseLinguistic2000" class="csl-entry" role="listitem">
-Packard, J. L. (2000). <em>The <span>Morphology</span> of <span>Chinese</span>: <span>A Linguistic</span> and <span>Cognitive Approach</span></em>. <span>Cambridge University Press</span>.
+Packard, J. L. (2000). <em>The <span>Morphology</span> of <span>Chinese</span>: <span>A Linguistic</span> and <span>Cognitive Approach</span></em>. Cambridge University Press.
 </div>
 <div id="ref-pronkoLanguagePsycholinguisticsReview1946" class="csl-entry" role="listitem">
 Pronko, N. H. (1946). Language and psycholinguistics: A review. <em>Psychological Bulletin</em>, <em>43</em>(3), 189–239. <a href="https://doi.org/10.1037/h0056729">https://doi.org/10.1037/h0056729</a>
@@ -403,14 +413,17 @@ Pronko, N. H. (1946). Language and psycholinguistics: A review. <em>Psychologica
 <div id="ref-yangSentenceIntegrationProcesses2010" class="csl-entry" role="listitem">
 Yang, C. L., Perfetti, C. A., &amp; Liu, Y. (2010). Sentence integration processes: <span>An ERP</span> study of <span>Chinese</span> sentence comprehension with relative clauses. <em>Brain and Language</em>, <em>112</em>(2), 85–100. <a href="https://doi.org/10.1016/j.bandl.2009.10.005">https://doi.org/10.1016/j.bandl.2009.10.005</a>
 </div>
-<div id="ref-zwaanParticipantNonnaiveteReproducibility2017" class="csl-entry" role="listitem">
-Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2018). Participant <span>Nonnaiveté</span> and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1968–1972. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
+<div id="ref-Zwaan-2018" class="csl-entry" role="listitem">
+Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2018). Participant nonnaiveté and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1968–1972. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
 </div>
-<div id="ref-zwaanLanguageComprehendersMentally2002" class="csl-entry" role="listitem">
+<div id="ref-Zwaan-2002" class="csl-entry" role="listitem">
 Zwaan, R. A., Stanfield, R. A., &amp; Yaxley, R. H. (2002). Language comprehenders mentally represent the shapes of objects. <em>Psychological Science</em>, <em>13</em>, 168–171. <a href="https://doi.org/10.1111/1467-9280.00430">https://doi.org/10.1111/1467-9280.00430</a>
 </div>
+<div id="ref-WeiAoLiQia.MaLiAn-2024" class="csl-entry" role="listitem">
+薇奧理卡‧瑪利安. (2024). <em>語言的力量：語言如何影響我們的思維、說話與生活，如何學會更多種語言，和多語言能力對腦部的好處</em>. 晨星. <a href="https://www.morningstar.com.tw/bookinfo.aspx?bookno=0104538">https://www.morningstar.com.tw/bookinfo.aspx?bookno=0104538</a>
 </div>
-</section></section></main><!-- /main --><script>
+</div>
+</section></main><!-- /main --><script>
 
 /* update total correct if #webex-total_correct exists */
 update_total_correct = function() {
