@@ -1,4 +1,4 @@
-# 緒論~科學方法 {#sec-intro_start}
+# 緒論~科學方法 {#sec-intro}
 
 > "According to the hypothetico-deductive method, to which psychology at least nominally adheres, a scientist begins by formulating a hypothesis that addresses some aspect of a relevant theory. With the hypothesis decided, the scientist then conducts an experiment and allows the data to determine whether or not the hypothesis was supported. This outcome then feeds into revision (and possible rejection) of the theory, stimulating an iterative cycle of hypothesis generation, hypothesis testing, and theoretical advance." --- Chris Chambers (2017)
 
@@ -114,13 +114,13 @@ B是假的。
 
 本章一開始曾提到一個有些聳動的名詞：**再現危機(Replication crisis)**，這是泛指心理科學領域從2011年起，透過檢討違反學術倫理的個案，以及多項跨實驗室合作再現專案，可成功再現原始研究結果不及一半，眾多心理學者意識到的各種問題[參考 @penningtonStudentGuideOpen2023 的名詞解釋]。最常被討論的問題有**發表偏誤**(Publication Bias)，**不正當的研究操作**(Questionable Research Practices, QRPs)，以及**缺乏透明度**(lack of transparency)[^01-intro-3]。最後一種問題的根源是許多心理科學及多數社會科學領域的研究者缺乏開放研究內容的觀念，在民主社會公民意識為主的現代，民眾應當了解大部分科學研究是受到政府單位的經費補助才能進行，而政府單位提供的經費是來自每一個合法公民的納稅，因此你我都有權知曉受政府補助的研究案內容。科學家也有義務向大眾揭露研究細節。
 
+<!---
 
 ::: {.callout-tip title="科學研究的理益衝突" collapse="true" style="color: gray"}
 - 接受私人資本集團補助的科學研究
 
 :::
 
-<!---
 @frankTeachingReplication2012 與 @chopikHowWhetherTeach2018 都指出許多有創新意義的心理學研究，缺乏保障信度的再現研究支持。原因是研究者在研究過程中，並不總是按照**科學方法**的思考及作業原則規劃研究設計及分析資料，特別是與統計分析有關的「設計實驗」和「檢驗假說」兩個步驟，採用不正當的研究操作(Quetionable Research Practices)。研究人員會採用不正當的研究操作的動機之一，是未明確區分探索性和確證性研究。@chopikHowWhetherTeach2018 指出，心理學研究經常從初步的探索結果擷取決定性的結論，而非進行嚴格的假設檢驗，導致研究者高估證據力。發表偏誤的來源則是只有符合研究者預期且統計顯著的結果能被期刊接受，但是不符合預期或無法再現的研究結果無法得到發表的機會。 @frankTeachingReplication2012 指出摻雜發表偏誤的一系列研究會讓其他研究者高估實驗效應，以及扭曲整合分析的估計值。
 --->
 
@@ -258,6 +258,24 @@ Chris Chambers的書列舉了心理學研究的七宗罪，並指出缺乏可靠
 ### 開放資料操作指引
 
 所謂開放資料不只是將研究資料公開到任何人都能自由檢索的公開網站而己，還有如何解釋及使用資料的元資料(meta data)。本書將參照FAIR公開資料協議[^01-intro-6]，說明如何挑選可尋得(Findable)且可取用(Accessible)的公開資料儲存庫，以及要公開的資料如何能與其他來源資料相互整合(Interoperabble)，還有重覆使用(Reusable)。本書讀者可透過評估已發表的研究公開資料符合各項原則的條件，以及實作範例認識如何運用FAIR的指引。
+
+
+## 研究倫理基本須知 {#sec-intro_ethics}
+
+科學研究能增進人類對這個世界的了解，是每個領域科學家進行研究的主要動機。行為與社會科學的研究對象是人類，運用各種方式取得人類行為資料是研究之必需。儘管研究有崇高的目標，任何取得資料的方式都不能侵害個人利益，或造成任何可能的風險。以下引述 @saulHowWriteLab2011 整理的基本須知，補充最近應該考慮的例子：
+
+- 獲取資料的方式是否會引發參與者心理或生理的不適？ 例如：詢問個人性別不只設計兩個選項，讓跨性別人士自由決定要不要告知。
+
+- 收集資料有無侵犯個人隱私？ 例如：在公開場合進行實驗；收集個人上網載具定位...
+
+- 因實驗操作的需要，事前隱暪部分內容，會不會損害參與者權益？
+例如：分班實施不同的教學法，比較學生的學習表現。
+
+- 參與者隨時中止參與研究的自由。
+
+- 邀請未成年人士參與研究，應考慮的問題：
+
+- 以非人類動物進行研究，應考慮的問題：
 
 
 <!---
