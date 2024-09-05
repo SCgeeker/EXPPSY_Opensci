@@ -13,7 +13,7 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
   sharing: [facebook, twitter]
-  date: "2024-XX-XX"
+  date: "2024-08-30"
   license: CC-BY
   page-footer: "CC-BY (2019-2024) 陳紹慶" 
   #cover-image: images/logos/logo.png

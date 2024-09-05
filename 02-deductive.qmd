@@ -1,10 +1,10 @@
-# 演繹推理 {#sec-deductive}
+# 演繹推理 {#deductive}
 
 > 如何在閱讀中運用演繹推理，辨識需要證據支持或否證的研究問題及假設。
 
 本書一開始就提到，科學論文及專業書藉是科學研究者取得研究問題的重要來源。充實個人知識含量是每個人要做的自我修行，本書及援用的課程能幫助的是如何有效彙整可用的知識，以及如何使用你所彙整的知識判斷可歸入個人知識庫的文獻。
 
-@sec-intro_cycle 曾簡單介紹最古典的演繹推理~三段論證的規則，現在我用改編自心理學者Peter Wason的推理測驗，測試看看你需不需要「脈絡資訊」(contextual information)來解決測驗問題：
+@intro_cycle 曾簡單介紹最古典的演繹推理~三段論證的規則，現在我用改編自心理學者Peter Wason的推理測驗，測試看看你需不需要「脈絡資訊」(contextual information)來解決測驗問題：
 
 ```
 你面前的桌子上有四張卡片，每張卡片朝著你的這一面分別印著「數字6」、「玫瑰花的素描圖像」、「幾何多邊形」、「天竺鼠的攝影像」等圖樣。研究人員告訴你每張卡片的另一面都有圖樣，每張卡片的兩面所印的圖樣規律是「如果一張卡片的一面是數字，則另一面是動物。」
@@ -31,7 +31,7 @@
 
 接著來看兩個問題裡要檢查的第二項。第一個問題裡要檢查的另一張卡片是「玫瑰花」，確定另一面不是「數字6」，才能確認「如果一張卡片的一面是數字，則另一面是動物。」的規律是正確的。有不少人可能會問，為何不檢查另外兩張卡片？那麼你可以想一下第二題，你會很容易接受第二個問題情境裡，另一個要問的是準備要結帳的未成年顧客要不要買香煙。大家應該都能理解，無論成年顧客要不要買香煙，都沒有違反「未成年不可買煙」的法律。在第一題的情境裡，研究人員所設定的規則如同現實世界的法律，另外兩張卡片如同成年顧客或買一般商品的顧客一樣，查問他們的真實年紀或要買的東西，都不會違反法律。這種很少意識卻在有脈絡的情境中，能用來檢測規律有沒有被違反的案例可稱為**反證原則**。
 
-雖然三段論只是眾多演繹推理方法的其中一種，卻是能檢視一種主張是否具備科學意義的基本方法。構成一項科學主張的客體，也就是原因與結果，必須使**確證原則**與**反證原則**可並存運作。然而與科學無關的各種現實事務，一般人都很容易接受的主張，通常只能檢測**確證原則**的證據，缺乏檢測**反證原則**的條件。這種只考慮**確證原則**的傾向，就是在其他心理學課程常會提到的[確認偏誤](https://zh.wikipedia.org/wiki/%E7%A2%BA%E8%AA%8D%E5%81%8F%E8%AA%A4)。實驗研究法的長期學習主題之一，就是能將想探討的研究問題，轉化為可以確證亦可以反證的**假設**。
+雖然三段論只是眾多演繹推理方法的其中一種，卻是能檢視一種主張是否具備科學意義的基本方法。構成一項科學主張的客體，也就是原因與結果，必須使**確證原則**與**反證原則**可並存運作。然而與科學無關的各種現實事務，我們所接受或都自行提出的主張，都只能檢測**確證原則**的證據，卻缺乏檢測**反證原則**的條件。實驗研究法的長期學習主題之一，就是能將想探討的研究問題，轉化為可以確證亦可以反證的**假設**。
 
 演繹推理的過程是提出可以檢驗的科學假設，還需要結合歸納推理才能運作能生產科學知識的流程。包括實驗心理學，各種科學研究經常這樣搭配使用歸納推理和演繹推理：
 
@@ -45,7 +45,7 @@
 
 心理學再現危機的影響層面及根源依然是個討論中的主題，我們在此專注在心理學實驗室裡，心理學研究者都會關心，極可能影響實驗結果的因素：非新手參與者(nonnaiveté participant)。因為大學生人口增加，以及遠距實驗平台的普及，許多人都有參與多樣心理學實驗的經驗。儘管研究者會儘可能調整實驗內容，減低參與者對研究作業的熟悉感。然而因為作業方式的普遍性，以及有大學學歷的參與者熱衷參與各式實驗而累積的經驗，有可能導致大部分驗證原始研究結果的心理學實驗，無法得到一致的研究結果。
 
-由於決策判斷(decision making)實驗是社會心理學大型再現研究專案中，結果最不盡如人意的項目 [@kleinInvestigatingVariationReplicability2014]， @Chandler-2015 特別關切非新手經驗削弱再現結果的程度。他們從專案中挑選12項決策行為實驗，透過線上平台邀請參與者分兩個梯次，參與同一項實驗，並且操作兩個梯次之間的相距時間、施測平台異同、以及被分派的實驗條件異同。評估再現程度的指標是比較每項實驗的兩個梯次效果量差異(difference of effect size)[^02-002]。
+由於決策判斷(decision making)實驗是大型再現研究專案中，結果最不盡如人意的項目 [citations]， @Chandler-2015 特別關切非新手經驗削弱再現結果的程度。他們從專案中挑選12項決策行為實驗，透過線上平台邀請參與者分兩個梯次，參與同一項實驗，並且操作兩個梯次之間的相距時間、施測平台異同、以及被分派的實驗條件異同。評估再現程度的指標是比較每項實驗的兩個梯次效果量差異(difference of effect size)[^02-002]。他們發現三種操作條件都會降低第二梯次的效果量，其中第二梯次被分派條件不同於第一次條件，效果量降低所造成的差異特別明顯。
 
 @Zwaan-2018 認為由於認知心理學實驗在大型再現研究專案所得到的再現結果相對較佳 [citation]，而且不同於決策判斷實驗通常採用組間比較，多數實驗採用組內比較。需要透過實驗評估非新手經驗降低再現結果效果量的程度，因此選擇九個認知心理學的經典實驗，涵蓋知覺/動作、記憶和語言三個領域。與 @Chandler-2015 一樣透過線上平台，招募參與者分兩個梯次參與。
 
@@ -71,7 +71,7 @@
 **研究問題**是在「推論」到「假設或學說」兩個狀態之間的產物。@Chandler-2015 及 @Zwaan-2018 都是在認同多數心理學研究無法穩定再現的前提下，鎖定非新手經驗的影響是需要探討的問題。兩群研究者的知識背景不同，對於所知悉的心理學實驗過程中，非新手經驗的來源或內涵有不一樣的看法。決策判斷實驗主要透過提供情境故事(cover story)給參與者閱讀，再讓參與者對特定問題以圈選選項或標記量表分數，所以參與者對於問卷格式的熟練、題目設計的理解、以及作實驗的個人動機等，都在Chandler等人的問題意識之中。認知心理學的實驗程序能減少參與者的主觀認知所造成的練習效應，所以Zwaan等人認為刺激材料的相似程度是最可能改變非新手經驗的條件。
 
 
-::: {.callout-note title="演練行動" collapse="true" style="color: yellow"}
+::: {.callout-note title="演練行動" collapse="true" style="color: gray"}
 從 @Chandler-2015 及 @Zwaan-2018 的論文裡，摘錄任何有關「非新手經驗」的關鍵詞，以及包含關鍵詞的文字段落。試者用你的理解重新說明各自的研究問題。 
 :::
 
@@ -148,7 +148,7 @@ Chandler等人認為，先前暴露會透過各種途徑影響參與者在後續
 - **具體性**:  研究假設應該具體說明符合理論預測，會觀察到的變項關係及測量結果，特別是充分符合預測的研究條件。
 
 
-::: {.callout-note title="演練行動" collapse="true" style="color: yellow"}
+::: {.callout-note title="演練行動" collapse="true" style="color: gray"}
 從 @Chandler-2015 及 @Zwaan-2018 的論文裡，摘錄符合四項設定條件的文字或圖表段落。以你能向他人表達報告的方式呈現出來。
 :::
 
@@ -185,7 +185,7 @@ Chandler等人認為，先前暴露會透過各種途徑影響參與者在後續
 --->
 
 
-最後一節介紹開源文獻管理軟體[zotero](https://www.zotero.org/)，這套軟體能幫助研究者收集整理要轉化出科學問題的文獻，官方及核心使用者開發的附加元件(plugins)，能協助研究者筆記文獻重點及個人想法，以及輔助撰寫報告時，編輯要引用的文獻及參考書目。接著分享形成研究問題及假設的建議及技巧，透過案例展示以及習作練習，讓讀者從閱讀 @Zwaan-2018 的重製實驗及原始文獻，接觸專業研究者如何進行演繹推理。
+最後一節介紹開源文獻管理軟體[zotero](https://www.zotero.org/)，這套軟體能幫助研究者收集整理要轉化出科學問題的文獻，官方及核心使用者開發的附加元件(plugins)，能協助研究者筆記文獻重點及個人想法，以及輔助撰寫報告時，編輯要引用的文獻及參考書目。接著分享形成研究問題及假設的建議及技巧，透過案例展示以及習作練習，讓讀者從閱讀 @zwaanParticipantNonnaiveteReproducibility2017 的重製實驗及原始文獻，接觸專業研究者如何進行演繹推理。
 
 <!---個人知識管理(Personal Knowledge Management, PKM)的觀念及技巧， --->
 
@@ -257,21 +257,21 @@ google doc
 
 ### 設定研究問題
 
-- 為何 @Zwaan-2018 要重製九項認知心理學實驗？
+- 為何 @zwaanParticipantNonnaiveteReproducibility2017 要重製九項認知心理學實驗？
 
-- @Zwaan-2018 選擇的九項實驗有什麼科學意義？
+- @zwaanParticipantNonnaiveteReproducibility2017 選擇的九項實驗有什麼科學意義？
 
-- 九項實驗各有什麼科學意義？如何從各項實驗的原始論文以及 @Zwaan-2018 彙整出來？如何找到彰顯各項實驗科學意義的相關文獻？
+- 九項實驗各有什麼科學意義？如何從各項實驗的原始論文以及 @zwaanParticipantNonnaiveteReproducibility2017 彙整出來？如何找到彰顯各項實驗科學意義的相關文獻？
 
 ### 設定研究假設
 
-- @Zwaan-2018 如何定義非生手參與者(Participant nonnaiveté)
+- @zwaanParticipantNonnaiveteReproducibility2017 如何定義非生手參與者(Participant nonnaiveté)
 
-- @Zwaan-2018 如何定義實驗結果的重製性(reproducibility of experimental effects)
+- @zwaanParticipantNonnaiveteReproducibility2017 如何定義實驗結果的重製性(reproducibility of experimental effects)
 
-- @Zwaan-2018 的論文裡那一個段落具體描述研究假設？
+- @zwaanParticipantNonnaiveteReproducibility2017 的論文裡那一個段落具體描述研究假設？
 
-- 各項原始實驗的假設是什麼？ @Zwaan-2018 設定的假設與原始實驗有什麼差異？能否從有引有關係的論文找出假設有變化或維持一致的研究演進路徑？
+- 各項原始實驗的假設是什麼？ @zwaanParticipantNonnaiveteReproducibility2017 設定的假設與原始實驗有什麼差異？能否從有引有關係的論文找出假設有變化或維持一致的研究演進路徑？
 
 <!---
 文明社會的基石是有典藏與傳播知識產物的機構，很多人首先會想到的機構應該是圖書館。一切資訊都可以數位化與網路化的今日，越來越少人依賴實體圖書館提供的服務。這種趨勢帶來知識的碎形化，許多學生要寫報告時都直接上網收集資料，報告內容欠缺組織與忽視資料來源。本節分享google scholar[^1]搭配Zotero[^2]的使用心得，讀者可依個人習慣建立個人化知識管理系統。
@@ -323,7 +323,7 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 --->
 
-[^02-001]: [wikipedia](https://en.wikipedia.org/wiki/Wason_selection_task) 傳統版 Wason, P. C. (1966). "Reasoning". In Foss, B. M. (ed.). New horizons in psychology. Vol. 1. Harmondsworth: Penguin. LCCN 66005291. 改編版見 Cosmides, L.; Tooby, J. (1992). "Cognitive Adaptions for Social Exchange" (PDF). In Barkow, J.; Cosmides, L.; Tooby, J. (eds.). The adapted mind: Evolutionary psychology and the generation of culture. New York: Oxford University Press. pp. 163–228. ISBN 978-0-19-506023-2.
+[^02-001]: 
 
 
 [^02-deductive-1]: <br/>(1)點擊內文連結或搜尋zotero官網，開啟後點選**下載Download**按鈕進入下載頁面。<br/><img src="images/z-a1-1.jpg"><br/>(2)網站會自動偵側個人設備的作業系統及瀏覽器版本，提供相容的主程式與連結器的下載及安裝連結，建議兩件都要下載安裝。<br/><img src="images/z-a1-2.jpg"><br/>(3)WINDOWS版主程式安裝成功，會在桌面出現圖標，可直接點擊啟動主程式。<br/><img src="images/z-a1-3.jpg"><br/>(4)連結器安裝成功時，通常會在網址列旁邊看到元件圖示。<br/><img src="images/z-a1-4.jpg">
@@ -340,7 +340,7 @@ knitr::include_graphics("figs/googledoc_zotero.png")
 
 [^02-deductive-7]: <br/>(1)安裝Zotero PDF Translate~搜尋或點擊這套附加元件的[GitHub 網頁](https://github.com/windingwind/zotero-pdf-translate)，如以下畫面。<br/><img src="images/z-a7-1.png"><br/>(2)在網頁中下滑，就會在網頁的右側看到 Releases 的字樣，點進去後即可下載，如以下畫面紅框處。<br/><img src="images/z-a7-2.png"><br/>(3)下載之後，就可以在電腦中找到 “ zotero-pdf-translate.xpi ” 的檔案。<br/><img src="images/z-a7-3.png"><br/>(4)開啟zotero附加元件管理頁面。如以下畫面示範。<br/><img src="images/z-a7-4.png"><br/>(5)把先前下載的 xpi 檔案拖移進去，安裝成功如以下畫面。<br/><img src="images/z-a7-5.png"><br/>(6)設定Zotero PDF Translate~開啟`編輯` 的`偏好設定`，如以下畫面示範。<br/><img src="images/z-a7-6.png"><br/>(7)切換到`翻譯`子頁面，即可選擇個人偏好的設定，如以下畫面示範。<br/><img src="images/z-a7-7.png">
 
-[^02-deductive-8]: <br/>(1)搜尋或由zotero附加元件清單網頁，找到[inciteful的github網頁](https://github.com/inciteful-xyz/inciteful-zotero-plugin)，最新版安裝檔案的連結點擊**Releases**即可開啟。<br/><img src="images/z-a8-1.png"><br/>(2)建議用滑鼠右鍵點選*另存新檔*，下載下圖的xpi檔案。安裝方法與前面介紹的Zotfile和translate一樣。<br/><img src="images/z-a8-2.png"><br/>(3)inciteful的功能主要有兩種。下圖示範第一種`Graph Search`，檢視單一文獻被後來出版的論文引用的關聯資訊。圖中的示範書目是 @Zwaan-2018 。<br/><img src="images/z-a8-3.png"><br/>(4)有連上網路的話，會在預設網路瀏覽器開啟這篇文獻的資訊頁，包括目前被引用的狀況，有引用及被引用的論文書目連結。<br/><img src="images/z-a8-4.png"><br/>(5)第二種功能`Connect Papers`是用至少兩篇論文為線索，查看至今有引用其中一篇論文的文獻關聯。下圖的示範書目是 @roedigerCreatingFalseMemories1995 與 @Zwaan-2018 。<br/><img src="images/z-a8-5.png"><br/>(6)因為 @roedigerCreatingFalseMemories1995 是經典的記憶研究，所以文獻引用網路相當壯觀。<br/><img src="images/z-a8-6.png">
+[^02-deductive-8]: <br/>(1)搜尋或由zotero附加元件清單網頁，找到[inciteful的github網頁](https://github.com/inciteful-xyz/inciteful-zotero-plugin)，最新版安裝檔案的連結點擊**Releases**即可開啟。<br/><img src="images/z-a8-1.png"><br/>(2)建議用滑鼠右鍵點選*另存新檔*，下載下圖的xpi檔案。安裝方法與前面介紹的Zotfile和translate一樣。<br/><img src="images/z-a8-2.png"><br/>(3)inciteful的功能主要有兩種。下圖示範第一種`Graph Search`，檢視單一文獻被後來出版的論文引用的關聯資訊。圖中的示範書目是 @zwaanParticipantNonnaiveteReproducibility2017 。<br/><img src="images/z-a8-3.png"><br/>(4)有連上網路的話，會在預設網路瀏覽器開啟這篇文獻的資訊頁，包括目前被引用的狀況，有引用及被引用的論文書目連結。<br/><img src="images/z-a8-4.png"><br/>(5)第二種功能`Connect Papers`是用至少兩篇論文為線索，查看至今有引用其中一篇論文的文獻關聯。下圖的示範書目是 @roedigerCreatingFalseMemories1995 與 @zwaanParticipantNonnaiveteReproducibility2017 。<br/><img src="images/z-a8-5.png"><br/>(6)因為 @roedigerCreatingFalseMemories1995 是經典的記憶研究，所以文獻引用網路相當壯觀。<br/><img src="images/z-a8-6.png">
 
 
 
