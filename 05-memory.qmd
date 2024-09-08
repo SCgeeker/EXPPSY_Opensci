@@ -152,7 +152,7 @@ knitr::include_graphics("figs/Spacing_exp1.png")
 
 列表關鍵詞從未在學習列表內出現，總再認率卻幾乎等於列表內有出現的字詞。有學習的列表關鍵詞再認率，與未學習的列表關鍵詞再認率之間的差異，被稱為**假記憶效應**(False memory effect)。之後的研究將學習字詞改用不同的語言，保持 @Roediger-1995 的設計與程序，都會發現原始研究相同的效應[例如 @Wang-2018]。
 
-假記憶效應雖然經得起考驗，導致的原因仍然有待探討。其中最能解釋的理論是關聯性越強的一組字詞，從人類記憶系統提取的效率越高。最近的證據有 @chadwickSemanticRepresentationsTemporal2016 測量40組字詞列表回憶相關誘導詞的錯答率，以及已知與字詞辨識有關的大腦區域：顳極(temporal pole)的相關字詞神經活動，兩組測量有顯著的正相關。這項研究的字詞相關性計算，是根據學習列表詞自由聯想到相關誘導詞的比例，例如"Cold"由"Snow"，"Ice"，"Winter"，"Warm"聯想到的平均比例約64%；"Black"由"White"，"Charred"，"Cat"，"Dark"聯想到的平均比例約49%。如果有可再現的實驗結果符合關聯性理論的預測，心理學者就能更進一步了解短期與長期記憶系統的運作原理。
+假記憶效應雖然經得起考驗，導致的原因仍然有待探討。其中最能解釋的理論是關聯性越強的一組字詞，從人類記憶系統提取的效率越高。最近的證據有 @Chadwick-2016 測量40組字詞列表回憶相關誘導詞的錯答率，以及已知與字詞辨識有關的大腦區域：顳極(temporal pole)的相關字詞神經活動，兩組測量有顯著的正相關。這項研究的字詞相關性計算，是根據學習列表詞自由聯想到相關誘導詞的比例，例如"Cold"由"Snow"，"Ice"，"Winter"，"Warm"聯想到的平均比例約64%；"Black"由"White"，"Charred"，"Cat"，"Dark"聯想到的平均比例約49%。如果有可再現的實驗結果符合關聯性理論的預測，心理學者就能更進一步了解短期與長期記憶系統的運作原理。
 
 ## 記憶實驗的再現與重製 {#sec-memory_rep}
 
@@ -176,9 +176,9 @@ knitr::include_graphics(c("figs/Serial_Recency_participant_same_1.png","figs/Ser
 knitr::include_graphics(c("figs/Spacing_N.png"))
 ```
 
-@Zwaan-2018 的假記憶實驗是 @Roediger-1995 的簡化版本：改用視覺呈現字詞項目列表，還有參與者不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。分析重點是未曾學習的列表關鍵詞之再認正確率，預計需要至少10人，才能有90%的考驗力，再現同樣的結果。請參考 @fig鄉fmemory-power。
+@Zwaan-2018 的假記憶實驗是 @Roediger-1995 的簡化版本：改用視覺呈現字詞項目列表，還有參與者不必做每個列表之後的自由回憶或其他作業，再認作業只需回答有或無。分析重點是未曾學習的列表關鍵詞之再認正確率，預計需要至少10人，才能有90%的考驗力，再現同樣的結果。請參考 @fig-memory-power。
 
-```{r fig-fmemory-power, echo=FALSE, fig.show='hold', message=FALSE, warning=FALSE, paged.print=TRUE, out.width='50%', fig.cap="估計錯誤記憶誤答率之考驗力與參與者人數。"}
+```{r fig-memory-power, echo=FALSE, fig.show='hold', message=FALSE, warning=FALSE, paged.print=TRUE, out.width='50%', fig.cap="估計錯誤記憶誤答率之考驗力與參與者人數。"}
 knitr::include_graphics(c("figs/False_Memory_N.png"))
 ```
 

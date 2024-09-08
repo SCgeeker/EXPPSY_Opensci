@@ -64,6 +64,8 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -251,7 +253,8 @@ div.csl-indent {
   <li><a href="#導讀" id="toc-導讀" class="nav-link active" data-scroll-target="#導讀">導讀</a>
   <ul class="collapse">
   <li><a href="#寫作動機" id="toc-寫作動機" class="nav-link" data-scroll-target="#寫作動機">寫作動機</a></li>
-  <li><a href="#如何使用這本書" id="toc-如何使用這本書" class="nav-link" data-scroll-target="#如何使用這本書">如何使用這本書</a></li>
+  <li><a href="#本書的設計理念" id="toc-本書的設計理念" class="nav-link" data-scroll-target="#本書的設計理念">本書的設計理念</a></li>
+  <li><a href="#課程計畫" id="toc-課程計畫" class="nav-link" data-scroll-target="#課程計畫">2024課程計畫</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/edit/master/index.qmd" class="toc-action">編輯本頁</a></p><p><a href="https://github.com/SCgeeker/EXPPSY_Opensci/issues/new" class="toc-action">提交問題</a></p></div></div></nav>
@@ -305,7 +308,7 @@ https://quarto.org/docs/books/
 <h3 class="anchored" data-anchor-id="寫作動機">寫作動機</h3>
 <p>心理學實驗法是帶領心理學學生了解如何準備及完成一項心理學實驗的課程，也是心理科學研究養成入門。有百年歷史的心理學系都將這門課程設定為必修課，許多有心深入心理學知識殿堂的學生從這門課程找到學涯起點，寫出一本實驗心理學教科書也是一名心理學教師的生涯里程碑。但是寫作這本書的第一版的2017年，正是心理科學再現危機(Replication Crisis)，逐漸轉變為心理科學可信度危機(Credibility Crisis)的時候 <span class="citation" data-cites="vazireImplicationsCredibilityRevolution2018 nosekReplicabilityRobustnessReproducibility2022">(<a href="references.html#ref-nosekReplicabilityRobustnessReproducibility2022" role="doc-biblioref">Nosek et al., 2022</a>; <a href="references.html#ref-vazireImplicationsCredibilityRevolution2018" role="doc-biblioref">Vazire, 2018</a>)</span>。</p>
 <p>2011年是歐美心理學界深刻感受粗糙的研究方法長期損害心理科學品質的關鍵時間。當年有曾於「科學」(Science)發表研究的荷蘭社會與人格心理學者Diederik Stapel被揭發研究造假<span class="citation" data-cites="stapelFakingScienceTrue2014">(<a href="references.html#ref-stapelFakingScienceTrue2014" role="doc-biblioref">Stapel, 2014</a>)</span>，以及美國資深社會與人格心理學者Daryl Bem發表結論有爭議且結果難以重現的超感知覺研究<span class="citation" data-cites="bemFeelingFutureExperimental2011">(<a href="references.html#ref-bemFeelingFutureExperimental2011" role="doc-biblioref">Bem, 2011</a>)</span>。後續緊接發生的類以案例，啟發一群心理學者提出改進心理科學研究流程的主張<span class="citation" data-cites="chambers_trust_2013 lindsayResearchPreregistration1012016">(<a href="references.html#ref-chambers_trust_2013" role="doc-biblioref">Chambers et al., 2013</a>; <a href="references.html#ref-lindsayResearchPreregistration1012016" role="doc-biblioref">Lindsay et al., 2016</a>)</span>，並付諸於大規模再現研究<span class="citation" data-cites="camererEvaluatingReplicabilitySocial2018 kleinInvestigatingVariationReplicability2014 opensciencecollaborationEstimatingReproducibilityPsychological2015">(<a href="references.html#ref-camererEvaluatingReplicabilitySocial2018" role="doc-biblioref">Camerer et al., 2018</a>; <a href="references.html#ref-kleinInvestigatingVariationReplicability2014" role="doc-biblioref">Klein et al., 2014</a>; <a href="references.html#ref-opensciencecollaborationEstimatingReproducibilityPsychological2015" role="doc-biblioref">Open Science Collaboration, 2015</a>)</span>。各種再現研究的結果顯示令人難以接受的事實：2015年之前發表於頂尖期刊的多數心理學研究，經過嚴謹設計的再現研究與資料分析，能重現原始發現的比例未達一半。對於正在學學習的學生來說，<strong>今天聽到教授講述某個有啟發性的研究，明天得知這項研究證據經不起考驗</strong>，這樣的狀況不再是只會從一些實驗室聽到的傳說故事，而是在任何大學學習場域隨時都會發生的情節。</p>
-<p>所謂「危機也是轉機」，在可信度危機時代開始接觸心理學的學生，更有機會發覺清楚的學習方向，這本教科書正是為了幫助學生認識如何設計有品質的心理學實驗，也能啟發獨立評估心理科學研究品質的多元能力。在這次的改版，我們定義「研究品質」能反應在研究結果的<strong>證據強度</strong>。如何評估心理學實驗的證據強度，還有設計達到預期證據強度的實驗研究，不是能一蹴可及的目標，這本書提供一個明確學習起點：<strong>看到讓你想認識的研究結果，你會不會先去找看看研究者有沒有公開資料與預先註冊研究計畫？</strong> – 這也是這本書自我定位「開放科學取向」的基本理由。</p>
+<p>所謂「危機也是轉機」，在可信度危機時代開始接觸心理學的學生，更有機會發覺清楚的學習方向，這本教科書正是為了幫助學生認識如何設計有品質的心理學實驗，也能啟發獨立評估心理科學研究品質的多元能力。在這次的改版，我們定義「研究品質」能反應在研究結果的<i class="fa-solid fa-info-circle" aria-label="info-circle"></i><strong>證據強度</strong>。如何評估心理學實驗的證據強度，還有設計達到預期證據強度的實驗研究，不是能一蹴可及的目標，這本書提供一個明確學習起點：<strong>看到讓你想認識的研究結果，你會不會先去找看看研究者有沒有公開資料與預先註冊研究計畫？</strong> – 這也是這本書自我定位「開放科學取向」的基本理由。</p>
 <div class="callout callout-style-default callout-note callout-titled" title="簡介'證據強度'">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -318,40 +321,17 @@ https://quarto.org/docs/books/
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>簡單的解釋是用來顯示一份測試兩種預測結果相異的實驗模型的實驗研究，兩種模型預測成功程度的綜合指標。在各種實證科學領域，各式證據強度指標陸續產生，科學研究社群尚在觀察如何運用證據強度指標。</p>
+<p>簡單的解釋是一份測試兩種預測結果相異的實驗模型的實驗研究，清楚指示兩種模型預測相對成功程度的綜合指標。在各種實證科學領域，各式證據強度指標陸續產生，科學研究社群如何運用證據強度指標尚在觀察。</p>
 </div>
 </div>
 </div>
-<!---
-### 本書的設計理念
-
-建立學習情境才能保持學習者對重要課題的興趣與專注，基於相關學習理論及建議操作[@Lave-1991; @chapmanUpgradeYourCargo2016]，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。--->
 </section>
-<section id="如何使用這本書" class="level3">
-<h3 class="anchored" data-anchor-id="如何使用這本書">如何使用這本書</h3>
-<p>這本書不只是一本實驗心理學教科書，更是一本倡導開放科學理念、引導學生進行嚴謹科學研究的入門書。透過學習書中的內容和方法，學生可以掌握設計和執行高品質心理學實驗的技巧，培養鑑別心理學實驗品質的眼光。提供給使用本書學習的學生一些建議：</p>
-<ul>
-<li><strong>將本書視為學習如何設計高品質心理學實驗的起點</strong>：
-<ul>
-<li>根據「科學方法」設計的學習架構，學習如何收集、整理和閱讀心理學論文，透過學習過程內化「科學方法」為個人的思考方法。</li>
-<li>認識「證據強度」的可用指標，運用指標設計具備預期證據強度的實驗方法。</li>
-</ul></li>
-<li><strong>培養批判性思考，理性質疑既有的研究結果</strong>：
-<ul>
-<li>本書提供通俗及經典的研究案例，說明即使是廣泛流行的理論，也可能缺乏經得起考驗的科學證據支持，讀者可由這些案例學習以批判角度審視各種基於科學研究的主張和觀念。</li>
-<li>本書提供示範研究者如何公開研究資料以及預先註冊研究計畫，可從示範中學習獨立評估心理科學研究品質。</li>
-</ul></li>
-<li><strong>以經典實驗範例作為研究靈感，設計自己的研究</strong>:
-<ul>
-<li>本書介紹的重製研究涵蓋記憶研究、心理計時學研究和語言研究等多個領域的經典實驗，詳細說明這些實驗的理論背景、實驗設計和重要結果。</li>
-<li>讀者可以比較原始實驗與 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 重製實驗的設計差異、使用開源實驗平台重現實驗結果，並思考如何將這些實驗改進或應用到其他研究問題上。</li>
-</ul></li>
-<li><strong>善用本書介紹的學習資源</strong>:
-<ul>
-<li>以 <span class="citation" data-cites="Chandler-2015">Chandler et al. (<a href="references.html#ref-Chandler-2015" role="doc-biblioref">2015</a>)</span> 與 <span class="citation" data-cites="Zwaan-2018">Zwaan et al. (<a href="references.html#ref-Zwaan-2018" role="doc-biblioref">2018</a>)</span> 的重製研究專案為主軸，講解如何進行文獻回顧、設定研究問題和假設、設計實驗、分析資料和撰寫報告。</li>
-<li>本書提供開源實驗設計平台、統計分析方法、如何使用書目管理軟體、如何撰寫預先註冊研究計畫等可免費使用的資源。不僅能幫助讀者學習科學方法，也能適用到任何領域的知識管理。</li>
-</ul></li>
-</ul>
+<section id="本書的設計理念" class="level3">
+<h3 class="anchored" data-anchor-id="本書的設計理念">本書的設計理念</h3>
+<p>建立學習情境才能保持學習者對重要課題的興趣與專注，基於相關學習理論及建議操作<span class="citation" data-cites="Lave-1991 chapmanUpgradeYourCargo2016">(<a href="references.html#ref-chapmanUpgradeYourCargo2016" role="doc-biblioref">Chapman, 2016</a>; <a href="references.html#ref-Lave-1991" role="doc-biblioref">Lave &amp; Wenger, 1991</a>)</span>，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。<!---第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。---></p>
+</section>
+<section id="課程計畫" class="level3">
+<h3 class="anchored" data-anchor-id="課程計畫"><a href="docs/99_2024syllabus.html">2024課程計畫</a></h3>
 <!--- 
 
 version 1 backup
@@ -387,11 +367,14 @@ Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, 
 <div id="ref-chambers_trust_2013" class="csl-entry" role="listitem">
 Chambers, C., Munafo, M., &amp; signatories, more than 80. (2013, June 5). Trust in science would be improved by study pre-registration. <em>The Guardian: Science</em>. <a href="http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration">http://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration</a>
 </div>
-<div id="ref-Chandler-2015" class="csl-entry" role="listitem">
-Chandler, J., Paolacci, G., Peer, E., Mueller, P., &amp; Ratliff, K. A. (2015). Using <span>Nonnaive Participants Can Reduce Effect Sizes</span>. <em>Psychological Science</em>, <em>26</em>(7), 1131–1139. <a href="https://doi.org/10.1177/0956797615585115">https://doi.org/10.1177/0956797615585115</a>
+<div id="ref-chapmanUpgradeYourCargo2016" class="csl-entry" role="listitem">
+Chapman, D. (2016, December 31). <em>Upgrade your cargo cult for the win</em>. Meaningness. <a href="https://meaningness.com/metablog/upgrade-your-cargo-cult">https://meaningness.com/metablog/upgrade-your-cargo-cult</a>
 </div>
 <div id="ref-kleinInvestigatingVariationReplicability2014" class="csl-entry" role="listitem">
 Klein, R. A., Ratliff, K. A., Vianello, M., Adams Jr, R. B., Bahník, Š., Bernstein, M. J., Bocian, K., Brandt, M. J., Brooks, B., Brumbaugh, C. C., Cemalcilar, Z., Chandler, J., Cheong, W., Davis, W. E., Devos, T., Eisner, M., Frankowska, N., Furrow, D., Galliani, E. M., … Nosek, B. A. (2014). Investigating <span>Variation</span> in <span>Replicability</span>: <span>A</span> <span>“<span>‘<span>Many Labs</span>’</span>”</span> <span>Replication Project</span>. <em>Social Psychology</em>, <em>45</em>, 142–152. <a href="https://doi.org/10.1027/1864-9335/a000178">https://doi.org/10.1027/1864-9335/a000178</a>
+</div>
+<div id="ref-Lave-1991" class="csl-entry" role="listitem">
+Lave, J., &amp; Wenger, E. (1991). <em>Situated learning: Legitimate peripheral participation</em>. Cambridge University Press.
 </div>
 <div id="ref-lindsayResearchPreregistration1012016" class="csl-entry" role="listitem">
 Lindsay, S., Simons, D., &amp; Lilienfeld, S. (2016). Research <span>Preregistration</span> 101. <em>Observer</em>, <em>29</em>(10), 14–16. <a href="https://www.psychologicalscience.org/observer/research-preregistration-101">https://www.psychologicalscience.org/observer/research-preregistration-101</a>
@@ -407,9 +390,6 @@ Stapel, D. (2014). <em>Faking <span>Science</span>: <span>A True Story</span> of
 </div>
 <div id="ref-vazireImplicationsCredibilityRevolution2018" class="csl-entry" role="listitem">
 Vazire, S. (2018). Implications of the <span>Credibility Revolution</span> for <span>Productivity</span>, <span>Creativity</span>, and <span>Progress</span>. <em>Perspectives on Psychological Science: A Journal of the Association for Psychological Science</em>, <em>13</em>(4), 411–417. <a href="https://doi.org/10.1177/1745691617751884">https://doi.org/10.1177/1745691617751884</a>
-</div>
-<div id="ref-Zwaan-2018" class="csl-entry" role="listitem">
-Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., &amp; Zeelenberg, R. (2018). Participant nonnaiveté and the reproducibility of cognitive psychology. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1968–1972. <a href="https://doi.org/10.3758/s13423-017-1348-y">https://doi.org/10.3758/s13423-017-1348-y</a>
 </div>
 </div>
 </section>
