@@ -35,7 +35,7 @@ https://quarto.org/docs/books/
 
 
 
-### [2024課程計畫](docs/99_2024syllabus.html)
+### [2024課程計畫](99_2024syllabus.html)
 
 ```{=html}
 <!--- 
