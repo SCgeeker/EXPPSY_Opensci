@@ -19,6 +19,7 @@
 #### **第一單元：緒論與科學方法 (第 1-2 週)**
 
 **課程目標：** 
+
  * 了解「實驗心理學」這門課的目的，以及為何需要學習科學方法。
  * 反思個人看待世界的方式，以及使用科學方法來檢驗自己的觀點。
  * 透過閱讀文獻認識科學方法的七個步驟，明白統計方法在現代科學研究的重要性。
@@ -31,14 +32,16 @@
 Stein, R., & Swan, A. B. (2019). Evaluating the validity of Myers‐Briggs Type Indicator theory: A teaching tool and window into intuitive psychology. Social and Personality Psychology Compass, 13(2), e12434. https://doi.org/10.1111/spc3.12434
 
 **課程活動：**
+
     * 課堂討論：以 MBTI 為例，讓學生討論如何用科學方法來檢驗其有效性。
     * NotebookLM 示範操作及演練
 
-<!---    *   案例分析：探討心理學歷史上著名的科學不當行為案例，例如數據造假、剽竊等，並讓學生反思這些行為的後果。 --->
+<!---    * 案例分析：探討心理學歷史上著名的科學不當行為案例，例如數據造假、剽竊等，並讓學生反思這些行為的後果。 --->
 
 #### **第二單元：演繹推理 (第 3-4 週)**
 
 **課程目標：**
+
 * 運用AI工具學習如何運用演繹推理，從閱讀過程辨識需要證據支持或否定的研究問題和假設。
 * 探討 Wason 推理作業的發展過程，了解脈絡資訊在演繹推理中的作用。
 * 說明確證原則和反證原則在科學假設建立中的重要性。
@@ -58,6 +61,7 @@ Cosmides, L.; Tooby, J. (1992). “Cognitive Adaptions for Social Exchange”. I
 #### **第三單元：文獻回顧與研究設計 (第 5-6 週)**
 
 **課程目標：**
+
   * 學習如何整合zotero文獻管理軟體以及AI工具，有效率地收集、整理和管理文獻。
   * 討論AI提問技巧和知識管理方法，掌握從文獻中萃取重要資訊的有效方法。
   * 探討參與者間實驗設計和參與者內實驗設計的優缺點，以及如何根據研究目的選擇合適的設計。
@@ -67,6 +71,7 @@ Cosmides, L.; Tooby, J. (1992). “Cognitive Adaptions for Social Exchange”. I
 
 
 **閱讀材料：**
+
 Chandler, J., Mueller, P., & Paolacci, G. (2014). Nonnaïveté among Amazon Mechanical Turk workers: Consequences and solutions for behavioral researchers. Behavior Research Methods, 46, 112–130.
 
 Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstra, K., & Zeelenberg, R. (2017). Participant Nonnaiveté and the reproducibility of cognitive psychology. Psychonomic Bulletin & Review, 1–5. https://doi.org/10.3758/s13423-017-1348-y
@@ -82,14 +87,15 @@ Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstr
 <!---
 
     
-    *   實驗設計練習：讓學生根據指定的論文，設計出不同的實驗版本，並比較不同設計的優缺點。
-    *   課堂討論：以 Chandler et al. (2015) 和 Zwaan et al. (2018) 的研究為例，讓學生討論如何控制非新手經驗之外的混淆變項。
+    * 實驗設計練習：讓學生根據指定的論文，設計出不同的實驗版本，並比較不同設計的優缺點。
+    * 課堂討論：以 Chandler et al. (2015) 和 Zwaan et al. (2018) 的研究為例，讓學生討論如何控制非新手經驗之外的混淆變項。
 
 --->
 
 #### **第四單元：歸納推理與資料分析 (第 7-8 週)**
 
 **課程目標：**
+
   * 了解歸納推理在科學研究中的角色，以及如何運用統計方法從實驗資料中歸納出結論。
   * 介紹心理學研究中常見的效果量指標，例如 Cohen's d，以及如何計算和解釋這些指標。
   * 學習如何使用 jamovi 等開源統計軟體進行資料分析，並了解如何選擇適當的統計模型。
@@ -111,9 +117,9 @@ Zwaan, R. A., Pecher, D., Paolacci, G., Bouwmeester, S., Verkoeijen, P., Dijkstr
 #### **第五單元：可重製的記憶研究 (第 10-11 週)**
 
 *   **課程目標：**
-    *   透過經典記憶實驗的介紹，讓學生了解記憶研究的發展歷史和重要理論。
-    *   以 Zwaan et al. (2018) 重製的記憶實驗為例，讓學生學習如何比較不同實驗程序的差異，以及如何評估這些差異對實驗結果的影響。
-    *   讓學生了解如何使用開源實驗平台設計和執行線上實驗，並學習如何收集和分析實驗資料。
+    * 透過經典記憶實驗的介紹，讓學生了解記憶研究的發展歷史和重要理論。
+    * 以 Zwaan et al. (2018) 重製的記憶實驗為例，讓學生學習如何比較不同實驗程序的差異，以及如何評估這些差異對實驗結果的影響。
+    * 讓學生了解如何使用開源實驗平台設計和執行線上實驗，並學習如何收集和分析實驗資料。
 
 *   **閱讀材料：**
 
@@ -126,6 +132,7 @@ Roediger, H. L., & McDermott, K. B. (1995). Creating false memories: Remembering
 
 
 **課程活動：**
+
   * 線上實驗平台操作教學：實際操作 OpenSesame、formr 或 psytoolkit 等線上實驗平台，學習如何設計實驗、設定參數、收集資料等功能。
   * 實驗設計練習：根據 Zwaan et al. (2018) 的實驗設計，嘗試使用中文材料重新設計實驗，並討論設計過程中遇到的問題和挑戰。
   * 課堂討論：比較 Zwaan et al. (2018) 的實驗設計和原始實驗設計的差異，並討論這些差異是否會影響實驗結果的再現性。
@@ -147,6 +154,7 @@ Eimer, M., & Schlaghecken, F. (1998). Effects of masked stimuli on motor activat
 Eriksen, B. A., & Eriksen, C. W. (1974). Effects of noise letters upon the identification of a target letter in a nonsearch task. Perception & Psychophysics, 16(1), 143–149. https://doi.org/10.3758/BF03203267
 
  **課程活動：**
+ 
   * 線上實驗平台操作教學：實際操作 OpenSesame、formr 或 psytoolkit 等線上實驗平台，學習如何設計心理計時學實驗、設定參數、收集資料等功能。
   * 實驗設計練習：根據 Zwaan et al. (2018) 的實驗設計，嘗試使用不同的刺激材料或反應方式重新設計實驗，並討論設計過程中遇到的問題和挑戰。
   * 資料分析練習：使用 Zwaan et al. (2018) 的公開資料，練習如何計算平均反應時間、正確率、效應量等指標，並使用 jamovi 軟體進行 t 檢定和變異數分析。
@@ -155,6 +163,7 @@ Eriksen, B. A., & Eriksen, C. W. (1974). Effects of noise letters upon the ident
 #### **第七單元：可重製的語言研究 (第 15-16 週)**
 
 **課程目標：**
+
   * 了解語言心理學的研究範疇和重要議題，例如語言習得、語言理解、語言產生等。
   * 透過經典語言心理學實驗的介紹，讓學生了解字詞辨識、句子理解等認知歷程。
   * 以 Zwaan et al. (2018) 重製的語言心理學實驗為例，讓學生學習如何比較不同實驗程序的差異，以及如何評估這些差異對實驗結果的影響。
@@ -169,31 +178,32 @@ Meyer, D. E., & Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of
 Zwaan, R. A., Stanfield, R. A., & Yaxley, R. H. (2002). Language comprehenders mentally represent the shapes of objects. Psychological Science, 13, 168–171. https://doi.org/10.1111/1467-9280.0043
 
 **課程活動：**
+
   * 線上實驗平台操作教學：實際操作 OpenSesame、formr 或 psytoolkit 等線上實驗平台，學習如何設計語言心理學實驗、設定參數、收集資料等功能。
   * 實驗設計練習：讓學生根據 Zwaan et al. (2018) 的實驗設計，嘗試使用中文材料重新設計實驗，並討論設計過程中遇到的問題和挑戰。
   * 資料分析練習：讓學生使用 Zwaan et al. (2018) 的公開資料，練習如何計算平均反應時間、正確率、效應量等指標，並使用 jamovi 軟體進行 t 檢定和變異數分析。
   * 課堂討論：讓學生比較 Zwaan et al. (2018) 的實驗設計和原始實驗設計的差異，並討論這些差異是否會影響實驗結果的再現性。
 
 
-<!---
 
 #### **第八單元：預先註冊研究的寫作指南 (第 17 週)**
 
 **課程目標：**
-  *   讓學生了解撰寫學術報告的重要性，以及如何撰寫符合科學規範的研究報告。
-  *   介紹 PRP-QUANT 模板，讓學生學習如何使用該模板撰寫預先註冊研究計畫書。
-  *   提供報告寫作的實用建議，涵蓋標題頁、摘要、緒論、方法、結果、討論、參考文獻等部分。
-  *   讓學生學習如何準備適用於公開場合的報告材料。
+
+  * 讓學生了解撰寫學術報告的重要性，以及如何撰寫符合科學規範的研究報告。
+  * 介紹 PRP-QUANT 模板，讓學生學習如何使用該模板撰寫預先註冊研究計畫書。
+  * 提供報告寫作的實用建議，涵蓋標題頁、摘要、緒論、方法、結果、討論、參考文獻等部分。
+  * 讓學生學習如何準備適用於公開場合的報告材料。
 
 *   **閱讀材料：**
 
 [PRP-QUANT 模板說明網頁](https://www.psycharchives.org/en/item/a417b468-7398-40e2-9050-4adad9e2078d)
 
-*   **課程活動：**
-    *   預先註冊研究計畫書撰寫練習：讓學生根據前幾週學習的內容，選擇一個感興趣的實驗心理學主題，並嘗試使用 PRP-QUANT 模板撰寫一份預先註冊研究計畫書。
-    *   報告寫作技巧教學：邀請老師或學長姐分享報告寫作的經驗和技巧，並讓學生練習如何設計簡報、製作海報等報告材料。 
+**課程活動：**
 
---->
+    * 預先註冊研究計畫書撰寫練習：讓學生根據前幾週學習的內容，選擇一個感興趣的實驗心理學主題，並嘗試使用 PRP-QUANT 模板撰寫一份預先註冊研究計畫書。
+    * 報告寫作技巧教學：邀請老師或學長姐分享報告寫作的經驗和技巧，並讓學生練習如何設計簡報、製作海報等報告材料。 
+
 
 ### **評量方式**
 
