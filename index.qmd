@@ -20,9 +20,20 @@ https://quarto.org/docs/books/
 簡單的解釋是一份測試兩種預測結果相異的實驗模型的實驗研究，清楚指示兩種模型預測相對成功程度的綜合指標。在各種實證科學領域，各式證據強度指標陸續產生，科學研究社群如何運用證據強度指標尚在觀察。
 :::
 
+### 建議學習工具
+
+- 文獻管理軟體： [Zotero](https://www.zotero.org/), [使用教學](https://scchen.com/zh/post/zotero/), 
+- 文獻搜尋引擎： [scite_](https://scite.ai/), [ResearchRabbit](https://www.researchrabbit.ai/), [Litmaps](https://app.litmaps.com/), [Consensus](https://consensus.app/search/), [SciHub](https://sci-hub.se/)
+- AI筆記工具： [NotebookLM](https://notebooklm.google.com/)
+- [實驗腳本開發](https://scgeeker.github.io/Online_EXP/)：[Opensesame](https://osdoc.cogsci.nl/), [Psytoolkit](https://www.psytoolkit.org/)
+- 學術寫作模板： [PRP-QUANT](https://www.psycharchives.org/en/item/a417b468-7398-40e2-9050-4adad9e2078d)
+
+<!---
 ### 本書的設計理念
 
-建立學習情境才能保持學習者對重要課題的興趣與專注，基於相關學習理論及建議操作[@Lave-1991; @chapmanUpgradeYourCargo2016]，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。<!---第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。--->
+建立學習情境才能保持學習者對重要課題的興趣與專注，基於相關學習理論及建議操作[@Lave-1991; @chapmanUpgradeYourCargo2016]，本書提供教師與學生經營學習開放科學操作的輔助原則及建議。第一單元不只介紹有經驗的心理科學研究者熟悉的知識循環，也討論未實踐科學誠信所帶來的長期不良影響。科學誠信在本書指向能提出經得起細節檢驗的研究操作，所以本書不像其他心理學實驗法教材 一樣，鉅細靡遺地解說或討論好幾件研究課題的操作細節，而是提供教師及學生參考資源，營造能規劃並執行完整再現專案的學習情境。在此情境中完成一件再現專案，學生將完整體驗如何運用預先註冊(preregistration)建構個人的知識品質判斷準則，教師也能從每次過程中檢視自己所信守的理論，與在真實世界實踐的差異。--->
+
+
 
 ### [2024課程計畫](docs/99_2024syllabus.html)
 
