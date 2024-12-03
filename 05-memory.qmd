@@ -136,7 +136,8 @@ knitr::include_graphics("figs/Spacing_exp1.png")
 然而1960年代許多研究發現的錯誤報告未學習相關詞的比率，平均錯答率未達20%。只有 @Deese-1959 使用學習列表全是與關鍵詞(例如“針”)有語義相關的字詞(例如“絲線”、“針頭”、“針孔”、“紡錘”...等)，呈現順序依照與關鍵詞的關連強度，發現測試結果有超過50%的錯答率。 @Roediger-1995 做了一些改良，發現錯答率提高到80%，並且參與者肯定超過一半的錯答項目有學習過。
 
 
-> [假記憶線上實驗範例](https://psych.hanover.edu/javatest/cle/cognition/cognition/falsememory_instructions.html)
+> [假記憶線上實驗範例](https://www.millisecond.com/download/library/falsememories) <br/>
+> **註**：範例網頁由實驗軟體開發公司[Millisecond](https://www.millisecond.com/)提供，選擇視覺版或聽覺版之後，依照網頁指示安裝套件，才能在網頁執行實驗。
 
 
 @Roediger-1995 的改良實驗有24套與24個關鍵詞有關 聯的15項字詞列表，學習階段播放錄音讓參與者記憶其中16套列表的字詞。每聽完一個列表，參與者做列表項目自由回憶或四則運算作業。測試階段的再認作業題目包括24套列表裡排序為前中後的三個字詞，以及所有關鍵詞。再認作業不只請參與者圈選曾選過的字詞，還要註記確認學過(R)，還是只有印象(K)。以下的表格改製  @Roediger-1995 Table 2，總計再認作業的項目數量安排與再認作業回答各種項目的比率：
